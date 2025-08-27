@@ -20,7 +20,7 @@
 ### 1. Настройка переменных окружения
 ```bash
 # Создайте файл .env
-echo "GROQ_API_KEY=your_key" > .env
+echo "GROQ_API_KEY=your_api" > .env
 ```
 
 ### 2. Запуск системы
