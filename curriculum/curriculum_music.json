@@ -1,0 +1,127 @@
+{
+  "id": "curriculum_music",
+  "title": "Music (Cambridge-style)",
+  "subject": "Music",
+  "stages": [
+    {
+      "id": "stage_primary",
+      "title": "Primary",
+      "age_range": [
+        5,
+        11
+      ],
+      "modules": [
+        {
+          "id": "module_music_listen_primary",
+          "title": "Listening & Keeping the Beat",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_music_pitch_primary",
+          "title": "Pitch & Simple Notation (do–re–mi)",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_music_rhythm_primary",
+          "title": "Rhythm (quarter, eighth, rests)",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_music_create_primary",
+          "title": "Singing & Simple Composition",
+          "recommended_hours": 20
+        }
+      ]
+    },
+    {
+      "id": "stage_lower_secondary",
+      "title": "Lower Secondary",
+      "age_range": [
+        11,
+        14
+      ],
+      "modules": [
+        {
+          "id": "module_music_notation_lower",
+          "title": "Staff Notation & Keys (C/G/F)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_music_scales_lower",
+          "title": "Scales & Intervals (major/minor)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_music_rhythm_lower",
+          "title": "Rhythm & Meter (2/4, 3/4, 4/4, syncopation)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_music_perform_lower",
+          "title": "Performance Basics (voice/instrument)",
+          "recommended_hours": 25
+        }
+      ]
+    },
+    {
+      "id": "stage_upper_secondary",
+      "title": "Upper Secondary (IGCSE Music)",
+      "age_range": [
+        14,
+        16
+      ],
+      "modules": [
+        {
+          "id": "module_music_theory_upper",
+          "title": "Music Theory (notation, harmony, chords)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_music_history_upper",
+          "title": "Listening & Set Works (styles, forms)",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_music_comp_upper",
+          "title": "Composition (melody, harmony, structure)",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_music_perf_upper",
+          "title": "Performance (solo/ensemble) + Recording",
+          "recommended_hours": 40
+        }
+      ]
+    },
+    {
+      "id": "stage_advanced",
+      "title": "Advanced (A Level Music)",
+      "age_range": [
+        16,
+        19
+      ],
+      "modules": [
+        {
+          "id": "module_music_analysis_advanced",
+          "title": "Advanced Analysis (form, harmony, counterpoint)",
+          "recommended_hours": 45
+        },
+        {
+          "id": "module_music_comp_advanced",
+          "title": "Advanced Composition & Orchestration",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_music_perf_advanced",
+          "title": "Advanced Performance & Interpretation",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_music_technology_advanced",
+          "title": "Music Technology (DAW, MIDI, notation software)",
+          "recommended_hours": 35
+        }
+      ]
+    }
+  ]
+}

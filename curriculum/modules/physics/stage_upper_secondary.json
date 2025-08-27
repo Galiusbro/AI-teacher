@@ -1,0 +1,195 @@
+[
+    {
+      "id": "module_phys_measurements",
+      "subject": "Physics",
+      "stage": "stage_upper_secondary",
+      "title": "Measurements and Units",
+      "description": "Фундаментальные величины (длина, масса, время), SI-единицы, точность и ошибки измерений.",
+      "recommended_hours": 15,
+      "age_hint": [14,16],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "PHY.MEA.U.1", "description": "Определять основные физические величины и их единицы", "bloom": "remember" },
+        { "code": "PHY.MEA.U.2", "description": "Выполнять простые измерения с учётом точности", "bloom": "apply" },
+        { "code": "PHY.MEA.U.3", "description": "Анализировать ошибки измерений", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["quiz","data_table_tasks","lab_simulation"],
+        "summative": ["test","mini_report"],
+        "required_artifacts": ["worksheet","doc"],
+        "rubrics": ["accuracy","clarity","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 40,
+        "min_lessons": 4,
+        "max_lessons": 5,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","video","interactive"],
+        "source_hints": ["phet_measurements","physics_lab_basics"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_phys_mechanics",
+      "subject": "Physics",
+      "stage": "stage_upper_secondary",
+      "title": "Motion and Forces",
+      "description": "Прямолинейное движение, скорость, ускорение, законы Ньютона, сила и масса.",
+      "recommended_hours": 25,
+      "age_hint": [14,16],
+      "prerequisites": ["module_phys_measurements"],
+      "objectives": [
+        { "code": "PHY.MEC.U.1", "description": "Рассчитывать скорость и ускорение", "bloom": "apply" },
+        { "code": "PHY.MEC.U.2", "description": "Объяснять законы Ньютона", "bloom": "understand" },
+        { "code": "PHY.MEC.U.3", "description": "Анализировать движение объектов под действием силы", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["graphing_tasks","simulation","quiz"],
+        "summative": ["exam_questions","lab_report"],
+        "required_artifacts": ["graph","doc"],
+        "rubrics": ["calculation_accuracy","conceptual_clarity","graphing"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 50,
+        "min_lessons": 6,
+        "max_lessons": 7,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["graph","video","simulation"],
+        "source_hints": ["phet_forces_motion","newton_laws_videos"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_phys_energy",
+      "subject": "Physics",
+      "stage": "stage_upper_secondary",
+      "title": "Energy, Work and Power",
+      "description": "Энергия, работа, мощность, законы сохранения энергии, КПД.",
+      "recommended_hours": 20,
+      "age_hint": [14,16],
+      "prerequisites": ["module_phys_mechanics"],
+      "objectives": [
+        { "code": "PHY.ENE.U.1", "description": "Вычислять работу и мощность", "bloom": "apply" },
+        { "code": "PHY.ENE.U.2", "description": "Объяснять закон сохранения энергии", "bloom": "understand" },
+        { "code": "PHY.ENE.U.3", "description": "Оценивать КПД процессов", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["calc_tasks","quiz","simulation"],
+        "summative": ["exam_questions","lab_experiment"],
+        "required_artifacts": ["worksheet","doc"],
+        "rubrics": ["calculation","clarity","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 6,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["video","worksheet","simulation"],
+        "source_hints": ["phet_energy_forms","energy_conversion_videos"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_phys_waves",
+      "subject": "Physics",
+      "stage": "stage_upper_secondary",
+      "title": "Waves (light, sound)",
+      "description": "Свойства волн, отражение, преломление, интерференция, звук.",
+      "recommended_hours": 20,
+      "age_hint": [14,16],
+      "prerequisites": ["module_phys_measurements"],
+      "objectives": [
+        { "code": "PHY.WAV.U.1", "description": "Объяснять характеристики волн (длина, частота, скорость)", "bloom": "understand" },
+        { "code": "PHY.WAV.U.2", "description": "Применять законы отражения и преломления", "bloom": "apply" },
+        { "code": "PHY.WAV.U.3", "description": "Анализировать простые звуковые явления", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["wave_simulations","quiz","lab_tasks"],
+        "summative": ["practical_demo","exam_questions"],
+        "required_artifacts": ["worksheet","doc"],
+        "rubrics": ["accuracy","conceptual_clarity","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 40,
+        "min_lessons": 5,
+        "max_lessons": 6,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["simulation","video","worksheet"],
+        "source_hints": ["phet_wave_on_string","light_refraction_videos"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_phys_electricity",
+      "subject": "Physics",
+      "stage": "stage_upper_secondary",
+      "title": "Electricity and Magnetism",
+      "description": "Электрический ток, напряжение, сопротивление, магнетизм, электромагнетизм.",
+      "recommended_hours": 30,
+      "age_hint": [14,16],
+      "prerequisites": ["module_phys_measurements"],
+      "objectives": [
+        { "code": "PHY.ELC.U.1", "description": "Составлять простые электрические схемы", "bloom": "apply" },
+        { "code": "PHY.ELC.U.2", "description": "Объяснять законы Ома и Кирхгофа", "bloom": "understand" },
+        { "code": "PHY.ELC.U.3", "description": "Анализировать поведение магнитных полей", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["circuit_building_apps","quiz","calc_tasks"],
+        "summative": ["circuit_exam","lab_report"],
+        "required_artifacts": ["worksheet","diagram"],
+        "rubrics": ["calculation","clarity","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 50,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.25, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["simulation","worksheet","diagram"],
+        "source_hints": ["circuit_simulators","phet_electricity_magnetism"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_phys_atomic",
+      "subject": "Physics",
+      "stage": "stage_upper_secondary",
+      "title": "Atomic Physics",
+      "description": "Модель атома, радиоактивность, изотопы и их применение.",
+      "recommended_hours": 20,
+      "age_hint": [14,16],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "PHY.ATM.U.1", "description": "Описывать структуру атома", "bloom": "remember" },
+        { "code": "PHY.ATM.U.2", "description": "Понимать явление радиоактивности", "bloom": "understand" },
+        { "code": "PHY.ATM.U.3", "description": "Анализировать применение изотопов", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["quiz","case_studies","video_lessons"],
+        "summative": ["exam_questions","essay"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["clarity","accuracy","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 40,
+        "min_lessons": 5,
+        "max_lessons": 6,
+        "mix": { "concept": 0.35, "guided": 0.2, "independent": 0.25, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["video","worksheet","interactive"],
+        "source_hints": ["atomic_models_videos","nuclear_basics_for_students"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

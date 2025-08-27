@@ -1,0 +1,135 @@
+[
+    {
+      "id": "module_art_drawing_lower",
+      "subject": "Art",
+      "stage": "stage_lower_secondary",
+      "title": "Drawing Techniques (hatching, shading, perspective)",
+      "description": "Системно осваиваем штриховку, тон, свет/тень и основы одноточечной/двухточечной перспективы.",
+      "recommended_hours": 35,
+      "age_hint": [11,14],
+      "prerequisites": ["module_art_observation_primary"],
+      "objectives": [
+        { "code": "ART.DRAW.1", "description": "Применять виды штриховки для передачи фактуры и объёма", "bloom": "apply" },
+        { "code": "ART.DRAW.2", "description": "Контролировать тональные градации (свет, полутон, тень, рефлекс)", "bloom": "analyze" },
+        { "code": "ART.DRAW.3", "description": "Строить простые объекты в одно- и двухточечной перспективе", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["technique_drills","drawing_task","exit_ticket"],
+        "summative": ["portfolio_piece","practical_exam"],
+        "required_artifacts": ["photo"],
+        "rubrics": ["technique","tonal_control","perspective_accuracy","presentation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 9,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video"],
+        "source_hints": ["atelier_basics","open_drawing_courses"]
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    },
+    {
+      "id": "module_art_color_lower",
+      "subject": "Art",
+      "stage": "stage_lower_secondary",
+      "title": "Color Theory (wheel, harmony, contrast)",
+      "description": "Цветовой круг, тёплые/холодные, гармонии (комплементарная, аналоговая, триада), контрасты и практика смешения.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": ["module_art_elements_primary"],
+      "objectives": [
+        { "code": "ART.COLOR.1", "description": "Объяснять устройство цветового круга и типы гармоний", "bloom": "understand" },
+        { "code": "ART.COLOR.2", "description": "Подбирать палитры под задачу (настроение/сюжет)", "bloom": "apply" },
+        { "code": "ART.COLOR.3", "description": "Смешивать цвета для получения нужных оттенков и значений (value)", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["palette_studies","mini_quiz","swatch_exercises"],
+        "summative": ["color_study_poster","portfolio_piece"],
+        "required_artifacts": ["photo"],
+        "rubrics": ["harmony_choice","mixing_accuracy","value_control","creativity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 8,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.35, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video","interactive"],
+        "source_hints": ["open_color_theory","museum_palettes"]
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    },
+    {
+      "id": "module_art_genres_lower",
+      "subject": "Art",
+      "stage": "stage_lower_secondary",
+      "title": "Genres & Styles (still life, landscape, portrait)",
+      "description": "Практика трёх ключевых жанров: натюрморт, пейзаж, портрет. Акцент на композицию, пропорции и передачу характера.",
+      "recommended_hours": 30,
+      "age_hint": [12,14],
+      "prerequisites": ["module_art_drawing_lower","module_art_color_lower"],
+      "objectives": [
+        { "code": "ART.GENRE.1", "description": "Создавать натюрморты с убедительной композицией и тоном", "bloom": "create" },
+        { "code": "ART.GENRE.2", "description": "Строить пейзажи с глубиной (плановость, атмосферная перспектива)", "bloom": "apply" },
+        { "code": "ART.GENRE.3", "description": "Передавать пропорции лица/фигуры в портрете", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["sketch_series","genre_studies","peer_feedback"],
+        "summative": ["mini_portfolio_3works"],
+        "required_artifacts": ["photo"],
+        "rubrics": ["composition","proportion","atmosphere_depth","expressiveness"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.4, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video"],
+        "source_hints": ["open_museum_collections","master_studies_guides"]
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    },
+    {
+      "id": "module_art_digital_lower",
+      "subject": "Art",
+      "stage": "stage_lower_secondary",
+      "title": "Digital Art Basics (layers, brushes)",
+      "description": "Основы цифрового рисования: рабочее пространство, слои, кисти, маски, экспорт. Перенос навыков штриховки/тонирования в цифровую среду.",
+      "recommended_hours": 25,
+      "age_hint": [12,14],
+      "prerequisites": ["module_art_drawing_lower"],
+      "objectives": [
+        { "code": "ART.DIGI.1", "description": "Использовать слои и базовые режимы наложения", "bloom": "apply" },
+        { "code": "ART.DIGI.2", "description": "Настраивать кисти и работать с масками для чистой обработки", "bloom": "apply" },
+        { "code": "ART.DIGI.3", "description": "Экспортировать работы в подходящих форматах (PNG/JPEG), соблюдать размеры", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["tool_drills","workflow_checklist"],
+        "summative": ["digital_study_final"],
+        "required_artifacts": ["file","image"],
+        "rubrics": ["layer_management","brush_control","cleanup_quality","export_settings"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 4,
+        "max_lessons": 6,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video","interactive"],
+        "source_hints": ["krita_gimp_basics","procreate_tutorials","open_brushpacks"]
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    }
+  ]
+  

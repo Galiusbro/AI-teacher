@@ -1,0 +1,131 @@
+[
+    {
+      "id": "module_pe_fitness_lower",
+      "subject": "PE",
+      "stage": "stage_lower_secondary",
+      "title": "Fitness Foundations (cardio, strength, flexibility)",
+      "description": "Фундамент физической подготовки: кардиоупражнения (скакалка, бег на месте), силовые (отжимания, приседания), растяжка.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": ["module_pe_motor_primary"],
+      "objectives": [
+        { "code": "PE.FIT.L.1", "description": "Выполнять регулярную разминку для разогрева мышц", "bloom": "apply" },
+        { "code": "PE.FIT.L.2", "description": "Развивать выносливость с помощью домашних кардио-упражнений", "bloom": "apply" },
+        { "code": "PE.FIT.L.3", "description": "Поддерживать гибкость через упражнения на растяжку", "bloom": "understand" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["fitness_challenges","video_routines","self_log"],
+        "summative": ["recorded_workout","parent_feedback"],
+        "required_artifacts": ["video","checklist"],
+        "rubrics": ["effort","form","consistency"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 25,
+        "min_lessons": 8,
+        "max_lessons": 12,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["video","checklist","interactive"],
+        "source_hints": ["youtube_teen_workouts","yoga_for_kids"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_pe_games_lower",
+      "subject": "PE",
+      "stage": "stage_lower_secondary",
+      "title": "Team Sports & Cooperation (home-adapted)",
+      "description": "Кооперативные задания: челленджи с семьёй, парные упражнения, онлайн-фитнес игры.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": ["module_pe_games_primary"],
+      "objectives": [
+        { "code": "PE.GAM.L.1", "description": "Участвовать в домашних кооперативных активностях", "bloom": "apply" },
+        { "code": "PE.GAM.L.2", "description": "Развивать навык сотрудничества через парные упражнения", "bloom": "analyze" },
+        { "code": "PE.GAM.L.3", "description": "Использовать онлайн-игры для повышения физической активности", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["family_challenges","interactive_tasks","quiz"],
+        "summative": ["video_demo","parent_confirmation"],
+        "required_artifacts": ["video","parent_note"],
+        "rubrics": ["participation","teamwork","attitude"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 20,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.15, "guided": 0.2, "independent": 0.45, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["video","interactive","worksheet"],
+        "source_hints": ["fitness_challenges_home","online_coop_games"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_pe_safety_lower",
+      "subject": "PE",
+      "stage": "stage_lower_secondary",
+      "title": "Injury Prevention & First Aid Basics",
+      "description": "Основы безопасности: правильная разминка, растяжка, осанка, базовые знания первой помощи.",
+      "recommended_hours": 20,
+      "age_hint": [11,14],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "PE.SAF.L.1", "description": "Выполнять безопасную разминку перед нагрузкой", "bloom": "apply" },
+        { "code": "PE.SAF.L.2", "description": "Понимать важность правильной осанки и техники", "bloom": "understand" },
+        { "code": "PE.SAF.L.3", "description": "Знать основы первой помощи при простых травмах", "bloom": "remember" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["safety_quiz","demo_tasks","discussion"],
+        "summative": ["checklist_exam","parent_feedback"],
+        "required_artifacts": ["worksheet","checklist"],
+        "rubrics": ["safety_awareness","application","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 20,
+        "min_lessons": 4,
+        "max_lessons": 6,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.25, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["video","worksheet"],
+        "source_hints": ["youth_first_aid_videos","injury_prevention_guides"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_pe_health_lower",
+      "subject": "PE",
+      "stage": "stage_lower_secondary",
+      "title": "Health, Nutrition and Lifestyle",
+      "description": "Фундаментальные знания о здоровье: питание, режим дня, отдых, минимизация экранного времени.",
+      "recommended_hours": 20,
+      "age_hint": [11,14],
+      "prerequisites": ["module_pe_health_primary"],
+      "objectives": [
+        { "code": "PE.HEA.L.1", "description": "Понимать основы здорового питания", "bloom": "understand" },
+        { "code": "PE.HEA.L.2", "description": "Составлять простой дневной план активности и отдыха", "bloom": "create" },
+        { "code": "PE.HEA.L.3", "description": "Оценивать своё самочувствие и уровень энергии", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["nutrition_diary","quiz","habit_tracking"],
+        "summative": ["weekly_log","self_report"],
+        "required_artifacts": ["log","doc"],
+        "rubrics": ["understanding","consistency","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 20,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.35, "guided": 0.2, "independent": 0.25, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","video","checklist"],
+        "source_hints": ["teen_health_videos","nutrition_basics_kids"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

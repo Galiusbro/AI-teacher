@@ -1,0 +1,226 @@
+[
+    {
+      "id": "module_bus_intro",
+      "subject": "Business",
+      "stage": "stage_upper_secondary",
+      "title": "Business Activity and Objectives",
+      "description": "Что такое бизнес, роль предпринимателей, цели компаний (прибыль, рост, выживание, социальная ответственность).",
+      "recommended_hours": 25,
+      "age_hint": [14,16],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "BUS.INTRO.1", "description": "Определять основные цели бизнеса", "bloom": "remember" },
+        { "code": "BUS.INTRO.2", "description": "Объяснять роль предпринимателей и факторов производства", "bloom": "understand" },
+        { "code": "BUS.INTRO.3", "description": "Анализировать, как цели бизнеса меняются в зависимости от стадии", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["quiz","case_discussion"],
+        "summative": ["short_answer_exam","case_study_analysis"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["concept_clarity","application","argument"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 6,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","video","interactive"],
+        "source_hints": ["open_biz_cases","entrepreneurship_guides"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_bus_org",
+      "subject": "Business",
+      "stage": "stage_upper_secondary",
+      "title": "Types of Business Organisation",
+      "description": "ИП, партнерства, корпорации, кооперативы, государственные компании. Плюсы и минусы, цели и структуры.",
+      "recommended_hours": 30,
+      "age_hint": [14,16],
+      "prerequisites": ["module_bus_intro"],
+      "objectives": [
+        { "code": "BUS.ORG.1", "description": "Сравнивать формы организации бизнеса", "bloom": "analyze" },
+        { "code": "BUS.ORG.2", "description": "Оценивать влияние выбора структуры на управление и финансы", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["compare_table","quiz"],
+        "summative": ["case_study_report","structured_exam_questions"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["comparison_quality","evaluation","communication"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","doc","interactive"],
+        "source_hints": ["legal_structures_guides","real_company_profiles"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_bus_people",
+      "subject": "Business",
+      "stage": "stage_upper_secondary",
+      "title": "People in Business (motivation, HR)",
+      "description": "Мотивация сотрудников, управление персоналом, рекрутинг, тренинг, стили лидерства.",
+      "recommended_hours": 30,
+      "age_hint": [14,16],
+      "prerequisites": ["module_bus_intro"],
+      "objectives": [
+        { "code": "BUS.PPL.1", "description": "Объяснять теории мотивации (Маслоу, Герцберг)", "bloom": "understand" },
+        { "code": "BUS.PPL.2", "description": "Применять HR-процессы к простым кейсам", "bloom": "apply" },
+        { "code": "BUS.PPL.3", "description": "Сравнивать стили управления и их эффективность", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["role_play","quiz","hr_scenario"],
+        "summative": ["essay","exam_case_study"],
+        "required_artifacts": ["doc","video"],
+        "rubrics": ["theory_use","application","evaluation","communication"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","video","interactive"],
+        "source_hints": ["hr_case_studies","management_theory"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_bus_marketing",
+      "subject": "Business",
+      "stage": "stage_upper_secondary",
+      "title": "Marketing (market research, 4Ps, strategy)",
+      "description": "Основы маркетинга: исследование рынка, 4P (Product, Price, Place, Promotion), сегментация и позиционирование.",
+      "recommended_hours": 35,
+      "age_hint": [14,16],
+      "prerequisites": ["module_bus_intro"],
+      "objectives": [
+        { "code": "BUS.MKT.1", "description": "Объяснять элементы 4P и их взаимосвязь", "bloom": "understand" },
+        { "code": "BUS.MKT.2", "description": "Разрабатывать простую маркетинговую стратегию для кейса", "bloom": "create" },
+        { "code": "BUS.MKT.3", "description": "Применять методы сегментации и анализа спроса", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["survey_design","quiz","strategy_brainstorm"],
+        "summative": ["marketing_plan_doc","presentation"],
+        "required_artifacts": ["doc","presentation"],
+        "rubrics": ["market_understanding","strategy_logic","creativity","communication"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 10,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.35, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","video","interactive","doc"],
+        "source_hints": ["open_marketing_cases","ad_campaign_examples"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_bus_operations",
+      "subject": "Business",
+      "stage": "stage_upper_secondary",
+      "title": "Operations Management (production, quality)",
+      "description": "Производственные процессы, управление запасами, методы обеспечения качества, производительность.",
+      "recommended_hours": 30,
+      "age_hint": [14,16],
+      "prerequisites": ["module_bus_intro"],
+      "objectives": [
+        { "code": "BUS.OPS.1", "description": "Описывать этапы производственного процесса и цепочки поставок", "bloom": "understand" },
+        { "code": "BUS.OPS.2", "description": "Объяснять методы контроля качества и их преимущества", "bloom": "apply" },
+        { "code": "BUS.OPS.3", "description": "Оценивать влияние производительности на эффективность бизнеса", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["process_mapping","quiz","case_discussion"],
+        "summative": ["operations_case_report","structured_exam"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["process_accuracy","quality_control","evaluation","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","interactive","video"],
+        "source_hints": ["lean_management_guides","operations_case_studies"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_bus_finance",
+      "subject": "Business",
+      "stage": "stage_upper_secondary",
+      "title": "Financial Information and Decisions",
+      "description": "Финансовая информация: выручка, издержки, прибыль. Финансовые отчёты, бюджеты, источники финансирования.",
+      "recommended_hours": 35,
+      "age_hint": [14,16],
+      "prerequisites": ["module_bus_intro"],
+      "objectives": [
+        { "code": "BUS.FIN.1", "description": "Рассчитывать выручку, издержки и прибыль", "bloom": "apply" },
+        { "code": "BUS.FIN.2", "description": "Интерпретировать простые отчёты о прибылях и убытках", "bloom": "analyze" },
+        { "code": "BUS.FIN.3", "description": "Оценивать источники финансирования бизнеса", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["calc_tasks","quiz","finance_scenarios"],
+        "summative": ["financial_report_doc","exam_data_response"],
+        "required_artifacts": ["doc","data"],
+        "rubrics": ["calculation_accuracy","interpretation","evaluation","presentation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","doc","data","interactive"],
+        "source_hints": ["finance_basics","open_financial_cases"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_bus_external",
+      "subject": "Business",
+      "stage": "stage_upper_secondary",
+      "title": "External Influences on Business",
+      "description": "Экономические, правовые, социальные и технологические факторы, влияющие на бизнес.",
+      "recommended_hours": 30,
+      "age_hint": [14,16],
+      "prerequisites": ["module_bus_intro"],
+      "objectives": [
+        { "code": "BUS.EXT.1", "description": "Идентифицировать факторы внешней среды", "bloom": "remember" },
+        { "code": "BUS.EXT.2", "description": "Объяснять, как макроэкономические условия влияют на бизнес", "bloom": "understand" },
+        { "code": "BUS.EXT.3", "description": "Оценивать влияние технологических и социальных трендов", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["PEST_table","quiz","case_discussion"],
+        "summative": ["external_factors_report","structured_exam"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["identification","explanation","evaluation","argument"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","interactive","doc"],
+        "source_hints": ["PESTLE_templates","business_environment_cases"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+      

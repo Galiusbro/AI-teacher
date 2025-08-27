@@ -1,0 +1,163 @@
+[
+    {
+      "id": "module_cs_thinking_lower",
+      "subject": "Computer Science",
+      "stage": "stage_lower_secondary",
+      "title": "Computational Thinking (decomposition, patterns, logic)",
+      "description": "Основы алгоритмического мышления: разбиение задач, поиск шаблонов, логические операции, простые алгоритмы.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "CS.THINK.L.1", "description": "Делить задачи на шаги (декомпозиция)", "bloom": "apply" },
+        { "code": "CS.THINK.L.2", "description": "Распознавать паттерны и повторения", "bloom": "understand" },
+        { "code": "CS.THINK.L.3", "description": "Использовать базовую булеву логику (AND, OR, NOT)", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["logic_puzzles","flowchart_task","quiz"],
+        "summative": ["mini_algorithm_design","structured_exam"],
+        "required_artifacts": ["doc","image"],
+        "rubrics": ["clarity","logic","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","interactive","image"],
+        "source_hints": ["logic_games","computational_thinking_workbooks"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_cs_programming_lower",
+      "subject": "Computer Science",
+      "stage": "stage_lower_secondary",
+      "title": "Intro Programming (block → text, variables, control)",
+      "description": "Знакомство с программированием: блочные среды (Scratch), переход к Python, переменные, ввод/вывод, условные операторы, циклы.",
+      "recommended_hours": 40,
+      "age_hint": [11,14],
+      "prerequisites": ["module_cs_thinking_lower"],
+      "objectives": [
+        { "code": "CS.PROG.L.1", "description": "Создавать программы с вводом/выводом данных", "bloom": "apply" },
+        { "code": "CS.PROG.L.2", "description": "Использовать переменные и простые типы данных", "bloom": "understand" },
+        { "code": "CS.PROG.L.3", "description": "Применять условные операторы и циклы", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["block_code_tasks","syntax_quiz","debugging_exercise"],
+        "summative": ["mini_program","project_submission"],
+        "required_artifacts": ["code","doc"],
+        "rubrics": ["syntax","logic","functionality"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 10,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","code","interactive"],
+        "source_hints": ["scratch_platform","python_tutorials"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_cs_data_lower",
+      "subject": "Computer Science",
+      "stage": "stage_lower_secondary",
+      "title": "Data & Representations (binary intro, images as data)",
+      "description": "Представление данных: числа в двоичной системе, текст (ASCII), изображения как пиксели и коды цветов.",
+      "recommended_hours": 20,
+      "age_hint": [11,14],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "CS.DATA.L.1", "description": "Переводить числа из десятичной в двоичную и обратно", "bloom": "apply" },
+        { "code": "CS.DATA.L.2", "description": "Объяснять хранение текста через кодировку ASCII", "bloom": "understand" },
+        { "code": "CS.DATA.L.3", "description": "Описывать, как изображения кодируются через пиксели", "bloom": "understand" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["binary_conversion_tasks","quiz","image_pixel_exercise"],
+        "summative": ["data_representation_test","structured_exam"],
+        "required_artifacts": ["doc","image"],
+        "rubrics": ["conversion_accuracy","conceptual_understanding","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 4,
+        "max_lessons": 6,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","interactive","image"],
+        "source_hints": ["binary_practice_sites","ascii_tables"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_cs_systems_lower",
+      "subject": "Computer Science",
+      "stage": "stage_lower_secondary",
+      "title": "Computer Systems (hardware, OS, networks intro)",
+      "description": "Базовые компоненты компьютера (процессор, память, устройства ввода/вывода), роль ОС, основы сетей.",
+      "recommended_hours": 25,
+      "age_hint": [11,14],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "CS.SYS.L.1", "description": "Идентифицировать основные аппаратные компоненты", "bloom": "remember" },
+        { "code": "CS.SYS.L.2", "description": "Объяснять роль ОС в управлении ресурсами", "bloom": "understand" },
+        { "code": "CS.SYS.L.3", "description": "Описывать основы сетей (LAN, интернет)", "bloom": "understand" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["component_matching","quiz","diagram_labeling"],
+        "summative": ["system_exam","short_report"],
+        "required_artifacts": ["doc","image"],
+        "rubrics": ["accuracy","clarity","conceptual_understanding"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.4, "guided": 0.25, "independent": 0.2, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","interactive"],
+        "source_hints": ["open_hardware_guides","basic_networking_refs"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_cs_project_lower",
+      "subject": "Computer Science",
+      "stage": "stage_lower_secondary",
+      "title": "Mini Project (plan–build–test–present)",
+      "description": "Небольшой проект: выбрать проблему, спланировать решение, реализовать простую программу или презентацию, протестировать, защитить.",
+      "recommended_hours": 25,
+      "age_hint": [11,14],
+      "prerequisites": ["module_cs_programming_lower"],
+      "objectives": [
+        { "code": "CS.PROJ.L.1", "description": "Формулировать проблему и разрабатывать план решения", "bloom": "create" },
+        { "code": "CS.PROJ.L.2", "description": "Создавать работающий прототип программы или модели", "bloom": "apply" },
+        { "code": "CS.PROJ.L.3", "description": "Презентовать результаты проекта", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["project_plan","peer_review","progress_check"],
+        "summative": ["final_project","presentation","reflection_report"],
+        "required_artifacts": ["code","presentation","doc"],
+        "rubrics": ["problem_definition","solution_quality","presentation","reflection"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.2, "guided": 0.2, "independent": 0.45, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","code","presentation","video"],
+        "source_hints": ["project_based_learning_refs","student_showcases"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

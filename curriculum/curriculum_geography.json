@@ -1,0 +1,102 @@
+{
+  "id": "curriculum_geography",
+  "title": "Geography (Cambridge-style)",
+  "subject": "Geography",
+  "stages": [
+    {
+      "id": "stage_lower_secondary",
+      "title": "Lower Secondary",
+      "age_range": [
+        11,
+        14
+      ],
+      "modules": [
+        {
+          "id": "module_geo_maps",
+          "title": "Maps, Globes and Coordinates",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_geo_physical",
+          "title": "Physical Geography (landforms, rivers, coasts)",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_geo_weather",
+          "title": "Weather and Climate",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_geo_human",
+          "title": "Human Geography (settlements, population)",
+          "recommended_hours": 35
+        }
+      ]
+    },
+    {
+      "id": "stage_upper_secondary",
+      "title": "Upper Secondary (IGCSE Geography)",
+      "age_range": [
+        14,
+        16
+      ],
+      "modules": [
+        {
+          "id": "module_geo_population",
+          "title": "Population and Migration",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_geo_settlements",
+          "title": "Urbanisation and Settlements",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_geo_economy",
+          "title": "Economic Activities (agriculture, industry, services)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_geo_environment",
+          "title": "Environment, Hazards and Sustainability",
+          "recommended_hours": 45
+        },
+        {
+          "id": "module_geo_fieldwork",
+          "title": "Fieldwork and Map Skills",
+          "recommended_hours": 30
+        }
+      ]
+    },
+    {
+      "id": "stage_advanced",
+      "title": "Advanced (A Level Geography)",
+      "age_range": [
+        16,
+        19
+      ],
+      "modules": [
+        {
+          "id": "module_geo_advanced_physical",
+          "title": "Advanced Physical Geography (tectonics, hydrology, atmosphere)",
+          "recommended_hours": 60
+        },
+        {
+          "id": "module_geo_advanced_human",
+          "title": "Advanced Human Geography (globalisation, development, inequality)",
+          "recommended_hours": 60
+        },
+        {
+          "id": "module_geo_advanced_environment",
+          "title": "Environmental Geography (sustainability, resource management)",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_geo_research",
+          "title": "Independent Investigation & Fieldwork Project",
+          "recommended_hours": 50
+        }
+      ]
+    }
+  ]
+}

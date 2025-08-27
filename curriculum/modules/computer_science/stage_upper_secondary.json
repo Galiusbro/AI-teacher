@@ -1,0 +1,199 @@
+[
+    {
+      "id": "module_cs_theory_igcse",
+      "subject": "Computer Science",
+      "stage": "stage_upper_secondary",
+      "title": "CS Theory (CPU, memory, storage, networking, security)",
+      "description": "Фундаментальные теории компьютерных систем: архитектура ЦП, память, хранение, сети и основы кибербезопасности.",
+      "recommended_hours": 45,
+      "age_hint": [14,16],
+      "prerequisites": ["module_cs_systems_lower"],
+      "objectives": [
+        { "code": "CS.THEO.I.1", "description": "Объяснять устройство ЦП, роли ALU, CU, регистров", "bloom": "understand" },
+        { "code": "CS.THEO.I.2", "description": "Сравнивать типы памяти и носителей (RAM, SSD, HDD)", "bloom": "analyze" },
+        { "code": "CS.THEO.I.3", "description": "Описывать основы сетей и угроз информационной безопасности", "bloom": "understand" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["diagram_labeling","quiz","concept_maps"],
+        "summative": ["structured_exam","short_essay"],
+        "required_artifacts": ["doc","image"],
+        "rubrics": ["clarity","accuracy","terminology","analysis"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 9,
+        "max_lessons": 12,
+        "mix": { "concept": 0.4, "guided": 0.25, "independent": 0.2, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","interactive"],
+        "source_hints": ["cpu_architecture_refs","networking_basics","cybersecurity_guides"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_cs_programming_igcse",
+      "subject": "Computer Science",
+      "stage": "stage_upper_secondary",
+      "title": "Programming (procedural, subroutines, arrays, files)",
+      "description": "Программирование на Python: процедуры и функции, массивы и списки, работа с файлами, обработка ошибок.",
+      "recommended_hours": 60,
+      "age_hint": [14,16],
+      "prerequisites": ["module_cs_programming_lower"],
+      "objectives": [
+        { "code": "CS.PROG.I.1", "description": "Использовать процедуры и функции для структурирования кода", "bloom": "apply" },
+        { "code": "CS.PROG.I.2", "description": "Создавать программы с массивами и списками", "bloom": "apply" },
+        { "code": "CS.PROG.I.3", "description": "Осуществлять ввод/вывод данных в файлы", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["coding_exercises","quiz","debugging_tasks"],
+        "summative": ["program_submission","exam_practical"],
+        "required_artifacts": ["code","doc"],
+        "rubrics": ["syntax","logic","efficiency","documentation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 12,
+        "max_lessons": 15,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.35, "assessment": 0.1 }
+      },
+      "resources": {
+        "allowed_media": ["text","code","interactive"],
+        "source_hints": ["python_docs","coding_challenges"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_cs_algorithms_igcse",
+      "subject": "Computer Science",
+      "stage": "stage_upper_secondary",
+      "title": "Algorithms (search/sort, logic, flowcharts, pseudocode)",
+      "description": "Алгоритмы: линейный/бинарный поиск, сортировки (bubble, insertion), псевдокод, блок-схемы, логические выражения.",
+      "recommended_hours": 35,
+      "age_hint": [14,16],
+      "prerequisites": ["module_cs_thinking_lower"],
+      "objectives": [
+        { "code": "CS.ALG.I.1", "description": "Понимать и реализовывать алгоритмы поиска и сортировки", "bloom": "apply" },
+        { "code": "CS.ALG.I.2", "description": "Читать и писать блок-схемы и псевдокод", "bloom": "apply" },
+        { "code": "CS.ALG.I.3", "description": "Использовать булеву логику для алгоритмов", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["pseudocode_tasks","quiz","algorithm_trace"],
+        "summative": ["algorithm_exam","programming_test"],
+        "required_artifacts": ["code","doc"],
+        "rubrics": ["trace_accuracy","implementation","clarity","logic"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","code","interactive","image"],
+        "source_hints": ["algorithm_visualizers","sorting_sims"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_cs_datarep_igcse",
+      "subject": "Computer Science",
+      "stage": "stage_upper_secondary",
+      "title": "Data Representation (binary, hex, text, images, sound)",
+      "description": "Системы счисления (двоичная, шестнадцатеричная), кодировки текста, изображения и звука, сжатие данных.",
+      "recommended_hours": 30,
+      "age_hint": [14,16],
+      "prerequisites": ["module_cs_data_lower"],
+      "objectives": [
+        { "code": "CS.DREP.I.1", "description": "Переводить числа в разные системы счисления", "bloom": "apply" },
+        { "code": "CS.DREP.I.2", "description": "Объяснять кодирование текста (ASCII, Unicode)", "bloom": "understand" },
+        { "code": "CS.DREP.I.3", "description": "Описывать сжатие изображений и аудио", "bloom": "understand" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["conversion_tasks","quiz","encoding_activity"],
+        "summative": ["exam_questions","structured_test"],
+        "required_artifacts": ["doc","data"],
+        "rubrics": ["conversion_accuracy","terminology","conceptual_clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","interactive","data"],
+        "source_hints": ["binary_tools","compression_demos"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_cs_databases_igcse",
+      "subject": "Computer Science",
+      "stage": "stage_upper_secondary",
+      "title": "Databases (concepts, simple SQL or forms/queries)",
+      "description": "Основы баз данных: таблицы, ключи, запросы. Простые SQL (SELECT) или графические интерфейсы форм/запросов.",
+      "recommended_hours": 25,
+      "age_hint": [14,16],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "CS.DB.I.1", "description": "Объяснять концепции таблиц, записей и ключей", "bloom": "understand" },
+        { "code": "CS.DB.I.2", "description": "Создавать простые SQL-запросы SELECT", "bloom": "apply" },
+        { "code": "CS.DB.I.3", "description": "Использовать формы и запросы для выборки данных", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["sql_tasks","quiz","db_design_activity"],
+        "summative": ["db_project","exam_questions"],
+        "required_artifacts": ["doc","data"],
+        "rubrics": ["query_accuracy","design_logic","data_handling"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","data","interactive"],
+        "source_hints": ["sqlite_demos","db_case_studies"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_cs_project_igcse",
+      "subject": "Computer Science",
+      "stage": "stage_upper_secondary",
+      "title": "Programming Project (spec → design → code → test)",
+      "description": "Полноценный проект: постановка задачи, проектирование, программирование, тестирование и документация.",
+      "recommended_hours": 35,
+      "age_hint": [14,16],
+      "prerequisites": ["module_cs_programming_igcse","module_cs_algorithms_igcse"],
+      "objectives": [
+        { "code": "CS.PROJ.I.1", "description": "Разрабатывать спецификацию и план программы", "bloom": "create" },
+        { "code": "CS.PROJ.I.2", "description": "Реализовывать проект с использованием структурного программирования", "bloom": "apply" },
+        { "code": "CS.PROJ.I.3", "description": "Документировать и тестировать программу", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["design_review","peer_feedback","progress_check"],
+        "summative": ["final_project_code","project_report","presentation"],
+        "required_artifacts": ["code","doc","presentation"],
+        "rubrics": ["design_quality","code_functionality","documentation","testing"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 10,
+        "mix": { "concept": 0.2, "guided": 0.2, "independent": 0.45, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["code","doc","presentation","interactive"],
+        "source_hints": ["student_projects","open_code_examples"]
+      },
+      "verification_policy": {
+        "guardian_confirmation_required": true,
+        "signature_required": true
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

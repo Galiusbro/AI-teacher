@@ -1,0 +1,99 @@
+[
+    {
+      "id": "module_pe_motor_primary",
+      "subject": "PE",
+      "stage": "stage_primary",
+      "title": "Fundamental Motor Skills (running, jumping, throwing — adapted)",
+      "description": "Базовые двигательные навыки в домашних условиях: прыжки на месте, приседания, метание мягкого предмета в корзину.",
+      "recommended_hours": 30,
+      "age_hint": [5,11],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "PE.MOT.P.1", "description": "Улучшать координацию и баланс с помощью простых упражнений", "bloom": "apply" },
+        { "code": "PE.MOT.P.2", "description": "Развивать силу и выносливость через активные игры", "bloom": "apply" },
+        { "code": "PE.MOT.P.3", "description": "Формировать привычку ежедневной разминки", "bloom": "remember" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["movement_games","video_tasks","self_checklist"],
+        "summative": ["recorded_routine","parent_feedback"],
+        "required_artifacts": ["video","checklist"],
+        "rubrics": ["effort","coordination","regularity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 20,
+        "min_lessons": 8,
+        "max_lessons": 12,
+        "mix": { "concept": 0.2, "guided": 0.3, "independent": 0.35, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["video","interactive","checklist"],
+        "source_hints": ["youtube_kids_fitness","jumping_games"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_pe_games_primary",
+      "subject": "PE",
+      "stage": "stage_primary",
+      "title": "Simple Movement Games & Teamwork (home-adapted)",
+      "description": "Домашние кооперативные игры: эстафеты с игрушками, игры на внимание, парные упражнения с родителями/сиблингами.",
+      "recommended_hours": 25,
+      "age_hint": [5,11],
+      "prerequisites": ["module_pe_motor_primary"],
+      "objectives": [
+        { "code": "PE.GAM.P.1", "description": "Участвовать в подвижных играх дома", "bloom": "apply" },
+        { "code": "PE.GAM.P.2", "description": "Развивать навык сотрудничества в мини-играх", "bloom": "analyze" },
+        { "code": "PE.GAM.P.3", "description": "Учиться контролировать эмоции в игровой ситуации", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["family_games","interactive_tasks","self_report"],
+        "summative": ["video_demo","parent_check"],
+        "required_artifacts": ["video","parent_note"],
+        "rubrics": ["participation","cooperation","attitude"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 20,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.15, "guided": 0.25, "independent": 0.4, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["video","interactive","worksheet"],
+        "source_hints": ["youtube_family_games","simple_home_sports"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_pe_health_primary",
+      "subject": "PE",
+      "stage": "stage_primary",
+      "title": "Healthy Habits (hydration, rest, hygiene)",
+      "description": "Основы здоровья: пить воду, отдыхать, делать зарядку и соблюдать гигиену.",
+      "recommended_hours": 20,
+      "age_hint": [5,11],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "PE.HEA.P.1", "description": "Формировать привычку пить воду регулярно", "bloom": "remember" },
+        { "code": "PE.HEA.P.2", "description": "Понимать важность сна и отдыха", "bloom": "understand" },
+        { "code": "PE.HEA.P.3", "description": "Соблюдать простые правила гигиены после активности", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["habit_checklists","quiz","routine_tracking"],
+        "summative": ["weekly_log","parent_confirmation"],
+        "required_artifacts": ["checklist","log"],
+        "rubrics": ["consistency","understanding","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 15,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.3, "guided": 0.2, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","video","interactive"],
+        "source_hints": ["kids_health_videos","daily_routine_apps"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

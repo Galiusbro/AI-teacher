@@ -1,0 +1,147 @@
+{
+  "id": "curriculum_languages",
+  "title": "Languages (Cambridge-style)",
+  "subject": "Languages",
+  "stages": [
+    {
+      "id": "stage_primary",
+      "title": "Primary",
+      "age_range": [
+        5,
+        11
+      ],
+      "modules": [
+        {
+          "id": "module_lang_listening_primary",
+          "title": "Listening & Understanding Simple Phrases",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_lang_speaking_primary",
+          "title": "Speaking Basics (greetings, introductions)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_lang_reading_primary",
+          "title": "Reading Simple Words and Sentences",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_lang_writing_primary",
+          "title": "Writing Simple Words and Sentences",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_lang_culture_primary",
+          "title": "Songs, Stories and Cultural Elements",
+          "recommended_hours": 20
+        }
+      ]
+    },
+    {
+      "id": "stage_lower_secondary",
+      "title": "Lower Secondary",
+      "age_range": [
+        11,
+        14
+      ],
+      "modules": [
+        {
+          "id": "module_lang_listening_lower",
+          "title": "Listening to Conversations & Everyday Speech",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_lang_speaking_lower",
+          "title": "Speaking (introductions, opinions, simple dialogues)",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_lang_reading_lower",
+          "title": "Reading Short Texts (emails, stories, news)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_lang_writing_lower",
+          "title": "Writing Short Texts (emails, notes, essays)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_lang_grammar_lower",
+          "title": "Basic Grammar (tenses, pronouns, sentence order)",
+          "recommended_hours": 30
+        }
+      ]
+    },
+    {
+      "id": "stage_upper_secondary",
+      "title": "Upper Secondary (IGCSE Languages)",
+      "age_range": [
+        14,
+        16
+      ],
+      "modules": [
+        {
+          "id": "module_lang_listening_upper",
+          "title": "Listening Comprehension (conversations, interviews)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_lang_speaking_upper",
+          "title": "Oral Communication (descriptions, arguments, debates)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_lang_reading_upper",
+          "title": "Reading Comprehension (literary and non-fiction texts)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_lang_writing_upper",
+          "title": "Extended Writing (essays, reports, letters)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_lang_culture_upper",
+          "title": "Culture & Literature (short stories, poetry, articles)",
+          "recommended_hours": 30
+        }
+      ]
+    },
+    {
+      "id": "stage_advanced",
+      "title": "Advanced (A Level Languages)",
+      "age_range": [
+        16,
+        19
+      ],
+      "modules": [
+        {
+          "id": "module_lang_advanced_listening",
+          "title": "Advanced Listening (lectures, debates, media)",
+          "recommended_hours": 45
+        },
+        {
+          "id": "module_lang_advanced_speaking",
+          "title": "Advanced Speaking (presentations, formal debate)",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_lang_advanced_reading",
+          "title": "Advanced Reading (literary works, academic texts)",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_lang_advanced_writing",
+          "title": "Advanced Writing (essays, analysis, creative)",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_lang_translation",
+          "title": "Translation & Comparative Studies",
+          "recommended_hours": 40
+        }
+      ]
+    }
+  ]
+}

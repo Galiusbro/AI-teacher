@@ -1,0 +1,131 @@
+[
+    {
+      "id": "module_geo_advanced_physical",
+      "subject": "Geography",
+      "stage": "stage_advanced",
+      "title": "Advanced Physical Geography (tectonics, hydrology, atmosphere)",
+      "description": "Углублённое изучение физических процессов: тектоника и вулканизм, гидрология и реки, атмосферные процессы и климатическая динамика.",
+      "recommended_hours": 60,
+      "age_hint": [16,19],
+      "prerequisites": ["module_geo_physical","module_geo_weather"],
+      "objectives": [
+        { "code": "GEO.PHY.A.1", "description": "Анализировать тектонические процессы и их влияние на рельеф", "bloom": "analyze" },
+        { "code": "GEO.PHY.A.2", "description": "Оценивать гидрологические циклы и речные системы", "bloom": "evaluate" },
+        { "code": "GEO.PHY.A.3", "description": "Интерпретировать атмосферные процессы и климатические изменения", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["diagram_analysis","case_study_discussions","quiz"],
+        "summative": ["structured_exam","case_study_report"],
+        "required_artifacts": ["doc","diagram"],
+        "rubrics": ["scientific_accuracy","case_analysis","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 12,
+        "max_lessons": 14,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["diagram","text","video"],
+        "source_hints": ["physical_geo_texts","case_study_bank","research_articles"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_geo_advanced_human",
+      "subject": "Geography",
+      "stage": "stage_advanced",
+      "title": "Advanced Human Geography (globalisation, development, inequality)",
+      "description": "Углублённое изучение человеческой географии: процессы глобализации, развитие стран, социально-экономическое неравенство.",
+      "recommended_hours": 60,
+      "age_hint": [16,19],
+      "prerequisites": ["module_geo_population","module_geo_economy"],
+      "objectives": [
+        { "code": "GEO.HUM.A.1", "description": "Оценивать влияние глобализации на разные регионы", "bloom": "evaluate" },
+        { "code": "GEO.HUM.A.2", "description": "Анализировать показатели развития стран", "bloom": "analyze" },
+        { "code": "GEO.HUM.A.3", "description": "Интерпретировать и объяснять социальное неравенство", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["data_interpretation","debates","essay_plans"],
+        "summative": ["exam_case_study","structured_essay"],
+        "required_artifacts": ["doc","graph"],
+        "rubrics": ["argument","data_analysis","evaluation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 12,
+        "max_lessons": 14,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["graph","map","text"],
+        "source_hints": ["UN_dev_reports","globalisation_case_studies"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_geo_advanced_environment",
+      "subject": "Geography",
+      "stage": "stage_advanced",
+      "title": "Environmental Geography (sustainability, resource management)",
+      "description": "Окружающая среда: устойчивое развитие, использование природных ресурсов, управление лесами, водными и энергетическими системами.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_geo_environment"],
+      "objectives": [
+        { "code": "GEO.ENV.A.1", "description": "Анализировать стратегии управления ресурсами", "bloom": "analyze" },
+        { "code": "GEO.ENV.A.2", "description": "Оценивать устойчивость использования природных ресурсов", "bloom": "evaluate" },
+        { "code": "GEO.ENV.A.3", "description": "Разрабатывать предложения по устойчивому развитию", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["policy_analysis","case_discussions","quiz"],
+        "summative": ["sustainability_report","exam_essay"],
+        "required_artifacts": ["doc","presentation"],
+        "rubrics": ["analysis","evaluation","communication"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 10,
+        "max_lessons": 12,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.25, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["text","graph","presentation"],
+        "source_hints": ["sustainability_reports","environmental_case_studies"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_geo_research",
+      "subject": "Geography",
+      "stage": "stage_advanced",
+      "title": "Independent Investigation & Fieldwork Project",
+      "description": "Самостоятельное исследование: формулировка вопроса, сбор и анализ данных, полевой отчёт и презентация.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_geo_fieldwork"],
+      "objectives": [
+        { "code": "GEO.RES.A.1", "description": "Проектировать исследование и формулировать гипотезу", "bloom": "create" },
+        { "code": "GEO.RES.A.2", "description": "Собирать и анализировать данные (качественные и количественные)", "bloom": "analyze" },
+        { "code": "GEO.RES.A.3", "description": "Оформлять отчёт и защищать результаты перед аудиторией", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["proposal_review","draft_feedback","peer_review"],
+        "summative": ["fieldwork_project_report","oral_presentation"],
+        "required_artifacts": ["doc","data","presentation"],
+        "rubrics": ["research_design","data_analysis","argumentation","communication"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 9,
+        "max_lessons": 11,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["map","data","presentation"],
+        "source_hints": ["fieldwork_guides","academic_journals","igcse_a_level_samples"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

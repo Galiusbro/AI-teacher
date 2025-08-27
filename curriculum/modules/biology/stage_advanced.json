@@ -1,0 +1,204 @@
+[
+  {
+    "id": "module_bio_cell_biology",
+    "subject": "Biology",
+    "stage": "stage_advanced",
+    "title": "Cell Biology and Biochemistry",
+    "description": "Углублённое изучение клеточных структур, мембранного транспорта, ферментов, метаболизма (гликолиз, дыхание, фотосинтез) и биохимии макромолекул.",
+    "recommended_hours": 35,
+    "age_hint": [16,19],
+    "prerequisites": ["module_bio_cells","module_bio_plants"],
+    "objectives": [
+      { "code": "BIO.CELL.A.1", "description": "Анализировать структуру клеточных органоидов на уровне ультраструктуры", "bloom": "analyze" },
+      { "code": "BIO.CELL.A.2", "description": "Объяснять биохимические пути метаболизма (дыхание, фотосинтез)", "bloom": "understand" },
+      { "code": "BIO.CELL.A.3", "description": "Проводить эксперименты по влиянию ферментов и факторов на метаболизм", "bloom": "apply" }
+    ],
+    "assessment_blueprint": {
+      "formative": ["lab_practice","quiz","diagram_analysis"],
+      "summative": ["practical_report","structured_exam_questions"],
+      "required_artifacts": ["doc","photo"],
+      "rubrics": ["lab_accuracy","pathway_understanding","data_analysis","presentation"]
+    },
+    "lesson_policy": {
+      "default_lesson_minutes": 60,
+      "min_lessons": 7,
+      "max_lessons": 10,
+      "mix": { "concept": 0.3, "guided": 0.2, "independent": 0.35, "assessment": 0.15 }
+    },
+    "resources": {
+      "allowed_media": ["text","image","video","interactive"],
+      "source_hints": ["biochem_datasets","molecular_visualizations"]
+    },
+    "version": "1.0.0",
+    "locale_support": ["en","ru","es","zh"]
+  },
+  {
+    "id": "module_bio_genetics_advanced",
+    "subject": "Biology",
+    "stage": "stage_advanced",
+    "title": "Molecular Genetics and Biotechnology",
+    "description": "Строение ДНК/РНК, репликация, транскрипция, трансляция, регуляция генов, методы генной инженерии и биотехнологий.",
+    "recommended_hours": 30,
+    "age_hint": [16,19],
+    "prerequisites": ["module_bio_genetics"],
+    "objectives": [
+      { "code": "BIO.GEN.A.1", "description": "Объяснять процессы репликации, транскрипции и трансляции", "bloom": "understand" },
+      { "code": "BIO.GEN.A.2", "description": "Анализировать регуляцию экспрессии генов у прокариот и эукариот", "bloom": "analyze" },
+      { "code": "BIO.GEN.A.3", "description": "Описывать методы молекулярной биологии (PCR, электрофорез, клонирование)", "bloom": "apply" }
+    ],
+    "assessment_blueprint": {
+      "formative": ["problem_sets","quiz","case_discussion"],
+      "summative": ["molecular_lab_report","essay_exam"],
+      "required_artifacts": ["doc","image"],
+      "rubrics": ["conceptual_clarity","method_explanation","data_handling","communication"]
+    },
+    "lesson_policy": {
+      "default_lesson_minutes": 60,
+      "min_lessons": 6,
+      "max_lessons": 9,
+      "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+    },
+    "resources": {
+      "allowed_media": ["text","image","video","interactive"],
+      "source_hints": ["open_genomics","biotech_case_studies"]
+    },
+    "version": "1.0.0",
+    "locale_support": ["en","ru","es","zh"]
+  },
+  {
+    "id": "module_bio_physiology",
+    "subject": "Biology",
+    "stage": "stage_advanced",
+    "title": "Human and Plant Physiology",
+    "description": "Механизмы работы органов и систем человека (нервная, эндокринная, выделительная) и физиология растений (транспорт, регуляция, гормоны).",
+    "recommended_hours": 40,
+    "age_hint": [16,19],
+    "prerequisites": ["module_bio_human_biology","module_bio_plants"],
+    "objectives": [
+      { "code": "BIO.PHYS.A.1", "description": "Объяснять механизмы передачи нервных импульсов и гормональной регуляции", "bloom": "understand" },
+      { "code": "BIO.PHYS.A.2", "description": "Анализировать работу органов выделительной системы и поддержание гомеостаза", "bloom": "analyze" },
+      { "code": "BIO.PHYS.A.3", "description": "Сравнивать механизмы транспорта веществ у растений и животных", "bloom": "evaluate" }
+    ],
+    "assessment_blueprint": {
+      "formative": ["diagram_completion","case_study","mini_quiz"],
+      "summative": ["structured_exam_questions","practical_lab_log"],
+      "required_artifacts": ["doc","image"],
+      "rubrics": ["mechanism_accuracy","comparative_analysis","terminology_use","application"]
+    },
+    "lesson_policy": {
+      "default_lesson_minutes": 60,
+      "min_lessons": 7,
+      "max_lessons": 11,
+      "mix": { "concept": 0.3, "guided": 0.2, "independent": 0.35, "assessment": 0.15 }
+    },
+    "resources": {
+      "allowed_media": ["text","image","video","interactive"],
+      "source_hints": ["human_physiology_refs","plant_transport_models"]
+    },
+    "version": "1.0.0",
+    "locale_support": ["en","ru","es","zh"]
+  },
+  {
+    "id": "module_bio_ecosystems",
+    "subject": "Biology",
+    "stage": "stage_advanced",
+    "title": "Advanced Ecology and Sustainability",
+    "description": "Углублённое изучение популяционной экологии, биомов, биоразнообразия, экологических взаимодействий и устойчивого развития.",
+    "recommended_hours": 30,
+    "age_hint": [16,19],
+    "prerequisites": ["module_bio_ecology"],
+    "objectives": [
+      { "code": "BIO.ECO.A.1", "description": "Оценивать динамику популяций с использованием моделей роста", "bloom": "analyze" },
+      { "code": "BIO.ECO.A.2", "description": "Интерпретировать экологические данные (видовое богатство, индекс Шеннона)", "bloom": "apply" },
+      { "code": "BIO.ECO.A.3", "description": "Разрабатывать стратегии устойчивости и сохранения биоразнообразия", "bloom": "create" }
+    ],
+    "assessment_blueprint": {
+      "formative": ["data_response","fieldwork_simulation","quiz"],
+      "summative": ["ecology_project_report","exam_case_study"],
+      "required_artifacts": ["doc","data"],
+      "rubrics": ["data_analysis","model_application","sustainability_planning","report_quality"]
+    },
+    "lesson_policy": {
+      "default_lesson_minutes": 60,
+      "min_lessons": 6,
+      "max_lessons": 9,
+      "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.35, "assessment": 0.15 }
+    },
+    "resources": {
+      "allowed_media": ["text","image","video","interactive","data"],
+      "source_hints": ["environmental_datasets","ecology_modelling_tools"]
+    },
+    "version": "1.0.0",
+    "locale_support": ["en","ru","es","zh"]
+  },
+  {
+    "id": "module_bio_evolution",
+    "subject": "Biology",
+    "stage": "stage_advanced",
+    "title": "Evolution and Biodiversity",
+    "description": "Принципы эволюции, естественный отбор, генетическая изменчивость, виды и таксоны, происхождение и сохранение биоразнообразия.",
+    "recommended_hours": 25,
+    "age_hint": [16,19],
+    "prerequisites": ["module_bio_organisms","module_bio_genetics"],
+    "objectives": [
+      { "code": "BIO.EVO.A.1", "description": "Объяснять механизмы естественного отбора и адаптаций", "bloom": "understand" },
+      { "code": "BIO.EVO.A.2", "description": "Сравнивать эволюционные модели и доказательства (ископаемые, молекулярные)", "bloom": "analyze" },
+      { "code": "BIO.EVO.A.3", "description": "Оценивать угрозы биоразнообразию и методы его сохранения", "bloom": "evaluate" }
+    ],
+    "assessment_blueprint": {
+      "formative": ["timeline_activity","comparative_tables","quiz"],
+      "summative": ["evolution_essay","structured_exam"],
+      "required_artifacts": ["doc","image"],
+      "rubrics": ["conceptual_understanding","evidence_use","argument_strength","clarity"]
+    },
+    "lesson_policy": {
+      "default_lesson_minutes": 60,
+      "min_lessons": 5,
+      "max_lessons": 8,
+      "mix": { "concept": 0.3, "guided": 0.2, "independent": 0.35, "assessment": 0.15 }
+    },
+    "resources": {
+      "allowed_media": ["text","image","video","interactive"],
+      "source_hints": ["open_phylogenetics","museum_fossil_records"]
+    },
+    "version": "1.0.0",
+    "locale_support": ["en","ru","es","zh"]
+  },
+  {
+    "id": "module_bio_research",
+    "subject": "Biology",
+    "stage": "stage_advanced",
+    "title": "Practical Skills and Research Methods",
+    "description": "Методы лабораторных исследований: дизайн эксперимента, статистический анализ, обработка данных и научное письмо.",
+    "recommended_hours": 20,
+    "age_hint": [16,19],
+    "prerequisites": ["module_bio_cell_biology"],
+    "objectives": [
+      { "code": "BIO.RES.A.1", "description": "Планировать и проводить лабораторные эксперименты", "bloom": "apply" },
+      { "code": "BIO.RES.A.2", "description": "Анализировать результаты с использованием статистических методов", "bloom": "analyze" },
+      { "code": "BIO.RES.A.3", "description": "Оформлять научный отчёт с правильной структурой и ссылками", "bloom": "create" }
+    ],
+    "assessment_blueprint": {
+      "formative": ["experimental_design","mini_projects","data_analysis_tasks"],
+      "summative": ["full_lab_report","research_poster","oral_presentation"],
+      "required_artifacts": ["doc","data","video"],
+      "rubrics": ["experimental_design","data_accuracy","report_quality","communication"]
+    },
+    "lesson_policy": {
+      "default_lesson_minutes": 60,
+      "min_lessons": 4,
+      "max_lessons": 6,
+      "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.3, "assessment": 0.2 }
+    },
+    "resources": {
+      "allowed_media": ["text","image","video","interactive","data"],
+      "source_hints": ["open_lab_manuals","statistical_tools","research_guides"]
+    },
+    "verification_policy": {
+      "guardian_confirmation_required": true,
+      "signature_required": true
+    },
+    "version": "1.0.0",
+    "locale_support": ["en","ru","es","zh"]
+  }
+]

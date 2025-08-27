@@ -1,0 +1,147 @@
+{
+  "id": "curriculum_english",
+  "title": "English (Cambridge-style)",
+  "subject": "English",
+  "stages": [
+    {
+      "id": "stage_primary",
+      "title": "Primary",
+      "age_range": [
+        5,
+        11
+      ],
+      "modules": [
+        {
+          "id": "module_eng_reading_primary",
+          "title": "Reading and Phonics",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_eng_writing_primary",
+          "title": "Writing and Handwriting",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_eng_spelling_primary",
+          "title": "Spelling and Vocabulary",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_eng_listening_primary",
+          "title": "Listening and Speaking",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_eng_storytelling_primary",
+          "title": "Stories and Creative Expression",
+          "recommended_hours": 30
+        }
+      ]
+    },
+    {
+      "id": "stage_lower_secondary",
+      "title": "Lower Secondary",
+      "age_range": [
+        11,
+        14
+      ],
+      "modules": [
+        {
+          "id": "module_eng_grammar_lower",
+          "title": "Grammar and Sentence Structure",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_eng_vocabulary_lower",
+          "title": "Vocabulary Development",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_eng_reading_lower",
+          "title": "Reading Comprehension",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_eng_writing_lower",
+          "title": "Writing for Different Purposes (letters, reports, essays)",
+          "recommended_hours": 45
+        },
+        {
+          "id": "module_eng_speaking_lower",
+          "title": "Speaking and Presentation Skills",
+          "recommended_hours": 25
+        }
+      ]
+    },
+    {
+      "id": "stage_upper_secondary",
+      "title": "Upper Secondary (IGCSE)",
+      "age_range": [
+        14,
+        16
+      ],
+      "modules": [
+        {
+          "id": "module_eng_language_upper",
+          "title": "English Language (First/Second)",
+          "recommended_hours": 60
+        },
+        {
+          "id": "module_eng_writing_upper",
+          "title": "Discursive and Creative Writing",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_eng_comprehension_upper",
+          "title": "Advanced Reading Comprehension and Analysis",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_eng_literature_upper",
+          "title": "English Literature (poetry, drama, prose)",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_eng_oral_upper",
+          "title": "Oral Communication and Debates",
+          "recommended_hours": 30
+        }
+      ]
+    },
+    {
+      "id": "stage_advanced",
+      "title": "Advanced (AS/A Level)",
+      "age_range": [
+        16,
+        19
+      ],
+      "modules": [
+        {
+          "id": "module_eng_critical_advanced",
+          "title": "Critical Analysis of Texts",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_eng_rhetoric_advanced",
+          "title": "Rhetoric and Argumentation",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_eng_academic_advanced",
+          "title": "Academic and Research Writing",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_eng_worldlit_advanced",
+          "title": "World Literature and Comparative Studies",
+          "recommended_hours": 45
+        },
+        {
+          "id": "module_eng_creative_advanced",
+          "title": "Creative Writing and Media",
+          "recommended_hours": 35
+        }
+      ]
+    }
+  ]
+}

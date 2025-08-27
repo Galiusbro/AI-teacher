@@ -1,0 +1,131 @@
+[
+    {
+      "id": "module_hist_early_modern_adv",
+      "subject": "History",
+      "stage": "stage_advanced",
+      "title": "Early Modern History (politics, religion, economy)",
+      "description": "Изучение раннего Нового времени: политика, религия и экономика в Европе (1500–1700), Реформация, Абсолютизм, ранние революции.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_hist_early_modern"],
+      "objectives": [
+        { "code": "HIS.EMD.A.1", "description": "Анализировать последствия Реформации для Европы", "bloom": "analyze" },
+        { "code": "HIS.EMD.A.2", "description": "Оценивать роль монархий и абсолютизма", "bloom": "evaluate" },
+        { "code": "HIS.EMD.A.3", "description": "Сравнивать социально-экономические изменения периода", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["source_analysis","debates","quiz"],
+        "summative": ["thematic_essay","document_exam"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["source_use","argument","comparative_analysis"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 10,
+        "max_lessons": 12,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["doc","timeline","map"],
+        "source_hints": ["reformation_documents","economic_histories","early_modern_chronicles"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_hist_modern_adv",
+      "subject": "History",
+      "stage": "stage_advanced",
+      "title": "Modern History (19–20th centuries)",
+      "description": "Глубокое изучение модерна: индустриализация, революции XIX века, мировые войны, холодная война.",
+      "recommended_hours": 60,
+      "age_hint": [16,19],
+      "prerequisites": ["module_hist_19th","module_hist_20th_wars","module_hist_international"],
+      "objectives": [
+        { "code": "HIS.MOD.A.1", "description": "Анализировать причины и последствия ключевых событий XIX–XX вв.", "bloom": "analyze" },
+        { "code": "HIS.MOD.A.2", "description": "Оценивать роль идеологий (либерализм, коммунизм, фашизм)", "bloom": "evaluate" },
+        { "code": "HIS.MOD.A.3", "description": "Интерпретировать международные отношения в контексте холодной войны", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["case_study_tasks","debates","timeline_projects"],
+        "summative": ["structured_exam","research_essay"],
+        "required_artifacts": ["doc","timeline"],
+        "rubrics": ["argument","evidence","critical_thinking"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 12,
+        "max_lessons": 14,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.25, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","map","timeline"],
+        "source_hints": ["cold_war_archives","industrialisation_sources","20th_century_speeches"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_hist_historical_thinking",
+      "subject": "History",
+      "stage": "stage_advanced",
+      "title": "Historical Thinking (historiography, debates)",
+      "description": "Историография и дебаты: разные интерпретации событий, работа с историками и школами мысли.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_hist_skills_lower"],
+      "objectives": [
+        { "code": "HIS.THK.A.1", "description": "Различать разные историографические подходы", "bloom": "analyze" },
+        { "code": "HIS.THK.A.2", "description": "Сравнивать интерпретации событий историками", "bloom": "evaluate" },
+        { "code": "HIS.THK.A.3", "description": "Формулировать собственную интерпретацию в дебатах", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["historiography_tables","debate_tasks","quiz"],
+        "summative": ["historiography_essay","exam_questions"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["interpretation","argument","source_use"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 9,
+        "max_lessons": 11,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","text","presentation"],
+        "source_hints": ["historiography_readers","debate_materials"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_hist_research",
+      "subject": "History",
+      "stage": "stage_advanced",
+      "title": "Independent Research Essay / Coursework",
+      "description": "Самостоятельное исследование по выбранной теме истории с опорой на источники и историографию.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_hist_historical_thinking"],
+      "objectives": [
+        { "code": "HIS.RES.A.1", "description": "Разрабатывать исследовательский вопрос по истории", "bloom": "create" },
+        { "code": "HIS.RES.A.2", "description": "Использовать первичные и вторичные источники", "bloom": "analyze" },
+        { "code": "HIS.RES.A.3", "description": "Оформлять исследовательское эссе по академическим стандартам", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["proposal_feedback","draft_reviews","peer_review"],
+        "summative": ["research_essay","oral_defense"],
+        "required_artifacts": ["doc","presentation"],
+        "rubrics": ["research_quality","argument","source_integration"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","presentation"],
+        "source_hints": ["a_level_history_guides","sample_coursework","archives"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

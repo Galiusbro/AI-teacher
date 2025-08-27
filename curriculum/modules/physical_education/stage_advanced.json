@@ -1,0 +1,163 @@
+[
+    {
+      "id": "module_pe_biomechanics_adv",
+      "subject": "PE",
+      "stage": "stage_advanced",
+      "title": "Biomechanics & Movement Analysis",
+      "description": "Анализ движений: сила, угол, равновесие, биомеханика упражнений. Использование замедленной съёмки и приложений.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_pe_anatomy_upper"],
+      "objectives": [
+        { "code": "PE.BIO.A.1", "description": "Объяснять механические принципы движения", "bloom": "understand" },
+        { "code": "PE.BIO.A.2", "description": "Применять видеоанализ для оценки техники", "bloom": "apply" },
+        { "code": "PE.BIO.A.3", "description": "Оценивать эффективность движений и давать рекомендации", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["video_analysis","diagram_tasks","quiz"],
+        "summative": ["biomechanics_report","presentation"],
+        "required_artifacts": ["video","doc"],
+        "rubrics": ["accuracy","application","analysis"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 55,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.25, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["video","diagram","doc"],
+        "source_hints": ["biomechanics_apps","sport_analysis_videos"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_pe_exercise_physiology_adv",
+      "subject": "PE",
+      "stage": "stage_advanced",
+      "title": "Exercise Physiology",
+      "description": "Изучение физиологических адаптаций организма: энергия, кислород, выносливость, работа сердца и лёгких.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_pe_anatomy_upper"],
+      "objectives": [
+        { "code": "PE.PHY.A.1", "description": "Объяснять энергетические системы организма", "bloom": "understand" },
+        { "code": "PE.PHY.A.2", "description": "Проводить простые тесты на выносливость дома", "bloom": "apply" },
+        { "code": "PE.PHY.A.3", "description": "Сравнивать влияние разных тренировок на организм", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["self_experiments","quiz","data_tracking"],
+        "summative": ["lab_report","exam_questions"],
+        "required_artifacts": ["log","doc"],
+        "rubrics": ["clarity","data_accuracy","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 50,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.35, "guided": 0.2, "independent": 0.25, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","video","log"],
+        "source_hints": ["physiology_videos","endurance_tests"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_pe_psychology_adv",
+      "subject": "PE",
+      "stage": "stage_advanced",
+      "title": "Advanced Sports Psychology",
+      "description": "Психология спорта: стресс, фокусировка, лидерство и командная динамика. Включает онлайн-техники мотивации.",
+      "recommended_hours": 35,
+      "age_hint": [16,19],
+      "prerequisites": ["module_pe_psychology_upper"],
+      "objectives": [
+        { "code": "PE.PSY.A.1", "description": "Анализировать факторы мотивации и демотивации", "bloom": "analyze" },
+        { "code": "PE.PSY.A.2", "description": "Применять техники управления стрессом", "bloom": "apply" },
+        { "code": "PE.PSY.A.3", "description": "Оценивать роль психологии в успешных выступлениях", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["reflection_logs","case_discussions","quiz"],
+        "summative": ["essay","presentation"],
+        "required_artifacts": ["doc","slide"],
+        "rubrics": ["analysis","clarity","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.2, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","video","slide"],
+        "source_hints": ["sports_psychology_videos","motivation_case_studies"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_pe_performance_adv",
+      "subject": "PE",
+      "stage": "stage_advanced",
+      "title": "Performance Analysis & Coaching",
+      "description": "Анализ спортивного выступления и основы коучинга: использование видео, постановка целей, корректировка тренировок.",
+      "recommended_hours": 45,
+      "age_hint": [16,19],
+      "prerequisites": ["module_pe_training_upper","module_pe_practical_upper"],
+      "objectives": [
+        { "code": "PE.PER.A.1", "description": "Анализировать технику и результативность по видео", "bloom": "analyze" },
+        { "code": "PE.PER.A.2", "description": "Составлять план улучшения с учётом анализа", "bloom": "create" },
+        { "code": "PE.PER.A.3", "description": "Применять коучинговые приёмы для саморазвития", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["video_feedback","peer_review","workshop"],
+        "summative": ["coaching_plan","video_portfolio"],
+        "required_artifacts": ["video","doc"],
+        "rubrics": ["clarity","creativity","practicality"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["video","doc","log"],
+        "source_hints": ["sports_coaching_videos","performance_apps"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_pe_research_adv",
+      "subject": "PE",
+      "stage": "stage_advanced",
+      "title": "Research Project (sports science)",
+      "description": "Индивидуальное исследование: спортивная наука, физическая активность, влияние тренировок на организм. Работа в формате мини-диссертации.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_pe_exercise_physiology_adv","module_pe_psychology_adv"],
+      "objectives": [
+        { "code": "PE.RES.A.1", "description": "Формулировать исследовательский вопрос", "bloom": "create" },
+        { "code": "PE.RES.A.2", "description": "Собирать и анализировать данные (опросы, замеры)", "bloom": "analyze" },
+        { "code": "PE.RES.A.3", "description": "Оформлять исследовательский отчёт", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["project_outline","data_collection","peer_feedback"],
+        "summative": ["research_paper","oral_defense"],
+        "required_artifacts": ["doc","presentation"],
+        "rubrics": ["originality","data_analysis","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.2, "guided": 0.2, "independent": 0.4, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","slide","spreadsheet"],
+        "source_hints": ["a_level_research_guides","sports_science_articles"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

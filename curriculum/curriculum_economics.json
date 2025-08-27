@@ -1,0 +1,92 @@
+{
+  "id": "curriculum_economics",
+  "title": "Economics (Cambridge-style)",
+  "subject": "Economics",
+  "stages": [
+    {
+      "id": "stage_upper_secondary",
+      "title": "Upper Secondary (IGCSE Economics)",
+      "age_range": [
+        14,
+        16
+      ],
+      "modules": [
+        {
+          "id": "module_econ_basic_concepts",
+          "title": "Basic Economic Concepts (scarcity, choice, opportunity cost)",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_econ_demand_supply",
+          "title": "Demand and Supply",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_econ_market",
+          "title": "The Market System (price, competition, elasticity)",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_econ_production",
+          "title": "Production and Costs",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_econ_labor",
+          "title": "Labour and Employment",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_econ_government",
+          "title": "Government and the Economy (tax, spending, policy)",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_econ_international",
+          "title": "International Trade and Globalisation",
+          "recommended_hours": 40
+        }
+      ]
+    },
+    {
+      "id": "stage_advanced",
+      "title": "Advanced (A Level Economics)",
+      "age_range": [
+        16,
+        19
+      ],
+      "modules": [
+        {
+          "id": "module_econ_micro",
+          "title": "Microeconomics (demand/supply, elasticity, market structures)",
+          "recommended_hours": 60
+        },
+        {
+          "id": "module_econ_macro",
+          "title": "Macroeconomics (inflation, growth, unemployment)",
+          "recommended_hours": 60
+        },
+        {
+          "id": "module_econ_government_adv",
+          "title": "Government Policies (fiscal, monetary, supply-side)",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_econ_international_adv",
+          "title": "International Economics (trade, exchange rates, globalization)",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_econ_development",
+          "title": "Development Economics (inequality, poverty, sustainability)",
+          "recommended_hours": 45
+        },
+        {
+          "id": "module_econ_research",
+          "title": "Case Studies, Data Response & Research Project",
+          "recommended_hours": 45
+        }
+      ]
+    }
+  ]
+}

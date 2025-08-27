@@ -1,0 +1,195 @@
+[
+    {
+      "id": "module_phys_mechanics_adv",
+      "subject": "Physics",
+      "stage": "stage_advanced",
+      "title": "Advanced Mechanics and Dynamics",
+      "description": "Продвинутая механика: кинематика, динамика, импульс, работа и энергия, круговое движение и колебания.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_phys_mechanics","module_phys_energy"],
+      "objectives": [
+        { "code": "PHY.MEC.A.1", "description": "Решать задачи на движение с переменным ускорением", "bloom": "apply" },
+        { "code": "PHY.MEC.A.2", "description": "Анализировать динамику тел по законам Ньютона", "bloom": "analyze" },
+        { "code": "PHY.MEC.A.3", "description": "Применять законы сохранения импульса и энергии", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["problem_sets","graphing_tasks","simulation"],
+        "summative": ["exam_paper","lab_report"],
+        "required_artifacts": ["doc","graph"],
+        "rubrics": ["accuracy","reasoning","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["simulation","graph","worksheet"],
+        "source_hints": ["advanced_mechanics_videos","phet_dynamics"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_phys_waves_adv",
+      "subject": "Physics",
+      "stage": "stage_advanced",
+      "title": "Wave Phenomena and Optics",
+      "description": "Волновая природа: суперпозиция, интерференция, дифракция, поляризация. Оптика: линзы, зеркала, оптические приборы.",
+      "recommended_hours": 30,
+      "age_hint": [16,19],
+      "prerequisites": ["module_phys_waves"],
+      "objectives": [
+        { "code": "PHY.WAV.A.1", "description": "Объяснять явления интерференции и дифракции", "bloom": "understand" },
+        { "code": "PHY.WAV.A.2", "description": "Решать задачи на оптику линз и зеркал", "bloom": "apply" },
+        { "code": "PHY.WAV.A.3", "description": "Анализировать поляризацию и её применение", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["wave_simulations","quiz","lab_tasks"],
+        "summative": ["exam_questions","optics_report"],
+        "required_artifacts": ["doc","graph"],
+        "rubrics": ["accuracy","clarity","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 55,
+        "min_lessons": 7,
+        "max_lessons": 8,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["simulation","graph","worksheet"],
+        "source_hints": ["phet_waves_light","optics_experiments_videos"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_phys_fields",
+      "subject": "Physics",
+      "stage": "stage_advanced",
+      "title": "Fields (gravitational, electric, magnetic)",
+      "description": "Законы полей: гравитация, электростатика, магнетизм. Полевая теория и потенциал.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_phys_electricity"],
+      "objectives": [
+        { "code": "PHY.FLD.A.1", "description": "Объяснять законы Кулона и тяготения Ньютона", "bloom": "understand" },
+        { "code": "PHY.FLD.A.2", "description": "Строить диаграммы силовых линий", "bloom": "apply" },
+        { "code": "PHY.FLD.A.3", "description": "Анализировать движение тел в полях", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["field_diagrams","calc_tasks","quiz"],
+        "summative": ["exam_paper","field_lab"],
+        "required_artifacts": ["diagram","doc"],
+        "rubrics": ["clarity","accuracy","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["diagram","simulation","worksheet"],
+        "source_hints": ["gravity_field_sims","electromagnetism_videos"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_phys_nuclear",
+      "subject": "Physics",
+      "stage": "stage_advanced",
+      "title": "Nuclear and Particle Physics",
+      "description": "Ядро и элементарные частицы: радиоактивность, ядерные реакции, стандартная модель.",
+      "recommended_hours": 35,
+      "age_hint": [16,19],
+      "prerequisites": ["module_phys_atomic"],
+      "objectives": [
+        { "code": "PHY.NUC.A.1", "description": "Объяснять процессы радиоактивного распада", "bloom": "understand" },
+        { "code": "PHY.NUC.A.2", "description": "Сравнивать виды излучений (альфа, бета, гамма)", "bloom": "analyze" },
+        { "code": "PHY.NUC.A.3", "description": "Оценивать значение стандартной модели", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["quiz","case_studies","simulations"],
+        "summative": ["exam_questions","essay"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["clarity","understanding","evaluation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 50,
+        "min_lessons": 7,
+        "max_lessons": 8,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["video","simulation","doc"],
+        "source_hints": ["nuclear_physics_videos","particle_physics_diagrams"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_phys_thermal",
+      "subject": "Physics",
+      "stage": "stage_advanced",
+      "title": "Thermal Physics",
+      "description": "Тепловые процессы: температура, удельная теплоёмкость, газовые законы, энтропия.",
+      "recommended_hours": 25,
+      "age_hint": [16,19],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "PHY.THR.A.1", "description": "Объяснять законы идеального газа", "bloom": "understand" },
+        { "code": "PHY.THR.A.2", "description": "Рассчитывать работу и теплоту процессов", "bloom": "apply" },
+        { "code": "PHY.THR.A.3", "description": "Анализировать графики P–V и T–V", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["calc_tasks","quiz","simulation"],
+        "summative": ["exam_paper","lab_report"],
+        "required_artifacts": ["doc","graph"],
+        "rubrics": ["accuracy","clarity","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 7,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["graph","worksheet","simulation"],
+        "source_hints": ["thermal_physics_videos","gas_laws_simulators"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_phys_research",
+      "subject": "Physics",
+      "stage": "stage_advanced",
+      "title": "Experimental and Research Skills",
+      "description": "Навыки исследовательской работы: планирование экспериментов, обработка данных, оформление отчётов.",
+      "recommended_hours": 20,
+      "age_hint": [16,19],
+      "prerequisites": ["module_phys_measurements"],
+      "objectives": [
+        { "code": "PHY.RES.A.1", "description": "Планировать эксперимент и формулировать гипотезу", "bloom": "create" },
+        { "code": "PHY.RES.A.2", "description": "Собирать и анализировать данные", "bloom": "analyze" },
+        { "code": "PHY.RES.A.3", "description": "Оформлять отчёт с выводами и графиками", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["project_outline","data_collection","peer_review"],
+        "summative": ["lab_report","oral_defense"],
+        "required_artifacts": ["doc","presentation"],
+        "rubrics": ["originality","data_analysis","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 50,
+        "min_lessons": 5,
+        "max_lessons": 6,
+        "mix": { "concept": 0.25, "guided": 0.2, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","graph","slide"],
+        "source_hints": ["a_level_physics_practicals","data_analysis_guides"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

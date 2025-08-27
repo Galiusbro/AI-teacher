@@ -1,0 +1,44 @@
+{
+    "id": "curriculum_cambridge_like",
+    "title": "Cambridge-style International Curriculum",
+    "languages": ["en","ru","es","zh"],
+    "stages": [
+      {
+        "id": "stage_primary",
+        "title": "Primary",
+        "age_range": [5,11],
+        "subjects": ["Mathematics","English","Science","ICT","GlobalPerspectives","Art","Music","PE"],
+        "cluster_rules": {
+          "Science": { "mode": "integrated", "map_to": "curriculum_science_integrated" }
+        }
+      },
+      {
+        "id": "stage_lower_secondary",
+        "title": "Lower Secondary",
+        "age_range": [11,14],
+        "subjects": ["Mathematics","English","Science","Geography","History","ICT","Art","Music","PE","Languages"],
+        "cluster_rules": {
+          "Science": { "mode": "integrated", "map_to": "curriculum_science_integrated" }
+        }
+      },
+      {
+        "id": "stage_upper_secondary",
+        "title": "Upper Secondary (IGCSE)",
+        "age_range": [14,16],
+        "subjects": ["Mathematics","English","Physics","Chemistry","Biology","Geography","History","Economics","Business","ICT","GlobalPerspectives","Languages","Art"],
+        "cluster_rules": {
+          "Science": { "mode": "separate", "map_to_children": ["curriculum_biology","curriculum_chemistry","curriculum_physics"] }
+        }
+      },
+      {
+        "id": "stage_advanced",
+        "title": "Advanced (AS/A level)",
+        "age_range": [16,19],
+        "subjects": ["Mathematics","FurtherMathematics","EnglishLiterature","Physics","Chemistry","Biology","Geography","History","Economics","Business","ComputerScience","GlobalPerspectives","ArtAndDesign","Languages"],
+        "cluster_rules": {
+          "Science": { "mode": "separate", "map_to_children": ["curriculum_biology","curriculum_chemistry","curriculum_physics"] }
+        }
+      }
+    ]
+  }
+  

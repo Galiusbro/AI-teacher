@@ -1,0 +1,162 @@
+[
+    {
+      "id": "module_lit_poetry_igcse",
+      "subject": "EnglishLiterature",
+      "stage": "stage_upper_secondary",
+      "title": "Poetry Analysis (themes, imagery, rhythm)",
+      "description": "Чтение и анализ стихотворений: тема, образность, звукопись, ритм/метр, строфика; связь формы и смысла.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "LIT.POE.I.1", "description": "Определять тему и настроение стихотворения", "bloom": "understand" },
+        { "code": "LIT.POE.I.2", "description": "Анализировать образность, звуковые приёмы и метрику", "bloom": "analyze" },
+        { "code": "LIT.POE.I.3", "description": "Интерпретировать связь формы и авторского замысла с опорой на текст", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["close_reading_tasks","annotation_workshops","quiz_terms"],
+        "summative": ["unseen_poem_essay","comparative_poetry_essay"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["textual_evidence","analysis_depth","technical_accuracy","coherence"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.25, "guided": 0.35, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","audio"],
+        "source_hints": ["poetry_anthologies","teacher_chosen_poets","public_domain_collections"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lit_prose_igcse",
+      "subject": "EnglishLiterature",
+      "stage": "stage_upper_secondary",
+      "title": "Prose (novels, short stories)",
+      "description": "Анализ прозы: сюжет и композиция, персонажи и мотивация, повествователь, стиль и контекст.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "LIT.PRO.I.1", "description": "Выделять ключевые элементы композиции и фокус рассказчика", "bloom": "understand" },
+        { "code": "LIT.PRO.I.2", "description": "Анализировать персонажей и их развитие через текстовые свидетельства", "bloom": "analyze" },
+        { "code": "LIT.PRO.I.3", "description": "Оценивать влияние стиля и контекста на интерпретацию", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["chapter_journals","character_maps","extract_commentaries"],
+        "summative": ["prose_extract_essay","thematic_essay"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["evidence_selection","interpretation","structure","language_use"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.2, "guided": 0.35, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text"],
+        "source_hints": ["set_texts_school","short_story_collections","public_domain_novels"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lit_drama_igcse",
+      "subject": "EnglishLiterature",
+      "stage": "stage_upper_secondary",
+      "title": "Drama (Shakespeare + modern plays)",
+      "description": "Драматургия как сценическое искусство: структура сцены, диалог, ремарки, исторический и постановочный контекст.",
+      "recommended_hours": 45,
+      "age_hint": [14,16],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "LIT.DRA.I.1", "description": "Объяснять, как драматург строит конфликт и динамику сцены", "bloom": "understand" },
+        { "code": "LIT.DRA.I.2", "description": "Анализировать языковые и сценические средства (ирония, символы, ремарки)", "bloom": "analyze" },
+        { "code": "LIT.DRA.I.3", "description": "Оценивать влияние постановочного контекста на интерпретацию", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["scene_performance","director_notebook","extract_commentaries"],
+        "summative": ["drama_extract_essay","comparative_drama_essay","performance_reflection"],
+        "required_artifacts": ["doc","presentation"],
+        "rubrics": ["textual_analysis","context_awareness","interpretive_argument","communication"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 9,
+        "max_lessons": 11,
+        "mix": { "concept": 0.25, "guided": 0.35, "independent": 0.2, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["text","video"],
+        "source_hints": ["shakespeare_public_domain","licensed_modern_plays","stage_adaptations"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lit_comparison_igcse",
+      "subject": "EnglishLiterature",
+      "stage": "stage_upper_secondary",
+      "title": "Comparative Reading (texts across genres)",
+      "description": "Сравнительный анализ текстов разных жанров и периодов: мотивы, темы, приёмы, контексты.",
+      "recommended_hours": 35,
+      "age_hint": [14,16],
+      "prerequisites": ["module_lit_poetry_igcse","module_lit_prose_igcse","module_lit_drama_igcse"],
+      "objectives": [
+        { "code": "LIT.CMP.I.1", "description": "Выявлять общие мотивы и контрасты между текстами", "bloom": "analyze" },
+        { "code": "LIT.CMP.I.2", "description": "Сопоставлять приёмы и их эффект в разных жанрах", "bloom": "analyze" },
+        { "code": "LIT.CMP.I.3", "description": "Строить аргументированное сравнительное эссе", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["comparison_charts","paired_extract_tasks","thesis_workshops"],
+        "summative": ["comparative_essay","exam_comparison_question"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["comparative_structure","evidence_balance","insight","cohesion"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.2, "guided": 0.35, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text"],
+        "source_hints": ["paired_texts_school","anthology_pairs","teacher_curated_sets"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lit_essay_igcse",
+      "subject": "EnglishLiterature",
+      "stage": "stage_upper_secondary",
+      "title": "Essay Writing and Interpretation",
+      "description": "Навыки литературного эссе: тезис, структура, выбор цитат, интерпретация, стиль академического письма.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "LIT.ESS.I.1", "description": "Формулировать чёткий тезис и план аргумента", "bloom": "apply" },
+        { "code": "LIT.ESS.I.2", "description": "Интегрировать текстовые доказательства с анализом", "bloom": "analyze" },
+        { "code": "LIT.ESS.I.3", "description": "Редактировать и совершенствовать стиль и логику изложения", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["thesis_clinics","paragraph_drills","peer_review"],
+        "summative": ["timed_essay","coursework_essay"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["thesis_quality","evidence_analysis","organisation","language_accuracy"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.2, "guided": 0.3, "independent": 0.35, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text"],
+        "source_hints": ["essay_models","style_guides","mark_schemes_like"]
+      },
+      "version": "1.0.0"
+    }
+  ]

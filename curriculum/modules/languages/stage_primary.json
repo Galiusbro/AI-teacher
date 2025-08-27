@@ -1,0 +1,163 @@
+[
+    {
+      "id": "module_lang_listening_primary",
+      "subject": "Languages",
+      "stage": "stage_primary",
+      "title": "Listening & Understanding Simple Phrases",
+      "description": "Развитие слухового восприятия: понимание простых фраз, команд, вопросов в классе и повседневных ситуациях.",
+      "recommended_hours": 30,
+      "age_hint": [5,11],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "LAN.LIS.P.1", "description": "Понимать простые устные инструкции", "bloom": "understand" },
+        { "code": "LAN.LIS.P.2", "description": "Распознавать знакомые слова и выражения", "bloom": "remember" },
+        { "code": "LAN.LIS.P.3", "description": "Реагировать на короткие вопросы и команды", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["listening_games","matching_tasks","quiz"],
+        "summative": ["listening_test","teacher_observation"],
+        "required_artifacts": ["audio"],
+        "rubrics": ["accuracy","comprehension","response"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.25, "guided": 0.35, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["audio","video","interactive"],
+        "source_hints": ["kids_songs","simple_dialogues"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lang_speaking_primary",
+      "subject": "Languages",
+      "stage": "stage_primary",
+      "title": "Speaking Basics (greetings, introductions)",
+      "description": "Базовые навыки устной речи: приветствия, представления, простые вопросы и ответы.",
+      "recommended_hours": 30,
+      "age_hint": [5,11],
+      "prerequisites": ["module_lang_listening_primary"],
+      "objectives": [
+        { "code": "LAN.SPK.P.1", "description": "Использовать базовые приветствия и прощания", "bloom": "apply" },
+        { "code": "LAN.SPK.P.2", "description": "Представлять себя и задавать простые вопросы", "bloom": "apply" },
+        { "code": "LAN.SPK.P.3", "description": "Поддерживать короткий диалог", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["role_play","games","peer_feedback"],
+        "summative": ["oral_test","dialogue_performance"],
+        "required_artifacts": ["audio"],
+        "rubrics": ["pronunciation","fluency","interaction"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.2, "guided": 0.35, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["audio","video","interactive"],
+        "source_hints": ["greetings_chants","kids_dialogues"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lang_reading_primary",
+      "subject": "Languages",
+      "stage": "stage_primary",
+      "title": "Reading Simple Words and Sentences",
+      "description": "Развитие навыков чтения: распознавание букв, слов и простых предложений.",
+      "recommended_hours": 25,
+      "age_hint": [5,11],
+      "prerequisites": ["module_lang_listening_primary"],
+      "objectives": [
+        { "code": "LAN.RED.P.1", "description": "Читать знакомые слова и короткие фразы", "bloom": "apply" },
+        { "code": "LAN.RED.P.2", "description": "Понимать простые предложения", "bloom": "understand" },
+        { "code": "LAN.RED.P.3", "description": "Ассоциировать картинки и текст", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["reading_games","flashcards","quiz"],
+        "summative": ["reading_test","teacher_observation"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["accuracy","fluency","comprehension"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["doc","image","interactive"],
+        "source_hints": ["phonics_books","simple_readers"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lang_writing_primary",
+      "subject": "Languages",
+      "stage": "stage_primary",
+      "title": "Writing Simple Words and Sentences",
+      "description": "Основы письма: написание букв, слов и простых предложений.",
+      "recommended_hours": 25,
+      "age_hint": [5,11],
+      "prerequisites": ["module_lang_reading_primary"],
+      "objectives": [
+        { "code": "LAN.WRT.P.1", "description": "Писать буквы и знакомые слова", "bloom": "apply" },
+        { "code": "LAN.WRT.P.2", "description": "Составлять короткие предложения", "bloom": "create" },
+        { "code": "LAN.WRT.P.3", "description": "Применять базовые правила орфографии", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["copy_tasks","writing_games","peer_review"],
+        "summative": ["writing_test","mini_project"],
+        "required_artifacts": ["doc","worksheet"],
+        "rubrics": ["handwriting","accuracy","expression"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["doc","worksheet","image"],
+        "source_hints": ["writing_workbooks","phonics_guides"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lang_culture_primary",
+      "subject": "Languages",
+      "stage": "stage_primary",
+      "title": "Songs, Stories and Cultural Elements",
+      "description": "Знакомство с культурой через песни, сказки, праздники и традиции.",
+      "recommended_hours": 20,
+      "age_hint": [5,11],
+      "prerequisites": ["module_lang_listening_primary","module_lang_speaking_primary"],
+      "objectives": [
+        { "code": "LAN.CUL.P.1", "description": "Участвовать в песнях и играх на изучаемом языке", "bloom": "apply" },
+        { "code": "LAN.CUL.P.2", "description": "Распознавать культурные элементы (праздники, традиции)", "bloom": "understand" },
+        { "code": "LAN.CUL.P.3", "description": "Проявлять уважение к культурным различиям", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["song_games","storytelling","group_discussions"],
+        "summative": ["cultural_project","presentation"],
+        "required_artifacts": ["audio","poster"],
+        "rubrics": ["participation","expression","cultural_awareness"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 4,
+        "max_lessons": 6,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["audio","video","poster"],
+        "source_hints": ["kids_songs","simple_stories","cultural_resources"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

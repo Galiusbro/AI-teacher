@@ -1,0 +1,77 @@
+{
+  "id": "curriculum_english_literature",
+  "title": "English Literature (Cambridge-style)",
+  "subject": "EnglishLiterature",
+  "stages": [
+    {
+      "id": "stage_upper_secondary",
+      "title": "Upper Secondary (IGCSE English Literature)",
+      "age_range": [
+        14,
+        16
+      ],
+      "modules": [
+        {
+          "id": "module_lit_poetry_igcse",
+          "title": "Poetry Analysis (themes, imagery, rhythm)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_lit_prose_igcse",
+          "title": "Prose (novels, short stories)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_lit_drama_igcse",
+          "title": "Drama (Shakespeare + modern plays)",
+          "recommended_hours": 45
+        },
+        {
+          "id": "module_lit_comparison_igcse",
+          "title": "Comparative Reading (texts across genres)",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_lit_essay_igcse",
+          "title": "Essay Writing and Interpretation",
+          "recommended_hours": 40
+        }
+      ]
+    },
+    {
+      "id": "stage_advanced",
+      "title": "Advanced (AS/A Level English Literature)",
+      "age_range": [
+        16,
+        19
+      ],
+      "modules": [
+        {
+          "id": "module_lit_poetry_adv",
+          "title": "Advanced Poetry (forms, schools, comparative study)",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_lit_drama_adv",
+          "title": "Advanced Drama (classical to modern, performance context)",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_lit_prose_adv",
+          "title": "Advanced Prose (novels, narrative techniques, critical theories)",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_lit_comparison_adv",
+          "title": "Comparative & Contextual Studies (literary movements, culture)",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_lit_coursework_adv",
+          "title": "Independent Coursework / Research Essay",
+          "recommended_hours": 45
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+[
+    {
+      "id": "module_eng_grammar_lower",
+      "subject": "English",
+      "stage": "stage_lower_secondary",
+      "title": "Grammar and Sentence Structure",
+      "description": "Синтаксис и грамматика: части речи, типы предложений, согласование времен, согласование подлежащего и сказуемого, пунктуация.",
+      "recommended_hours": 40,
+      "age_hint": [11,14],
+      "prerequisites": ["module_eng_reading_primary","module_eng_writing_primary"],
+      "objectives": [
+        { "code": "ENG.GRM.L.1", "description": "Опознавать части речи и функции слов в предложении", "bloom": "understand" },
+        { "code": "ENG.GRM.L.2", "description": "Строить правильно оформленные простые/сложные предложения", "bloom": "apply" },
+        { "code": "ENG.GRM.L.3", "description": "Использовать времена и согласование грамотно в контексте", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["sentence_combining","error_correction","mini_quizzes"],
+        "summative": ["grammar_test","edited_paragraph_submission"],
+        "required_artifacts": ["worksheet","doc"],
+        "rubrics": ["accuracy","clarity","control_of_syntax"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","interactive"],
+        "source_hints": ["grammar_handbooks","interactive_grammar_apps"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_eng_vocabulary_lower",
+      "subject": "English",
+      "stage": "stage_lower_secondary",
+      "title": "Vocabulary Development",
+      "description": "Расширение словарного запаса: корни, приставки и суффиксы, коллокации, синонимы/антонимы, тематические наборы слов.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "ENG.VOC.L.1", "description": "Опознавать значения слов по контексту и словообразовательным элементам", "bloom": "understand" },
+        { "code": "ENG.VOC.L.2", "description": "Использовать новые слова в устной и письменной речи", "bloom": "apply" },
+        { "code": "ENG.VOC.L.3", "description": "Различать регистры и уместность лексики", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["flashcard_cycles","context_cloze","word_maps"],
+        "summative": ["vocab_quiz","themed_paragraph"],
+        "required_artifacts": ["worksheet","doc"],
+        "rubrics": ["range","accuracy","appropriacy"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","interactive"],
+        "source_hints": ["word_lists_by_theme","morphology_minilessons"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_eng_reading_lower",
+      "subject": "English",
+      "stage": "stage_lower_secondary",
+      "title": "Reading Comprehension",
+      "description": "Работа с текстом: извлечение фактов, интерпретация, выводы, намерение автора, структура и жанр.",
+      "recommended_hours": 40,
+      "age_hint": [11,14],
+      "prerequisites": ["module_eng_reading_primary"],
+      "objectives": [
+        { "code": "ENG.RED.L.1", "description": "Находить явную информацию и ключевые идеи в тексте", "bloom": "understand" },
+        { "code": "ENG.RED.L.2", "description": "Делать выводы и определять авторское намерение", "bloom": "analyze" },
+        { "code": "ENG.RED.L.3", "description": "Сравнивать тексты разных жанров по структуре и стилю", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["guided_reading","annotation_tasks","question_stems"],
+        "summative": ["reading_comprehension_test","comparative_response"],
+        "required_artifacts": ["worksheet","doc"],
+        "rubrics": ["evidence_use","inference","text_structure_awareness"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.2, "guided": 0.4, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","audio"],
+        "source_hints": ["graded_nonfiction_sets","short_story_packs"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_eng_writing_lower",
+      "subject": "English",
+      "stage": "stage_lower_secondary",
+      "title": "Writing for Different Purposes (letters, reports, essays)",
+      "description": "Письмо для разных задач: структура, планирование, ввод–тезис–параграфы–вывод, стиль и регистр.",
+      "recommended_hours": 45,
+      "age_hint": [11,14],
+      "prerequisites": ["module_eng_grammar_lower","module_eng_vocabulary_lower"],
+      "objectives": [
+        { "code": "ENG.WRI.L.1", "description": "Планировать текст под цель и аудиторию", "bloom": "apply" },
+        { "code": "ENG.WRI.L.2", "description": "Структурировать параграфы, связывать идеи и использовать тему/поддержку", "bloom": "apply" },
+        { "code": "ENG.WRI.L.3", "description": "Редактировать текст с точки зрения ясности, логики и языка", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["outline_workshops","paragraph_drills","peer_review"],
+        "summative": ["letter_or_report_submission","short_essay"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["organisation","cohesion","task_achievement","language_control"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 9,
+        "max_lessons": 11,
+        "mix": { "concept": 0.2, "guided": 0.35, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text"],
+        "source_hints": ["genre_models","mark_scheme_like"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_eng_speaking_lower",
+      "subject": "English",
+      "stage": "stage_lower_secondary",
+      "title": "Speaking and Presentation Skills",
+      "description": "Устная коммуникация: диалоги, монологи, презентации; уверенность, чёткость, визуальная поддержка, ответ на вопросы.",
+      "recommended_hours": 25,
+      "age_hint": [11,14],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "ENG.SPK.L.1", "description": "Готовить краткие выступления с опорой на план и визуалы", "bloom": "apply" },
+        { "code": "ENG.SPK.L.2", "description": "Выступать уверенно и ясно, поддерживать контакт с аудиторией", "bloom": "apply" },
+        { "code": "ENG.SPK.L.3", "description": "Отвечать на вопросы и вести мини-дискуссию", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["pair_speaking","micro_presentations","feedback_cycles"],
+        "summative": ["graded_presentation","QnA_assessment"],
+        "required_artifacts": ["presentation"],
+        "rubrics": ["content_clarity","delivery","interaction"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.15, "guided": 0.3, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["audio","presentation"],
+        "source_hints": ["speaking_prompts","presentation_checklists"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

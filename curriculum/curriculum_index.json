@@ -1,0 +1,15 @@
+{
+    "id": "curriculum_index",
+    "entries": [
+      { "curriculum_id": "curriculum_math", "subject_code": "Mathematics", "stages": ["stage_primary","stage_lower_secondary","stage_upper_secondary","stage_advanced"], "url": "store://curriculum/math.json", "version": "1.0.0" },
+      { "curriculum_id": "curriculum_english", "subject_code": "English", "stages": ["stage_primary","stage_lower_secondary","stage_upper_secondary","stage_advanced"], "url": "store://curriculum/english.json", "version": "1.0.0" },
+      { "curriculum_id": "curriculum_science_integrated", "subject_code": "Science", "stages": ["stage_primary","stage_lower_secondary"], "url": "store://curriculum/science_integrated.json", "version": "1.0.0" },
+      { "curriculum_id": "curriculum_biology", "subject_code": "Biology", "stages": ["stage_upper_secondary","stage_advanced"], "url": "store://curriculum/biology.json", "version": "1.0.0" },
+      { "curriculum_id": "curriculum_chemistry", "subject_code": "Chemistry", "stages": ["stage_upper_secondary","stage_advanced"], "url": "store://curriculum/chemistry.json", "version": "1.0.0" },
+      { "curriculum_id": "curriculum_physics", "subject_code": "Physics", "stages": ["stage_upper_secondary","stage_advanced"], "url": "store://curriculum/physics.json", "version": "1.0.0" },
+      { "curriculum_id": "curriculum_ict", "subject_code": "ICT", "stages": ["stage_primary","stage_lower_secondary","stage_upper_secondary"], "url": "store://curriculum/ict.json", "version": "1.0.0" },
+      { "curriculum_id": "curriculum_computer_science", "subject_code": "ComputerScience", "stages": ["stage_lower_secondary","stage_upper_secondary","stage_advanced"], "url": "store://curriculum/compsci.json", "version": "1.0.0" },
+      { "curriculum_id": "curriculum_global_perspectives", "subject_code": "GlobalPerspectives", "stages": ["stage_lower_secondary","stage_upper_secondary","stage_advanced"], "url": "store://curriculum/global_perspectives.json", "version": "1.0.0" }
+    ]
+  }
+  

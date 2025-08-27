@@ -1,0 +1,195 @@
+[
+    {
+      "id": "module_math_numbers_primary",
+      "subject": "Mathematics",
+      "stage": "stage_primary",
+      "title": "Numbers and Counting",
+      "description": "Знакомство с числами: счёт, запись чисел, сравнение, состав числа.",
+      "recommended_hours": 40,
+      "age_hint": [5,11],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "MATH.NUM.P.1", "description": "Считать вперёд и назад в пределах 100+", "bloom": "remember" },
+        { "code": "MATH.NUM.P.2", "description": "Сравнивать числа по величине", "bloom": "understand" },
+        { "code": "MATH.NUM.P.3", "description": "Группировать предметы и определять количество", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["counting_games","matching_tasks","quiz"],
+        "summative": ["number_test","teacher_observation"],
+        "required_artifacts": ["worksheet"],
+        "rubrics": ["accuracy","fluency","confidence"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.35, "independent": 0.25, "assessment": 0.1 }
+      },
+      "resources": {
+        "allowed_media": ["interactive","worksheet","manipulatives"],
+        "source_hints": ["counting_songs","math_games"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_operations_primary",
+      "subject": "Mathematics",
+      "stage": "stage_primary",
+      "title": "Basic Operations (+, −, ×, ÷)",
+      "description": "Основные арифметические действия: сложение, вычитание, умножение, деление.",
+      "recommended_hours": 50,
+      "age_hint": [6,11],
+      "prerequisites": ["module_math_numbers_primary"],
+      "objectives": [
+        { "code": "MATH.OPR.P.1", "description": "Выполнять сложение и вычитание в пределах 100", "bloom": "apply" },
+        { "code": "MATH.OPR.P.2", "description": "Знать таблицу умножения до 10×10", "bloom": "remember" },
+        { "code": "MATH.OPR.P.3", "description": "Решать простые задачи на деление", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["flashcards","mini_tasks","quiz"],
+        "summative": ["arithmetic_test","word_problems"],
+        "required_artifacts": ["worksheet"],
+        "rubrics": ["accuracy","speed","problem_solving"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 35,
+        "min_lessons": 8,
+        "max_lessons": 12,
+        "mix": { "concept": 0.25, "guided": 0.35, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","flashcards","interactive"],
+        "source_hints": ["multiplication_tables","math_drills"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_fractions_primary",
+      "subject": "Mathematics",
+      "stage": "stage_primary",
+      "title": "Fractions and Decimals (intro)",
+      "description": "Введение в дроби и десятичные числа: половины, четверти, простые десятичные.",
+      "recommended_hours": 30,
+      "age_hint": [7,11],
+      "prerequisites": ["module_math_operations_primary"],
+      "objectives": [
+        { "code": "MATH.FRC.P.1", "description": "Определять половину и четверть предмета/группы", "bloom": "understand" },
+        { "code": "MATH.FRC.P.2", "description": "Сравнивать простые дроби (1/2, 1/3, 1/4)", "bloom": "apply" },
+        { "code": "MATH.FRC.P.3", "description": "Понимать связь между десятичными и дробями", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["fraction_games","shapes_coloring","quiz"],
+        "summative": ["fraction_test","worksheet"],
+        "required_artifacts": ["doc","worksheet"],
+        "rubrics": ["understanding","application","accuracy"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 35,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","interactive","visual"],
+        "source_hints": ["fraction_circles","decimal_games"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_measure_primary",
+      "subject": "Mathematics",
+      "stage": "stage_primary",
+      "title": "Measurement (length, mass, time)",
+      "description": "Измерения: длина, масса, время. Практические задачи в быту и природе.",
+      "recommended_hours": 40,
+      "age_hint": [6,11],
+      "prerequisites": ["module_math_numbers_primary"],
+      "objectives": [
+        { "code": "MATH.MES.P.1", "description": "Использовать линейку и часы для измерений", "bloom": "apply" },
+        { "code": "MATH.MES.P.2", "description": "Сравнивать объекты по длине, массе, времени", "bloom": "analyze" },
+        { "code": "MATH.MES.P.3", "description": "Решать простые задачи на измерение", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["practical_tasks","measurement_games","quiz"],
+        "summative": ["measurement_test","project"],
+        "required_artifacts": ["worksheet"],
+        "rubrics": ["accuracy","application","problem_solving"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 35,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","tools","interactive"],
+        "source_hints": ["math_measure_kits","time_games"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_geometry_primary",
+      "subject": "Mathematics",
+      "stage": "stage_primary",
+      "title": "Shapes and Space",
+      "description": "Геометрия для начальной школы: линии, углы, многоугольники, трёхмерные фигуры.",
+      "recommended_hours": 35,
+      "age_hint": [6,11],
+      "prerequisites": ["module_math_numbers_primary"],
+      "objectives": [
+        { "code": "MATH.GEO.P.1", "description": "Опознавать и называть основные фигуры", "bloom": "remember" },
+        { "code": "MATH.GEO.P.2", "description": "Рисовать простые геометрические фигуры", "bloom": "apply" },
+        { "code": "MATH.GEO.P.3", "description": "Классифицировать фигуры по признакам", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["drawing_tasks","shape_sorting","quiz"],
+        "summative": ["geometry_test","portfolio"],
+        "required_artifacts": ["worksheet","drawing"],
+        "rubrics": ["accuracy","recognition","creativity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 35,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","image","interactive"],
+        "source_hints": ["shape_games","geometry_cards"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_data_primary",
+      "subject": "Mathematics",
+      "stage": "stage_primary",
+      "title": "Data Handling (charts, simple graphs)",
+      "description": "Сбор, представление и анализ простых данных: таблицы, диаграммы, графики.",
+      "recommended_hours": 25,
+      "age_hint": [8,11],
+      "prerequisites": ["module_math_numbers_primary"],
+      "objectives": [
+        { "code": "MATH.DAT.P.1", "description": "Собирать данные из наблюдений", "bloom": "apply" },
+        { "code": "MATH.DAT.P.2", "description": "Строить простые диаграммы и графики", "bloom": "create" },
+        { "code": "MATH.DAT.P.3", "description": "Интерпретировать данные из графиков", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["chart_tasks","group_work","quiz"],
+        "summative": ["data_project","worksheet"],
+        "required_artifacts": ["doc","chart"],
+        "rubrics": ["clarity","accuracy","interpretation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 35,
+        "min_lessons": 4,
+        "max_lessons": 6,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.35, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["chart","worksheet","interactive"],
+        "source_hints": ["kids_charts","math_games_data"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

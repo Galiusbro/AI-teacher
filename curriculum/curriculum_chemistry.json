@@ -1,0 +1,82 @@
+{
+  "id": "curriculum_chemistry",
+  "title": "Chemistry",
+  "subject": "Chemistry",
+  "stages": [
+    {
+      "id": "stage_upper_secondary",
+      "title": "Upper Secondary (IGCSE Chemistry)",
+      "age_range": [
+        14,
+        16
+      ],
+      "modules": [
+        {
+          "id": "module_chem_atoms",
+          "title": "Atoms, Elements and Compounds",
+          "recommended_hours": 20
+        },
+        {
+          "id": "module_chem_bonding",
+          "title": "Chemical Bonding and Structure",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_chem_reactions",
+          "title": "Chemical Reactions and Stoichiometry",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_chem_periodic",
+          "title": "The Periodic Table",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_chem_acids",
+          "title": "Acids, Bases and Salts",
+          "recommended_hours": 20
+        },
+        {
+          "id": "module_chem_metals",
+          "title": "Metals and Reactivity",
+          "recommended_hours": 20
+        }
+      ]
+    },
+    {
+      "id": "stage_advanced",
+      "title": "Advanced (A Level Chemistry)",
+      "age_range": [
+        16,
+        19
+      ],
+      "modules": [
+        {
+          "id": "module_chem_physical",
+          "title": "Physical Chemistry (thermodynamics, kinetics)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_chem_inorganic",
+          "title": "Inorganic Chemistry (groups, transition metals)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_chem_organic",
+          "title": "Organic Chemistry",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_chem_analytical",
+          "title": "Analytical Techniques (spectroscopy, chromatography)",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_chem_research",
+          "title": "Practical Skills and Research Methods",
+          "recommended_hours": 25
+        }
+      ]
+    }
+  ]
+}

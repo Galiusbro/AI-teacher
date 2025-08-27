@@ -1,0 +1,17 @@
+{
+    "id": "subject_registry",
+    "version": "1.0.0",
+    "subjects": [
+      { "code": "Mathematics", "kind": "single", "titles": {"en":"Mathematics","ru":"Математика"} },
+      { "code": "English", "kind": "single", "titles": {"en":"English","ru":"Английский"} },
+      { "code": "Science", "kind": "cluster", "titles": {"en":"Science","ru":"Естествознание"},
+        "cluster_children": ["Biology","Chemistry","Physics"] },
+      { "code": "Biology", "kind": "single", "titles": {"en":"Biology","ru":"Биология"} },
+      { "code": "Chemistry", "kind": "single", "titles": {"en":"Chemistry","ru":"Химия"} },
+      { "code": "Physics", "kind": "single", "titles": {"en":"Physics","ru":"Физика"} },
+      { "code": "ICT", "kind": "single", "titles": {"en":"ICT","ru":"ИКТ"} },
+      { "code": "ComputerScience", "kind": "single", "titles": {"en":"Computer Science","ru":"Информатика"} },
+      { "code": "GlobalPerspectives", "kind": "single", "titles": {"en":"Global Perspectives","ru":"Глобальные перспективы"} }
+    ]
+  }
+  

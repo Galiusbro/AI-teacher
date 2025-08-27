@@ -1,0 +1,167 @@
+[
+    {
+      "id": "module_chem_physical",
+      "subject": "Chemistry",
+      "stage": "stage_advanced",
+      "title": "Physical Chemistry (thermodynamics, kinetics)",
+      "description": "Термодинамика, энтальпия и энтропия, равновесие, скорости реакций, теория столкновений, катализаторы.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_chem_reactions","module_chem_acids"],
+      "objectives": [
+        { "code": "CHEM.PHY.A.1", "description": "Рассчитывать тепловые эффекты реакций (ΔH, ΔS)", "bloom": "apply" },
+        { "code": "CHEM.PHY.A.2", "description": "Объяснять факторы, влияющие на скорость реакции", "bloom": "understand" },
+        { "code": "CHEM.PHY.A.3", "description": "Анализировать влияние катализаторов и условий на равновесие", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["calc_tasks","experiment_simulation","quiz"],
+        "summative": ["lab_report","exam_data_response"],
+        "required_artifacts": ["doc","data","photo"],
+        "rubrics": ["calculation_accuracy","data_analysis","conceptual_understanding","report_quality"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 11,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","data","interactive"],
+        "source_hints": ["thermo_tables","kinetics_experiments"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_chem_inorganic",
+      "subject": "Chemistry",
+      "stage": "stage_advanced",
+      "title": "Inorganic Chemistry (groups, transition metals)",
+      "description": "Химия групп 1, 2, 17; переходные металлы, комплексы, каталитическая активность и окраска соединений.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_chem_periodic","module_chem_metals"],
+      "objectives": [
+        { "code": "CHEM.INO.A.1", "description": "Описывать свойства элементов групп 1, 2 и 17", "bloom": "understand" },
+        { "code": "CHEM.INO.A.2", "description": "Объяснять поведение переходных металлов и их комплексов", "bloom": "apply" },
+        { "code": "CHEM.INO.A.3", "description": "Анализировать роль переходных металлов в промышленности", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["trend_tables","quiz","reaction_prediction"],
+        "summative": ["exam_structured","mini_lab_report"],
+        "required_artifacts": ["doc","data","photo"],
+        "rubrics": ["trend_analysis","reaction_prediction","industrial_application","presentation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 10,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","data","interactive"],
+        "source_hints": ["periodic_trends_refs","transition_metals_case_studies"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_chem_organic",
+      "subject": "Chemistry",
+      "stage": "stage_advanced",
+      "title": "Organic Chemistry",
+      "description": "Строение органических соединений, изомерия, функциональные группы, механизмы реакций, полимеры, биомолекулы.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_chem_bonding","module_chem_reactions"],
+      "objectives": [
+        { "code": "CHEM.ORG.A.1", "description": "Идентифицировать функциональные группы и их свойства", "bloom": "understand" },
+        { "code": "CHEM.ORG.A.2", "description": "Составлять уравнения органических реакций и механизмы", "bloom": "apply" },
+        { "code": "CHEM.ORG.A.3", "description": "Анализировать стереоизомерию и её влияние на свойства", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["reaction_mechanism_tasks","quiz","molecule_models"],
+        "summative": ["organic_exam","lab_report"],
+        "required_artifacts": ["doc","image","photo"],
+        "rubrics": ["reaction_accuracy","mechanism_logic","stereochemistry_analysis","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 9,
+        "max_lessons": 12,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","interactive"],
+        "source_hints": ["organic_mechanisms","spectroscopy_guides"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_chem_analytical",
+      "subject": "Chemistry",
+      "stage": "stage_advanced",
+      "title": "Analytical Techniques (spectroscopy, chromatography)",
+      "description": "Методы анализа: спектроскопия (IR, NMR, MS), хроматография (TLC, газовая, жидкостная). Интерпретация спектров.",
+      "recommended_hours": 25,
+      "age_hint": [16,19],
+      "prerequisites": ["module_chem_organic"],
+      "objectives": [
+        { "code": "CHEM.ANA.A.1", "description": "Объяснять принципы спектроскопии и хроматографии", "bloom": "understand" },
+        { "code": "CHEM.ANA.A.2", "description": "Интерпретировать простые спектры IR, NMR, MS", "bloom": "apply" },
+        { "code": "CHEM.ANA.A.3", "description": "Сравнивать методы анализа по точности и применимости", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["spectrum_tasks","quiz","comparison_tables"],
+        "summative": ["analytical_exam","lab_report"],
+        "required_artifacts": ["doc","data","image"],
+        "rubrics": ["spectrum_interpretation","method_comparison","accuracy","communication"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","data","image"],
+        "source_hints": ["spectroscopy_datasets","chromatography_refs"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_chem_research",
+      "subject": "Chemistry",
+      "stage": "stage_advanced",
+      "title": "Practical Skills and Research Methods",
+      "description": "Экспериментальные техники, планирование исследований, обработка данных, статистика, оформление отчётов.",
+      "recommended_hours": 25,
+      "age_hint": [16,19],
+      "prerequisites": ["module_chem_physical","module_chem_organic"],
+      "objectives": [
+        { "code": "CHEM.RES.A.1", "description": "Планировать и проводить химические эксперименты", "bloom": "apply" },
+        { "code": "CHEM.RES.A.2", "description": "Использовать статистику для анализа результатов", "bloom": "analyze" },
+        { "code": "CHEM.RES.A.3", "description": "Оформлять исследовательский отчёт с корректными ссылками", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["experiment_design","mini_project","peer_review"],
+        "summative": ["full_research_report","poster_presentation","oral_exam"],
+        "required_artifacts": ["doc","data","presentation"],
+        "rubrics": ["design_quality","data_accuracy","report_quality","communication"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.25, "guided": 0.2, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["text","data","doc","presentation"],
+        "source_hints": ["open_lab_manuals","research_guides","statistical_tools"]
+      },
+      "verification_policy": {
+        "guardian_confirmation_required": true,
+        "signature_required": true
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

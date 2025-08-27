@@ -1,0 +1,72 @@
+{
+  "id": "curriculum_science_integrated",
+  "title": "Science (Integrated)",
+  "subject": "Science",
+  "stages": [
+    {
+      "id": "stage_primary",
+      "title": "Primary",
+      "age_range": [
+        5,
+        11
+      ],
+      "modules": [
+        {
+          "id": "module_sci_living_primary",
+          "title": "Living Things and Habitats",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_sci_materials_primary",
+          "title": "Materials and Properties",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_sci_forces_primary",
+          "title": "Forces and Motion (intro)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_sci_light_sound_primary",
+          "title": "Light and Sound (intro)",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_sci_earth_primary",
+          "title": "Earth and Space",
+          "recommended_hours": 30
+        }
+      ]
+    },
+    {
+      "id": "stage_lower_secondary",
+      "title": "Lower Secondary",
+      "age_range": [
+        11,
+        14
+      ],
+      "modules": [
+        {
+          "id": "module_sci_biology_lower",
+          "title": "Cells, Organisms, Ecosystems",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_sci_chemistry_lower",
+          "title": "Matter and Simple Reactions",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_sci_physics_lower",
+          "title": "Forces, Energy, Waves",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_sci_earth_lower",
+          "title": "Earth Systems: Rocks, Weather, Climate",
+          "recommended_hours": 30
+        }
+      ]
+    }
+  ]
+}

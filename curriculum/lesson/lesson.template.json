@@ -1,0 +1,147 @@
+{
+    "id": "{{lesson_id}}",
+    "module_id": "{{module_id}}",
+    "subject": "{{subject}}",
+    "stage": "{{stage_id}}",
+    "age_hint": ["{{age_min}}", "{{age_max}}"],
+    "language": "{{lang_code}}",
+    "locale_overrides": {},
+    "title": "{{lesson_title}}",
+    "subtitle": "{{lesson_subtitle}}",
+    "type": "{{lesson_type}}",
+    "duration_minutes": "{{duration}}",
+    "prerequisites": ["{{optional_prereq_lesson_id}}"],
+    "tags": ["{{tag1}}","{{tag2}}"],
+  
+    "objectives": [
+      { "code": "{{OBJ.1}}", "description": "{{objective_1}}", "bloom": "understand" },
+      { "code": "{{OBJ.2}}", "description": "{{objective_2}}", "bloom": "apply" }
+    ],
+  
+    "materials": {
+      "required": ["{{req1}}","{{req2}}"],
+      "optional": ["{{opt1}}"],
+      "safety_notes": "{{safety_if_any}}"
+    },
+  
+    "content": {
+      "intro": "{{short_hook_or_warmup}}",
+      "theory_blocks": [
+        {
+          "heading": "{{block1_heading}}",
+          "body": "{{block1_text}}",
+          "formulas_latex": ["{{latex_1}}","{{latex_2}}"],
+          "media": ["{{media_ref_1}}","{{media_ref_2}}"]
+        }
+      ],
+      "examples": [
+        {
+          "prompt": "{{example_prompt_1}}",
+          "worked_solution": "{{example_solution_1}}",
+          "media": ["{{media_ref_3}}"]
+        }
+      ],
+      "guided_prompts": ["{{prompt1}}","{{prompt2}}"],
+      "misconceptions": ["{{misconception_1}}","{{misconception_2}}"]
+    },
+  
+    "differentiation": {
+      "easier": ["{{easier_tip_1}}"],
+      "harder": ["{{harder_tip_1}}"],
+      "fast_track_rule": "if mastery >= 0.85 → next=independent",
+      "remediate_rule": "if mastery < 0.6 → insert extra guided with extra hints"
+    },
+  
+    "interactives": [
+      {
+        "id": "act_1",
+        "title": "{{activity_title}}",
+        "type": "multiple_choice",
+        "instructions": "{{activity_instructions}}",
+        "payload": {
+          "items": [
+            { "id": "q1", "question": "{{q1}}", "choices": ["A","B","C","D"] }
+          ]
+        },
+        "answer_key": { "q1": "B" },
+        "scoring": { "max_points": 5, "auto_grader": true },
+        "feedback_rules": [
+          { "when": "correct", "message": "{{good_job}}" },
+          { "when": "incorrect", "message": "{{hint_try_again}}" }
+        ]
+      }
+    ],
+  
+    "tasks": [
+      {
+        "id": "task_practice_1",
+        "kind": "practice",
+        "instructions": "{{practice_instructions}}",
+        "inputs": ["mcq","text"],
+        "expected": {
+          "mcq_min_correct_ratio": 0.8,
+          "keywords_any": ["{{kw1}}","{{kw2}}"]
+        },
+        "allow_ai_hints": true,
+        "allow_parent_confirmation": false
+      }
+    ],
+  
+    "assessment": {
+      "mode": "formative",
+      "rubric": [
+        { "criterion": "{{crit_understanding}}", "levels": ["начинает","продвигается","уверенно"] },
+        { "criterion": "{{crit_application}}", "levels": ["начинает","продвигается","уверенно"] }
+      ],
+      "mastery_threshold": { "overall": 0.8, "mcq": 0.8, "constructed": 0.7 },
+      "proctoring": { "parent_signoff_required": false, "parent_pin": false, "camera_required": false }
+    },
+  
+    "feedback_policy": {
+      "ai_check": true,
+      "hint_after_incorrect": 2,
+      "show_worked_example_on_fail": true,
+      "retry_limit": 3
+    },
+  
+    "accessibility": {
+      "alt_text": true,
+      "keyboard_support": true,
+      "reduced_motion": true,
+      "high_contrast_mode": true,
+      "read_aloud": true,
+      "captions": true
+    },
+  
+    "resources": {
+      "allowed_media": ["text","diagram","video","interactive","audio","photo"],
+      "links": ["{{reference_or_source_link_1}}","{{reference_or_source_link_2}}"],
+      "source_hints": ["{{internal_pack_1}}","{{dataset_or_reader}}"]
+    },
+  
+    "safety": {
+      "adult_supervision": false,
+      "protective_equipment": [],
+      "hazards": []
+    },
+  
+    "telemetry": {
+      "log_events": ["mcq_submit","hint_used","retry","file_upload"],
+      "store_artifacts": ["answers","drawings","uploads"]
+    },
+  
+    "next_lesson_logic": {
+      "if_mastery_gte": 0.85,
+      "next_type_if_mastered": "independent",
+      "next_type_if_not_mastered": "guided"
+    },
+  
+    "version": "1.0.0",
+    "metadata": {
+      "authors": ["{{author_name}}"],
+      "created_at": "{{iso_datetime}}",
+      "updated_at": "{{iso_datetime}}",
+      "license": "CC-BY-4.0"
+    }
+  }
+  

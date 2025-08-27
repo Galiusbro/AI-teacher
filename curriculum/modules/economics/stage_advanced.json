@@ -1,0 +1,195 @@
+[
+    {
+      "id": "module_econ_micro",
+      "subject": "Economics",
+      "stage": "stage_advanced",
+      "title": "Microeconomics (demand/supply, elasticity, market structures)",
+      "description": "Продвинутые концепции микроэкономики: поведение потребителей и производителей, эластичность, структуры рынка (совершенная конкуренция, монополия, олигополия).",
+      "recommended_hours": 60,
+      "age_hint": [16,19],
+      "prerequisites": ["module_econ_demand_supply","module_econ_market"],
+      "objectives": [
+        { "code": "ECON.MIC.A.1", "description": "Применять концепции предельной полезности и предельных издержек", "bloom": "apply" },
+        { "code": "ECON.MIC.A.2", "description": "Анализировать рыночные структуры и поведение фирм", "bloom": "analyze" },
+        { "code": "ECON.MIC.A.3", "description": "Оценивать эффективность и последствия несовершенной конкуренции", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["case_studies","graphing_exercises","debates"],
+        "summative": ["structured_exam","extended_essay"],
+        "required_artifacts": ["doc","graph"],
+        "rubrics": ["analysis","evaluation","argument"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 12,
+        "max_lessons": 15,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","graph","interactive"],
+        "source_hints": ["market_structure_cases","econ_journals"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_econ_macro",
+      "subject": "Economics",
+      "stage": "stage_advanced",
+      "title": "Macroeconomics (inflation, growth, unemployment)",
+      "description": "Национальная экономика: совокупный спрос и предложение, экономический рост, инфляция, безработица.",
+      "recommended_hours": 60,
+      "age_hint": [16,19],
+      "prerequisites": ["module_econ_government"],
+      "objectives": [
+        { "code": "ECON.MAC.A.1", "description": "Анализировать факторы совокупного спроса и предложения", "bloom": "analyze" },
+        { "code": "ECON.MAC.A.2", "description": "Применять модели AD-AS для прогнозирования макроэкономических явлений", "bloom": "apply" },
+        { "code": "ECON.MAC.A.3", "description": "Оценивать макроэкономическую политику и её последствия", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["graphing_exercises","quiz","macro_scenarios"],
+        "summative": ["data_response_exam","policy_essay"],
+        "required_artifacts": ["doc","graph"],
+        "rubrics": ["conceptual_clarity","evaluation","policy_application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 12,
+        "max_lessons": 15,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","graph","interactive"],
+        "source_hints": ["macro_data_sets","imf_reports"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_econ_government_adv",
+      "subject": "Economics",
+      "stage": "stage_advanced",
+      "title": "Government Policies (fiscal, monetary, supply-side)",
+      "description": "Инструменты экономической политики: налоги и расходы, денежно-кредитная политика, политика предложения.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_econ_government"],
+      "objectives": [
+        { "code": "ECON.GOV.A.1", "description": "Различать инструменты фискальной, монетарной и структурной политики", "bloom": "understand" },
+        { "code": "ECON.GOV.A.2", "description": "Анализировать влияние политики на макроэкономические показатели", "bloom": "analyze" },
+        { "code": "ECON.GOV.A.3", "description": "Оценивать эффективность разных политик в долгосрочной перспективе", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["policy_debates","quiz","scenario_tasks"],
+        "summative": ["policy_report","exam_questions"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["clarity","analysis","evaluation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 10,
+        "max_lessons": 12,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","graph","interactive"],
+        "source_hints": ["policy_papers","central_bank_reports"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_econ_international_adv",
+      "subject": "Economics",
+      "stage": "stage_advanced",
+      "title": "International Economics (trade, exchange rates, globalization)",
+      "description": "Мировая торговля, валютные курсы, интеграция и глобализация.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_econ_international"],
+      "objectives": [
+        { "code": "ECON.INT.A.1", "description": "Применять теорию сравнительных преимуществ", "bloom": "apply" },
+        { "code": "ECON.INT.A.2", "description": "Анализировать факторы изменения валютных курсов", "bloom": "analyze" },
+        { "code": "ECON.INT.A.3", "description": "Оценивать последствия глобализации и интеграции", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["exchange_rate_tasks","quiz","debate"],
+        "summative": ["trade_policy_report","exam_data_response"],
+        "required_artifacts": ["doc","graph"],
+        "rubrics": ["application","evaluation","argument"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 10,
+        "max_lessons": 12,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","graph","interactive"],
+        "source_hints": ["wto_reports","imf_trade_datasets"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_econ_development",
+      "subject": "Economics",
+      "stage": "stage_advanced",
+      "title": "Development Economics (inequality, poverty, sustainability)",
+      "description": "Развитие и неравенство, бедность, устойчивое развитие, международная помощь.",
+      "recommended_hours": 45,
+      "age_hint": [16,19],
+      "prerequisites": ["module_econ_international"],
+      "objectives": [
+        { "code": "ECON.DEV.A.1", "description": "Объяснять показатели развития (HDI, GDP per capita)", "bloom": "understand" },
+        { "code": "ECON.DEV.A.2", "description": "Анализировать причины бедности и неравенства", "bloom": "analyze" },
+        { "code": "ECON.DEV.A.3", "description": "Оценивать эффективность мер устойчивого развития", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["case_studies","quiz","discussion"],
+        "summative": ["development_report","exam_essays"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["clarity","analysis","evaluation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 9,
+        "max_lessons": 11,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","data","interactive"],
+        "source_hints": ["world_bank","undp_reports"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_econ_research",
+      "subject": "Economics",
+      "stage": "stage_advanced",
+      "title": "Case Studies, Data Response & Research Project",
+      "description": "Анализ кейсов, задания с данными и самостоятельный исследовательский проект.",
+      "recommended_hours": 45,
+      "age_hint": [16,19],
+      "prerequisites": ["module_econ_micro","module_econ_macro"],
+      "objectives": [
+        { "code": "ECON.RES.A.1", "description": "Интерпретировать экономические данные и диаграммы", "bloom": "analyze" },
+        { "code": "ECON.RES.A.2", "description": "Создавать исследовательский проект с гипотезой и анализом", "bloom": "create" },
+        { "code": "ECON.RES.A.3", "description": "Презентовать результаты исследования", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["data_tasks","project_planning","peer_review"],
+        "summative": ["research_project","presentation"],
+        "required_artifacts": ["doc","presentation"],
+        "rubrics": ["data_analysis","research_quality","communication"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 9,
+        "max_lessons": 11,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["text","graph","presentation"],
+        "source_hints": ["academic_journals","econ_databases"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

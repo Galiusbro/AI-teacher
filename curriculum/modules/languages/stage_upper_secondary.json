@@ -1,0 +1,163 @@
+[
+    {
+      "id": "module_lang_listening_upper",
+      "subject": "Languages",
+      "stage": "stage_upper_secondary",
+      "title": "Listening Comprehension (conversations, interviews)",
+      "description": "Развитие навыков понимания устной речи: диалоги, интервью, более сложные аудиотексты.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_lang_listening_lower"],
+      "objectives": [
+        { "code": "LAN.LIS.U.1", "description": "Понимать основную идею и детали в сложных разговорах", "bloom": "understand" },
+        { "code": "LAN.LIS.U.2", "description": "Выделять ключевые аргументы в интервью и дискуссиях", "bloom": "analyze" },
+        { "code": "LAN.LIS.U.3", "description": "Оценивать позицию и интонацию говорящего", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["listening_tasks","note_taking","quiz"],
+        "summative": ["listening_exam","oral_response"],
+        "required_artifacts": ["audio","notes"],
+        "rubrics": ["comprehension","detail","interpretation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 50,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.25, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["audio","video","interactive"],
+        "source_hints": ["igcse_listening_pastpapers","graded_audio_materials"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lang_speaking_upper",
+      "subject": "Languages",
+      "stage": "stage_upper_secondary",
+      "title": "Oral Communication (descriptions, arguments, debates)",
+      "description": "Развитие устной речи: аргументы, описание, участие в дискуссиях и дебатах.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_lang_speaking_lower","module_lang_grammar_lower"],
+      "objectives": [
+        { "code": "LAN.SPK.U.1", "description": "Структурировать устное высказывание (начало, развитие, вывод)", "bloom": "apply" },
+        { "code": "LAN.SPK.U.2", "description": "Аргументировать свою точку зрения", "bloom": "evaluate" },
+        { "code": "LAN.SPK.U.3", "description": "Участвовать в дебатах и дискуссиях", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["role_play","debates","peer_feedback"],
+        "summative": ["oral_exam","presentation"],
+        "required_artifacts": ["audio","video"],
+        "rubrics": ["fluency","argument","interaction"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 50,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.2, "guided": 0.3, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["audio","video","slides"],
+        "source_hints": ["debate_materials","speaking_prompts"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lang_reading_upper",
+      "subject": "Languages",
+      "stage": "stage_upper_secondary",
+      "title": "Reading Comprehension (literary and non-fiction texts)",
+      "description": "Развитие чтения: художественные и публицистические тексты, статьи, эссе.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_lang_reading_lower"],
+      "objectives": [
+        { "code": "LAN.RED.U.1", "description": "Анализировать литературные и информационные тексты", "bloom": "analyze" },
+        { "code": "LAN.RED.U.2", "description": "Определять структуру текста и аргументацию", "bloom": "analyze" },
+        { "code": "LAN.RED.U.3", "description": "Интерпретировать стилистические особенности", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["reading_tasks","text_annotation","quiz"],
+        "summative": ["reading_exam","essay"],
+        "required_artifacts": ["doc","annotation"],
+        "rubrics": ["analysis","interpretation","evidence"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 50,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.25, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","annotation","interactive"],
+        "source_hints": ["igcse_reading_passages","literary_extracts"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lang_writing_upper",
+      "subject": "Languages",
+      "stage": "stage_upper_secondary",
+      "title": "Extended Writing (essays, reports, letters)",
+      "description": "Развитие письменной речи: структурированные тексты — эссе, отчёты, письма.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_lang_writing_lower","module_lang_grammar_lower"],
+      "objectives": [
+        { "code": "LAN.WRT.U.1", "description": "Писать связные и структурированные тексты", "bloom": "create" },
+        { "code": "LAN.WRT.U.2", "description": "Аргументировать точку зрения письменно", "bloom": "evaluate" },
+        { "code": "LAN.WRT.U.3", "description": "Применять сложные грамматические структуры", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["essay_drafts","peer_review","quiz"],
+        "summative": ["writing_exam","portfolio"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["coherence","argument","grammar"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 50,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","worksheet"],
+        "source_hints": ["igcse_writing_prompts","sample_essays"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lang_culture_upper",
+      "subject": "Languages",
+      "stage": "stage_upper_secondary",
+      "title": "Culture & Literature (short stories, poetry, articles)",
+      "description": "Изучение культуры и литературы через рассказы, статьи, поэзию и культурные тексты.",
+      "recommended_hours": 30,
+      "age_hint": [14,16],
+      "prerequisites": ["module_lang_culture_primary"],
+      "objectives": [
+        { "code": "LAN.CUL.U.1", "description": "Понимать и обсуждать литературные отрывки", "bloom": "analyze" },
+        { "code": "LAN.CUL.U.2", "description": "Сравнивать культурные традиции через тексты", "bloom": "evaluate" },
+        { "code": "LAN.CUL.U.3", "description": "Создавать собственные отклики (эссе, проекты)", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["text_discussions","creative_tasks","quiz"],
+        "summative": ["literature_project","oral_presentation"],
+        "required_artifacts": ["doc","presentation"],
+        "rubrics": ["analysis","expression","cultural_awareness"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 50,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","audio","video"],
+        "source_hints": ["igcse_literature_texts","cultural_materials"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

@@ -1,0 +1,131 @@
+[
+    {
+      "id": "module_music_notation_lower",
+      "subject": "Music",
+      "stage": "stage_lower_secondary",
+      "title": "Staff Notation & Keys (C/G/F)",
+      "description": "Изучение нотного стана, ключей (C, G, F), длительностей и простых партитур.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": ["module_music_pitch_primary","module_music_rhythm_primary"],
+      "objectives": [
+        { "code": "MUS.NOT.L.1", "description": "Читать и записывать ноты на нотном стане", "bloom": "apply" },
+        { "code": "MUS.NOT.L.2", "description": "Опознавать и использовать ключи C, G и F", "bloom": "understand" },
+        { "code": "MUS.NOT.L.3", "description": "Исполнять простые мелодии по нотам", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["notation_tasks","sight_reading","quiz"],
+        "summative": ["notation_test","performance_demo"],
+        "required_artifacts": ["worksheet","audio"],
+        "rubrics": ["notation_accuracy","fluency","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 40,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","audio","interactive"],
+        "source_hints": ["staff_notation","sight_reading_exercises"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_music_scales_lower",
+      "subject": "Music",
+      "stage": "stage_lower_secondary",
+      "title": "Scales & Intervals (major/minor)",
+      "description": "Мажорные и минорные гаммы, интервалы и их роль в построении музыки.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": ["module_music_notation_lower"],
+      "objectives": [
+        { "code": "MUS.SCL.L.1", "description": "Играть и петь мажорные гаммы", "bloom": "apply" },
+        { "code": "MUS.SCL.L.2", "description": "Опознавать минорные гаммы на слух", "bloom": "understand" },
+        { "code": "MUS.SCL.L.3", "description": "Сравнивать интервалы и их звучание", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["scale_drills","interval_games","quiz"],
+        "summative": ["scale_test","performance"],
+        "required_artifacts": ["worksheet","audio"],
+        "rubrics": ["intonation","fluency","analysis"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 40,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["audio","worksheet","interactive"],
+        "source_hints": ["scale_practice","interval_games"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_music_rhythm_lower",
+      "subject": "Music",
+      "stage": "stage_lower_secondary",
+      "title": "Rhythm & Meter (2/4, 3/4, 4/4, syncopation)",
+      "description": "Ритм и метр: размеры 2/4, 3/4, 4/4, синкопа и простая полиритмия.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": ["module_music_rhythm_primary"],
+      "objectives": [
+        { "code": "MUS.RHY.L.1", "description": "Считывать и исполнять ритмы в разных размерах", "bloom": "apply" },
+        { "code": "MUS.RHY.L.2", "description": "Распознавать и воспроизводить синкопу", "bloom": "apply" },
+        { "code": "MUS.RHY.L.3", "description": "Играть простые полиритмы в ансамбле", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["clap_patterns","ensemble_drills","quiz"],
+        "summative": ["performance_demo","rhythm_test"],
+        "required_artifacts": ["audio","video"],
+        "rubrics": ["rhythm_accuracy","ensemble_skills","creativity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 40,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.25, "guided": 0.35, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["audio","video","worksheet"],
+        "source_hints": ["rhythm_games","meter_exercises"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_music_perform_lower",
+      "subject": "Music",
+      "stage": "stage_lower_secondary",
+      "title": "Performance Basics (voice/instrument)",
+      "description": "Основы выступления: вокал или инструмент, простые ансамблевые пьесы.",
+      "recommended_hours": 25,
+      "age_hint": [11,14],
+      "prerequisites": ["module_music_listen_primary","module_music_create_primary"],
+      "objectives": [
+        { "code": "MUS.PRF.L.1", "description": "Исполнять простые произведения на голосе или инструменте", "bloom": "apply" },
+        { "code": "MUS.PRF.L.2", "description": "Играть в ансамбле, соблюдая ритм и динамику", "bloom": "analyze" },
+        { "code": "MUS.PRF.L.3", "description": "Демонстрировать сценическое поведение", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["mini_performances","peer_feedback","quiz"],
+        "summative": ["performance_exam","ensemble_project"],
+        "required_artifacts": ["audio","video"],
+        "rubrics": ["intonation","ensemble","stage_presence"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.2, "guided": 0.3, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["audio","video","worksheet"],
+        "source_hints": ["beginner_songs","ensemble_scores"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

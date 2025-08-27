@@ -1,0 +1,163 @@
+[
+    {
+      "id": "module_eng_critical_advanced",
+      "subject": "English",
+      "stage": "stage_advanced",
+      "title": "Critical Analysis of Texts",
+      "description": "Глубокий анализ текстов: риторика, подтекст, интертекстуальность, стилистика. Навыки критического чтения и интерпретации.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_eng_comprehension_upper","module_eng_literature_upper"],
+      "objectives": [
+        { "code": "ENG.CRT.A.1", "description": "Применять методы критического анализа к сложным текстам", "bloom": "apply" },
+        { "code": "ENG.CRT.A.2", "description": "Интерпретировать интертекстуальные и стилистические элементы", "bloom": "analyze" },
+        { "code": "ENG.CRT.A.3", "description": "Оценивать тексты в разных культурных и исторических контекстах", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["annotation_workshops","seminars","peer_review"],
+        "summative": ["critical_analysis_essay","exam_unseen_text"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["textual_insight","critical_argument","context_awareness","coherence"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 10,
+        "max_lessons": 12,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text"],
+        "source_hints": ["critical_anthologies","advanced_readings","examiner_reports"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_eng_rhetoric_advanced",
+      "subject": "English",
+      "stage": "stage_advanced",
+      "title": "Rhetoric and Argumentation",
+      "description": "Изучение риторики и аргументации: приёмы убеждения, логическая структура, стиль. Навыки публичной и письменной аргументации.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_eng_oral_upper","module_eng_writing_upper"],
+      "objectives": [
+        { "code": "ENG.RHE.A.1", "description": "Опознавать и использовать риторические приёмы", "bloom": "apply" },
+        { "code": "ENG.RHE.A.2", "description": "Строить аргументированные устные и письменные выступления", "bloom": "create" },
+        { "code": "ENG.RHE.A.3", "description": "Оценивать эффективность аргументации", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["debates","speech_analysis","rhetoric_drills"],
+        "summative": ["rhetoric_essay","oral_presentation"],
+        "required_artifacts": ["doc","presentation"],
+        "rubrics": ["argument_clarity","persuasiveness","structure","delivery"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.2, "guided": 0.3, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["text","video","presentation"],
+        "source_hints": ["classical_rhetoric","debate_handbooks","speech_collections"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_eng_academic_advanced",
+      "subject": "English",
+      "stage": "stage_advanced",
+      "title": "Academic and Research Writing",
+      "description": "Академическое письмо: работа с источниками, цитирование, структура исследовательской работы, аргументированное эссе.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_eng_writing_upper","module_eng_comprehension_upper"],
+      "objectives": [
+        { "code": "ENG.ACA.A.1", "description": "Разрабатывать исследовательские вопросы и план работы", "bloom": "create" },
+        { "code": "ENG.ACA.A.2", "description": "Интегрировать первичные и вторичные источники", "bloom": "analyze" },
+        { "code": "ENG.ACA.A.3", "description": "Оформлять работы по академическим стандартам", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["outline_review","citation_practice","draft_feedback"],
+        "summative": ["research_essay","extended_coursework"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["research_quality","evidence_integration","academic_style","argument_coherence"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 10,
+        "max_lessons": 12,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["text"],
+        "source_hints": ["style_guides","academic_journals","research_databases"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_eng_worldlit_advanced",
+      "subject": "English",
+      "stage": "stage_advanced",
+      "title": "World Literature and Comparative Studies",
+      "description": "Мировая литература и сравнительные исследования: культурный контекст, перевод, сравнение авторов и традиций.",
+      "recommended_hours": 45,
+      "age_hint": [16,19],
+      "prerequisites": ["module_eng_literature_upper"],
+      "objectives": [
+        { "code": "ENG.WLD.A.1", "description": "Сравнивать тексты разных культур и традиций", "bloom": "analyze" },
+        { "code": "ENG.WLD.A.2", "description": "Интерпретировать перевод и его влияние на смысл", "bloom": "evaluate" },
+        { "code": "ENG.WLD.A.3", "description": "Создавать сравнительные эссе по мировой литературе", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["paired_text_analysis","translation_discussions","seminars"],
+        "summative": ["comparative_world_lit_essay","exam_question"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["comparative_argument","cultural_awareness","textual_evidence","cohesion"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 9,
+        "max_lessons": 11,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text"],
+        "source_hints": ["world_lit_anthologies","comparative_guides","translation_studies"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_eng_creative_advanced",
+      "subject": "English",
+      "stage": "stage_advanced",
+      "title": "Creative Writing and Media",
+      "description": "Творческое письмо и медиа: рассказы, поэзия, сценарии, журналистика, блогинг, медиатексты.",
+      "recommended_hours": 35,
+      "age_hint": [16,19],
+      "prerequisites": ["module_eng_writing_upper"],
+      "objectives": [
+        { "code": "ENG.CRE.A.1", "description": "Создавать оригинальные тексты разных жанров (проза, поэзия, статьи)", "bloom": "create" },
+        { "code": "ENG.CRE.A.2", "description": "Адаптировать стиль письма под разные медиа", "bloom": "apply" },
+        { "code": "ENG.CRE.A.3", "description": "Редактировать тексты для публикации", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["writing_workshops","peer_review","media_tasks"],
+        "summative": ["creative_portfolio","media_piece_submission"],
+        "required_artifacts": ["doc","media"],
+        "rubrics": ["creativity","style","genre_control","audience_awareness"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["text","audio","video"],
+        "source_hints": ["creative_prompts","student_magazines","digital_media_samples"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

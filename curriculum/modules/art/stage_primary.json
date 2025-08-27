@@ -1,0 +1,135 @@
+[
+    {
+      "id": "module_art_materials_primary",
+      "subject": "Art",
+      "stage": "stage_primary",
+      "title": "Materials & Tools (pencil, crayon, paint)",
+      "description": "Знакомство с основными художественными материалами и инструментами. Ученики учатся безопасно использовать карандаш, фломастер, кисть и краски.",
+      "recommended_hours": 25,
+      "age_hint": [5,7],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "ART.MAT.1", "description": "Идентифицировать основные материалы (карандаш, кисть, краска)", "bloom": "remember" },
+        { "code": "ART.MAT.2", "description": "Правильно держать и использовать материалы для рисования", "bloom": "apply" },
+        { "code": "ART.MAT.3", "description": "Понимать простые правила безопасности и ухода за инструментами", "bloom": "understand" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["quiz","practical_demo"],
+        "summative": ["portfolio_piece"],
+        "required_artifacts": ["photo"],
+        "rubrics": ["tool_use","safety","neatness"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.25, "guided": 0.35, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video"],
+        "source_hints": ["child_art_books","open_art_resources"]
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    },
+    {
+      "id": "module_art_elements_primary",
+      "subject": "Art",
+      "stage": "stage_primary",
+      "title": "Elements of Art (line, shape, color)",
+      "description": "Изучение базовых элементов искусства: линии, формы и цвета. Дети учатся распознавать их в окружающем мире и использовать в рисунках.",
+      "recommended_hours": 30,
+      "age_hint": [7,9],
+      "prerequisites": ["module_art_materials_primary"],
+      "objectives": [
+        { "code": "ART.ELEM.1", "description": "Распознавать линии и формы в объектах", "bloom": "understand" },
+        { "code": "ART.ELEM.2", "description": "Создавать рисунки, используя разные линии и формы", "bloom": "apply" },
+        { "code": "ART.ELEM.3", "description": "Различать основные цвета и смешивать их для получения новых", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["quiz","drawing_task","exit_ticket"],
+        "summative": ["portfolio_piece"],
+        "required_artifacts": ["photo"],
+        "rubrics": ["recognition","creativity","technique"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 40,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video","interactive"],
+        "source_hints": ["child_art_books","open_art_resources"]
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    },
+    {
+      "id": "module_art_observation_primary",
+      "subject": "Art",
+      "stage": "stage_primary",
+      "title": "Observation Drawing (simple objects)",
+      "description": "Ученики учатся внимательно наблюдать за предметами и передавать их форму в простых рисунках.",
+      "recommended_hours": 25,
+      "age_hint": [8,10],
+      "prerequisites": ["module_art_elements_primary"],
+      "objectives": [
+        { "code": "ART.OBS.1", "description": "Рассматривать объекты и выделять основные формы", "bloom": "analyze" },
+        { "code": "ART.OBS.2", "description": "Создавать простые наброски по наблюдению", "bloom": "apply" },
+        { "code": "ART.OBS.3", "description": "Использовать свет и тень для передачи объёма", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["drawing_task","peer_feedback"],
+        "summative": ["portfolio_piece"],
+        "required_artifacts": ["photo"],
+        "rubrics": ["observation","proportion","shading"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 40,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.2, "guided": 0.3, "independent": 0.35, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video"],
+        "source_hints": ["still_life_examples","kids_drawing_guides"]
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    },
+    {
+      "id": "module_art_composition_primary",
+      "subject": "Art",
+      "stage": "stage_primary",
+      "title": "Composition & Story in Pictures",
+      "description": "Введение в основы композиции: расположение объектов, баланс, создание простого визуального рассказа.",
+      "recommended_hours": 20,
+      "age_hint": [9,11],
+      "prerequisites": ["module_art_observation_primary"],
+      "objectives": [
+        { "code": "ART.COMP.1", "description": "Распознавать простые композиционные приёмы (центр, баланс)", "bloom": "understand" },
+        { "code": "ART.COMP.2", "description": "Создавать рисунки с сюжетной идеей", "bloom": "create" },
+        { "code": "ART.COMP.3", "description": "Использовать расположение объектов для передачи истории", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["quiz","sketch_task"],
+        "summative": ["story_drawing_project"],
+        "required_artifacts": ["photo"],
+        "rubrics": ["storytelling","balance","creativity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 40,
+        "min_lessons": 4,
+        "max_lessons": 6,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.4, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video","interactive"],
+        "source_hints": ["children_comics","picture_books"]
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    }
+  ]
+  

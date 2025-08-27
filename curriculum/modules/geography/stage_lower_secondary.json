@@ -1,0 +1,131 @@
+[
+    {
+      "id": "module_geo_maps",
+      "subject": "Geography",
+      "stage": "stage_lower_secondary",
+      "title": "Maps, Globes and Coordinates",
+      "description": "Навыки чтения карт и глобусов: масштаб, условные знаки, координаты, широта и долгота, определение местоположения.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "GEO.MAP.L.1", "description": "Определять местоположение с использованием широты и долготы", "bloom": "apply" },
+        { "code": "GEO.MAP.L.2", "description": "Читать и интерпретировать топографические карты", "bloom": "analyze" },
+        { "code": "GEO.MAP.L.3", "description": "Применять масштаб для расчета расстояний", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["map_reading_tasks","coordinate_games","quiz"],
+        "summative": ["map_test","practical_assignment"],
+        "required_artifacts": ["worksheet","map"],
+        "rubrics": ["accuracy","map_skills","interpretation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.25, "guided": 0.35, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["map","interactive"],
+        "source_hints": ["atlases","topographic_maps","online_globe_apps"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_geo_physical",
+      "subject": "Geography",
+      "stage": "stage_lower_secondary",
+      "title": "Physical Geography (landforms, rivers, coasts)",
+      "description": "Изучение физических форм рельефа: горы, равнины, реки, побережья, процессы эрозии и отложения.",
+      "recommended_hours": 35,
+      "age_hint": [11,14],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "GEO.PHY.L.1", "description": "Объяснять процессы формирования гор, рек и побережий", "bloom": "understand" },
+        { "code": "GEO.PHY.L.2", "description": "Анализировать влияние эрозии и отложения", "bloom": "analyze" },
+        { "code": "GEO.PHY.L.3", "description": "Интерпретировать карты рельефа и диаграммы", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["diagram_tasks","group_discussions","quiz"],
+        "summative": ["short_report","exam_questions"],
+        "required_artifacts": ["doc","diagram"],
+        "rubrics": ["conceptual_clarity","diagram_accuracy","analysis"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["diagram","video"],
+        "source_hints": ["physical_geo_texts","process_videos","erosion_case_studies"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_geo_weather",
+      "subject": "Geography",
+      "stage": "stage_lower_secondary",
+      "title": "Weather and Climate",
+      "description": "Изучение погоды и климата: атмосферные процессы, метеорологические приборы, климатические пояса.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "GEO.WEA.L.1", "description": "Определять факторы, влияющие на погоду", "bloom": "understand" },
+        { "code": "GEO.WEA.L.2", "description": "Пользоваться простыми метеорологическими приборами", "bloom": "apply" },
+        { "code": "GEO.WEA.L.3", "description": "Сравнивать климатические зоны мира", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["weather_diary","instrument_practice","quiz"],
+        "summative": ["climate_zone_project","exam_questions"],
+        "required_artifacts": ["doc","chart"],
+        "rubrics": ["observation","application","analysis"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["chart","interactive"],
+        "source_hints": ["weather_data_sets","climate_maps","school_weather_station"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_geo_human",
+      "subject": "Geography",
+      "stage": "stage_lower_secondary",
+      "title": "Human Geography (settlements, population)",
+      "description": "Изучение расселения людей, урбанизации, роста населения и влияния человека на географическую среду.",
+      "recommended_hours": 35,
+      "age_hint": [11,14],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "GEO.HUM.L.1", "description": "Различать типы поселений и их особенности", "bloom": "understand" },
+        { "code": "GEO.HUM.L.2", "description": "Анализировать изменения численности населения и миграцию", "bloom": "analyze" },
+        { "code": "GEO.HUM.L.3", "description": "Оценивать влияние урбанизации на окружающую среду", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["population_graphs","settlement_maps","quiz"],
+        "summative": ["case_study_report","exam_questions"],
+        "required_artifacts": ["doc","graph"],
+        "rubrics": ["map_skills","data_analysis","argument"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["map","graph","text"],
+        "source_hints": ["population_data_sets","settlement_case_studies","urbanisation_reports"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

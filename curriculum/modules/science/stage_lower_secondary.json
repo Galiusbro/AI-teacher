@@ -1,0 +1,130 @@
+[
+    {
+      "id": "module_sci_biology_lower",
+      "subject": "Science",
+      "stage": "stage_lower_secondary",
+      "title": "Cells, Organisms, Ecosystems",
+      "description": "Клетки и их функции, органы и системы организма, экосистемы и круговорот веществ.",
+      "recommended_hours": 40,
+      "age_hint": [11,14],
+      "prerequisites": ["module_sci_living_primary"],
+      "objectives": [
+        { "code": "SCI.BIO.L.1", "description": "Определять основные части клетки", "bloom": "remember" },
+        { "code": "SCI.BIO.L.2", "description": "Объяснять функции органов и систем организма", "bloom": "understand" },
+        { "code": "SCI.BIO.L.3", "description": "Анализировать простые цепи питания и экосистемы", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["microscope_virtual","diagram_tasks","quiz"],
+        "summative": ["lab_report","presentation"],
+        "required_artifacts": ["diagram","doc"],
+        "rubrics": ["clarity","observation","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["diagram","video","interactive"],
+        "source_hints": ["virtual_cell_apps","ecosystem_simulators"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_sci_chemistry_lower",
+      "subject": "Science",
+      "stage": "stage_lower_secondary",
+      "title": "Matter and Simple Reactions",
+      "description": "Строение вещества, атомы и молекулы, простые химические реакции (горение, нейтрализация).",
+      "recommended_hours": 35,
+      "age_hint": [11,14],
+      "prerequisites": ["module_sci_materials_primary"],
+      "objectives": [
+        { "code": "SCI.CHE.L.1", "description": "Объяснять разницу между атомами и молекулами", "bloom": "understand" },
+        { "code": "SCI.CHE.L.2", "description": "Наблюдать простые реакции (газ, осадок, тепло)", "bloom": "apply" },
+        { "code": "SCI.CHE.L.3", "description": "Записывать простые уравнения реакций", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["virtual_experiments","quiz","observation_tasks"],
+        "summative": ["lab_report","mini_project"],
+        "required_artifacts": ["doc","photo"],
+        "rubrics": ["accuracy","safety","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 40,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["video","simulation","worksheet"],
+        "source_hints": ["phet_chemistry","kids_chem_experiments"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_sci_physics_lower",
+      "subject": "Science",
+      "stage": "stage_lower_secondary",
+      "title": "Forces, Energy, Waves",
+      "description": "Основы физики: законы движения, энергия, простые машины, волны (звук, свет).",
+      "recommended_hours": 35,
+      "age_hint": [11,14],
+      "prerequisites": ["module_sci_forces_primary","module_sci_light_sound_primary"],
+      "objectives": [
+        { "code": "SCI.PHY.L.1", "description": "Применять законы движения к простым задачам", "bloom": "apply" },
+        { "code": "SCI.PHY.L.2", "description": "Объяснять виды энергии и их преобразования", "bloom": "understand" },
+        { "code": "SCI.PHY.L.3", "description": "Демонстрировать свойства звуковых и световых волн", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["graphing_tasks","quiz","simulation"],
+        "summative": ["exam_questions","video_demo"],
+        "required_artifacts": ["graph","video"],
+        "rubrics": ["calculation","clarity","observation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["simulation","graph","video"],
+        "source_hints": ["phet_forces_energy","wave_simulators"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_sci_earth_lower",
+      "subject": "Science",
+      "stage": "stage_lower_secondary",
+      "title": "Earth Systems: Rocks, Weather, Climate",
+      "description": "Горные породы, круговорот воды, климат и погода, изменение климата.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": ["module_sci_earth_primary"],
+      "objectives": [
+        { "code": "SCI.EAR.L.1", "description": "Классифицировать основные типы горных пород", "bloom": "remember" },
+        { "code": "SCI.EAR.L.2", "description": "Объяснять круговорот воды и его значение", "bloom": "understand" },
+        { "code": "SCI.EAR.L.3", "description": "Анализировать влияние климата на жизнь человека", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["observation_logs","quiz","map_tasks"],
+        "summative": ["mini_project","presentation"],
+        "required_artifacts": ["doc","slide"],
+        "rubrics": ["clarity","analysis","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 40,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.2, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["video","map","worksheet"],
+        "source_hints": ["earth_science_for_kids","weather_apps"]
+      },
+      "version": "1.0.0"
+    }
+  ]

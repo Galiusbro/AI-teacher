@@ -1,0 +1,195 @@
+[
+    {
+      "id": "module_chem_atoms",
+      "subject": "Chemistry",
+      "stage": "stage_upper_secondary",
+      "title": "Atoms, Elements and Compounds",
+      "description": "Структура атома, изотопы, химические элементы, соединения и смеси. Введение в нотацию и формулы.",
+      "recommended_hours": 20,
+      "age_hint": [14,16],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "CHEM.ATM.1", "description": "Описывать строение атома и расположение электронов", "bloom": "understand" },
+        { "code": "CHEM.ATM.2", "description": "Различать элементы, соединения и смеси", "bloom": "apply" },
+        { "code": "CHEM.ATM.3", "description": "Записывать химические формулы и символы элементов", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["quiz","diagram_labeling","classification_task"],
+        "summative": ["topic_test","structured_exam_questions"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["terminology","symbol_usage","conceptual_clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 4,
+        "max_lessons": 6,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","interactive"],
+        "source_hints": ["open_chemistry_refs","periodic_table_resources"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_chem_bonding",
+      "subject": "Chemistry",
+      "stage": "stage_upper_secondary",
+      "title": "Chemical Bonding and Structure",
+      "description": "Ионные, ковалентные и металлические связи. Связь и свойства веществ, кристаллические решётки, простые молекулы.",
+      "recommended_hours": 25,
+      "age_hint": [14,16],
+      "prerequisites": ["module_chem_atoms"],
+      "objectives": [
+        { "code": "CHEM.BND.1", "description": "Сравнивать ионные, ковалентные и металлические связи", "bloom": "analyze" },
+        { "code": "CHEM.BND.2", "description": "Объяснять связь между типом связи и свойствами веществ", "bloom": "evaluate" },
+        { "code": "CHEM.BND.3", "description": "Строить электронные диаграммы для простых молекул", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["bonding_diagram_tasks","quiz","comparison_table"],
+        "summative": ["structured_exam","case_question"],
+        "required_artifacts": ["doc","image"],
+        "rubrics": ["diagram_accuracy","application","reasoning"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","interactive"],
+        "source_hints": ["molecular_models","bonding_visualizations"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_chem_reactions",
+      "subject": "Chemistry",
+      "stage": "stage_upper_secondary",
+      "title": "Chemical Reactions and Stoichiometry",
+      "description": "Законы сохранения массы, уравнивание реакций, расчёты (массы, моли, объёмы), типы реакций (соединение, разложение, замещение).",
+      "recommended_hours": 30,
+      "age_hint": [14,16],
+      "prerequisites": ["module_chem_atoms","module_chem_bonding"],
+      "objectives": [
+        { "code": "CHEM.RXN.1", "description": "Составлять и уравнивать химические уравнения", "bloom": "apply" },
+        { "code": "CHEM.RXN.2", "description": "Выполнять стехиометрические расчёты с мольными соотношениями", "bloom": "apply" },
+        { "code": "CHEM.RXN.3", "description": "Классифицировать реакции по типам", "bloom": "understand" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["calc_tasks","quiz","reaction_sorting"],
+        "summative": ["stoichiometry_test","lab_report"],
+        "required_artifacts": ["doc","photo"],
+        "rubrics": ["calculation_accuracy","equation_balance","classification"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 6,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","data","interactive"],
+        "source_hints": ["stoichiometry_practice","open_lab_guides"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_chem_periodic",
+      "subject": "Chemistry",
+      "stage": "stage_upper_secondary",
+      "title": "The Periodic Table",
+      "description": "Структура периодической таблицы, группы и периоды, тренды свойств (атомный радиус, ионные энергии, реактивность).",
+      "recommended_hours": 25,
+      "age_hint": [14,16],
+      "prerequisites": ["module_chem_atoms"],
+      "objectives": [
+        { "code": "CHEM.PER.1", "description": "Описывать организацию Периодической таблицы", "bloom": "understand" },
+        { "code": "CHEM.PER.2", "description": "Анализировать тренды свойств в периодах и группах", "bloom": "analyze" },
+        { "code": "CHEM.PER.3", "description": "Прогнозировать свойства элементов на основе положения", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["trend_graphing","quiz","table_annotation"],
+        "summative": ["structured_exam","data_response"],
+        "required_artifacts": ["doc","data"],
+        "rubrics": ["trend_analysis","prediction_accuracy","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","data","interactive"],
+        "source_hints": ["periodic_trends_refs","IUPAC_resources"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_chem_acids",
+      "subject": "Chemistry",
+      "stage": "stage_upper_secondary",
+      "title": "Acids, Bases and Salts",
+      "description": "Свойства кислот и оснований, индикаторы, реакции нейтрализации, получение солей и pH-шкала.",
+      "recommended_hours": 20,
+      "age_hint": [14,16],
+      "prerequisites": ["module_chem_reactions"],
+      "objectives": [
+        { "code": "CHEM.ACD.1", "description": "Объяснять понятия кислот, оснований и pH", "bloom": "understand" },
+        { "code": "CHEM.ACD.2", "description": "Составлять уравнения реакций нейтрализации", "bloom": "apply" },
+        { "code": "CHEM.ACD.3", "description": "Проводить опыты по получению солей", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["lab_simulation","quiz","reaction_equations"],
+        "summative": ["practical_report","exam_questions"],
+        "required_artifacts": ["doc","photo"],
+        "rubrics": ["conceptual_clarity","lab_accuracy","equation_balance"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 4,
+        "max_lessons": 6,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","video","interactive"],
+        "source_hints": ["acid_base_sims","lab_manuals"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_chem_metals",
+      "subject": "Chemistry",
+      "stage": "stage_upper_secondary",
+      "title": "Metals and Reactivity",
+      "description": "Металлы, их свойства, активности, ряды реактивности, методы извлечения и коррозия.",
+      "recommended_hours": 20,
+      "age_hint": [14,16],
+      "prerequisites": ["module_chem_reactions","module_chem_periodic"],
+      "objectives": [
+        { "code": "CHEM.MET.1", "description": "Составлять ряд активности металлов", "bloom": "apply" },
+        { "code": "CHEM.MET.2", "description": "Объяснять методы извлечения металлов", "bloom": "understand" },
+        { "code": "CHEM.MET.3", "description": "Оценивать методы защиты от коррозии", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["reactivity_experiments","quiz","comparison_tasks"],
+        "summative": ["structured_exam","lab_report"],
+        "required_artifacts": ["doc","photo"],
+        "rubrics": ["accuracy","reasoning","safety","evaluation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 4,
+        "max_lessons": 6,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","video","interactive"],
+        "source_hints": ["metal_extraction_refs","corrosion_case_studies"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

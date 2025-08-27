@@ -1,0 +1,163 @@
+[
+    {
+      "id": "module_lang_listening_lower",
+      "subject": "Languages",
+      "stage": "stage_lower_secondary",
+      "title": "Listening to Conversations & Everyday Speech",
+      "description": "Развитие понимания устной речи: диалоги, простые аудио и видео материалы из повседневной жизни.",
+      "recommended_hours": 35,
+      "age_hint": [11,14],
+      "prerequisites": ["module_lang_listening_primary"],
+      "objectives": [
+        { "code": "LAN.LIS.L.1", "description": "Понимать смысл простых разговоров", "bloom": "understand" },
+        { "code": "LAN.LIS.L.2", "description": "Распознавать ключевые слова и выражения", "bloom": "analyze" },
+        { "code": "LAN.LIS.L.3", "description": "Следовать устным инструкциям", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["listening_exercises","note_taking","quiz"],
+        "summative": ["listening_test","oral_response"],
+        "required_artifacts": ["audio"],
+        "rubrics": ["comprehension","response","accuracy"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 40,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.25, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["audio","video","interactive"],
+        "source_hints": ["graded_listening","school_audio_materials"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lang_speaking_lower",
+      "subject": "Languages",
+      "stage": "stage_lower_secondary",
+      "title": "Speaking (introductions, opinions, simple dialogues)",
+      "description": "Практика устной речи: обмен мнениями, простые диалоги и монологи.",
+      "recommended_hours": 35,
+      "age_hint": [11,14],
+      "prerequisites": ["module_lang_speaking_primary"],
+      "objectives": [
+        { "code": "LAN.SPK.L.1", "description": "Использовать лексику для описания себя и окружающих", "bloom": "apply" },
+        { "code": "LAN.SPK.L.2", "description": "Выражать простые мнения и предпочтения", "bloom": "apply" },
+        { "code": "LAN.SPK.L.3", "description": "Участвовать в коротких диалогах", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["pair_work","role_play","quiz"],
+        "summative": ["oral_test","presentation"],
+        "required_artifacts": ["audio"],
+        "rubrics": ["fluency","pronunciation","interaction"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 40,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.2, "guided": 0.3, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["audio","video"],
+        "source_hints": ["role_play_materials","dialogue_samples"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lang_reading_lower",
+      "subject": "Languages",
+      "stage": "stage_lower_secondary",
+      "title": "Reading Short Texts (emails, stories, news)",
+      "description": "Развитие навыков чтения: короткие рассказы, электронные письма, адаптированные новости.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": ["module_lang_reading_primary"],
+      "objectives": [
+        { "code": "LAN.RED.L.1", "description": "Читать и понимать короткие тексты", "bloom": "understand" },
+        { "code": "LAN.RED.L.2", "description": "Определять основную мысль текста", "bloom": "analyze" },
+        { "code": "LAN.RED.L.3", "description": "Выделять ключевые факты и детали", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["reading_tasks","highlighting_exercises","quiz"],
+        "summative": ["reading_test","comprehension_questions"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["comprehension","analysis","accuracy"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 40,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["doc","interactive"],
+        "source_hints": ["graded_readers","adapted_news"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lang_writing_lower",
+      "subject": "Languages",
+      "stage": "stage_lower_secondary",
+      "title": "Writing Short Texts (emails, notes, essays)",
+      "description": "Письмо: короткие заметки, письма, простые эссе с базовыми связками.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": ["module_lang_writing_primary"],
+      "objectives": [
+        { "code": "LAN.WRT.L.1", "description": "Составлять простые письма и заметки", "bloom": "apply" },
+        { "code": "LAN.WRT.L.2", "description": "Писать короткие эссе по знакомым темам", "bloom": "create" },
+        { "code": "LAN.WRT.L.3", "description": "Применять базовые связки и вводные слова", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["writing_tasks","peer_review","quiz"],
+        "summative": ["writing_test","essay"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["clarity","grammar","coherence"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 40,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","worksheet"],
+        "source_hints": ["writing_prompts","email_samples"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lang_grammar_lower",
+      "subject": "Languages",
+      "stage": "stage_lower_secondary",
+      "title": "Basic Grammar (tenses, pronouns, sentence order)",
+      "description": "Систематизация грамматики: времена, местоимения, порядок слов, базовые правила согласования.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "LAN.GRM.L.1", "description": "Применять основные времена (present, past, future)", "bloom": "apply" },
+        { "code": "LAN.GRM.L.2", "description": "Использовать личные и притяжательные местоимения", "bloom": "apply" },
+        { "code": "LAN.GRM.L.3", "description": "Строить предложения в правильном порядке", "bloom": "understand" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["grammar_drills","gap_fills","quiz"],
+        "summative": ["grammar_test","short_writing_task"],
+        "required_artifacts": ["worksheet"],
+        "rubrics": ["accuracy","application","consistency"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 40,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","doc","interactive"],
+        "source_hints": ["basic_grammar_books","language_apps"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

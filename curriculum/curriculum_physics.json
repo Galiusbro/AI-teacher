@@ -1,0 +1,87 @@
+{
+  "id": "curriculum_physics",
+  "title": "Physics",
+  "subject": "Physics",
+  "stages": [
+    {
+      "id": "stage_upper_secondary",
+      "title": "Upper Secondary (IGCSE Physics)",
+      "age_range": [
+        14,
+        16
+      ],
+      "modules": [
+        {
+          "id": "module_phys_measurements",
+          "title": "Measurements and Units",
+          "recommended_hours": 15
+        },
+        {
+          "id": "module_phys_mechanics",
+          "title": "Motion and Forces",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_phys_energy",
+          "title": "Energy, Work and Power",
+          "recommended_hours": 20
+        },
+        {
+          "id": "module_phys_waves",
+          "title": "Waves (light, sound)",
+          "recommended_hours": 20
+        },
+        {
+          "id": "module_phys_electricity",
+          "title": "Electricity and Magnetism",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_phys_atomic",
+          "title": "Atomic Physics",
+          "recommended_hours": 20
+        }
+      ]
+    },
+    {
+      "id": "stage_advanced",
+      "title": "Advanced (A Level Physics)",
+      "age_range": [
+        16,
+        19
+      ],
+      "modules": [
+        {
+          "id": "module_phys_mechanics_adv",
+          "title": "Advanced Mechanics and Dynamics",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_phys_waves_adv",
+          "title": "Wave Phenomena and Optics",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_phys_fields",
+          "title": "Fields (gravitational, electric, magnetic)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_phys_nuclear",
+          "title": "Nuclear and Particle Physics",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_phys_thermal",
+          "title": "Thermal Physics",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_phys_research",
+          "title": "Experimental and Research Skills",
+          "recommended_hours": 20
+        }
+      ]
+    }
+  ]
+}

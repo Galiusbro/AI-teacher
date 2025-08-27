@@ -1,0 +1,163 @@
+[
+    {
+      "id": "module_lit_poetry_adv",
+      "subject": "EnglishLiterature",
+      "stage": "stage_advanced",
+      "title": "Advanced Poetry (forms, schools, comparative study)",
+      "description": "Углублённый анализ поэзии: формы и размеры, поэтические школы и эпохи, интертекст и сравнительное чтение.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_lit_poetry_igcse"],
+      "objectives": [
+        { "code": "LIT.POE.A.1", "description": "Различать и анализировать формы/метры и их эффект", "bloom": "analyze" },
+        { "code": "LIT.POE.A.2", "description": "Интерпретировать поэтические стратегии в историко-литературном контексте", "bloom": "evaluate" },
+        { "code": "LIT.POE.A.3", "description": "Писать сравнительные эссе на базе нескольких поэтов/школ", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["close_reading_seminars","prosody_workshops","comparison_grids"],
+        "summative": ["unseen_poem_essay_advanced","comparative_poetry_essay"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["technical_accuracy","contextual_understanding","comparative_argument","textual_evidence"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 10,
+        "max_lessons": 12,
+        "mix": { "concept": 0.25, "guided": 0.35, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","audio"],
+        "source_hints": ["advanced_anthologies","critical_essays","public_domain_collections"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lit_drama_adv",
+      "subject": "EnglishLiterature",
+      "stage": "stage_advanced",
+      "title": "Advanced Drama (classical to modern, performance context)",
+      "description": "Драма от античности до современности: поэтика жанра, постановочный и культурный контекст, интерпретации.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_lit_drama_igcse"],
+      "objectives": [
+        { "code": "LIT.DRA.A.1", "description": "Анализировать сценический язык, ремарки и композицию", "bloom": "analyze" },
+        { "code": "LIT.DRA.A.2", "description": "Сопоставлять режиссёрские и исторические интерпретации", "bloom": "evaluate" },
+        { "code": "LIT.DRA.A.3", "description": "Создавать аргументированные эссе по extract и whole-text вопросам", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["director_notebooks","scene_performance","context_briefs"],
+        "summative": ["drama_extract_essay_adv","whole_text_argument_essay","performance_reflection"],
+        "required_artifacts": ["doc","presentation"],
+        "rubrics": ["textual_analysis","context_awareness","argument_structure","communication"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 10,
+        "max_lessons": 12,
+        "mix": { "concept": 0.25, "guided": 0.35, "independent": 0.2, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["text","video"],
+        "source_hints": ["public_domain_classics","licensed_modern_plays","recorded_performances"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lit_prose_adv",
+      "subject": "EnglishLiterature",
+      "stage": "stage_advanced",
+      "title": "Advanced Prose (novels, narrative techniques, critical theories)",
+      "description": "Проза и повествовательные стратегии: фокализация, надёжность рассказчика, стиль, критические подходы (формализм, феминизм и др.).",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_lit_prose_igcse"],
+      "objectives": [
+        { "code": "LIT.PRO.A.1", "description": "Разбирать повествовательные техники и их влияние на смысл", "bloom": "analyze" },
+        { "code": "LIT.PRO.A.2", "description": "Применять критические теории к анализу прозы", "bloom": "apply" },
+        { "code": "LIT.PRO.A.3", "description": "Писать исследовательские эссе с опорой на вторичную литературу", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["theory_applied_notes","extract_commentaries","peer_review"],
+        "summative": ["research_essay_with_sources","timed_extract_essay"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["theoretical_application","textual_evidence","structure","academic_style"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 10,
+        "max_lessons": 12,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text"],
+        "source_hints": ["set_texts_advanced","critical_articles","style_guides"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lit_comparison_adv",
+      "subject": "EnglishLiterature",
+      "stage": "stage_advanced",
+      "title": "Comparative & Contextual Studies (literary movements, culture)",
+      "description": "Сравнительное и контекстуальное чтение: литературные течения, культурные контексты, интертекстуальные связи.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_lit_poetry_adv","module_lit_prose_adv","module_lit_drama_adv"],
+      "objectives": [
+        { "code": "LIT.CMP.A.1", "description": "Сопоставлять тексты с учётом движений и контекстов", "bloom": "analyze" },
+        { "code": "LIT.CMP.A.2", "description": "Оценивать интертекстуальные связи и культурные коды", "bloom": "evaluate" },
+        { "code": "LIT.CMP.A.3", "description": "Создавать сравнительные аргументы с опорой на первичные/вторичные источники", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["context_maps","paired_extract_seminars","thesis_workshops"],
+        "summative": ["comparative_context_essay","exam_comparison_question_adv"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["comparative_structure","contextual_precision","insight","cohesion"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 10,
+        "max_lessons": 12,
+        "mix": { "concept": 0.2, "guided": 0.35, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text"],
+        "source_hints": ["movement_surveys","critical_companions","teacher_curated_pairs"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lit_coursework_adv",
+      "subject": "EnglishLiterature",
+      "stage": "stage_advanced",
+      "title": "Independent Coursework / Research Essay",
+      "description": "Индивидуальная исследовательская работа: выбор темы, формулировка тезиса, работа с источниками, академическое письмо и устная защита.",
+      "recommended_hours": 45,
+      "age_hint": [16,19],
+      "prerequisites": ["module_lit_essay_igcse","module_lit_prose_adv"],
+      "objectives": [
+        { "code": "LIT.CWK.A.1", "description": "Проектировать исследование (вопросы, корпус текстов, метод)", "bloom": "create" },
+        { "code": "LIT.CWK.A.2", "description": "Интегрировать первичные и вторичные источники в аргументацию", "bloom": "analyze" },
+        { "code": "LIT.CWK.A.3", "description": "Представлять и защищать работу в письменной и устной форме", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["proposal_review","outline_clinic","draft_peer_feedback"],
+        "summative": ["research_essay_coursework","oral_presentation_with_QA"],
+        "required_artifacts": ["doc","presentation"],
+        "rubrics": ["research_quality","evidence_integration","argument_coherence","communication"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 9,
+        "max_lessons": 11,
+        "mix": { "concept": 0.15, "guided": 0.25, "independent": 0.4, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["text"],
+        "source_hints": ["library_databases","style_guides","mark_schemes_like"]
+      },
+      "version": "1.0.0"
+    }
+]
+  

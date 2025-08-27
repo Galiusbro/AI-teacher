@@ -1,0 +1,131 @@
+[
+    {
+      "id": "module_pe_anatomy_upper",
+      "subject": "PE",
+      "stage": "stage_upper_secondary",
+      "title": "Anatomy & Physiology for Sport",
+      "description": "Основы анатомии и физиологии: дыхательная, сердечно-сосудистая и мышечная системы. Их роль в физической активности.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_pe_fitness_lower"],
+      "objectives": [
+        { "code": "PE.ANA.U.1", "description": "Идентифицировать основные мышцы и суставы", "bloom": "remember" },
+        { "code": "PE.ANA.U.2", "description": "Объяснять влияние физической нагрузки на дыхание и сердце", "bloom": "understand" },
+        { "code": "PE.ANA.U.3", "description": "Применять знания физиологии при планировании тренировок", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["diagram_tasks","video_lessons","quiz"],
+        "summative": ["annotated_diagram","short_exam"],
+        "required_artifacts": ["doc","diagram"],
+        "rubrics": ["accuracy","clarity","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["video","diagram","worksheet"],
+        "source_hints": ["anatomy_for_teens","sport_science_videos"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_pe_training_upper",
+      "subject": "PE",
+      "stage": "stage_upper_secondary",
+      "title": "Training Methods & Fitness Planning",
+      "description": "Методы тренировки: кардио, силовые, интервальные; составление индивидуального плана с учётом целей и безопасности.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_pe_fitness_lower","module_pe_anatomy_upper"],
+      "objectives": [
+        { "code": "PE.TRA.U.1", "description": "Сравнивать разные методы тренировки (HIIT, кардио, силовые)", "bloom": "analyze" },
+        { "code": "PE.TRA.U.2", "description": "Разрабатывать персональный фитнес-план", "bloom": "create" },
+        { "code": "PE.TRA.U.3", "description": "Оценивать эффективность выполненных тренировок", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["fitness_logs","video_routines","peer_feedback"],
+        "summative": ["training_plan_project","recorded_workout"],
+        "required_artifacts": ["log","video","doc"],
+        "rubrics": ["creativity","accuracy","consistency"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 50,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["video","worksheet","log"],
+        "source_hints": ["youtube_workout_guides","fitness_planning_templates"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_pe_psychology_upper",
+      "subject": "PE",
+      "stage": "stage_upper_secondary",
+      "title": "Psychology of Sport & Motivation",
+      "description": "Основы спортивной психологии: мотивация, цели, стресс и работа с вниманием.",
+      "recommended_hours": 30,
+      "age_hint": [14,16],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "PE.PSY.U.1", "description": "Понимать роль мотивации в достижении спортивных целей", "bloom": "understand" },
+        { "code": "PE.PSY.U.2", "description": "Применять техники самоконтроля и концентрации", "bloom": "apply" },
+        { "code": "PE.PSY.U.3", "description": "Оценивать влияние стресса на результативность", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["reflection_tasks","case_studies","quiz"],
+        "summative": ["essay","presentation"],
+        "required_artifacts": ["doc","slide"],
+        "rubrics": ["clarity","application","self_reflection"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 40,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.2, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["video","worksheet","slide"],
+        "source_hints": ["motivation_in_sport","mindfulness_for_teens"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_pe_practical_upper",
+      "subject": "PE",
+      "stage": "stage_upper_secondary",
+      "title": "Practical Performance & Video Assessment",
+      "description": "Практика в домашних условиях: выполнение упражнений, запись на видео, анализ движений и прогресса.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_pe_training_upper"],
+      "objectives": [
+        { "code": "PE.PRF.U.1", "description": "Выполнять тренировочные комплексы дома", "bloom": "apply" },
+        { "code": "PE.PRF.U.2", "description": "Демонстрировать правильную технику упражнений", "bloom": "analyze" },
+        { "code": "PE.PRF.U.3", "description": "Использовать видеозапись для анализа и корректировки", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["video_practice","self_reflection","checklist"],
+        "summative": ["video_portfolio","parent_confirmation"],
+        "required_artifacts": ["video","log"],
+        "rubrics": ["form","effort","progress"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 50,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["video","log","worksheet"],
+        "source_hints": ["igcse_pe_video_examples","fitness_tracking_apps"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

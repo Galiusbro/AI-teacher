@@ -1,0 +1,127 @@
+{
+  "id": "curriculum_pe",
+  "title": "Physical Education (Cambridge-style)",
+  "subject": "PE",
+  "stages": [
+    {
+      "id": "stage_primary",
+      "title": "Primary",
+      "age_range": [
+        5,
+        11
+      ],
+      "modules": [
+        {
+          "id": "module_pe_motor_primary",
+          "title": "Fundamental Motor Skills (running, jumping, throwing)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_pe_games_primary",
+          "title": "Simple Games & Teamwork",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_pe_health_primary",
+          "title": "Healthy Habits (hydration, rest, hygiene)",
+          "recommended_hours": 20
+        }
+      ]
+    },
+    {
+      "id": "stage_lower_secondary",
+      "title": "Lower Secondary",
+      "age_range": [
+        11,
+        14
+      ],
+      "modules": [
+        {
+          "id": "module_pe_fitness_lower",
+          "title": "Fitness Foundations (cardio, strength, flexibility)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_pe_games_lower",
+          "title": "Team Sports & Cooperation",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_pe_safety_lower",
+          "title": "Injury Prevention & First Aid Basics",
+          "recommended_hours": 20
+        },
+        {
+          "id": "module_pe_health_lower",
+          "title": "Health, Nutrition and Lifestyle",
+          "recommended_hours": 20
+        }
+      ]
+    },
+    {
+      "id": "stage_upper_secondary",
+      "title": "Upper Secondary (IGCSE PE)",
+      "age_range": [
+        14,
+        16
+      ],
+      "modules": [
+        {
+          "id": "module_pe_anatomy_upper",
+          "title": "Anatomy & Physiology for Sport",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_pe_training_upper",
+          "title": "Training Methods & Fitness Planning",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_pe_psychology_upper",
+          "title": "Psychology of Sport & Motivation",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_pe_practical_upper",
+          "title": "Practical Performance & Video Assessment",
+          "recommended_hours": 40
+        }
+      ]
+    },
+    {
+      "id": "stage_advanced",
+      "title": "Advanced (A Level PE)",
+      "age_range": [
+        16,
+        19
+      ],
+      "modules": [
+        {
+          "id": "module_pe_biomechanics_adv",
+          "title": "Biomechanics & Movement Analysis",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_pe_exercise_physiology_adv",
+          "title": "Exercise Physiology",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_pe_psychology_adv",
+          "title": "Advanced Sports Psychology",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_pe_performance_adv",
+          "title": "Performance Analysis & Coaching",
+          "recommended_hours": 45
+        },
+        {
+          "id": "module_pe_research_adv",
+          "title": "Research Project (sports science)",
+          "recommended_hours": 40
+        }
+      ]
+    }
+  ]
+}

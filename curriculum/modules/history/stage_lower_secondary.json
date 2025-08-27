@@ -1,0 +1,131 @@
+[
+    {
+      "id": "module_hist_skills_lower",
+      "subject": "History",
+      "stage": "stage_lower_secondary",
+      "title": "Historical Skills (sources, timelines, cause & consequence)",
+      "description": "Введение в историческое мышление: работа с источниками, понимание хронологии, установление причинно-следственных связей.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "HIS.SKL.L.1", "description": "Читать и интерпретировать простые исторические источники", "bloom": "analyze" },
+        { "code": "HIS.SKL.L.2", "description": "Строить базовые хронологические линии (таймлайны)", "bloom": "apply" },
+        { "code": "HIS.SKL.L.3", "description": "Определять причины и последствия событий", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["timeline_tasks","source_questions","quiz"],
+        "summative": ["document_analysis","short_essay"],
+        "required_artifacts": ["doc","timeline"],
+        "rubrics": ["source_use","chronology","cause_consequence"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","timeline","interactive"],
+        "source_hints": ["intro_history_texts","source_packs","digital_timelines"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_hist_ancient",
+      "subject": "History",
+      "stage": "stage_lower_secondary",
+      "title": "Ancient Civilisations",
+      "description": "История древних цивилизаций: Египет, Месопотамия, Индия, Китай, Греция и Рим. Основные достижения и наследие.",
+      "recommended_hours": 35,
+      "age_hint": [11,14],
+      "prerequisites": ["module_hist_skills_lower"],
+      "objectives": [
+        { "code": "HIS.ANC.L.1", "description": "Описывать ключевые достижения древних цивилизаций", "bloom": "understand" },
+        { "code": "HIS.ANC.L.2", "description": "Сравнивать политические и культурные системы древних обществ", "bloom": "analyze" },
+        { "code": "HIS.ANC.L.3", "description": "Оценивать наследие древних цивилизаций", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["map_tasks","civilisation_charts","quiz"],
+        "summative": ["essay","source_based_test"],
+        "required_artifacts": ["doc","map"],
+        "rubrics": ["understanding","comparison","argument"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["map","timeline","text"],
+        "source_hints": ["ancient_history_texts","museum_resources","UNESCO_heritage"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_hist_medieval",
+      "subject": "History",
+      "stage": "stage_lower_secondary",
+      "title": "Medieval Period",
+      "description": "Средневековая история: феодализм, религия и церковь, крестовые походы, города и культура.",
+      "recommended_hours": 35,
+      "age_hint": [11,14],
+      "prerequisites": ["module_hist_ancient"],
+      "objectives": [
+        { "code": "HIS.MED.L.1", "description": "Объяснять ключевые особенности феодальной системы", "bloom": "understand" },
+        { "code": "HIS.MED.L.2", "description": "Анализировать роль церкви и религии в обществе", "bloom": "analyze" },
+        { "code": "HIS.MED.L.3", "description": "Сравнивать жизнь в деревне и в средневековом городе", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["source_discussions","role_play","quiz"],
+        "summative": ["essay","document_analysis"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["source_use","argument","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","map","interactive"],
+        "source_hints": ["medieval_chronicles","museum_collections"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_hist_early_modern",
+      "subject": "History",
+      "stage": "stage_lower_secondary",
+      "title": "Early Modern Period (1500–1800)",
+      "description": "Раннее Новое время: Ренессанс, Реформация, Великие географические открытия, начало индустриализации.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": ["module_hist_medieval"],
+      "objectives": [
+        { "code": "HIS.EMD.L.1", "description": "Описывать культурные достижения Ренессанса", "bloom": "understand" },
+        { "code": "HIS.EMD.L.2", "description": "Анализировать последствия Реформации и открытий", "bloom": "analyze" },
+        { "code": "HIS.EMD.L.3", "description": "Оценивать влияние ранней индустриализации", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["timeline_tasks","source_discussions","quiz"],
+        "summative": ["essay","exam_questions"],
+        "required_artifacts": ["doc","timeline"],
+        "rubrics": ["chronology","analysis","argument"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["timeline","text","map"],
+        "source_hints": ["renaissance_texts","exploration_maps","reformation_sources"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

@@ -1,0 +1,163 @@
+[
+    {
+      "id": "module_ict_safety_lower",
+      "subject": "ICT",
+      "stage": "stage_lower_secondary",
+      "title": "E-Safety, Privacy, Cyber Hygiene",
+      "description": "Развитие цифровой безопасности: пароли, приватность, киберугрозы, социальные сети и базовые навыки кибер-гигиены.",
+      "recommended_hours": 25,
+      "age_hint": [11,14],
+      "prerequisites": ["module_ict_safety_primary"],
+      "objectives": [
+        { "code": "ICT.SAF.L.1", "description": "Опознавать угрозы (фишинг, мошенничество, вирусы)", "bloom": "analyze" },
+        { "code": "ICT.SAF.L.2", "description": "Применять правила кибер-гигиены", "bloom": "apply" },
+        { "code": "ICT.SAF.L.3", "description": "Оценивать риски использования социальных сетей", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["scenario_tasks","quiz","discussion"],
+        "summative": ["safety_plan","case_study_report"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["awareness","application","reflection"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.25, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["poster","interactive","video"],
+        "source_hints": ["cyber_safety_guides","teen_online_safety_cases"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_ict_docs_lower",
+      "subject": "ICT",
+      "stage": "stage_lower_secondary",
+      "title": "Documents, Spreadsheets, Presentations (skills)",
+      "description": "Практические навыки: редактирование документов, создание таблиц и диаграмм, оформление презентаций.",
+      "recommended_hours": 40,
+      "age_hint": [11,14],
+      "prerequisites": ["module_ict_typing_primary","module_ict_data_primary"],
+      "objectives": [
+        { "code": "ICT.DOC.L.1", "description": "Создавать и редактировать тексты с форматированием", "bloom": "apply" },
+        { "code": "ICT.DOC.L.2", "description": "Использовать электронные таблицы для простых вычислений", "bloom": "apply" },
+        { "code": "ICT.DOC.L.3", "description": "Создавать слайды и оформлять презентации", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["mini_tasks","peer_feedback","quiz"],
+        "summative": ["portfolio","practical_exam"],
+        "required_artifacts": ["doc","slides","spreadsheet"],
+        "rubrics": ["accuracy","clarity","presentation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","spreadsheet","slides"],
+        "source_hints": ["office_skills_guides","school_IT_curriculum"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_ict_data_lower",
+      "subject": "ICT",
+      "stage": "stage_lower_secondary",
+      "title": "Data Handling: Spreadsheets, Charts, Simple Databases",
+      "description": "Работа с данными: создание диаграмм, базовые функции в таблицах, основы простых баз данных.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": ["module_ict_data_primary"],
+      "objectives": [
+        { "code": "ICT.DAT.L.1", "description": "Вводить и структурировать данные в таблицах", "bloom": "apply" },
+        { "code": "ICT.DAT.L.2", "description": "Создавать графики и диаграммы", "bloom": "create" },
+        { "code": "ICT.DAT.L.3", "description": "Понимать основы баз данных (таблицы, поля, записи)", "bloom": "understand" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["spreadsheet_tasks","chart_exercises","quiz"],
+        "summative": ["data_project","practical_exam"],
+        "required_artifacts": ["spreadsheet","chart"],
+        "rubrics": ["accuracy","visualisation","interpretation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["spreadsheet","chart"],
+        "source_hints": ["beginner_data_skills","school_db_examples"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_ict_media_lower",
+      "subject": "ICT",
+      "stage": "stage_lower_secondary",
+      "title": "Digital Media: Images, Audio, Video (basics)",
+      "description": "Основы создания и редактирования изображений, звука и видео. Работа с базовыми инструментами мультимедиа.",
+      "recommended_hours": 25,
+      "age_hint": [11,14],
+      "prerequisites": ["module_ict_productivity_primary"],
+      "objectives": [
+        { "code": "ICT.MED.L.1", "description": "Создавать и редактировать простые изображения", "bloom": "apply" },
+        { "code": "ICT.MED.L.2", "description": "Работать с аудио- и видеоматериалами", "bloom": "apply" },
+        { "code": "ICT.MED.L.3", "description": "Оценивать качество цифровых медиа", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["creative_tasks","media_reviews","quiz"],
+        "summative": ["media_project","portfolio"],
+        "required_artifacts": ["image","audio","video"],
+        "rubrics": ["creativity","technical_accuracy","presentation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.2, "guided": 0.3, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["image","audio","video"],
+        "source_hints": ["beginner_editors","school_media_projects"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_ict_comms_lower",
+      "subject": "ICT",
+      "stage": "stage_lower_secondary",
+      "title": "Communication & Collaboration (email, cloud, etiquette)",
+      "description": "Коммуникация онлайн: электронная почта, облачные сервисы, этикет в цифровой среде.",
+      "recommended_hours": 20,
+      "age_hint": [11,14],
+      "prerequisites": ["module_ict_safety_lower"],
+      "objectives": [
+        { "code": "ICT.COM.L.1", "description": "Создавать и отправлять электронные письма", "bloom": "apply" },
+        { "code": "ICT.COM.L.2", "description": "Использовать облачные сервисы для совместной работы", "bloom": "apply" },
+        { "code": "ICT.COM.L.3", "description": "Оценивать правила цифрового этикета", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["email_tasks","cloud_collaboration","quiz"],
+        "summative": ["communication_project","peer_review"],
+        "required_artifacts": ["doc","screenshot"],
+        "rubrics": ["communication","collaboration","etiquette"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 4,
+        "max_lessons": 6,
+        "mix": { "concept": 0.2, "guided": 0.3, "independent": 0.25, "assessment": 0.25 }
+      },
+      "resources": {
+        "allowed_media": ["doc","screenshot","presentation"],
+        "source_hints": ["email_tutorials","cloud_guides","digital_etiquette_lessons"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

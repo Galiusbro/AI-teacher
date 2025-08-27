@@ -1,0 +1,131 @@
+[
+    {
+      "id": "module_hist_19th",
+      "subject": "History",
+      "stage": "stage_upper_secondary",
+      "title": "19th Century History (industrialisation, empire)",
+      "description": "Изучение XIX века: индустриализация, социальные изменения, национализм, рост империй.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_hist_early_modern"],
+      "objectives": [
+        { "code": "HIS.19C.U.1", "description": "Объяснять ключевые факторы индустриализации", "bloom": "understand" },
+        { "code": "HIS.19C.U.2", "description": "Анализировать последствия роста империй", "bloom": "analyze" },
+        { "code": "HIS.19C.U.3", "description": "Оценивать социальные и политические изменения XIX века", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["source_questions","timeline_tasks","quiz"],
+        "summative": ["essay","exam_questions"],
+        "required_artifacts": ["doc","timeline"],
+        "rubrics": ["chronology","source_use","analysis"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","map","timeline"],
+        "source_hints": ["industrial_revolution_sources","empire_case_studies"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_hist_20th_wars",
+      "subject": "History",
+      "stage": "stage_upper_secondary",
+      "title": "20th Century Wars and Peace",
+      "description": "История Первой и Второй мировых войн, Версальский договор, Лига Наций, ООН.",
+      "recommended_hours": 45,
+      "age_hint": [14,16],
+      "prerequisites": ["module_hist_19th"],
+      "objectives": [
+        { "code": "HIS.20W.U.1", "description": "Описывать причины и ход мировых войн", "bloom": "understand" },
+        { "code": "HIS.20W.U.2", "description": "Анализировать последствия Версальского договора и мировых конфликтов", "bloom": "analyze" },
+        { "code": "HIS.20W.U.3", "description": "Оценивать роль международных организаций в поддержании мира", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["source_analysis","debates","quiz"],
+        "summative": ["structured_exam","essay"],
+        "required_artifacts": ["doc","map"],
+        "rubrics": ["cause_consequence","argument","evidence_use"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 9,
+        "max_lessons": 11,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.25, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["map","text","video"],
+        "source_hints": ["wwi_documents","wwii_sources","un_archives"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_hist_international",
+      "subject": "History",
+      "stage": "stage_upper_secondary",
+      "title": "International Relations (1919–2000)",
+      "description": "От Версальской системы до конца холодной войны: дипломатия, конфликты, союзные блоки, разоружение.",
+      "recommended_hours": 45,
+      "age_hint": [14,16],
+      "prerequisites": ["module_hist_20th_wars"],
+      "objectives": [
+        { "code": "HIS.INT.U.1", "description": "Анализировать международные конфликты XX века", "bloom": "analyze" },
+        { "code": "HIS.INT.U.2", "description": "Оценивать эффективность дипломатических соглашений", "bloom": "evaluate" },
+        { "code": "HIS.INT.U.3", "description": "Интерпретировать источники по международным отношениям", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["case_study_tasks","source_analysis","quiz"],
+        "summative": ["exam_essay","structured_exam"],
+        "required_artifacts": ["doc","map"],
+        "rubrics": ["case_study","argument","critical_use_of_sources"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 9,
+        "max_lessons": 11,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["map","doc","timeline"],
+        "source_hints": ["cold_war_documents","diplomacy_archives"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_hist_case_study",
+      "subject": "History",
+      "stage": "stage_upper_secondary",
+      "title": "Depth Studies (specific regions/countries)",
+      "description": "Глубокое изучение истории конкретных стран или регионов (например, Германия, Россия, США, Китай, Южная Африка).",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_hist_19th","module_hist_20th_wars"],
+      "objectives": [
+        { "code": "HIS.CSD.U.1", "description": "Анализировать ключевые события истории выбранного региона", "bloom": "analyze" },
+        { "code": "HIS.CSD.U.2", "description": "Интерпретировать источники и точки зрения", "bloom": "evaluate" },
+        { "code": "HIS.CSD.U.3", "description": "Составлять аргументированные эссе по теме", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["region_specific_tasks","debates","source_discussions"],
+        "summative": ["depth_study_essay","exam_questions"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["depth","evidence_use","argument"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.2, "guided": 0.3, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","map","timeline"],
+        "source_hints": ["regional_case_studies","igcse_pastpapers"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

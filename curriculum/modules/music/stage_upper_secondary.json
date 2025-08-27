@@ -1,0 +1,131 @@
+[
+    {
+      "id": "module_music_theory_upper",
+      "subject": "Music",
+      "stage": "stage_upper_secondary",
+      "title": "Music Theory (notation, harmony, chords)",
+      "description": "Теория музыки: расширенная нотация, гармония, аккорды, гармонические последовательности.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_music_notation_lower","module_music_scales_lower"],
+      "objectives": [
+        { "code": "MUS.THE.U.1", "description": "Читать и писать сложные ритмы и мелодии", "bloom": "apply" },
+        { "code": "MUS.THE.U.2", "description": "Использовать аккорды и гармонические последовательности", "bloom": "apply" },
+        { "code": "MUS.THE.U.3", "description": "Анализировать простые партитуры", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["notation_drills","harmony_tasks","quiz"],
+        "summative": ["theory_exam","score_analysis"],
+        "required_artifacts": ["worksheet","score"],
+        "rubrics": ["notation_accuracy","harmonic_understanding","analysis"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 50,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.35, "guided": 0.3, "independent": 0.2, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["score","worksheet","audio"],
+        "source_hints": ["igcse_theory_guides","harmony_exercises"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_music_history_upper",
+      "subject": "Music",
+      "stage": "stage_upper_secondary",
+      "title": "Listening & Set Works (styles, forms)",
+      "description": "Слушание музыки, анализ форм и стилей. Изучение обязательных произведений из разных эпох.",
+      "recommended_hours": 35,
+      "age_hint": [14,16],
+      "prerequisites": ["module_music_listen_primary","module_music_perform_lower"],
+      "objectives": [
+        { "code": "MUS.HIS.U.1", "description": "Опознавать стили музыки (барокко, классицизм, романтизм, XX век)", "bloom": "understand" },
+        { "code": "MUS.HIS.U.2", "description": "Анализировать формы (соната, вариации, концерт)", "bloom": "analyze" },
+        { "code": "MUS.HIS.U.3", "description": "Различать характерные черты обязательных произведений", "bloom": "remember" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["listening_tasks","style_matching","quiz"],
+        "summative": ["listening_exam","essay"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["listening_accuracy","analysis","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["audio","worksheet"],
+        "source_hints": ["set_works_list","listening_exercises"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_music_comp_upper",
+      "subject": "Music",
+      "stage": "stage_upper_secondary",
+      "title": "Composition (melody, harmony, structure)",
+      "description": "Сочинение музыки: создание мелодий, гармонии, работа с формой и структурой.",
+      "recommended_hours": 35,
+      "age_hint": [14,16],
+      "prerequisites": ["module_music_theory_upper"],
+      "objectives": [
+        { "code": "MUS.COM.U.1", "description": "Создавать оригинальные мелодии", "bloom": "create" },
+        { "code": "MUS.COM.U.2", "description": "Разрабатывать гармонические последовательности", "bloom": "apply" },
+        { "code": "MUS.COM.U.3", "description": "Структурировать композиции в заданной форме", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["composition_sketches","peer_feedback","quiz"],
+        "summative": ["composition_project","portfolio"],
+        "required_artifacts": ["score","audio"],
+        "rubrics": ["creativity","structure","harmony"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 55,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["score","audio","notation_software"],
+        "source_hints": ["igcse_composition","beginner_orchestration"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_music_perf_upper",
+      "subject": "Music",
+      "stage": "stage_upper_secondary",
+      "title": "Performance (solo/ensemble) + Recording",
+      "description": "Исполнительская практика: сольное и ансамблевое выступление, основы записи музыки.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_music_perform_lower"],
+      "objectives": [
+        { "code": "MUS.PRF.U.1", "description": "Исполнять сольные произведения с точностью и выразительностью", "bloom": "apply" },
+        { "code": "MUS.PRF.U.2", "description": "Играть и петь в ансамбле, следуя дирижёру", "bloom": "analyze" },
+        { "code": "MUS.PRF.U.3", "description": "Использовать запись как инструмент анализа и самоконтроля", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["mini_performances","ensemble_rehearsals","peer_feedback"],
+        "summative": ["performance_exam","recorded_portfolio"],
+        "required_artifacts": ["audio","video"],
+        "rubrics": ["intonation","expression","ensemble_skills"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["audio","video","notation_software"],
+        "source_hints": ["igcse_performance_guide","ensemble_pieces"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

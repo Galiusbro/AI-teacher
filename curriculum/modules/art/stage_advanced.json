@@ -1,0 +1,161 @@
+[
+    {
+      "id": "module_art_research_advanced",
+      "subject": "Art",
+      "stage": "stage_advanced",
+      "title": "Contextual Research & Artist Studies",
+      "description": "Глубокое исследование художников, стилей и культурных контекстов. Анализ источников, написание аннотаций, построение moodboards.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_art_portfolio_upper"],
+      "objectives": [
+        { "code": "ART.RES.A.1", "description": "Проводить исследования художников и направлений в искусстве", "bloom": "analyze" },
+        { "code": "ART.RES.A.2", "description": "Составлять аннотированные страницы (visual + text) для скетчбука", "bloom": "apply" },
+        { "code": "ART.RES.A.3", "description": "Оценивать релевантность референсов к собственной теме", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["annotated_pages","moodboards","short_presentations"],
+        "summative": ["research_portfolio_section","written_analysis_600w"],
+        "required_artifacts": ["photo","doc"],
+        "rubrics": ["research_depth","contextual_understanding","visual_links","annotation_quality"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.4, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video","interactive"],
+        "source_hints": ["museum_collections","academic_articles","open_artist_archives"]
+      },
+      "portfolio_requirements": {
+        "include_in_coursework": true,
+        "min_pages_process": 10,
+        "artist_studies_required": 3
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    },
+    {
+      "id": "module_art_process_advanced",
+      "subject": "Art",
+      "stage": "stage_advanced",
+      "title": "Process & Iteration (sketchbooks, experiments)",
+      "description": "Работа в скетчбуке: серии экспериментов, итерации идей, оценка и отбор лучших подходов.",
+      "recommended_hours": 45,
+      "age_hint": [16,19],
+      "prerequisites": ["module_art_research_advanced"],
+      "objectives": [
+        { "code": "ART.PROC.A.1", "description": "Разрабатывать несколько визуальных решений для одной темы", "bloom": "create" },
+        { "code": "ART.PROC.A.2", "description": "Документировать процесс: гипотезы, эксперименты, сравнения", "bloom": "evaluate" },
+        { "code": "ART.PROC.A.3", "description": "Использовать критику для улучшения собственных решений", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["process_pages","crit_sessions","iteration_logs"],
+        "summative": ["sketchbook_submission","process_review_video"],
+        "required_artifacts": ["photo","doc","video"],
+        "rubrics": ["idea_generation","iteration_depth","responsiveness_to_feedback","documentation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 10,
+        "mix": { "concept": 0.15, "guided": 0.2, "independent": 0.5, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video","interactive"],
+        "source_hints": ["open_sketchbook_projects","art_critique_guides"]
+      },
+      "portfolio_requirements": {
+        "include_in_coursework": true,
+        "min_pages_process": 15,
+        "require_experiments_in_different_media": true
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    },
+    {
+      "id": "module_art_specialism_advanced",
+      "subject": "Art",
+      "stage": "stage_advanced",
+      "title": "Specialism (painting / illustration / digital)",
+      "description": "Выбор специализации и углублённое освоение: живопись, графика, иллюстрация, digital art. Формирование собственной манеры.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_art_process_advanced"],
+      "objectives": [
+        { "code": "ART.SPEC.A.1", "description": "Освоить техники выбранной специализации", "bloom": "apply" },
+        { "code": "ART.SPEC.A.2", "description": "Применять методические знания к проектам", "bloom": "create" },
+        { "code": "ART.SPEC.A.3", "description": "Формировать личный стиль через серию работ", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["technique_exercises","mentor_feedback","style_studies"],
+        "summative": ["specialism_series_3works","artist_statement_500w"],
+        "required_artifacts": ["photo","file","doc"],
+        "rubrics": ["technical_mastery","stylistic_coherence","innovation","execution_quality"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 12,
+        "mix": { "concept": 0.15, "guided": 0.2, "independent": 0.5, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video","interactive","file"],
+        "source_hints": ["specialist_workshops","online_masterclasses","open_courseware"]
+      },
+      "portfolio_requirements": {
+        "include_in_coursework": true,
+        "series_required": 3,
+        "artist_statement_words": 500
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    },
+    {
+      "id": "module_art_personal_advanced",
+      "subject": "Art",
+      "stage": "stage_advanced",
+      "title": "Personal Investigation & Final Piece",
+      "description": "Персональное художественное исследование. От выбора темы и концепта — к финальной работе, защите и презентации.",
+      "recommended_hours": 45,
+      "age_hint": [17,19],
+      "prerequisites": ["module_art_specialism_advanced"],
+      "objectives": [
+        { "code": "ART.PERS.A.1", "description": "Формулировать личную художественную тему для исследования", "bloom": "create" },
+        { "code": "ART.PERS.A.2", "description": "Создавать финальную работу с ясной концепцией и техникой", "bloom": "create" },
+        { "code": "ART.PERS.A.3", "description": "Писать исследовательский текст о замысле и процессе", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["proposal_review","midpoint_check","crit_sessions"],
+        "summative": ["final_piece_A1","research_report_1500w","viva_voce_video"],
+        "required_artifacts": ["photo","doc","video"],
+        "rubrics": ["conceptual_strength","research_linkage","technical_execution","personal_voice","presentation_quality"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 12,
+        "mix": { "concept": 0.15, "guided": 0.15, "independent": 0.55, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video","file"],
+        "source_hints": ["academic_art_journals","exhibition_catalogues","open_portfolio_sites"]
+      },
+      "portfolio_requirements": {
+        "include_in_coursework": true,
+        "final_piece_format": "A1_or_digital_equivalent",
+        "research_report_words": 1500,
+        "guardian_confirmation_required": true
+      },
+      "verification_policy": {
+        "present_to_guardian": true,
+        "guardian_password_confirmation": true,
+        "store_review_signature": true
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    }
+  ]
+  

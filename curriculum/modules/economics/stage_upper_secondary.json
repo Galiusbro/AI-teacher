@@ -1,0 +1,227 @@
+[
+    {
+      "id": "module_econ_basic_concepts",
+      "subject": "Economics",
+      "stage": "stage_upper_secondary",
+      "title": "Basic Economic Concepts (scarcity, choice, opportunity cost)",
+      "description": "Основные экономические понятия: ограниченность ресурсов, выбор, издержки упущенных возможностей.",
+      "recommended_hours": 25,
+      "age_hint": [14,16],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "ECON.BAS.I.1", "description": "Объяснять концепцию ограниченности ресурсов", "bloom": "understand" },
+        { "code": "ECON.BAS.I.2", "description": "Применять понятие издержек упущенных возможностей на примерах", "bloom": "apply" },
+        { "code": "ECON.BAS.I.3", "description": "Анализировать роль выбора в экономике", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["quiz","scenario_discussion","diagram_tasks"],
+        "summative": ["structured_exam","essay"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["conceptual_clarity","application","reasoning"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.4, "guided": 0.25, "independent": 0.2, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","diagram","interactive"],
+        "source_hints": ["basic_econ_refs","opportunity_cost_case_studies"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_econ_demand_supply",
+      "subject": "Economics",
+      "stage": "stage_upper_secondary",
+      "title": "Demand and Supply",
+      "description": "Основы спроса и предложения: кривые, сдвиги, равновесие.",
+      "recommended_hours": 30,
+      "age_hint": [14,16],
+      "prerequisites": ["module_econ_basic_concepts"],
+      "objectives": [
+        { "code": "ECON.DS.I.1", "description": "Строить и объяснять кривые спроса и предложения", "bloom": "apply" },
+        { "code": "ECON.DS.I.2", "description": "Определять равновесие на рынке", "bloom": "analyze" },
+        { "code": "ECON.DS.I.3", "description": "Оценивать факторы, влияющие на сдвиги спроса и предложения", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["graphing_exercises","quiz","case_studies"],
+        "summative": ["exam_data_response","essay"],
+        "required_artifacts": ["doc","graph"],
+        "rubrics": ["graph_accuracy","interpretation","evaluation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","graph","interactive"],
+        "source_hints": ["demand_supply_graphs","econ_simulators"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_econ_market",
+      "subject": "Economics",
+      "stage": "stage_upper_secondary",
+      "title": "The Market System (price, competition, elasticity)",
+      "description": "Формирование цен, виды конкуренции, ценовая и неценовая эластичность.",
+      "recommended_hours": 35,
+      "age_hint": [14,16],
+      "prerequisites": ["module_econ_demand_supply"],
+      "objectives": [
+        { "code": "ECON.MKT.I.1", "description": "Объяснять роль цен как сигнала и стимула", "bloom": "understand" },
+        { "code": "ECON.MKT.I.2", "description": "Рассчитывать и интерпретировать ценовую эластичность спроса", "bloom": "apply" },
+        { "code": "ECON.MKT.I.3", "description": "Сравнивать рыночные структуры (монополия, конкуренция)", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["elasticity_calc_tasks","quiz","market_scenarios"],
+        "summative": ["structured_exam","essay"],
+        "required_artifacts": ["doc","data"],
+        "rubrics": ["calculation_accuracy","conceptual_clarity","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","data","graph"],
+        "source_hints": ["elasticity_exercises","competition_case_studies"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_econ_production",
+      "subject": "Economics",
+      "stage": "stage_upper_secondary",
+      "title": "Production and Costs",
+      "description": "Факторы производства, издержки (фиксированные, переменные), издержки на единицу продукции и производительность.",
+      "recommended_hours": 30,
+      "age_hint": [14,16],
+      "prerequisites": ["module_econ_basic_concepts"],
+      "objectives": [
+        { "code": "ECON.PROD.I.1", "description": "Классифицировать факторы производства", "bloom": "understand" },
+        { "code": "ECON.PROD.I.2", "description": "Рассчитывать общие, средние и предельные издержки", "bloom": "apply" },
+        { "code": "ECON.PROD.I.3", "description": "Анализировать связь издержек и предложения", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["cost_calc_tasks","quiz","case_discussion"],
+        "summative": ["exam_questions","short_report"],
+        "required_artifacts": ["doc","data"],
+        "rubrics": ["accuracy","interpretation","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","data","interactive"],
+        "source_hints": ["production_case_studies","cost_calculators"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_econ_labor",
+      "subject": "Economics",
+      "stage": "stage_upper_secondary",
+      "title": "Labour and Employment",
+      "description": "Факторы, влияющие на занятость, профсоюзы, рынок труда, уровень заработной платы.",
+      "recommended_hours": 25,
+      "age_hint": [14,16],
+      "prerequisites": ["module_econ_production"],
+      "objectives": [
+        { "code": "ECON.LAB.I.1", "description": "Объяснять факторы, влияющие на спрос и предложение труда", "bloom": "understand" },
+        { "code": "ECON.LAB.I.2", "description": "Анализировать роль профсоюзов в рынке труда", "bloom": "analyze" },
+        { "code": "ECON.LAB.I.3", "description": "Оценивать факторы, влияющие на уровень заработной платы", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["labour_market_graphs","quiz","debate"],
+        "summative": ["structured_exam","case_study_report"],
+        "required_artifacts": ["doc","graph"],
+        "rubrics": ["graphing","analysis","evaluation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","graph","interactive"],
+        "source_hints": ["labour_econ_refs","employment_reports"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_econ_government",
+      "subject": "Economics",
+      "stage": "stage_upper_secondary",
+      "title": "Government and the Economy (tax, spending, policy)",
+      "description": "Роль государства: налоги, государственные расходы, фискальная и монетарная политика.",
+      "recommended_hours": 35,
+      "age_hint": [14,16],
+      "prerequisites": ["module_econ_market"],
+      "objectives": [
+        { "code": "ECON.GOV.I.1", "description": "Объяснять роль налогов и госрасходов", "bloom": "understand" },
+        { "code": "ECON.GOV.I.2", "description": "Анализировать влияние фискальной политики на экономику", "bloom": "analyze" },
+        { "code": "ECON.GOV.I.3", "description": "Оценивать эффективность инструментов экономической политики", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["policy_scenarios","quiz","graphing_exercises"],
+        "summative": ["policy_report","exam_questions"],
+        "required_artifacts": ["doc","graph"],
+        "rubrics": ["clarity","policy_application","evaluation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","graph","interactive"],
+        "source_hints": ["fiscal_policy_refs","government_reports"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_econ_international",
+      "subject": "Economics",
+      "stage": "stage_upper_secondary",
+      "title": "International Trade and Globalisation",
+      "description": "Международная торговля, сравнительные преимущества, тарифы и квоты, глобализация и её последствия.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_econ_market"],
+      "objectives": [
+        { "code": "ECON.INT.I.1", "description": "Объяснять преимущества международной торговли", "bloom": "understand" },
+        { "code": "ECON.INT.I.2", "description": "Анализировать влияние тарифов и квот", "bloom": "analyze" },
+        { "code": "ECON.INT.I.3", "description": "Оценивать последствия глобализации для стран и фирм", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["trade_graphs","quiz","debate"],
+        "summative": ["international_trade_report","exam_questions"],
+        "required_artifacts": ["doc","graph"],
+        "rubrics": ["analysis","evaluation","clarity","argument"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","graph","interactive"],
+        "source_hints": ["trade_datasets","globalization_reports"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

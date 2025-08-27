@@ -1,0 +1,163 @@
+[
+    {
+      "id": "module_art_observation_upper",
+      "subject": "Art",
+      "stage": "stage_upper_secondary",
+      "title": "Advanced Observation & Proportion",
+      "description": "Расширенная практика наблюдательного рисования: пропорции, жест, тональные отношения, фактуры. Построение сложных объектов и групп предметов.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_art_drawing_lower","module_art_genres_lower"],
+      "objectives": [
+        { "code": "ART.OBS.U.1", "description": "Точно передавать пропорции и угол наклона форм в сложных объектах", "bloom": "analyze" },
+        { "code": "ART.OBS.U.2", "description": "Управлять тональными отношениями для убеждающего объёма", "bloom": "apply" },
+        { "code": "ART.OBS.U.3", "description": "Передавать фактуры (металл, стекло, ткань, кожа) различными приёмами", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["technique_drills","process_sketches","peer_feedback","exit_ticket"],
+        "summative": ["observational_piece_A2","written_rationale_200w"],
+        "required_artifacts": ["photo","doc"],
+        "rubrics": ["proportion_accuracy","tonal_control","texture_rendering","craftsmanship","process_evidence"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 12,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.4, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video"],
+        "source_hints": ["atelier_methods","museum_collections","open_still_life_refs"]
+      },
+      "portfolio_requirements": {
+        "include_in_coursework": true,
+        "min_process_pages": 6,
+        "final_piece_format": "A2_photo",
+        "annotation_language": ["en","ru"]
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    },
+    {
+      "id": "module_art_perspective_upper",
+      "subject": "Art",
+      "stage": "stage_upper_secondary",
+      "title": "Perspective & Composition (rule of thirds, focal points)",
+      "description": "Глубокое освоение линейной/воздушной перспективы, композиционного баланса, фокальных точек и направляющих линий.",
+      "recommended_hours": 35,
+      "age_hint": [14,16],
+      "prerequisites": ["module_art_drawing_lower","module_art_color_lower"],
+      "objectives": [
+        { "code": "ART.PERS.U.1", "description": "Строить сцены в 1–2 точках схода, учитывать высоту горизонта", "bloom": "apply" },
+        { "code": "ART.PERS.U.2", "description": "Применять правило третей, золотое сечение и фокальные точки", "bloom": "analyze" },
+        { "code": "ART.PERS.U.3", "description": "Организовывать визуальный путь зрителя направляющими линиями и контрастами", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["perspective_grids","thumbnail_compositions","mini_quiz"],
+        "summative": ["composed_scene_final","composition_explanation_150w"],
+        "required_artifacts": ["photo","doc"],
+        "rubrics": ["perspective_accuracy","compositional_balance","focal_clarity","visual_flow","presentation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 6,
+        "max_lessons": 9,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.35, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video","interactive"],
+        "source_hints": ["urban_sketching_refs","composition_guides"]
+      },
+      "portfolio_requirements": {
+        "include_in_coursework": true,
+        "min_thumbnails": 8,
+        "must_show_grid_overlays": true
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    },
+    {
+      "id": "module_art_media_upper",
+      "subject": "Art",
+      "stage": "stage_upper_secondary",
+      "title": "Media & Techniques (ink, watercolor, acrylic, digital)",
+      "description": "Исследование медиа: перо/тушь, акварель, акрил, базовый digital. Смешанные техники и выбор медиа под задачу.",
+      "recommended_hours": 35,
+      "age_hint": [14,16],
+      "prerequisites": ["module_art_observation_primary","module_art_digital_lower"],
+      "objectives": [
+        { "code": "ART.MEDIA.U.1", "description": "Демонстрировать контроль материала (краевая резкость, лессировки, непрозрачные слои)", "bloom": "apply" },
+        { "code": "ART.MEDIA.U.2", "description": "Выбирать медиум в соответствии с намерением/сюжетом", "bloom": "evaluate" },
+        { "code": "ART.MEDIA.U.3", "description": "Комбинировать техники для достижения нужной фактуры и атмосферы", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["material_swatches","technique_studies","peer_feedback"],
+        "summative": ["mixed_media_piece","process_log_pdf"],
+        "required_artifacts": ["photo","file","doc"],
+        "rubrics": ["material_control","intent_match","experimentation","finish_quality","documentation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 6,
+        "max_lessons": 9,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.4, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video","interactive","file"],
+        "source_hints": ["open_painting_courses","digital_art_basics","material_safety_sheets"]
+      },
+      "portfolio_requirements": {
+        "include_in_coursework": true,
+        "min_process_pages": 6,
+        "accepted_digital_formats": ["PNG","JPEG","PSD","PROCREATE"]
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    },
+    {
+      "id": "module_art_portfolio_upper",
+      "subject": "Art",
+      "stage": "stage_upper_secondary",
+      "title": "Coursework / Portfolio Project",
+      "description": "Цикл от исследования темы до финальной работы: референсы, эксперименты, серии эскизов, итоговая композиция, аннотация и презентация.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_art_observation_upper","module_art_perspective_upper","module_art_media_upper"],
+      "objectives": [
+        { "code": "ART.PORT.U.1", "description": "Проводить визуальное исследование темы (референсы, художники, анализ работ)", "bloom": "analyze" },
+        { "code": "ART.PORT.U.2", "description": "Вести скетчбук процесса: гипотезы, эксперименты, рефлексия", "bloom": "evaluate" },
+        { "code": "ART.PORT.U.3", "description": "Создавать финальную работу, демонстрирующую уверенное владение техникой и композиционным мышлением", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["proposal_review","milestone_checks","crit_sessions"],
+        "summative": ["final_piece","process_portfolio_pdf","artist_statement_400w","viva_voce_video"],
+        "required_artifacts": ["photo","file","doc","video"],
+        "rubrics": ["research_depth","process_clarity","technical_mastery","conceptual_strength","presentation_quality"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 12,
+        "mix": { "concept": 0.15, "guided": 0.2, "independent": 0.5, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video","interactive","file"],
+        "source_hints": ["artist_studies","museum_digital_collections","open_journals"]
+      },
+      "portfolio_requirements": {
+        "include_in_coursework": true,
+        "min_pages_process": 12,
+        "final_piece_format": "A2_or_digital_equivalent",
+        "artist_statement_words": 300,
+        "guardian_confirmation_required": true
+      },
+      "verification_policy": {
+        "present_to_guardian": true,
+        "guardian_password_confirmation": true,
+        "store_review_signature": true
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    }
+  ]
+  

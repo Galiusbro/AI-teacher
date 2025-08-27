@@ -1,0 +1,195 @@
+[
+    {
+      "id": "module_math_numbers_upper",
+      "subject": "Mathematics",
+      "stage": "stage_upper_secondary",
+      "title": "Number Theory and Standard Form",
+      "description": "Числовые системы, простые числа, делимость, стандартная форма записи больших и малых чисел.",
+      "recommended_hours": 30,
+      "age_hint": [14,16],
+      "prerequisites": ["module_math_numbers_lower"],
+      "objectives": [
+        { "code": "MATH.NUM.U.1", "description": "Использовать свойства делимости и простых чисел", "bloom": "apply" },
+        { "code": "MATH.NUM.U.2", "description": "Работать с НОД и НОК", "bloom": "apply" },
+        { "code": "MATH.NUM.U.3", "description": "Записывать числа в стандартной форме и выполнять действия", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["number_drills","quiz","mini_tasks"],
+        "summative": ["test","exam_questions"],
+        "required_artifacts": ["worksheet"],
+        "rubrics": ["accuracy","application","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","interactive"],
+        "source_hints": ["igcse_number_theory","prime_factors"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_algebra_upper",
+      "subject": "Mathematics",
+      "stage": "stage_upper_secondary",
+      "title": "Algebra (expressions, equations, inequalities)",
+      "description": "Алгебра: упрощение выражений, решение уравнений и неравенств, работа с формулами.",
+      "recommended_hours": 50,
+      "age_hint": [14,16],
+      "prerequisites": ["module_math_algebra_intro"],
+      "objectives": [
+        { "code": "MATH.ALG.U.1", "description": "Упрощать алгебраические выражения", "bloom": "apply" },
+        { "code": "MATH.ALG.U.2", "description": "Решать линейные и квадратные уравнения", "bloom": "analyze" },
+        { "code": "MATH.ALG.U.3", "description": "Решать линейные неравенства и системы уравнений", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["equation_tasks","quiz","problem_sets"],
+        "summative": ["algebra_exam","portfolio"],
+        "required_artifacts": ["worksheet"],
+        "rubrics": ["accuracy","reasoning","problem_solving"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 50,
+        "min_lessons": 10,
+        "max_lessons": 12,
+        "mix": { "concept": 0.35, "guided": 0.3, "independent": 0.2, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","graph"],
+        "source_hints": ["igcse_algebra_pastpapers","algebra_workbooks"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_quadratics_upper",
+      "subject": "Mathematics",
+      "stage": "stage_upper_secondary",
+      "title": "Quadratic Equations and Functions",
+      "description": "Квадратные уравнения, графики парабол, формула корней, теорема Виета.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_math_algebra_upper"],
+      "objectives": [
+        { "code": "MATH.QUA.U.1", "description": "Решать квадратные уравнения разными методами", "bloom": "apply" },
+        { "code": "MATH.QUA.U.2", "description": "Строить графики квадратичных функций", "bloom": "create" },
+        { "code": "MATH.QUA.U.3", "description": "Применять теорему Виета", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["graph_tasks","quiz","problem_sets"],
+        "summative": ["quadratics_exam","project"],
+        "required_artifacts": ["graph","worksheet"],
+        "rubrics": ["accuracy","graphing","reasoning"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 50,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["graph","worksheet","interactive"],
+        "source_hints": ["quadratic_graphs","igcse_functions"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_geometry_upper",
+      "subject": "Mathematics",
+      "stage": "stage_upper_secondary",
+      "title": "Geometry and Trigonometry",
+      "description": "Геометрия: свойства фигур, теорема Пифагора, тригонометрические функции и задачи.",
+      "recommended_hours": 45,
+      "age_hint": [14,16],
+      "prerequisites": ["module_math_geometry_lower","module_math_measure_lower"],
+      "objectives": [
+        { "code": "MATH.GEO.U.1", "description": "Применять свойства фигур в задачах", "bloom": "apply" },
+        { "code": "MATH.GEO.U.2", "description": "Использовать теорему Пифагора", "bloom": "apply" },
+        { "code": "MATH.GEO.U.3", "description": "Решать задачи с тригонометрическими отношениями", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["geometry_tasks","trig_exercises","quiz"],
+        "summative": ["geometry_exam","portfolio"],
+        "required_artifacts": ["worksheet","graph"],
+        "rubrics": ["accuracy","application","reasoning"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 55,
+        "min_lessons": 9,
+        "max_lessons": 11,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","graph","interactive"],
+        "source_hints": ["igcse_trigonometry","geometry_cases"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_statistics_upper",
+      "subject": "Mathematics",
+      "stage": "stage_upper_secondary",
+      "title": "Statistics (mean, median, probability)",
+      "description": "Статистика: среднее, медиана, мода, простейшая вероятность.",
+      "recommended_hours": 35,
+      "age_hint": [14,16],
+      "prerequisites": ["module_math_data_lower"],
+      "objectives": [
+        { "code": "MATH.STA.U.1", "description": "Вычислять среднее, медиану, моду", "bloom": "apply" },
+        { "code": "MATH.STA.U.2", "description": "Строить диаграммы и гистограммы", "bloom": "create" },
+        { "code": "MATH.STA.U.3", "description": "Решать задачи на вероятность", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["statistics_tasks","probability_games","quiz"],
+        "summative": ["statistics_exam","project"],
+        "required_artifacts": ["doc","chart"],
+        "rubrics": ["accuracy","interpretation","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","chart","interactive"],
+        "source_hints": ["igcse_statistics","probability_sets"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_calculus_intro",
+      "subject": "Mathematics",
+      "stage": "stage_upper_secondary",
+      "title": "Introduction to Calculus (limits, gradients)",
+      "description": "Первые шаги в анализе: понятие предела, касательная как предел градиента.",
+      "recommended_hours": 20,
+      "age_hint": [15,16],
+      "prerequisites": ["module_math_algebra_upper","module_math_geometry_upper"],
+      "objectives": [
+        { "code": "MATH.CAL.U.1", "description": "Понимать интуитивное определение предела", "bloom": "understand" },
+        { "code": "MATH.CAL.U.2", "description": "Вычислять градиенты простых функций", "bloom": "apply" },
+        { "code": "MATH.CAL.U.3", "description": "Использовать касательные для приближений", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["limit_tasks","graphical_exercises","quiz"],
+        "summative": ["intro_calculus_exam","project"],
+        "required_artifacts": ["graph","worksheet"],
+        "rubrics": ["understanding","accuracy","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 4,
+        "max_lessons": 6,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["graph","worksheet","interactive"],
+        "source_hints": ["intro_calculus_graphs","limits_cases"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

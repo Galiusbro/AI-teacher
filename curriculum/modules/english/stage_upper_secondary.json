@@ -1,0 +1,163 @@
+[
+    {
+      "id": "module_eng_language_upper",
+      "subject": "English",
+      "stage": "stage_upper_secondary",
+      "title": "English Language (First/Second)",
+      "description": "Углублённое владение языком: чтение и понимание сложных текстов, структурированное письмо, владение стилями и регистрами.",
+      "recommended_hours": 60,
+      "age_hint": [14,16],
+      "prerequisites": ["module_eng_grammar_lower","module_eng_reading_lower"],
+      "objectives": [
+        { "code": "ENG.LNG.U.1", "description": "Интерпретировать и анализировать разнообразные тексты", "bloom": "analyze" },
+        { "code": "ENG.LNG.U.2", "description": "Писать тексты в разных регистрах (официальный, неофициальный)", "bloom": "apply" },
+        { "code": "ENG.LNG.U.3", "description": "Редактировать тексты для ясности, стиля и структуры", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["reading_exercises","language_tasks","short_writing_drills"],
+        "summative": ["paper1_reading_exam","paper2_writing_exam"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["textual_analysis","register_control","coherence","language_accuracy"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 12,
+        "max_lessons": 14,
+        "mix": { "concept": 0.25, "guided": 0.35, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text"],
+        "source_hints": ["igcse_past_papers","examiner_reports","language_anthologies"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_eng_writing_upper",
+      "subject": "English",
+      "stage": "stage_upper_secondary",
+      "title": "Discursive and Creative Writing",
+      "description": "Навыки дискурсивного и творческого письма: аргументация, повествование, описание, создание оригинальных текстов.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_eng_writing_lower","module_eng_vocabulary_lower"],
+      "objectives": [
+        { "code": "ENG.WRI.U.1", "description": "Строить аргументированные эссе и статьи", "bloom": "create" },
+        { "code": "ENG.WRI.U.2", "description": "Использовать выразительные средства языка в творческом письме", "bloom": "apply" },
+        { "code": "ENG.WRI.U.3", "description": "Редактировать текст для стиля, точности и выразительности", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["essay_outlines","narrative_drafts","peer_review"],
+        "summative": ["discursive_essay_exam","creative_writing_exam"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["argument_clarity","creativity","structure","style"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.2, "guided": 0.35, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text"],
+        "source_hints": ["model_essays","creative_prompts","igcse_mark_schemes"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_eng_comprehension_upper",
+      "subject": "English",
+      "stage": "stage_upper_secondary",
+      "title": "Advanced Reading Comprehension and Analysis",
+      "description": "Глубокое понимание текста: подтекст, авторское намерение, риторические приёмы, анализ стиля.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_eng_reading_lower"],
+      "objectives": [
+        { "code": "ENG.CMP.U.1", "description": "Определять подтекст и тон текста", "bloom": "analyze" },
+        { "code": "ENG.CMP.U.2", "description": "Анализировать использование риторических средств", "bloom": "analyze" },
+        { "code": "ENG.CMP.U.3", "description": "Оценивать эффективность стиля и структуры", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["annotation_tasks","textual_analysis_exercises","question_stems"],
+        "summative": ["paper1_comprehension_exam","essay_response"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["evidence_use","interpretation","stylistic_awareness"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.25, "guided": 0.35, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text"],
+        "source_hints": ["igcse_extracts","annotated_passages","examiner_reports"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_eng_literature_upper",
+      "subject": "English",
+      "stage": "stage_upper_secondary",
+      "title": "English Literature (poetry, drama, prose)",
+      "description": "Изучение художественной литературы: поэзия, драма (включая Шекспира) и проза.",
+      "recommended_hours": 50,
+      "age_hint": [14,16],
+      "prerequisites": ["module_eng_reading_lower"],
+      "objectives": [
+        { "code": "ENG.LIT.U.1", "description": "Интерпретировать художественные тексты через цитаты", "bloom": "analyze" },
+        { "code": "ENG.LIT.U.2", "description": "Сравнивать тексты по темам и мотивам", "bloom": "analyze" },
+        { "code": "ENG.LIT.U.3", "description": "Писать литературные эссе с аргументами и доказательствами", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["close_reading","performance_reflections","theme_maps"],
+        "summative": ["paper3_literature_exam","comparative_essay"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["interpretation","comparative_argument","evidence_use","coherence"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 10,
+        "max_lessons": 12,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","video"],
+        "source_hints": ["set_texts_school","public_domain_shakespeare","critical_guides"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_eng_oral_upper",
+      "subject": "English",
+      "stage": "stage_upper_secondary",
+      "title": "Oral Communication and Debates",
+      "description": "Ораторские навыки: устные выступления, дебаты, риторика, умение слушать и реагировать.",
+      "recommended_hours": 30,
+      "age_hint": [14,16],
+      "prerequisites": ["module_eng_speaking_lower"],
+      "objectives": [
+        { "code": "ENG.ORL.U.1", "description": "Подготавливать и проводить устные выступления", "bloom": "apply" },
+        { "code": "ENG.ORL.U.2", "description": "Участвовать в дебатах и структурировать аргументы", "bloom": "analyze" },
+        { "code": "ENG.ORL.U.3", "description": "Оценивать выступления одноклассников и давать обратную связь", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["mini_debates","speech_rehearsals","peer_feedback"],
+        "summative": ["oral_exam","debate_assessment"],
+        "required_artifacts": ["presentation","audio_recording"],
+        "rubrics": ["content","delivery","interaction","argument"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.15, "guided": 0.3, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["audio","video","presentation"],
+        "source_hints": ["debate_topics","public_speaking_guides","exam_speaking_prompts"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

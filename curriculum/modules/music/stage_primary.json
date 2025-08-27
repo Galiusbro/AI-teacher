@@ -1,0 +1,131 @@
+[
+    {
+      "id": "module_music_listen_primary",
+      "subject": "Music",
+      "stage": "stage_primary",
+      "title": "Listening & Keeping the Beat",
+      "description": "Развитие слуха и чувства ритма: узнавание мелодий, повторение простых ритмов, игра с движением под музыку.",
+      "recommended_hours": 30,
+      "age_hint": [5,11],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "MUS.LIS.P.1", "description": "Опознавать знакомые мелодии и звуки", "bloom": "remember" },
+        { "code": "MUS.LIS.P.2", "description": "Следовать простому ритму хлопками или движением", "bloom": "apply" },
+        { "code": "MUS.LIS.P.3", "description": "Различать громкость и темп", "bloom": "understand" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["clap_games","movement_tasks","quiz"],
+        "summative": ["performance_demo","teacher_observation"],
+        "required_artifacts": ["audio","video"],
+        "rubrics": ["rhythm","listening","participation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 25,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.25, "guided": 0.35, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["audio","video","interactive"],
+        "source_hints": ["children_songs","rhythm_games"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_music_pitch_primary",
+      "subject": "Music",
+      "stage": "stage_primary",
+      "title": "Pitch & Simple Notation (do–re–mi)",
+      "description": "Знакомство с высотой звука: гамма, простая нотная запись, соотнесение звука и знака.",
+      "recommended_hours": 25,
+      "age_hint": [6,11],
+      "prerequisites": ["module_music_listen_primary"],
+      "objectives": [
+        { "code": "MUS.PIT.P.1", "description": "Различать высокие и низкие звуки", "bloom": "understand" },
+        { "code": "MUS.PIT.P.2", "description": "Петь гамму do–re–mi", "bloom": "apply" },
+        { "code": "MUS.PIT.P.3", "description": "Читать и записывать простые ноты", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["singing_tasks","note_matching","quiz"],
+        "summative": ["notation_test","performance_demo"],
+        "required_artifacts": ["worksheet","audio"],
+        "rubrics": ["pitch_accuracy","notation","participation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 25,
+        "min_lessons": 4,
+        "max_lessons": 6,
+        "mix": { "concept": 0.3, "guided": 0.35, "independent": 0.2, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","audio","interactive"],
+        "source_hints": ["solfege_songs","beginner_notation"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_music_rhythm_primary",
+      "subject": "Music",
+      "stage": "stage_primary",
+      "title": "Rhythm (quarter, eighth, rests)",
+      "description": "Ритм: четверти, восьмые и паузы. Практика через хлопки, игры и простые партитуры.",
+      "recommended_hours": 25,
+      "age_hint": [6,11],
+      "prerequisites": ["module_music_listen_primary"],
+      "objectives": [
+        { "code": "MUS.RHY.P.1", "description": "Распознавать и исполнять простые ритмические рисунки", "bloom": "apply" },
+        { "code": "MUS.RHY.P.2", "description": "Читать ритм в простой записи", "bloom": "apply" },
+        { "code": "MUS.RHY.P.3", "description": "Создавать собственные короткие ритмические фразы", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["clap_patterns","rhythm_games","quiz"],
+        "summative": ["rhythm_performance","notation_test"],
+        "required_artifacts": ["worksheet","audio","video"],
+        "rubrics": ["rhythm_accuracy","creativity","participation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.25, "guided": 0.35, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","audio","interactive"],
+        "source_hints": ["rhythm_flashcards","music_games"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_music_create_primary",
+      "subject": "Music",
+      "stage": "stage_primary",
+      "title": "Singing & Simple Composition",
+      "description": "Пение детских песен, создание коротких мелодий и импровизация на основе знакомых мотивов.",
+      "recommended_hours": 20,
+      "age_hint": [7,11],
+      "prerequisites": ["module_music_pitch_primary","module_music_rhythm_primary"],
+      "objectives": [
+        { "code": "MUS.CRE.P.1", "description": "Петь песни в унисон", "bloom": "apply" },
+        { "code": "MUS.CRE.P.2", "description": "Придумывать простые мелодии или ритмы", "bloom": "create" },
+        { "code": "MUS.CRE.P.3", "description": "Исполнять композиции вместе с группой", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["singing_tasks","composition_games","peer_feedback"],
+        "summative": ["performance","mini_project"],
+        "required_artifacts": ["audio","video"],
+        "rubrics": ["pitch_accuracy","creativity","teamwork"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 4,
+        "max_lessons": 6,
+        "mix": { "concept": 0.2, "guided": 0.3, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["audio","video","worksheet"],
+        "source_hints": ["children_songs","music_creation_apps"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

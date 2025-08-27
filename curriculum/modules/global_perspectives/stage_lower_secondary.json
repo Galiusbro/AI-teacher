@@ -1,0 +1,163 @@
+[
+    {
+      "id": "module_gp_thinking_lower",
+      "subject": "Global Perspectives",
+      "stage": "stage_lower_secondary",
+      "title": "Critical Thinking Foundations",
+      "description": "Введение в критическое мышление: факты и мнения, логические связи, простые аргументы.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "GP.THNK.L.1", "description": "Различать факты и мнения", "bloom": "understand" },
+        { "code": "GP.THNK.L.2", "description": "Опознавать простые аргументы и выводы", "bloom": "analyze" },
+        { "code": "GP.THNK.L.3", "description": "Формулировать собственные выводы на основе данных", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["argument_sorting","logic_games","quiz"],
+        "summative": ["short_written_response","oral_argument"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["clarity","logic","evidence_use"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","interactive"],
+        "source_hints": ["critical_thinking_games","beginner_logic_texts"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_gp_sources_lower",
+      "subject": "Global Perspectives",
+      "stage": "stage_lower_secondary",
+      "title": "Working with Information Sources",
+      "description": "Навыки работы с источниками: поиск информации, проверка достоверности, определение предвзятости.",
+      "recommended_hours": 25,
+      "age_hint": [11,14],
+      "prerequisites": ["module_gp_thinking_lower"],
+      "objectives": [
+        { "code": "GP.SRC.L.1", "description": "Опознавать надёжные и ненадёжные источники", "bloom": "evaluate" },
+        { "code": "GP.SRC.L.2", "description": "Проводить базовую проверку фактов", "bloom": "apply" },
+        { "code": "GP.SRC.L.3", "description": "Анализировать предвзятость и точку зрения автора", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["source_checklists","fact_vs_opinion","quiz"],
+        "summative": ["source_analysis_report","presentation"],
+        "required_artifacts": ["doc","presentation"],
+        "rubrics": ["evaluation","accuracy","critical_thinking"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.2, "guided": 0.35, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","video"],
+        "source_hints": ["media_literacy_kits","fact_check_sites"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_gp_issues_lower",
+      "subject": "Global Perspectives",
+      "stage": "stage_lower_secondary",
+      "title": "Exploring Global Issues (environment, culture, health)",
+      "description": "Обзор ключевых мировых проблем: экология, культурное разнообразие, здоровье и благополучие.",
+      "recommended_hours": 35,
+      "age_hint": [11,14],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "GP.ISS.L.1", "description": "Описывать глобальные проблемы и их влияние", "bloom": "understand" },
+        { "code": "GP.ISS.L.2", "description": "Анализировать разные точки зрения по проблемам", "bloom": "analyze" },
+        { "code": "GP.ISS.L.3", "description": "Формулировать собственное мнение с аргументами", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["issue_discussions","poster_projects","quiz"],
+        "summative": ["essay","presentation"],
+        "required_artifacts": ["doc","poster"],
+        "rubrics": ["understanding","analysis","expression"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.25, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["text","poster","video"],
+        "source_hints": ["UNICEF_reports","WHO_resources","culture_case_studies"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_gp_collab_lower",
+      "subject": "Global Perspectives",
+      "stage": "stage_lower_secondary",
+      "title": "Collaboration and Discussion Skills",
+      "description": "Навыки сотрудничества: работа в группах, дискуссии, уважение мнений, достижение консенсуса.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "GP.COL.L.1", "description": "Эффективно участвовать в групповых обсуждениях", "bloom": "apply" },
+        { "code": "GP.COL.L.2", "description": "Формулировать аргументы и слушать других", "bloom": "analyze" },
+        { "code": "GP.COL.L.3", "description": "Оценивать командную работу и собственный вклад", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["group_discussions","role_play","peer_feedback"],
+        "summative": ["collaboration_project","oral_presentation"],
+        "required_artifacts": ["doc","presentation"],
+        "rubrics": ["teamwork","communication","reflection"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.2, "guided": 0.3, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["text","audio","presentation"],
+        "source_hints": ["team_building_tasks","debate_prompts"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_gp_projects_lower",
+      "subject": "Global Perspectives",
+      "stage": "stage_lower_secondary",
+      "title": "Mini Projects and Presentations",
+      "description": "Краткосрочные исследовательские проекты: выбор темы, сбор информации, подготовка презентации.",
+      "recommended_hours": 30,
+      "age_hint": [11,14],
+      "prerequisites": ["module_gp_sources_lower","module_gp_collab_lower"],
+      "objectives": [
+        { "code": "GP.PRJ.L.1", "description": "Формулировать вопросы для исследования", "bloom": "create" },
+        { "code": "GP.PRJ.L.2", "description": "Собирать информацию из разных источников", "bloom": "apply" },
+        { "code": "GP.PRJ.L.3", "description": "Презентовать результаты исследования", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["draft_projects","peer_review","mentor_feedback"],
+        "summative": ["mini_project_report","presentation"],
+        "required_artifacts": ["doc","presentation"],
+        "rubrics": ["research","clarity","presentation_skills"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","presentation","poster"],
+        "source_hints": ["student_project_guides","presentation_templates"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

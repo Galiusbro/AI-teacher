@@ -1,0 +1,6 @@
+psycopg2-binary
+flask
+jsonschema
+groq
+python-dotenv
+

@@ -1,0 +1,195 @@
+[
+    {
+      "id": "module_ict_systems_igcse",
+      "subject": "ICT",
+      "stage": "stage_upper_secondary",
+      "title": "ICT Systems & Impact (networks, ethics, law)",
+      "description": "Понимание информационных систем, сетей, их влияния на общество, этических и правовых аспектов.",
+      "recommended_hours": 30,
+      "age_hint": [14,16],
+      "prerequisites": ["module_ict_safety_lower"],
+      "objectives": [
+        { "code": "ICT.SYS.U.1", "description": "Описывать компоненты ИКТ-систем", "bloom": "understand" },
+        { "code": "ICT.SYS.U.2", "description": "Объяснять основы работы сетей", "bloom": "analyze" },
+        { "code": "ICT.SYS.U.3", "description": "Оценивать влияние ИКТ на общество", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["diagram_tasks","quiz","case_discussions"],
+        "summative": ["structured_exam","essay"],
+        "required_artifacts": ["doc","diagram"],
+        "rubrics": ["understanding","analysis","evaluation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["diagram","text","presentation"],
+        "source_hints": ["ict_systems_guides","case_studies"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_ict_data_igcse",
+      "subject": "ICT",
+      "stage": "stage_upper_secondary",
+      "title": "Data, Databases & Spreadsheets (functions, queries)",
+      "description": "Работа с данными: расширенные функции таблиц, создание диаграмм, основы запросов и простых баз данных.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_ict_data_lower"],
+      "objectives": [
+        { "code": "ICT.DAT.U.1", "description": "Использовать функции в электронных таблицах (SUM, AVERAGE, IF)", "bloom": "apply" },
+        { "code": "ICT.DAT.U.2", "description": "Создавать и использовать простые базы данных", "bloom": "apply" },
+        { "code": "ICT.DAT.U.3", "description": "Выполнять базовые запросы и фильтрацию данных", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["spreadsheet_tasks","db_exercises","quiz"],
+        "summative": ["practical_exam","data_project"],
+        "required_artifacts": ["spreadsheet","db"],
+        "rubrics": ["accuracy","data_handling","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["spreadsheet","db","chart"],
+        "source_hints": ["igcse_data_sets","school_db_tools"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_ict_docs_igcse",
+      "subject": "ICT",
+      "stage": "stage_upper_secondary",
+      "title": "Document, Presentation & DTP Skills (professional)",
+      "description": "Создание профессиональных документов, презентаций и верстка (desktop publishing).",
+      "recommended_hours": 30,
+      "age_hint": [14,16],
+      "prerequisites": ["module_ict_docs_lower"],
+      "objectives": [
+        { "code": "ICT.DOC.U.1", "description": "Создавать документы с профессиональным форматированием", "bloom": "apply" },
+        { "code": "ICT.DOC.U.2", "description": "Разрабатывать презентации с мультимедиа", "bloom": "create" },
+        { "code": "ICT.DOC.U.3", "description": "Использовать основы верстки и дизайна", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["design_tasks","peer_feedback","quiz"],
+        "summative": ["portfolio","practical_exam"],
+        "required_artifacts": ["doc","slides","dtp_file"],
+        "rubrics": ["layout","clarity","professionalism"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","slides","image"],
+        "source_hints": ["design_guides","igcse_portfolio_samples"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_ict_graphics_igcse",
+      "subject": "ICT",
+      "stage": "stage_upper_secondary",
+      "title": "Graphics, Imaging & Multimedia",
+      "description": "Редактирование изображений, работа с мультимедиа и создание графических элементов.",
+      "recommended_hours": 20,
+      "age_hint": [14,16],
+      "prerequisites": ["module_ict_media_lower"],
+      "objectives": [
+        { "code": "ICT.GFX.U.1", "description": "Редактировать изображения и графику", "bloom": "apply" },
+        { "code": "ICT.GFX.U.2", "description": "Использовать мультимедийные элементы в проектах", "bloom": "apply" },
+        { "code": "ICT.GFX.U.3", "description": "Оценивать качество визуального контента", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["editing_tasks","media_reviews","quiz"],
+        "summative": ["graphics_project","portfolio"],
+        "required_artifacts": ["image","slides"],
+        "rubrics": ["creativity","accuracy","presentation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.2, "guided": 0.3, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["image","video","slides"],
+        "source_hints": ["photo_editing_guides","igcse_media_samples"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_ict_comms_igcse",
+      "subject": "ICT",
+      "stage": "stage_upper_secondary",
+      "title": "Communication, Networks & Internet Services",
+      "description": "Коммуникации и интернет: электронная почта, чаты, социальные сети, облачные сервисы и основы сетей.",
+      "recommended_hours": 25,
+      "age_hint": [14,16],
+      "prerequisites": ["module_ict_comms_lower","module_ict_systems_igcse"],
+      "objectives": [
+        { "code": "ICT.COM.U.1", "description": "Использовать электронные и облачные сервисы для коммуникации", "bloom": "apply" },
+        { "code": "ICT.COM.U.2", "description": "Понимать основы сетевых сервисов и протоколов", "bloom": "understand" },
+        { "code": "ICT.COM.U.3", "description": "Оценивать влияние интернета на бизнес и общество", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["scenario_tasks","case_discussions","quiz"],
+        "summative": ["exam_questions","project_report"],
+        "required_artifacts": ["doc","presentation"],
+        "rubrics": ["communication","analysis","evaluation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.25, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["presentation","doc","diagram"],
+        "source_hints": ["network_basics_guides","igcse_case_studies"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_ict_project_igcse",
+      "subject": "ICT",
+      "stage": "stage_upper_secondary",
+      "title": "Practical Project & Case Study",
+      "description": "Итоговый практический проект: решение задачи с использованием ИКТ-инструментов, анализ кейса.",
+      "recommended_hours": 25,
+      "age_hint": [14,16],
+      "prerequisites": ["module_ict_docs_igcse","module_ict_data_igcse","module_ict_graphics_igcse"],
+      "objectives": [
+        { "code": "ICT.PRJ.U.1", "description": "Применять навыки для комплексного проекта", "bloom": "apply" },
+        { "code": "ICT.PRJ.U.2", "description": "Интегрировать текст, данные и мультимедиа", "bloom": "create" },
+        { "code": "ICT.PRJ.U.3", "description": "Оценивать собственное решение и предлагать улучшения", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["draft_reviews","peer_feedback","teacher_guidance"],
+        "summative": ["final_project","case_study_exam"],
+        "required_artifacts": ["doc","spreadsheet","slides","image"],
+        "rubrics": ["integration","creativity","problem_solving"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","slides","spreadsheet","image"],
+        "source_hints": ["igcse_projects","case_study_samples"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

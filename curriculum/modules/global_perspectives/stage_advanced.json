@@ -1,0 +1,163 @@
+[
+    {
+      "id": "module_gp_epq_advanced",
+      "subject": "Global Perspectives",
+      "stage": "stage_advanced",
+      "title": "Extended Project Qualification (EPQ)",
+      "description": "Индивидуальный исследовательский проект: формулировка вопроса, проведение анализа, представление результатов в формате письменной работы и презентации.",
+      "recommended_hours": 60,
+      "age_hint": [16,19],
+      "prerequisites": ["module_gp_essay_igcse"],
+      "objectives": [
+        { "code": "GP.EPQ.A.1", "description": "Формулировать исследовательский вопрос высокого уровня", "bloom": "create" },
+        { "code": "GP.EPQ.A.2", "description": "Разрабатывать план исследования и собирать данные", "bloom": "analyze" },
+        { "code": "GP.EPQ.A.3", "description": "Представлять результаты в письменной и устной форме", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["proposal_review","progress_logs","peer_feedback"],
+        "summative": ["final_report","oral_presentation"],
+        "required_artifacts": ["doc","presentation"],
+        "rubrics": ["research_depth","originality","communication","critical_thinking"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 90,
+        "min_lessons": 12,
+        "max_lessons": 15,
+        "mix": { "concept": 0.15, "guided": 0.25, "independent": 0.4, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","presentation"],
+        "source_hints": ["EPQ_guides","academic_databases"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_gp_research_methods_advanced",
+      "subject": "Global Perspectives",
+      "stage": "stage_advanced",
+      "title": "Advanced Research Methods",
+      "description": "Продвинутые методы исследования: работа с первичными и вторичными источниками, опросы, интервью, статистический анализ.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_gp_research_igcse"],
+      "objectives": [
+        { "code": "GP.RES.A.1", "description": "Применять количественные и качественные методы сбора данных", "bloom": "apply" },
+        { "code": "GP.RES.A.2", "description": "Анализировать и интерпретировать данные", "bloom": "analyze" },
+        { "code": "GP.RES.A.3", "description": "Оценивать надёжность и валидность исследований", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["methodology_design","data_analysis_tasks","quiz"],
+        "summative": ["research_methods_report","exam_section"],
+        "required_artifacts": ["doc","data"],
+        "rubrics": ["method_selection","data_interpretation","rigour"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["doc","data"],
+        "source_hints": ["research_methods_handbooks","survey_tools","data_sets"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_gp_issues_advanced",
+      "subject": "Global Perspectives",
+      "stage": "stage_advanced",
+      "title": "Evaluating Global Issues and Case Studies",
+      "description": "Изучение глобальных проблем (экология, технологии, политика, здоровье) через кейс-стади и сравнительный анализ.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_gp_issues_lower","module_gp_analysis_igcse"],
+      "objectives": [
+        { "code": "GP.ISS.A.1", "description": "Анализировать глобальные проблемы через реальные примеры", "bloom": "analyze" },
+        { "code": "GP.ISS.A.2", "description": "Сравнивать разные перспективы и культурные подходы", "bloom": "analyze" },
+        { "code": "GP.ISS.A.3", "description": "Формулировать аргументированные выводы по проблемам", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["case_discussions","debates","issue_reports"],
+        "summative": ["case_study_exam","comparative_essay"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["analysis","comparative_argument","evaluation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","presentation"],
+        "source_hints": ["UN_reports","NGO_case_studies","policy_papers"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_gp_argument_advanced",
+      "subject": "Global Perspectives",
+      "stage": "stage_advanced",
+      "title": "Structured Argumentation and Critical Essay",
+      "description": "Навыки академического письма: структура эссе, аргументация, использование доказательств, критическое мышление.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_gp_essay_igcse"],
+      "objectives": [
+        { "code": "GP.ARG.A.1", "description": "Структурировать аргументированное эссе", "bloom": "create" },
+        { "code": "GP.ARG.A.2", "description": "Использовать источники для поддержки позиции", "bloom": "apply" },
+        { "code": "GP.ARG.A.3", "description": "Критически оценивать контраргументы", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["essay_plans","peer_review","draft_feedback"],
+        "summative": ["critical_essay","exam_section"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["structure","argument","evidence","critical_thinking"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.2, "guided": 0.3, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","text"],
+        "source_hints": ["essay_guides","sample_a_level_essays"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_gp_presentation_advanced",
+      "subject": "Global Perspectives",
+      "stage": "stage_advanced",
+      "title": "Presentation, Defense and Peer Review",
+      "description": "Навыки академической защиты работы: устное выступление, ответы на вопросы, рецензирование чужих проектов.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_gp_presentation_igcse","module_gp_epq_advanced"],
+      "objectives": [
+        { "code": "GP.PRS.A.1", "description": "Проводить устные защиты проектов", "bloom": "apply" },
+        { "code": "GP.PRS.A.2", "description": "Отвечать на вопросы аудитории", "bloom": "evaluate" },
+        { "code": "GP.PRS.A.3", "description": "Осуществлять peer review чужих исследований", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["mock_defenses","peer_feedback","presentation_rehearsals"],
+        "summative": ["final_presentation","oral_defense","peer_review_report"],
+        "required_artifacts": ["presentation","doc","feedback_form"],
+        "rubrics": ["delivery","argumentation","responsiveness","evaluation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.15, "guided": 0.25, "independent": 0.3, "assessment": 0.3 }
+      },
+      "resources": {
+        "allowed_media": ["presentation","video","audio"],
+        "source_hints": ["defense_guides","presentation_samples"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

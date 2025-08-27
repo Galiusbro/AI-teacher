@@ -1,0 +1,131 @@
+[
+    {
+      "id": "module_music_analysis_advanced",
+      "subject": "Music",
+      "stage": "stage_advanced",
+      "title": "Advanced Analysis (form, harmony, counterpoint)",
+      "description": "Глубокий музыкальный анализ: форма, гармония, контрапункт, стилизация и интерпретация произведений.",
+      "recommended_hours": 45,
+      "age_hint": [16,19],
+      "prerequisites": ["module_music_theory_upper","module_music_history_upper"],
+      "objectives": [
+        { "code": "MUS.ANL.A.1", "description": "Анализировать гармонию и структуру крупных произведений", "bloom": "analyze" },
+        { "code": "MUS.ANL.A.2", "description": "Применять принципы контрапункта", "bloom": "apply" },
+        { "code": "MUS.ANL.A.3", "description": "Оценивать стили разных эпох", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["score_analysis","essay_plans","quiz"],
+        "summative": ["analysis_exam","research_essay"],
+        "required_artifacts": ["doc","score"],
+        "rubrics": ["analytical_depth","accuracy","interpretation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["score","audio","doc"],
+        "source_hints": ["a_level_analysis_guides","set_works_collections"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_music_comp_advanced",
+      "subject": "Music",
+      "stage": "stage_advanced",
+      "title": "Advanced Composition & Orchestration",
+      "description": "Композиторская практика: создание сложных произведений, оркестровка, стиль и жанр.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_music_comp_upper","module_music_theory_upper"],
+      "objectives": [
+        { "code": "MUS.COM.A.1", "description": "Создавать оригинальные композиции в разных жанрах", "bloom": "create" },
+        { "code": "MUS.COM.A.2", "description": "Применять принципы оркестровки", "bloom": "apply" },
+        { "code": "MUS.COM.A.3", "description": "Анализировать собственные и чужие композиции", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["composition_drafts","peer_review","workshops"],
+        "summative": ["composition_portfolio","orchestration_project"],
+        "required_artifacts": ["score","audio"],
+        "rubrics": ["creativity","structure","orchestration"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 65,
+        "min_lessons": 9,
+        "max_lessons": 11,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["score","audio","notation_software"],
+        "source_hints": ["a_level_composition_guides","orchestration_texts"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_music_perf_advanced",
+      "subject": "Music",
+      "stage": "stage_advanced",
+      "title": "Advanced Performance & Interpretation",
+      "description": "Исполнительское мастерство: сольное и ансамблевое выступление, интерпретация, сценическое поведение.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_music_perf_upper"],
+      "objectives": [
+        { "code": "MUS.PRF.A.1", "description": "Исполнять произведения высокого уровня сложности", "bloom": "apply" },
+        { "code": "MUS.PRF.A.2", "description": "Интерпретировать музыку с учётом стиля и эпохи", "bloom": "evaluate" },
+        { "code": "MUS.PRF.A.3", "description": "Демонстрировать уверенность и артистизм на сцене", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["mock_performances","peer_feedback","masterclasses"],
+        "summative": ["performance_exam","recorded_portfolio"],
+        "required_artifacts": ["audio","video"],
+        "rubrics": ["intonation","expression","stage_presence"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 70,
+        "min_lessons": 10,
+        "max_lessons": 12,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["audio","video"],
+        "source_hints": ["a_level_performance_standards","masterclass_recordings"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_music_technology_advanced",
+      "subject": "Music",
+      "stage": "stage_advanced",
+      "title": "Music Technology (DAW, MIDI, notation software)",
+      "description": "Современные музыкальные технологии: работа с DAW, MIDI, запись и редактирование музыки.",
+      "recommended_hours": 35,
+      "age_hint": [16,19],
+      "prerequisites": ["module_music_comp_upper"],
+      "objectives": [
+        { "code": "MUS.TEC.A.1", "description": "Использовать секвенсоры и DAW для записи музыки", "bloom": "apply" },
+        { "code": "MUS.TEC.A.2", "description": "Работать с MIDI и виртуальными инструментами", "bloom": "apply" },
+        { "code": "MUS.TEC.A.3", "description": "Применять нотационные программы для создания партитур", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["daw_projects","midi_tasks","quiz"],
+        "summative": ["tech_project","portfolio"],
+        "required_artifacts": ["audio","project_file"],
+        "rubrics": ["technical_accuracy","creativity","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 55,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["audio","project_file","software"],
+        "source_hints": ["daw_tutorials","midi_exercises","notation_guides"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

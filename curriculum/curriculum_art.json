@@ -1,0 +1,127 @@
+{
+  "id": "curriculum_art",
+  "title": "Art & Design (Cambridge-style)",
+  "subject": "Art",
+  "stages": [
+    {
+      "id": "stage_primary",
+      "title": "Primary",
+      "age_range": [
+        5,
+        11
+      ],
+      "modules": [
+        {
+          "id": "module_art_materials_primary",
+          "title": "Materials & Tools (pencil, crayon, paint)",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_art_elements_primary",
+          "title": "Elements of Art (line, shape, color)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_art_observation_primary",
+          "title": "Observation Drawing (simple objects)",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_art_composition_primary",
+          "title": "Composition & Story in Pictures",
+          "recommended_hours": 20
+        }
+      ]
+    },
+    {
+      "id": "stage_lower_secondary",
+      "title": "Lower Secondary",
+      "age_range": [
+        11,
+        14
+      ],
+      "modules": [
+        {
+          "id": "module_art_drawing_lower",
+          "title": "Drawing Techniques (hatching, shading, perspective)",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_art_color_lower",
+          "title": "Color Theory (wheel, harmony, contrast)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_art_genres_lower",
+          "title": "Genres & Styles (still life, landscape, portrait)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_art_digital_lower",
+          "title": "Digital Art Basics (layers, brushes)",
+          "recommended_hours": 25
+        }
+      ]
+    },
+    {
+      "id": "stage_upper_secondary",
+      "title": "Upper Secondary (IGCSE Art & Design)",
+      "age_range": [
+        14,
+        16
+      ],
+      "modules": [
+        {
+          "id": "module_art_observation_upper",
+          "title": "Advanced Observation & Proportion",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_art_perspective_upper",
+          "title": "Perspective & Composition (rule of thirds, focal points)",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_art_media_upper",
+          "title": "Media & Techniques (ink, watercolor, acrylic, digital)",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_art_portfolio_upper",
+          "title": "Coursework / Portfolio Project",
+          "recommended_hours": 40
+        }
+      ]
+    },
+    {
+      "id": "stage_advanced",
+      "title": "Advanced (A Level Art & Design)",
+      "age_range": [
+        16,
+        19
+      ],
+      "modules": [
+        {
+          "id": "module_art_research_advanced",
+          "title": "Contextual Research & Artist Studies",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_art_process_advanced",
+          "title": "Process & Iteration (sketchbooks, experiments)",
+          "recommended_hours": 45
+        },
+        {
+          "id": "module_art_specialism_advanced",
+          "title": "Specialism (painting / illustration / digital)",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_art_personal_advanced",
+          "title": "Personal Investigation & Final Piece",
+          "recommended_hours": 45
+        }
+      ]
+    }
+  ]
+}

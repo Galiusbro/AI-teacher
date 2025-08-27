@@ -1,0 +1,112 @@
+{
+  "id": "curriculum_global_perspectives",
+  "title": "Global Perspectives",
+  "subject": "Global Perspectives",
+  "stages": [
+    {
+      "id": "stage_lower_secondary",
+      "title": "Lower Secondary",
+      "age_range": [
+        11,
+        14
+      ],
+      "modules": [
+        {
+          "id": "module_gp_thinking_lower",
+          "title": "Critical Thinking Foundations",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_gp_sources_lower",
+          "title": "Working with Information Sources",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_gp_issues_lower",
+          "title": "Exploring Global Issues (environment, culture, health)",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_gp_collab_lower",
+          "title": "Collaboration and Discussion Skills",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_gp_projects_lower",
+          "title": "Mini Projects and Presentations",
+          "recommended_hours": 30
+        }
+      ]
+    },
+    {
+      "id": "stage_upper_secondary",
+      "title": "Upper Secondary (IGCSE Global Perspectives)",
+      "age_range": [
+        14,
+        16
+      ],
+      "modules": [
+        {
+          "id": "module_gp_research_igcse",
+          "title": "Research Skills (questions, planning, sources)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_gp_analysis_igcse",
+          "title": "Analysis & Evaluation of Perspectives",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_gp_collab_igcse",
+          "title": "Collaborative Projects (team investigations)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_gp_presentation_igcse",
+          "title": "Presentation and Communication Skills",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_gp_essay_igcse",
+          "title": "Individual Research Essay",
+          "recommended_hours": 40
+        }
+      ]
+    },
+    {
+      "id": "stage_advanced",
+      "title": "Advanced (A Level Global Perspectives & Research)",
+      "age_range": [
+        16,
+        19
+      ],
+      "modules": [
+        {
+          "id": "module_gp_epq_advanced",
+          "title": "Extended Project Qualification (EPQ)",
+          "recommended_hours": 60
+        },
+        {
+          "id": "module_gp_research_methods_advanced",
+          "title": "Advanced Research Methods",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_gp_issues_advanced",
+          "title": "Evaluating Global Issues and Case Studies",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_gp_argument_advanced",
+          "title": "Structured Argumentation and Critical Essay",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_gp_presentation_advanced",
+          "title": "Presentation, Defense and Peer Review",
+          "recommended_hours": 40
+        }
+      ]
+    }
+  ]
+}

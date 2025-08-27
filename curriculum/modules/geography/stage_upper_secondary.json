@@ -1,0 +1,163 @@
+[
+    {
+      "id": "module_geo_population",
+      "subject": "Geography",
+      "stage": "stage_upper_secondary",
+      "title": "Population and Migration",
+      "description": "Изучение роста населения, демографических моделей, факторов миграции, последствий миграционных процессов.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": ["module_geo_human"],
+      "objectives": [
+        { "code": "GEO.POP.U.1", "description": "Интерпретировать демографические графики и пирамиды", "bloom": "analyze" },
+        { "code": "GEO.POP.U.2", "description": "Объяснять факторы, влияющие на миграцию", "bloom": "understand" },
+        { "code": "GEO.POP.U.3", "description": "Оценивать последствия миграции для стран и регионов", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["population_graph_tasks","migration_case_discussions","quiz"],
+        "summative": ["case_study_report","exam_questions"],
+        "required_artifacts": ["doc","graph"],
+        "rubrics": ["data_interpretation","argument_quality","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["graph","map","text"],
+        "source_hints": ["UN_population_data","migration_case_studies"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_geo_settlements",
+      "subject": "Geography",
+      "stage": "stage_upper_secondary",
+      "title": "Urbanisation and Settlements",
+      "description": "Процессы урбанизации, структура городов, проблемы мегаполисов, сельские и городские поселения.",
+      "recommended_hours": 35,
+      "age_hint": [14,16],
+      "prerequisites": ["module_geo_human"],
+      "objectives": [
+        { "code": "GEO.SET.U.1", "description": "Различать типы поселений и их иерархию", "bloom": "understand" },
+        { "code": "GEO.SET.U.2", "description": "Анализировать процессы урбанизации и её последствия", "bloom": "analyze" },
+        { "code": "GEO.SET.U.3", "description": "Оценивать устойчивость городского развития", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["urban_map_analysis","case_discussions","quiz"],
+        "summative": ["urbanisation_report","exam_questions"],
+        "required_artifacts": ["doc","map"],
+        "rubrics": ["map_skills","case_study_usage","evaluation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["map","graph","text"],
+        "source_hints": ["urban_case_studies","settlement_maps"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_geo_economy",
+      "subject": "Geography",
+      "stage": "stage_upper_secondary",
+      "title": "Economic Activities (agriculture, industry, services)",
+      "description": "Экономическая география: сельское хозяйство, промышленность, сфера услуг; факторы размещения, глобализация и международная торговля.",
+      "recommended_hours": 40,
+      "age_hint": [14,16],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "GEO.ECO.U.1", "description": "Объяснять факторы, влияющие на сельское хозяйство и промышленность", "bloom": "understand" },
+        { "code": "GEO.ECO.U.2", "description": "Анализировать роль глобализации и торговли", "bloom": "analyze" },
+        { "code": "GEO.ECO.U.3", "description": "Оценивать устойчивость экономической деятельности", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["economic_maps","sector_graphs","quiz"],
+        "summative": ["exam_questions","case_study_report"],
+        "required_artifacts": ["doc","graph"],
+        "rubrics": ["data_use","conceptual_clarity","evaluation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["map","graph","data"],
+        "source_hints": ["world_bank_data","economic_case_studies"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_geo_environment",
+      "subject": "Geography",
+      "stage": "stage_upper_secondary",
+      "title": "Environment, Hazards and Sustainability",
+      "description": "Природные и антропогенные опасности (землетрясения, наводнения, загрязнение), влияние человека на окружающую среду, устойчивое развитие.",
+      "recommended_hours": 45,
+      "age_hint": [14,16],
+      "prerequisites": ["module_geo_physical","module_geo_weather"],
+      "objectives": [
+        { "code": "GEO.ENV.U.1", "description": "Идентифицировать природные и антропогенные опасности", "bloom": "remember" },
+        { "code": "GEO.ENV.U.2", "description": "Анализировать последствия стихийных бедствий и загрязнений", "bloom": "analyze" },
+        { "code": "GEO.ENV.U.3", "description": "Оценивать стратегии устойчивого развития", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["hazard_maps","sustainability_discussions","quiz"],
+        "summative": ["exam_case_study","project_report"],
+        "required_artifacts": ["doc","map"],
+        "rubrics": ["case_analysis","evaluation","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 9,
+        "max_lessons": 11,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["map","video","text"],
+        "source_hints": ["hazard_case_studies","sustainability_reports"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_geo_fieldwork",
+      "subject": "Geography",
+      "stage": "stage_upper_secondary",
+      "title": "Fieldwork and Map Skills",
+      "description": "Практическая работа: сбор и анализ данных в поле, картографические навыки, отчёты по исследованию.",
+      "recommended_hours": 30,
+      "age_hint": [14,16],
+      "prerequisites": ["module_geo_maps"],
+      "objectives": [
+        { "code": "GEO.FLD.U.1", "description": "Собирать географические данные в поле", "bloom": "apply" },
+        { "code": "GEO.FLD.U.2", "description": "Анализировать и представлять результаты исследований", "bloom": "analyze" },
+        { "code": "GEO.FLD.U.3", "description": "Оформлять отчёты по полевым исследованиям", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["data_collection_tasks","mapwork","peer_feedback"],
+        "summative": ["fieldwork_report","map_test"],
+        "required_artifacts": ["doc","map","data"],
+        "rubrics": ["data_collection","analysis","presentation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["map","data","interactive"],
+        "source_hints": ["fieldwork_guides","igcse_mapwork_pastpapers"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

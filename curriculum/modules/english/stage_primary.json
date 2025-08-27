@@ -1,0 +1,163 @@
+[
+    {
+      "id": "module_eng_reading_primary",
+      "subject": "English",
+      "stage": "stage_primary",
+      "title": "Reading and Phonics",
+      "description": "Фонетика и чтение: звуки и буквы, чтение простых слов и предложений, понимание смысла текста.",
+      "recommended_hours": 50,
+      "age_hint": [5,11],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "ENG.READ.P.1", "description": "Распознавать звуки и соответствующие им буквы", "bloom": "remember" },
+        { "code": "ENG.READ.P.2", "description": "Составлять простые слова и предложения", "bloom": "apply" },
+        { "code": "ENG.READ.P.3", "description": "Понимать основное содержание простых текстов", "bloom": "understand" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["phonics_drills","flashcards","reading_aloud"],
+        "summative": ["short_reading_test","teacher_observation"],
+        "required_artifacts": ["worksheet"],
+        "rubrics": ["accuracy","fluency","comprehension"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 8,
+        "max_lessons": 12,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","audio","interactive"],
+        "source_hints": ["phonics_books","graded_readers","children_audio_stories"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_eng_writing_primary",
+      "subject": "English",
+      "stage": "stage_primary",
+      "title": "Writing and Handwriting",
+      "description": "Навыки письма: алфавит, печатные и письменные буквы, написание простых предложений.",
+      "recommended_hours": 40,
+      "age_hint": [5,11],
+      "prerequisites": ["module_eng_reading_primary"],
+      "objectives": [
+        { "code": "ENG.WRI.P.1", "description": "Писать буквы алфавита правильно", "bloom": "remember" },
+        { "code": "ENG.WRI.P.2", "description": "Формировать простые предложения", "bloom": "apply" },
+        { "code": "ENG.WRI.P.3", "description": "Соблюдать базовые правила пунктуации (точка, заглавная буква)", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["copying_tasks","dictation","sentence_building"],
+        "summative": ["short_written_test","teacher_portfolio_check"],
+        "required_artifacts": ["notebook"],
+        "rubrics": ["legibility","correctness","structure"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.25, "guided": 0.35, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","interactive"],
+        "source_hints": ["handwriting_books","copybook_materials"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_eng_spelling_primary",
+      "subject": "English",
+      "stage": "stage_primary",
+      "title": "Spelling and Vocabulary",
+      "description": "Орфография и словарный запас: написание частотных слов, базовые правила правописания, расширение словаря.",
+      "recommended_hours": 35,
+      "age_hint": [5,11],
+      "prerequisites": ["module_eng_reading_primary"],
+      "objectives": [
+        { "code": "ENG.SPL.P.1", "description": "Запоминать и правильно писать ключевые слова", "bloom": "remember" },
+        { "code": "ENG.SPL.P.2", "description": "Применять простые правила правописания", "bloom": "apply" },
+        { "code": "ENG.SPL.P.3", "description": "Использовать новые слова в устной и письменной речи", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["spelling_games","quiz","dictation"],
+        "summative": ["weekly_spelling_test","vocabulary_check"],
+        "required_artifacts": ["worksheet"],
+        "rubrics": ["accuracy","application","usage"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","interactive"],
+        "source_hints": ["primary_word_lists","spelling_apps"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_eng_listening_primary",
+      "subject": "English",
+      "stage": "stage_primary",
+      "title": "Listening and Speaking",
+      "description": "Аудирование и устная речь: понимание простых инструкций и диалогов, развитие навыков устного ответа.",
+      "recommended_hours": 35,
+      "age_hint": [5,11],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "ENG.LIS.P.1", "description": "Понимать простые устные инструкции", "bloom": "understand" },
+        { "code": "ENG.LIS.P.2", "description": "Поддерживать простые диалоги (вопрос–ответ)", "bloom": "apply" },
+        { "code": "ENG.LIS.P.3", "description": "Выражать мысли короткими предложениями", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["listening_games","role_play","question_answer_drills"],
+        "summative": ["oral_test","teacher_observation"],
+        "required_artifacts": ["audio_recording"],
+        "rubrics": ["comprehension","fluency","interaction"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.2, "guided": 0.3, "independent": 0.35, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["audio","interactive"],
+        "source_hints": ["children_songs","listening_apps","storytime_audio"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_eng_storytelling_primary",
+      "subject": "English",
+      "stage": "stage_primary",
+      "title": "Stories and Creative Expression",
+      "description": "Творческое выражение: рассказывание историй, рисование и подписи, придумывание коротких сказок и рифмовок.",
+      "recommended_hours": 30,
+      "age_hint": [5,11],
+      "prerequisites": ["module_eng_reading_primary","module_eng_writing_primary"],
+      "objectives": [
+        { "code": "ENG.STO.P.1", "description": "Пересказывать знакомые истории простыми словами", "bloom": "apply" },
+        { "code": "ENG.STO.P.2", "description": "Создавать собственные короткие истории и рифмовки", "bloom": "create" },
+        { "code": "ENG.STO.P.3", "description": "Выражать идеи через текст и иллюстрации", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["story_circle","drawing_and_writing","improv_games"],
+        "summative": ["creative_story_project","short_performance"],
+        "required_artifacts": ["doc","drawing"],
+        "rubrics": ["creativity","clarity","expression"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["text","drawing","audio"],
+        "source_hints": ["children_folktales","picture_books","storytelling_kits"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

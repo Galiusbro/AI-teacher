@@ -1,0 +1,127 @@
+{
+  "id": "curriculum_computer_science",
+  "title": "Computer Science (Cambridge-style)",
+  "subject": "Computer Science",
+  "stages": [
+    {
+      "id": "stage_lower_secondary",
+      "title": "Lower Secondary (Computing foundations)",
+      "age_range": [
+        11,
+        14
+      ],
+      "modules": [
+        {
+          "id": "module_cs_thinking_lower",
+          "title": "Computational Thinking (decomposition, patterns, logic)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_cs_programming_lower",
+          "title": "Intro Programming (block → text, variables, control)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_cs_data_lower",
+          "title": "Data & Representations (binary intro, images as data)",
+          "recommended_hours": 20
+        },
+        {
+          "id": "module_cs_systems_lower",
+          "title": "Computer Systems (hardware, OS, networks intro)",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_cs_project_lower",
+          "title": "Mini Project (plan–build–test–present)",
+          "recommended_hours": 25
+        }
+      ]
+    },
+    {
+      "id": "stage_upper_secondary",
+      "title": "Upper Secondary (IGCSE Computer Science)",
+      "age_range": [
+        14,
+        16
+      ],
+      "modules": [
+        {
+          "id": "module_cs_theory_igcse",
+          "title": "CS Theory (CPU, memory, storage, networking, security)",
+          "recommended_hours": 45
+        },
+        {
+          "id": "module_cs_programming_igcse",
+          "title": "Programming (procedural, subroutines, arrays, files)",
+          "recommended_hours": 60
+        },
+        {
+          "id": "module_cs_algorithms_igcse",
+          "title": "Algorithms (search/sort, logic, flowcharts, pseudocode)",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_cs_datarep_igcse",
+          "title": "Data Representation (binary, hex, text, images, sound)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_cs_databases_igcse",
+          "title": "Databases (concepts, simple SQL or forms/queries)",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_cs_project_igcse",
+          "title": "Programming Project (spec → design → code → test)",
+          "recommended_hours": 35
+        }
+      ]
+    },
+    {
+      "id": "stage_advanced",
+      "title": "Advanced (AS/A Level Computer Science)",
+      "age_range": [
+        16,
+        19
+      ],
+      "modules": [
+        {
+          "id": "module_cs_programming_adv",
+          "title": "Advanced Programming (OO, recursion, modules)",
+          "recommended_hours": 60
+        },
+        {
+          "id": "module_cs_structures_adv",
+          "title": "Data Structures & Algorithms (lists, trees, graphs, complexity)",
+          "recommended_hours": 55
+        },
+        {
+          "id": "module_cs_systems_adv",
+          "title": "Computer Architecture & OS (assembly, scheduling)",
+          "recommended_hours": 45
+        },
+        {
+          "id": "module_cs_networks_security_adv",
+          "title": "Networks, Internet & Security (protocols, crypto basics)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_cs_databases_adv",
+          "title": "Databases & Transactions (relational, normalization, SQL)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_cs_ai_adv",
+          "title": "Foundations of AI & Data (search, logic, basic ML concepts)",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_cs_project_adv",
+          "title": "Capstone / Coursework (design–implement–evaluate)",
+          "recommended_hours": 45
+        }
+      ]
+    }
+  ]
+}

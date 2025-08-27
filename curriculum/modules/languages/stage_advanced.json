@@ -1,0 +1,163 @@
+[
+    {
+      "id": "module_lang_advanced_listening",
+      "subject": "Languages",
+      "stage": "stage_advanced",
+      "title": "Advanced Listening (lectures, debates, media)",
+      "description": "Развитие навыков понимания сложной устной речи: лекции, дебаты, новостные и академические материалы.",
+      "recommended_hours": 45,
+      "age_hint": [16,19],
+      "prerequisites": ["module_lang_listening_upper"],
+      "objectives": [
+        { "code": "LAN.LIS.A.1", "description": "Понимать основную идею академических лекций и дебатов", "bloom": "understand" },
+        { "code": "LAN.LIS.A.2", "description": "Выделять аргументы и контраргументы в аудиоматериалах", "bloom": "analyze" },
+        { "code": "LAN.LIS.A.3", "description": "Оценивать достоверность и стиль говорящего", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["note_taking","listening_analysis","quiz"],
+        "summative": ["listening_exam","oral_summary"],
+        "required_artifacts": ["audio","notes"],
+        "rubrics": ["comprehension","detail","critical_response"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["audio","video","notes"],
+        "source_hints": ["academic_lectures","debates_recordings"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lang_advanced_speaking",
+      "subject": "Languages",
+      "stage": "stage_advanced",
+      "title": "Advanced Speaking (presentations, formal debate)",
+      "description": "Формальные устные выступления: презентации, аргументация, академические дебаты.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_lang_speaking_upper"],
+      "objectives": [
+        { "code": "LAN.SPK.A.1", "description": "Проводить структурированные презентации", "bloom": "create" },
+        { "code": "LAN.SPK.A.2", "description": "Вести формальные дебаты", "bloom": "evaluate" },
+        { "code": "LAN.SPK.A.3", "description": "Использовать академическую лексику и регистр", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["mock_presentations","debates","peer_feedback"],
+        "summative": ["oral_exam","presentation"],
+        "required_artifacts": ["audio","video","slides"],
+        "rubrics": ["structure","argument","fluency"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 9,
+        "max_lessons": 11,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["slides","audio","video"],
+        "source_hints": ["academic_presentations","debate_prompts"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lang_advanced_reading",
+      "subject": "Languages",
+      "stage": "stage_advanced",
+      "title": "Advanced Reading (literary works, academic texts)",
+      "description": "Анализ сложных текстов: классическая и современная литература, академические статьи.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_lang_reading_upper"],
+      "objectives": [
+        { "code": "LAN.RED.A.1", "description": "Анализировать литературные произведения в контексте", "bloom": "analyze" },
+        { "code": "LAN.RED.A.2", "description": "Критически оценивать академические тексты", "bloom": "evaluate" },
+        { "code": "LAN.RED.A.3", "description": "Сравнивать разные жанры и стили", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["reading_journals","annotation","discussion"],
+        "summative": ["literary_analysis_essay","exam_questions"],
+        "required_artifacts": ["doc","annotation"],
+        "rubrics": ["interpretation","evidence","critical_thinking"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 10,
+        "max_lessons": 12,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","annotation","video"],
+        "source_hints": ["literary_classics","academic_articles"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lang_advanced_writing",
+      "subject": "Languages",
+      "stage": "stage_advanced",
+      "title": "Advanced Writing (essays, analysis, creative)",
+      "description": "Академическое и креативное письмо: аналитические эссе, исследовательские тексты, творческие работы.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_lang_writing_upper","module_lang_grammar_lower"],
+      "objectives": [
+        { "code": "LAN.WRT.A.1", "description": "Писать аналитические и аргументированные тексты", "bloom": "create" },
+        { "code": "LAN.WRT.A.2", "description": "Использовать сложные синтаксические конструкции", "bloom": "apply" },
+        { "code": "LAN.WRT.A.3", "description": "Создавать креативные тексты в разных жанрах", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["essay_drafts","peer_review","workshops"],
+        "summative": ["research_paper","writing_portfolio"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["argument","clarity","style"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 10,
+        "max_lessons": 12,
+        "mix": { "concept": 0.2, "guided": 0.25, "independent": 0.35, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","slides"],
+        "source_hints": ["academic_writing_guides","creative_prompts"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_lang_translation",
+      "subject": "Languages",
+      "stage": "stage_advanced",
+      "title": "Translation & Comparative Studies",
+      "description": "Перевод текстов и сравнительное изучение языков: стиль, культурные особенности, контекст.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_lang_reading_upper","module_lang_culture_upper"],
+      "objectives": [
+        { "code": "LAN.TRN.A.1", "description": "Переводить тексты с сохранением смысла и стиля", "bloom": "apply" },
+        { "code": "LAN.TRN.A.2", "description": "Сравнивать тексты на разных языках", "bloom": "analyze" },
+        { "code": "LAN.TRN.A.3", "description": "Оценивать культурные различия в переводе", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["translation_tasks","comparative_analysis","peer_feedback"],
+        "summative": ["translation_exam","comparative_essay"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["accuracy","style","cultural_awareness"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["doc","presentation"],
+        "source_hints": ["translation_exercises","comparative_lit_sources"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

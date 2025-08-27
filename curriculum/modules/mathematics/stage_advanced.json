@@ -1,0 +1,228 @@
+[
+    {
+      "id": "module_math_algebra_advanced",
+      "subject": "Mathematics",
+      "stage": "stage_advanced",
+      "title": "Advanced Algebra and Polynomials",
+      "description": "Алгебра высшего уровня: многочлены, факторизация, биномиальная теорема, последовательности и ряды.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_math_algebra_upper","module_math_quadratics_upper"],
+      "objectives": [
+        { "code": "MATH.ALG.A.1", "description": "Применять методы факторизации и разложения многочленов", "bloom": "apply" },
+        { "code": "MATH.ALG.A.2", "description": "Использовать биномиальную теорему", "bloom": "analyze" },
+        { "code": "MATH.ALG.A.3", "description": "Анализировать последовательности и ряды", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["algebra_sets","quiz","problem_solving"],
+        "summative": ["algebra_exam","portfolio"],
+        "required_artifacts": ["worksheet"],
+        "rubrics": ["accuracy","reasoning","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","graph"],
+        "source_hints": ["a_level_algebra","polynomials"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_functions_advanced",
+      "subject": "Mathematics",
+      "stage": "stage_advanced",
+      "title": "Functions and Graphs",
+      "description": "Функции и их свойства: инъекции, сюръекции, композиции, обратные функции, трансформации графиков.",
+      "recommended_hours": 35,
+      "age_hint": [16,19],
+      "prerequisites": ["module_math_algebra_upper"],
+      "objectives": [
+        { "code": "MATH.FUN.A.1", "description": "Интерпретировать свойства функций по графикам", "bloom": "analyze" },
+        { "code": "MATH.FUN.A.2", "description": "Строить обратные и составные функции", "bloom": "apply" },
+        { "code": "MATH.FUN.A.3", "description": "Оценивать влияние трансформаций на график", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["graph_tasks","quiz","function_sets"],
+        "summative": ["exam_questions","graph_portfolio"],
+        "required_artifacts": ["graph"],
+        "rubrics": ["accuracy","interpretation","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 55,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["graph","worksheet","interactive"],
+        "source_hints": ["a_level_graphs","function_cases"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_calculus_advanced",
+      "subject": "Mathematics",
+      "stage": "stage_advanced",
+      "title": "Calculus (differentiation, integration)",
+      "description": "Дифференцирование и интегрирование: правила, применение к графикам, скорости, площадям и объёмам.",
+      "recommended_hours": 60,
+      "age_hint": [16,19],
+      "prerequisites": ["module_math_calculus_intro"],
+      "objectives": [
+        { "code": "MATH.CAL.A.1", "description": "Применять правила дифференцирования", "bloom": "apply" },
+        { "code": "MATH.CAL.A.2", "description": "Решать задачи на нахождение экстремумов и касательных", "bloom": "analyze" },
+        { "code": "MATH.CAL.A.3", "description": "Вычислять неопределённые и определённые интегралы", "bloom": "apply" },
+        { "code": "MATH.CAL.A.4", "description": "Интерпретировать интеграл как площадь/объём", "bloom": "understand" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["derivative_tasks","integration_tasks","quiz"],
+        "summative": ["calculus_exam","portfolio"],
+        "required_artifacts": ["worksheet","graph"],
+        "rubrics": ["accuracy","application","problem_solving"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 65,
+        "min_lessons": 12,
+        "max_lessons": 14,
+        "mix": { "concept": 0.35, "guided": 0.3, "independent": 0.2, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["graph","worksheet","interactive"],
+        "source_hints": ["a_level_calculus","integration_cases"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_trigonometry_advanced",
+      "subject": "Mathematics",
+      "stage": "stage_advanced",
+      "title": "Advanced Trigonometry and Identities",
+      "description": "Продвинутая тригонометрия: формулы приведения, тождества, графики тригонометрических функций.",
+      "recommended_hours": 35,
+      "age_hint": [16,19],
+      "prerequisites": ["module_math_geometry_upper"],
+      "objectives": [
+        { "code": "MATH.TRIG.A.1", "description": "Строить графики тригонометрических функций", "bloom": "create" },
+        { "code": "MATH.TRIG.A.2", "description": "Доказывать и применять тригонометрические тождества", "bloom": "analyze" },
+        { "code": "MATH.TRIG.A.3", "description": "Решать тригонометрические уравнения", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["identity_tasks","graph_tasks","quiz"],
+        "summative": ["trigonometry_exam","portfolio"],
+        "required_artifacts": ["graph","worksheet"],
+        "rubrics": ["accuracy","reasoning","problem_solving"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 55,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["graph","worksheet","interactive"],
+        "source_hints": ["a_level_trigonometry","identities_problems"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_complex",
+      "subject": "Mathematics",
+      "stage": "stage_advanced",
+      "title": "Complex Numbers",
+      "description": "Комплексные числа: форма a+bi, мнимая единица, диаграммы Аргана, модуль и аргумент.",
+      "recommended_hours": 25,
+      "age_hint": [16,19],
+      "prerequisites": ["module_math_algebra_advanced"],
+      "objectives": [
+        { "code": "MATH.CMP.A.1", "description": "Выполнять арифметические операции с комплексными числами", "bloom": "apply" },
+        { "code": "MATH.CMP.A.2", "description": "Изображать комплексные числа на плоскости", "bloom": "understand" },
+        { "code": "MATH.CMP.A.3", "description": "Решать квадратные уравнения с комплексными корнями", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["complex_tasks","quiz","graphing"],
+        "summative": ["complex_exam","worksheet"],
+        "required_artifacts": ["worksheet","graph"],
+        "rubrics": ["accuracy","visualization","problem_solving"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 50,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["graph","worksheet","interactive"],
+        "source_hints": ["complex_numbers_intro","argand_diagrams"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_probability_stats_advanced",
+      "subject": "Mathematics",
+      "stage": "stage_advanced",
+      "title": "Probability and Statistics",
+      "description": "Вероятности и статистика: комбинаторика, распределения, дисперсия и стандартное отклонение.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_math_statistics_upper"],
+      "objectives": [
+        { "code": "MATH.STA.A.1", "description": "Вычислять вероятности в сложных ситуациях", "bloom": "apply" },
+        { "code": "MATH.STA.A.2", "description": "Использовать биномиальные и нормальные распределения", "bloom": "apply" },
+        { "code": "MATH.STA.A.3", "description": "Интерпретировать статистические результаты", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["probability_tasks","distribution_exercises","quiz"],
+        "summative": ["statistics_exam","case_study"],
+        "required_artifacts": ["doc","chart"],
+        "rubrics": ["accuracy","interpretation","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","chart","interactive"],
+        "source_hints": ["a_level_statistics","probability_sets"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_mechanics",
+      "subject": "Mathematics",
+      "stage": "stage_advanced",
+      "title": "Mechanics (forces, motion, vectors)",
+      "description": "Основы механики: силы, движение, уравнения движения, энергия, векторы.",
+      "recommended_hours": 35,
+      "age_hint": [16,19],
+      "prerequisites": ["module_math_geometry_upper","module_math_algebra_upper"],
+      "objectives": [
+        { "code": "MATH.MEC.A.1", "description": "Применять уравнения движения в задачах", "bloom": "apply" },
+        { "code": "MATH.MEC.A.2", "description": "Анализировать силы и моменты", "bloom": "analyze" },
+        { "code": "MATH.MEC.A.3", "description": "Использовать векторы для описания движения", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["mechanics_tasks","vector_problems","quiz"],
+        "summative": ["mechanics_exam","portfolio"],
+        "required_artifacts": ["worksheet","graph"],
+        "rubrics": ["accuracy","problem_solving","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 55,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","graph","interactive"],
+        "source_hints": ["a_level_mechanics","vectors_cases"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

@@ -1,0 +1,231 @@
+[
+    {
+      "id": "module_bus_strategy_adv",
+      "subject": "Business",
+      "stage": "stage_advanced",
+      "title": "Business Strategy and Objectives",
+      "description": "Формулирование и реализация стратегии: миссия, цели, SWOT/PEST, конкурентное преимущество, стратегии роста.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_bus_intro","module_bus_external"],
+      "objectives": [
+        { "code": "BUS.STR.A.1", "description": "Разрабатывать бизнес-миссию и стратегические цели", "bloom": "create" },
+        { "code": "BUS.STR.A.2", "description": "Анализировать внутренние и внешние факторы (SWOT, PEST)", "bloom": "analyze" },
+        { "code": "BUS.STR.A.3", "description": "Оценивать конкурентные стратегии (Porter, Ansoff)", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["strategy_canvas","quiz","case_discussion"],
+        "summative": ["strategy_report","exam_case_study"],
+        "required_artifacts": ["doc","presentation"],
+        "rubrics": ["analysis_depth","strategy_clarity","application","presentation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 10,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","doc","video"],
+        "source_hints": ["strategy_case_studies","open_management_models"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_bus_marketing_adv",
+      "subject": "Business",
+      "stage": "stage_advanced",
+      "title": "Marketing Strategy and Analytics",
+      "description": "Маркетинговая аналитика, сегментация, цифровой маркетинг, KPI, воронка продаж, стратегии продвижения.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_bus_marketing"],
+      "objectives": [
+        { "code": "BUS.MKT.A.1", "description": "Применять методы анализа рынка и сегментации", "bloom": "apply" },
+        { "code": "BUS.MKT.A.2", "description": "Оценивать эффективность маркетинговых кампаний по KPI", "bloom": "evaluate" },
+        { "code": "BUS.MKT.A.3", "description": "Разрабатывать комплексные маркетинговые стратегии", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["analytics_task","campaign_review","quiz"],
+        "summative": ["marketing_plan_doc","exam_data_response"],
+        "required_artifacts": ["doc","data","presentation"],
+        "rubrics": ["data_analysis","strategy_logic","creativity","evaluation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.35, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","doc","data","interactive"],
+        "source_hints": ["open_marketing_analytics","real_campaign_data"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_bus_hr_adv",
+      "subject": "Business",
+      "stage": "stage_advanced",
+      "title": "Human Resource Management and Leadership",
+      "description": "Управление персоналом, организационное поведение, лидерство, корпоративная культура, переговоры.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_bus_people"],
+      "objectives": [
+        { "code": "BUS.HR.A.1", "description": "Применять теории мотивации и лидерства", "bloom": "apply" },
+        { "code": "BUS.HR.A.2", "description": "Анализировать организационное поведение и культуру", "bloom": "analyze" },
+        { "code": "BUS.HR.A.3", "description": "Оценивать эффективность HR-стратегий", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["role_play","quiz","case_discussion"],
+        "summative": ["leadership_case_report","exam_essay"],
+        "required_artifacts": ["doc","video"],
+        "rubrics": ["theory_use","analysis","evaluation","communication"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","doc","video","interactive"],
+        "source_hints": ["open_hrm_cases","leadership_theory"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_bus_ops_adv",
+      "subject": "Business",
+      "stage": "stage_advanced",
+      "title": "Operations and Global Supply Chains",
+      "description": "Управление операциями и цепями поставок: глобализация, логистика, lean и agile методы.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_bus_operations"],
+      "objectives": [
+        { "code": "BUS.OPS.A.1", "description": "Анализировать глобальные цепочки поставок", "bloom": "analyze" },
+        { "code": "BUS.OPS.A.2", "description": "Применять методы оптимизации (lean, agile)", "bloom": "apply" },
+        { "code": "BUS.OPS.A.3", "description": "Оценивать риски и устойчивость цепочек поставок", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["supply_chain_mapping","quiz","case_discussion"],
+        "summative": ["operations_project_report","exam_case_study"],
+        "required_artifacts": ["doc","presentation"],
+        "rubrics": ["analysis","application","evaluation","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.35, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","doc","video","interactive"],
+        "source_hints": ["supply_chain_cases","open_logistics_data"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_bus_finance_adv",
+      "subject": "Business",
+      "stage": "stage_advanced",
+      "title": "Corporate Finance and Investment Decisions",
+      "description": "Финансовый менеджмент, инвестиции, источники капитала, анализ NPV/IRR, структура капитала.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_bus_finance"],
+      "objectives": [
+        { "code": "BUS.FIN.A.1", "description": "Рассчитывать ключевые показатели (NPV, IRR, ARR, payback)", "bloom": "apply" },
+        { "code": "BUS.FIN.A.2", "description": "Анализировать финансовую отчетность и структуру капитала", "bloom": "analyze" },
+        { "code": "BUS.FIN.A.3", "description": "Оценивать инвестиционные решения и риски", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["finance_problem_sets","quiz","scenario_analysis"],
+        "summative": ["finance_project_report","exam_data_response"],
+        "required_artifacts": ["doc","data"],
+        "rubrics": ["calculation_accuracy","data_analysis","evaluation","report_quality"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 11,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.35, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","doc","data","interactive"],
+        "source_hints": ["corporate_finance_texts","investment_cases"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_bus_global_adv",
+      "subject": "Business",
+      "stage": "stage_advanced",
+      "title": "Global Business and International Trade",
+      "description": "Международная торговля, глобализация, валютные курсы, барьеры и возможности на мировых рынках.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_bus_external"],
+      "objectives": [
+        { "code": "BUS.GLB.A.1", "description": "Объяснять принципы международной торговли и ВТО", "bloom": "understand" },
+        { "code": "BUS.GLB.A.2", "description": "Анализировать влияние глобализации на бизнес", "bloom": "analyze" },
+        { "code": "BUS.GLB.A.3", "description": "Оценивать риски и возможности выхода на международные рынки", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["trade_data_analysis","quiz","debate"],
+        "summative": ["global_business_report","exam_case_study"],
+        "required_artifacts": ["doc","data"],
+        "rubrics": ["conceptual_clarity","analysis","argument","communication"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","doc","data","video"],
+        "source_hints": ["WTO_reports","global_trade_cases"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_bus_research_adv",
+      "subject": "Business",
+      "stage": "stage_advanced",
+      "title": "Case Studies, Data Response & Research Project",
+      "description": "Практика анализа кейсов, ответов на структурированные вопросы, проведение исследовательского проекта.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_bus_strategy_adv","module_bus_marketing_adv","module_bus_finance_adv"],
+      "objectives": [
+        { "code": "BUS.RES.A.1", "description": "Анализировать бизнес-кейсы и данные в ограниченное время", "bloom": "analyze" },
+        { "code": "BUS.RES.A.2", "description": "Формулировать аргументированные письменные ответы", "bloom": "create" },
+        { "code": "BUS.RES.A.3", "description": "Проводить мини-исследования и оформлять отчет", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["mock_case_study","quiz","draft_report"],
+        "summative": ["final_research_report","oral_presentation","exam_case"],
+        "required_artifacts": ["doc","presentation","video"],
+        "rubrics": ["case_analysis","argument_strength","research_method","communication"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 9,
+        "max_lessons": 12,
+        "mix": { "concept": 0.2, "guided": 0.2, "independent": 0.45, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","doc","data","presentation","video"],
+        "source_hints": ["examiner_reports","sample_case_studies","research_guides"]
+      },
+      "verification_policy": {
+        "guardian_confirmation_required": true,
+        "signature_required": true
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

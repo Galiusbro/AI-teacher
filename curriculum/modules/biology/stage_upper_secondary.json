@@ -1,0 +1,201 @@
+[
+    {
+      "id": "module_bio_cells",
+      "subject": "Biology",
+      "stage": "stage_upper_secondary",
+      "title": "Cells and Microscopy",
+      "description": "Клеточная теория, органоиды, различия растительной и животной клеток. Основы световой микроскопии и подготовка препаратов.",
+      "recommended_hours": 20,
+      "age_hint": [14,16],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "BIO.CELL.1", "description": "Опознавать органоиды (ядро, митохондрии, хлоропласты, ЭПС, Гольджи, лизосомы, рибосомы)", "bloom": "understand" },
+        { "code": "BIO.CELL.2", "description": "Сравнивать растительные и животные клетки (стенка, вакуоль, хлоропласты)", "bloom": "analyze" },
+        { "code": "BIO.CELL.3", "description": "Описывать принципы работы светового микроскопа и правила подготовки препарата", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["labeling_task","quiz","diagram_completion"],
+        "summative": ["practical_report","written_exam"],
+        "required_artifacts": ["photo","doc"],
+        "rubrics": ["terminology","diagram_accuracy","methodology","conclusion"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video","interactive"],
+        "source_hints": ["open_bio_atlases","school_lab_guides","microscopy_safety"]
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    },
+    {
+      "id": "module_bio_organisms",
+      "subject": "Biology",
+      "stage": "stage_upper_secondary",
+      "title": "Classification and Organisms",
+      "description": "Иерархическая классификация (домены/царства), биномиальная номенклатура, ключи для определения, основные группы организмов.",
+      "recommended_hours": 20,
+      "age_hint": [14,16],
+      "prerequisites": ["module_bio_cells"],
+      "objectives": [
+        { "code": "BIO.ORG.1", "description": "Объяснять уровни таксономии и принцип биномиальной номенклатуры", "bloom": "understand" },
+        { "code": "BIO.ORG.2", "description": "Использовать дихотомические ключи для распознавания организмов", "bloom": "apply" },
+        { "code": "BIO.ORG.3", "description": "Сравнивать признаки бактерий, грибов, растений, животных и протистов", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["sorting_activity","key_build_task","quiz"],
+        "summative": ["classification_case_study","written_exam"],
+        "required_artifacts": ["doc","image"],
+        "rubrics": ["concept_accuracy","key_usage","comparative_reasoning","communication"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 6,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","interactive"],
+        "source_hints": ["taxonomy_references","field_guides","open_biodiversity_datasets"]
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    },
+    {
+      "id": "module_bio_human_biology",
+      "subject": "Biology",
+      "stage": "stage_upper_secondary",
+      "title": "Human Biology (digestion, respiration, circulation)",
+      "description": "Структура и функции пищеварительной, дыхательной и кровеносной систем, обмен веществ, транспорт кислорода, гомеостаз на базовом уровне.",
+      "recommended_hours": 30,
+      "age_hint": [14,16],
+      "prerequisites": ["module_bio_cells"],
+      "objectives": [
+        { "code": "BIO.HUM.1", "description": "Описывать органы и этапы пищеварения; роль ферментов", "bloom": "understand" },
+        { "code": "BIO.HUM.2", "description": "Объяснять вентиляцию лёгких, газообмен и транспорт газов кровью", "bloom": "apply" },
+        { "code": "BIO.HUM.3", "description": "Схематизировать круги кровообращения, работу сердца, состав крови", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["diagram_labeling","data_response","short_answers"],
+        "summative": ["topic_test_mcq_structured","practical_report_virtual"],
+        "required_artifacts": ["doc","image","photo"],
+        "rubrics": ["anatomical_accuracy","process_explanation","data_interpretation","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 6,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video","interactive"],
+        "source_hints": ["open_physiology_animations","nutrition_guides","health_safety_notes"]
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    },
+    {
+      "id": "module_bio_plants",
+      "subject": "Biology",
+      "stage": "stage_upper_secondary",
+      "title": "Plant Biology and Photosynthesis",
+      "description": "Строение растения, транспорт воды и минеральных веществ, фотосинтез и факторы, влияющие на его скорость. Строма/тилакоиды базово.",
+      "recommended_hours": 25,
+      "age_hint": [14,16],
+      "prerequisites": ["module_bio_cells","module_bio_organisms"],
+      "objectives": [
+        { "code": "BIO.PLA.1", "description": "Опознавать ткани растения (ксилема, флоэма, устьица) и их функции", "bloom": "understand" },
+        { "code": "BIO.PLA.2", "description": "Объяснять уравнение и этапы фотосинтеза на базовом уровне", "bloom": "apply" },
+        { "code": "BIO.PLA.3", "description": "Анализировать влияние света, CO₂ и температуры на скорость фотосинтеза", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["labeling_task","graphing_practice","quiz"],
+        "summative": ["data_response_photosynthesis","practical_plan_writeup"],
+        "required_artifacts": ["doc","image"],
+        "rubrics": ["structure_function_link","graphing_accuracy","variable_control","reasoning"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","video","interactive"],
+        "source_hints": ["plant_anatomy_refs","open_lab_simulations"]
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    },
+    {
+      "id": "module_bio_ecology",
+      "subject": "Biology",
+      "stage": "stage_upper_secondary",
+      "title": "Ecology and Environment",
+      "description": "Экосистемы, пищевые цепи/сети, круговороты веществ, факторы среды, антропогенное воздействие и охрана природы.",
+      "recommended_hours": 20,
+      "age_hint": [14,16],
+      "prerequisites": ["module_bio_organisms"],
+      "objectives": [
+        { "code": "BIO.ECO.1", "description": "Составлять пищевые цепи и сети, определять трофические уровни", "bloom": "apply" },
+        { "code": "BIO.ECO.2", "description": "Объяснять круговорот углерода/воды и роль организмов", "bloom": "understand" },
+        { "code": "BIO.ECO.3", "description": "Оценивать влияние человека на экосистемы и меры устойчивости", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["ecosystem_scenarios","graph_interpretation","quiz"],
+        "summative": ["case_study_report","written_exam"],
+        "required_artifacts": ["doc","image"],
+        "rubrics": ["systems_thinking","data_use","argumentation","solutions_feasibility"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 4,
+        "max_lessons": 6,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.35, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","interactive","video"],
+        "source_hints": ["open_environmental_datasets","ecosystem_modelling_apps"]
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    },
+    {
+      "id": "module_bio_genetics",
+      "subject": "Biology",
+      "stage": "stage_upper_secondary",
+      "title": "Inheritance and Genetics",
+      "description": "Гены, аллели, генотип/фенотип, моногибридное скрещивание, решётки Пеннета, основы ДНК и наследования признаков.",
+      "recommended_hours": 15,
+      "age_hint": [14,16],
+      "prerequisites": ["module_bio_cells"],
+      "objectives": [
+        { "code": "BIO.GEN.1", "description": "Определять генотипы/фенотипы и записывать аллели (дом./рец.)", "bloom": "apply" },
+        { "code": "BIO.GEN.2", "description": "Решать задачи по моногибридному скрещиванию (решётка Пеннета)", "bloom": "apply" },
+        { "code": "BIO.GEN.3", "description": "Объяснять базовую структуру ДНК и роль генов", "bloom": "understand" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["problem_set","terminology_quiz","error_analysis"],
+        "summative": ["topic_test_structured","mini_research_brief"],
+        "required_artifacts": ["doc","image"],
+        "rubrics": ["notation_accuracy","problem_solving","conceptual_clarity","communication"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 3,
+        "max_lessons": 5,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","image","interactive","video"],
+        "source_hints": ["open_genetics_sims","dna_visualizations"]
+      },
+      "version": "1.0.0",
+      "locale_support": ["en","ru","es","zh"]
+    }
+  ]
+  

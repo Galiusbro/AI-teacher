@@ -1,0 +1,97 @@
+{
+  "id": "curriculum_history",
+  "title": "History (Cambridge-style)",
+  "subject": "History",
+  "stages": [
+    {
+      "id": "stage_lower_secondary",
+      "title": "Lower Secondary",
+      "age_range": [
+        11,
+        14
+      ],
+      "modules": [
+        {
+          "id": "module_hist_skills_lower",
+          "title": "Historical Skills (sources, timelines, cause & consequence)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_hist_ancient",
+          "title": "Ancient Civilisations",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_hist_medieval",
+          "title": "Medieval Period",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_hist_early_modern",
+          "title": "Early Modern Period (1500–1800)",
+          "recommended_hours": 30
+        }
+      ]
+    },
+    {
+      "id": "stage_upper_secondary",
+      "title": "Upper Secondary (IGCSE History)",
+      "age_range": [
+        14,
+        16
+      ],
+      "modules": [
+        {
+          "id": "module_hist_19th",
+          "title": "19th Century History (industrialisation, empire)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_hist_20th_wars",
+          "title": "20th Century Wars and Peace",
+          "recommended_hours": 45
+        },
+        {
+          "id": "module_hist_international",
+          "title": "International Relations (1919–2000)",
+          "recommended_hours": 45
+        },
+        {
+          "id": "module_hist_case_study",
+          "title": "Depth Studies (specific regions/countries)",
+          "recommended_hours": 40
+        }
+      ]
+    },
+    {
+      "id": "stage_advanced",
+      "title": "Advanced (A Level History)",
+      "age_range": [
+        16,
+        19
+      ],
+      "modules": [
+        {
+          "id": "module_hist_early_modern_adv",
+          "title": "Early Modern History (politics, religion, economy)",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_hist_modern_adv",
+          "title": "Modern History (19–20th centuries)",
+          "recommended_hours": 60
+        },
+        {
+          "id": "module_hist_historical_thinking",
+          "title": "Historical Thinking (historiography, debates)",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_hist_research",
+          "title": "Independent Research Essay / Coursework",
+          "recommended_hours": 40
+        }
+      ]
+    }
+  ]
+}

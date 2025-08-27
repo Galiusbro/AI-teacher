@@ -1,0 +1,195 @@
+[
+    {
+      "id": "module_math_numbers_lower",
+      "subject": "Mathematics",
+      "stage": "stage_lower_secondary",
+      "title": "Integers, Fractions, Decimals",
+      "description": "Расширение работы с целыми числами, дробями и десятичными: сравнение, преобразование, операции.",
+      "recommended_hours": 40,
+      "age_hint": [11,14],
+      "prerequisites": ["module_math_numbers_primary","module_math_fractions_primary"],
+      "objectives": [
+        { "code": "MATH.NUM.L.1", "description": "Оперировать целыми числами, дробями и десятичными", "bloom": "apply" },
+        { "code": "MATH.NUM.L.2", "description": "Преобразовывать дроби в десятичные и проценты", "bloom": "apply" },
+        { "code": "MATH.NUM.L.3", "description": "Решать текстовые задачи с применением дробей и процентов", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["conversion_tasks","quiz","word_problems"],
+        "summative": ["test","exam_questions"],
+        "required_artifacts": ["worksheet"],
+        "rubrics": ["accuracy","application","problem_solving"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","interactive","visual"],
+        "source_hints": ["fractions_to_decimals","math_drills"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_algebra_intro",
+      "subject": "Mathematics",
+      "stage": "stage_lower_secondary",
+      "title": "Introduction to Algebra (expressions, simple equations)",
+      "description": "Введение в алгебру: буквенные выражения, простые уравнения и формулы.",
+      "recommended_hours": 45,
+      "age_hint": [11,14],
+      "prerequisites": ["module_math_numbers_lower"],
+      "objectives": [
+        { "code": "MATH.ALG.L.1", "description": "Записывать и упрощать выражения", "bloom": "apply" },
+        { "code": "MATH.ALG.L.2", "description": "Решать простые линейные уравнения", "bloom": "apply" },
+        { "code": "MATH.ALG.L.3", "description": "Использовать формулы для решения задач", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["equation_tasks","quiz","mini_problems"],
+        "summative": ["exam_questions","algebra_test"],
+        "required_artifacts": ["worksheet"],
+        "rubrics": ["accuracy","reasoning","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 50,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.35, "guided": 0.3, "independent": 0.2, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","interactive"],
+        "source_hints": ["intro_algebra","linear_equations"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_geometry_lower",
+      "subject": "Mathematics",
+      "stage": "stage_lower_secondary",
+      "title": "Geometry (angles, triangles, symmetry)",
+      "description": "Углы, треугольники, симметрия и базовые свойства фигур.",
+      "recommended_hours": 35,
+      "age_hint": [11,14],
+      "prerequisites": ["module_math_geometry_primary"],
+      "objectives": [
+        { "code": "MATH.GEO.L.1", "description": "Измерять и строить углы", "bloom": "apply" },
+        { "code": "MATH.GEO.L.2", "description": "Применять свойства треугольников", "bloom": "analyze" },
+        { "code": "MATH.GEO.L.3", "description": "Определять симметрию фигур", "bloom": "understand" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["angle_tasks","drawing_tasks","quiz"],
+        "summative": ["geometry_test","exam_problems"],
+        "required_artifacts": ["worksheet","drawing"],
+        "rubrics": ["accuracy","application","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","drawing","interactive"],
+        "source_hints": ["geometry_kits","angle_measurement"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_ratio_proportion",
+      "subject": "Mathematics",
+      "stage": "stage_lower_secondary",
+      "title": "Ratio, Proportion, Percentages",
+      "description": "Соотношения, пропорции и проценты в реальных задачах.",
+      "recommended_hours": 40,
+      "age_hint": [11,14],
+      "prerequisites": ["module_math_numbers_lower"],
+      "objectives": [
+        { "code": "MATH.RAT.L.1", "description": "Решать задачи на пропорции", "bloom": "apply" },
+        { "code": "MATH.RAT.L.2", "description": "Находить процент от числа", "bloom": "apply" },
+        { "code": "MATH.RAT.L.3", "description": "Использовать проценты в практических ситуациях", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["ratio_tasks","percentage_problems","quiz"],
+        "summative": ["test","real_life_project"],
+        "required_artifacts": ["worksheet"],
+        "rubrics": ["accuracy","application","problem_solving"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 45,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","interactive"],
+        "source_hints": ["ratio_problems","percentage_games"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_measure_lower",
+      "subject": "Mathematics",
+      "stage": "stage_lower_secondary",
+      "title": "Perimeter, Area, Volume",
+      "description": "Расчёт периметра, площади и объёма простых фигур и тел.",
+      "recommended_hours": 35,
+      "age_hint": [11,14],
+      "prerequisites": ["module_math_measure_primary","module_math_geometry_lower"],
+      "objectives": [
+        { "code": "MATH.MES.L.1", "description": "Вычислять периметр фигур", "bloom": "apply" },
+        { "code": "MATH.MES.L.2", "description": "Находить площадь прямоугольника, треугольника, круга", "bloom": "apply" },
+        { "code": "MATH.MES.L.3", "description": "Рассчитывать объём куба и параллелепипеда", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["area_tasks","volume_tasks","quiz"],
+        "summative": ["geometry_test","exam_questions"],
+        "required_artifacts": ["worksheet"],
+        "rubrics": ["accuracy","application","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 50,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","interactive","drawing"],
+        "source_hints": ["area_volume_problems","geometry_kits"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_math_data_lower",
+      "subject": "Mathematics",
+      "stage": "stage_lower_secondary",
+      "title": "Statistics and Probability (intro)",
+      "description": "Введение в статистику и вероятность: среднее, мода, медиана, простые вероятностные задачи.",
+      "recommended_hours": 25,
+      "age_hint": [11,14],
+      "prerequisites": ["module_math_data_primary"],
+      "objectives": [
+        { "code": "MATH.DAT.L.1", "description": "Находить среднее, моду и медиану", "bloom": "apply" },
+        { "code": "MATH.DAT.L.2", "description": "Строить диаграммы и гистограммы", "bloom": "create" },
+        { "code": "MATH.DAT.L.3", "description": "Решать простые вероятностные задачи", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["data_tasks","probability_games","quiz"],
+        "summative": ["statistics_test","mini_project"],
+        "required_artifacts": ["doc","chart"],
+        "rubrics": ["accuracy","interpretation","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 40,
+        "min_lessons": 5,
+        "max_lessons": 7,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.3, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["worksheet","chart","interactive"],
+        "source_hints": ["intro_stats","probability_games"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

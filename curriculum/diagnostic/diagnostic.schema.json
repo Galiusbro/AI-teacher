@@ -1,0 +1,259 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.org/diagnostic.schema.json",
+    "title": "Adaptive Diagnostic Assessment",
+    "type": "object",
+    "required": ["id", "subject", "target_age", "difficulty_level", "question_type", "content", "scoring", "adaptation_rules", "psychological_profile", "version"],
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Уникальный ID диагностического вопроса"
+      },
+      "subject": {
+        "type": "string",
+        "description": "Предмет (Mathematics, English, Physics, Geography, ...)"
+      },
+      "target_age": {
+        "type": "integer",
+        "minimum": 5,
+        "maximum": 18,
+        "description": "Целевой возраст ученика для этого вопроса"
+      },
+      "difficulty_level": {
+        "type": "string",
+        "enum": ["beginner", "elementary", "intermediate", "advanced", "expert"],
+        "description": "Уровень сложности независимо от возраста"
+      },
+      "question_type": {
+        "type": "string",
+        "enum": ["mcq_single", "mcq_multiple", "numeric", "short_text", "long_text", "dialogue", "interactive", "problem_solving"],
+        "description": "Тип вопроса"
+      },
+      "cognitive_domain": {
+        "type": "string",
+        "enum": ["remember", "understand", "apply", "analyze", "evaluate", "create"],
+        "description": "Когнитивный уровень по Блуму"
+      },
+      "estimated_time_sec": {
+        "type": "integer",
+        "minimum": 10,
+        "maximum": 600,
+        "description": "Ожидаемое время на ответ в секундах"
+      },
+
+      "content": {
+        "type": "object",
+        "required": ["question"],
+        "properties": {
+          "question": {
+            "type": "string",
+            "description": "Текст вопроса"
+          },
+          "context": {
+            "type": "string",
+            "description": "Дополнительный контекст/ситуация"
+          },
+          "instructions": {
+            "type": "string",
+            "description": "Специальные инструкции"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["text"],
+              "properties": {
+                "text": { "type": "string" },
+                "is_correct": { "type": "boolean" },
+                "feedback": { "type": "string" }
+              }
+            },
+            "description": "Варианты ответов для MCQ"
+          },
+          "expected_format": {
+            "type": "object",
+            "properties": {
+              "type": { "type": "string", "enum": ["number", "text", "fraction", "expression", "sentence"] },
+              "units": { "type": "string" },
+              "precision": { "type": "integer" }
+            }
+          },
+          "media": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["type", "url"],
+              "properties": {
+                "type": { "type": "string", "enum": ["image", "video", "audio", "diagram"] },
+                "url": { "type": "string" },
+                "caption": { "type": "string" }
+              }
+            }
+          }
+        }
+      },
+
+      "scoring": {
+        "type": "object",
+        "required": ["max_points"],
+        "properties": {
+          "max_points": {
+            "type": "number",
+            "minimum": 0
+          },
+          "partial_credit": {
+            "type": "boolean",
+            "description": "Возможны ли частичные баллы"
+          },
+          "auto_grade": {
+            "type": "boolean",
+            "description": "Можно ли автоматически проверить"
+          },
+          "tolerance": {
+            "type": "number",
+            "description": "Допустимая погрешность для числовых ответов"
+          },
+          "correct_answers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "answer": { "type": ["string", "number", "boolean"] },
+                "points": { "type": "number" },
+                "feedback": { "type": "string" }
+              }
+            }
+          }
+        }
+      },
+
+      "adaptation_rules": {
+        "type": "object",
+        "properties": {
+          "if_correct_increase_difficulty": {
+            "type": "boolean",
+            "description": "Повышать ли сложность при правильном ответе"
+          },
+          "if_incorrect_decrease_difficulty": {
+            "type": "boolean",
+            "description": "Понижать ли сложность при неправильном ответе"
+          },
+          "difficulty_adjustment": {
+            "type": "object",
+            "properties": {
+              "correct_streak_threshold": { "type": "integer", "minimum": 1 },
+              "incorrect_streak_threshold": { "type": "integer", "minimum": 1 },
+              "age_adjustment_range": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": { "type": "number" }
+              }
+            }
+          },
+          "follow_up_questions": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "ID вопросов для уточнения при определенном ответе"
+          }
+        }
+      },
+
+      "psychological_profile": {
+        "type": "object",
+        "properties": {
+          "learning_style": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["visual", "auditory", "kinesthetic", "reading_writing"]
+            }
+          },
+          "personality_traits": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["extroverted", "introverted", "conscientious", "creative", "analytical", "intuitive"]
+            }
+          },
+          "communication_style": {
+            "type": "string",
+            "enum": ["formal", "casual", "humorous", "direct", "metaphorical", "technical"]
+          },
+          "motivation_type": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["achievement", "mastery", "social", "autonomy", "purpose"]
+            }
+          },
+          "response_patterns": {
+            "type": "object",
+            "properties": {
+              "typical_response_time": {
+                "type": "object",
+                "properties": {
+                  "quick_threshold_sec": { "type": "integer" },
+                  "slow_threshold_sec": { "type": "integer" }
+                }
+              },
+              "confidence_indicators": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "hesitation_patterns": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          }
+        }
+      },
+
+      "accessibility": {
+        "type": "object",
+        "properties": {
+          "read_aloud": { "type": "boolean" },
+          "large_text": { "type": "boolean" },
+          "extra_time": { "type": "boolean" },
+          "simplified_language": { "type": "boolean" },
+          "visual_supports": { "type": "boolean" }
+        }
+      },
+
+      "localization": {
+        "type": "object",
+        "properties": {
+          "supported_languages": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "cultural_adaptations": {
+            "type": "object",
+            "additionalProperties": { "type": "string" }
+          }
+        }
+      },
+
+      "metadata": {
+        "type": "object",
+        "properties": {
+          "created_by": { "type": "string" },
+          "created_at": { "type": "string", "format": "date-time" },
+          "last_updated": { "type": "string", "format": "date-time" },
+          "usage_statistics": {
+            "type": "object",
+            "properties": {
+              "times_used": { "type": "integer" },
+              "avg_time_spent_sec": { "type": "number" },
+              "avg_correctness": { "type": "number" },
+              "difficulty_rating": { "type": "number" }
+            }
+          }
+        }
+      },
+
+      "version": { "type": "string" }
+    },
+    "additionalProperties": false
+  }

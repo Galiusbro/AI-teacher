@@ -1,0 +1,163 @@
+[
+    {
+      "id": "module_ict_foundations_primary",
+      "subject": "ICT",
+      "stage": "stage_primary",
+      "title": "Devices & Basic Operations",
+      "description": "Знакомство с компьютерами, планшетами и другими устройствами. Включение/выключение, использование мыши, сенсорного экрана и базовых приложений.",
+      "recommended_hours": 25,
+      "age_hint": [5,11],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "ICT.FND.P.1", "description": "Опознавать основные устройства (компьютер, планшет, смартфон)", "bloom": "remember" },
+        { "code": "ICT.FND.P.2", "description": "Выполнять базовые операции (открыть/сохранить файл, печать)", "bloom": "apply" },
+        { "code": "ICT.FND.P.3", "description": "Навигация по простым меню и приложениям", "bloom": "understand" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["practical_tasks","games","quiz"],
+        "summative": ["skills_demo","teacher_observation"],
+        "required_artifacts": ["worksheet"],
+        "rubrics": ["accuracy","independence","confidence"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["interactive","device"],
+        "source_hints": ["intro_kids_apps","educational_games"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_ict_typing_primary",
+      "subject": "ICT",
+      "stage": "stage_primary",
+      "title": "Keyboarding & Text Entry",
+      "description": "Освоение клавиатуры, простого набора текста и базовых правил оформления.",
+      "recommended_hours": 20,
+      "age_hint": [5,11],
+      "prerequisites": ["module_ict_foundations_primary"],
+      "objectives": [
+        { "code": "ICT.KEY.P.1", "description": "Владеть базовыми клавишами (буквы, цифры, enter, space)", "bloom": "apply" },
+        { "code": "ICT.KEY.P.2", "description": "Создавать простые тексты (слова, предложения)", "bloom": "apply" },
+        { "code": "ICT.KEY.P.3", "description": "Использовать простое форматирование (шрифт, размер, цвет)", "bloom": "understand" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["typing_games","short_text_tasks"],
+        "summative": ["typed_assignment"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["speed","accuracy","formatting"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 4,
+        "max_lessons": 6,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["interactive","doc"],
+        "source_hints": ["typing_apps","kids_word_processors"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_ict_safety_primary",
+      "subject": "ICT",
+      "stage": "stage_primary",
+      "title": "Online Safety & Digital Citizenship (intro)",
+      "description": "Основы безопасного поведения в интернете: пароли, личная информация, уважение к другим пользователям.",
+      "recommended_hours": 20,
+      "age_hint": [5,11],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "ICT.SAF.P.1", "description": "Объяснять важность паролей и конфиденциальности", "bloom": "understand" },
+        { "code": "ICT.SAF.P.2", "description": "Опознавать безопасные и небезопасные онлайн-ситуации", "bloom": "analyze" },
+        { "code": "ICT.SAF.P.3", "description": "Демонстрировать уважительное поведение онлайн", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["role_play","scenarios","quiz"],
+        "summative": ["safety_poster","teacher_observation"],
+        "required_artifacts": ["poster"],
+        "rubrics": ["awareness","application","communication"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 4,
+        "max_lessons": 6,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.25, "assessment": 0.2 }
+      },
+      "resources": {
+        "allowed_media": ["poster","interactive","video"],
+        "source_hints": ["child_safety_guides","online_safety_games"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_ict_productivity_primary",
+      "subject": "ICT",
+      "stage": "stage_primary",
+      "title": "Creating with Tools (paint, slides, simple docs)",
+      "description": "Создание рисунков, слайдов и простых документов с использованием базовых программ.",
+      "recommended_hours": 30,
+      "age_hint": [5,11],
+      "prerequisites": ["module_ict_typing_primary"],
+      "objectives": [
+        { "code": "ICT.CRT.P.1", "description": "Создавать простые рисунки и слайды", "bloom": "create" },
+        { "code": "ICT.CRT.P.2", "description": "Оформлять короткие документы", "bloom": "apply" },
+        { "code": "ICT.CRT.P.3", "description": "Презентовать свои работы классу", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["creative_tasks","peer_feedback","quiz"],
+        "summative": ["project_portfolio","presentation"],
+        "required_artifacts": ["doc","slides","image"],
+        "rubrics": ["creativity","clarity","basic_skills"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["doc","slides","image"],
+        "source_hints": ["paint_apps","simple_slide_tools","docs_for_kids"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_ict_data_primary",
+      "subject": "ICT",
+      "stage": "stage_primary",
+      "title": "Pictures, Tables and Simple Charts",
+      "description": "Основы представления информации в виде картинок, таблиц и простых диаграмм.",
+      "recommended_hours": 20,
+      "age_hint": [5,11],
+      "prerequisites": ["module_ict_productivity_primary"],
+      "objectives": [
+        { "code": "ICT.DAT.P.1", "description": "Создавать простые таблицы и диаграммы", "bloom": "apply" },
+        { "code": "ICT.DAT.P.2", "description": "Интерпретировать простые графики и изображения", "bloom": "understand" },
+        { "code": "ICT.DAT.P.3", "description": "Использовать цифровые инструменты для представления данных", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["chart_tasks","group_discussions","quiz"],
+        "summative": ["chart_project","doc_submission"],
+        "required_artifacts": ["doc","chart"],
+        "rubrics": ["clarity","accuracy","interpretation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 4,
+        "max_lessons": 6,
+        "mix": { "concept": 0.25, "guided": 0.25, "independent": 0.35, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["chart","doc","image"],
+        "source_hints": ["kids_data_apps","visualisation_tools"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

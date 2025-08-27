@@ -1,0 +1,231 @@
+[
+    {
+      "id": "module_cs_programming_adv",
+      "subject": "Computer Science",
+      "stage": "stage_advanced",
+      "title": "Advanced Programming (OO, recursion, modules)",
+      "description": "ООП (классы, объекты, наследование), рекурсия, модули и библиотеки. Продвинутое структурирование программ.",
+      "recommended_hours": 60,
+      "age_hint": [16,19],
+      "prerequisites": ["module_cs_programming_igcse"],
+      "objectives": [
+        { "code": "CS.PROG.A.1", "description": "Создавать классы и объекты, использовать наследование и инкапсуляцию", "bloom": "apply" },
+        { "code": "CS.PROG.A.2", "description": "Применять рекурсию для решения алгоритмических задач", "bloom": "apply" },
+        { "code": "CS.PROG.A.3", "description": "Использовать модули и библиотеки для расширения программ", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["oop_tasks","recursion_practice","quiz"],
+        "summative": ["program_submission","exam_practical"],
+        "required_artifacts": ["code","doc"],
+        "rubrics": ["syntax","design","efficiency","documentation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 12,
+        "max_lessons": 15,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.35, "assessment": 0.1 }
+      },
+      "resources": {
+        "allowed_media": ["code","doc","interactive"],
+        "source_hints": ["oop_guides","recursion_visualizers","python_libraries"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_cs_structures_adv",
+      "subject": "Computer Science",
+      "stage": "stage_advanced",
+      "title": "Data Structures & Algorithms (lists, trees, graphs, complexity)",
+      "description": "Классические структуры данных (связные списки, стеки, очереди, деревья, графы) и алгоритмы работы с ними. Анализ сложности O(n), O(log n).",
+      "recommended_hours": 55,
+      "age_hint": [16,19],
+      "prerequisites": ["module_cs_algorithms_igcse"],
+      "objectives": [
+        { "code": "CS.STR.A.1", "description": "Реализовывать линейные структуры данных (списки, стеки, очереди)", "bloom": "apply" },
+        { "code": "CS.STR.A.2", "description": "Использовать деревья и графы для решения задач", "bloom": "apply" },
+        { "code": "CS.STR.A.3", "description": "Анализировать алгоритмы по временной и пространственной сложности", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["ds_coding_tasks","complexity_analysis","quiz"],
+        "summative": ["exam_written","ds_project_code"],
+        "required_artifacts": ["code","doc"],
+        "rubrics": ["implementation","efficiency","analysis","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 10,
+        "max_lessons": 12,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["code","interactive","doc"],
+        "source_hints": ["ds_visualizers","big_o_resources"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_cs_systems_adv",
+      "subject": "Computer Science",
+      "stage": "stage_advanced",
+      "title": "Computer Architecture & OS (assembly, scheduling)",
+      "description": "Архитектура компьютеров: машинный код, ассемблер, управление памятью. ОС: процессы, планировщики, файловые системы.",
+      "recommended_hours": 45,
+      "age_hint": [16,19],
+      "prerequisites": ["module_cs_theory_igcse"],
+      "objectives": [
+        { "code": "CS.SYS.A.1", "description": "Писать простые программы на ассемблере", "bloom": "apply" },
+        { "code": "CS.SYS.A.2", "description": "Объяснять управление процессами и памятью в ОС", "bloom": "understand" },
+        { "code": "CS.SYS.A.3", "description": "Анализировать алгоритмы планирования (FIFO, Round Robin, Priority)", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["assembly_tasks","quiz","diagram_labeling"],
+        "summative": ["system_exam","lab_report"],
+        "required_artifacts": ["code","doc"],
+        "rubrics": ["implementation","conceptual_understanding","analysis","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","code","interactive"],
+        "source_hints": ["assembly_simulators","os_case_studies"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_cs_networks_security_adv",
+      "subject": "Computer Science",
+      "stage": "stage_advanced",
+      "title": "Networks, Internet & Security (protocols, crypto basics)",
+      "description": "Сетевые протоколы, архитектура TCP/IP, криптография (хеши, симметричное и асимметричное шифрование), угрозы и защита.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_cs_theory_igcse"],
+      "objectives": [
+        { "code": "CS.NET.A.1", "description": "Объяснять работу протоколов TCP/IP и DNS", "bloom": "understand" },
+        { "code": "CS.NET.A.2", "description": "Анализировать угрозы безопасности (DDoS, фишинг, malware)", "bloom": "analyze" },
+        { "code": "CS.NET.A.3", "description": "Применять базовые методы криптографии для защиты данных", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["network_diagram_task","quiz","crypto_exercises"],
+        "summative": ["security_exam","case_study"],
+        "required_artifacts": ["doc","code"],
+        "rubrics": ["accuracy","analysis","application","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","code","interactive"],
+        "source_hints": ["cybersecurity_guides","network_protocol_refs"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_cs_databases_adv",
+      "subject": "Computer Science",
+      "stage": "stage_advanced",
+      "title": "Databases & Transactions (relational, normalization, SQL)",
+      "description": "Реляционные БД, нормализация до 3НФ, SQL (JOIN, GROUP BY), транзакции и целостность данных.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_cs_databases_igcse"],
+      "objectives": [
+        { "code": "CS.DB.A.1", "description": "Создавать нормализованные таблицы до 3НФ", "bloom": "apply" },
+        { "code": "CS.DB.A.2", "description": "Писать сложные SQL-запросы (JOIN, агрегаты)", "bloom": "apply" },
+        { "code": "CS.DB.A.3", "description": "Оценивать важность транзакций и ACID-свойств", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["sql_practice","db_design_task","quiz"],
+        "summative": ["db_project","exam_data_response"],
+        "required_artifacts": ["doc","data"],
+        "rubrics": ["query_accuracy","design_quality","analysis","report_quality"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","data","interactive"],
+        "source_hints": ["open_sql_practice","db_design_refs"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_cs_ai_adv",
+      "subject": "Computer Science",
+      "stage": "stage_advanced",
+      "title": "Foundations of AI & Data (search, logic, basic ML concepts)",
+      "description": "Основы ИИ: поиск в пространстве состояний (DFS, BFS, A*), логика предикатов, базовые концепции машинного обучения.",
+      "recommended_hours": 35,
+      "age_hint": [16,19],
+      "prerequisites": ["module_cs_algorithms_igcse"],
+      "objectives": [
+        { "code": "CS.AI.A.1", "description": "Реализовывать алгоритмы поиска (DFS, BFS, A*)", "bloom": "apply" },
+        { "code": "CS.AI.A.2", "description": "Использовать логические выражения и правила вывода", "bloom": "apply" },
+        { "code": "CS.AI.A.3", "description": "Объяснять базовые методы ML (обучение с учителем, классификация)", "bloom": "understand" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["search_tasks","quiz","logic_problems"],
+        "summative": ["ai_project","exam_questions"],
+        "required_artifacts": ["code","doc"],
+        "rubrics": ["implementation","analysis","clarity","innovation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["code","doc","interactive"],
+        "source_hints": ["ai_search_visualizers","ml_concept_guides"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_cs_project_adv",
+      "subject": "Computer Science",
+      "stage": "stage_advanced",
+      "title": "Capstone / Coursework (design–implement–evaluate)",
+      "description": "Завершающий проект: от выбора задачи до дизайна, реализации, тестирования и презентации. Индивидуальная или групповая работа.",
+      "recommended_hours": 45,
+      "age_hint": [16,19],
+      "prerequisites": ["module_cs_programming_adv","module_cs_structures_adv","module_cs_databases_adv"],
+      "objectives": [
+        { "code": "CS.PROJ.A.1", "description": "Разрабатывать спецификацию и архитектуру ПО", "bloom": "create" },
+        { "code": "CS.PROJ.A.2", "description": "Реализовывать проект с использованием продвинутых технологий", "bloom": "apply" },
+        { "code": "CS.PROJ.A.3", "description": "Оценивать качество проекта и писать документацию", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["design_review","progress_check","peer_feedback"],
+        "summative": ["final_project_code","project_report","presentation"],
+        "required_artifacts": ["code","doc","presentation"],
+        "rubrics": ["design_quality","functionality","documentation","presentation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 9,
+        "max_lessons": 12,
+        "mix": { "concept": 0.2, "guided": 0.2, "independent": 0.45, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["code","doc","presentation"],
+        "source_hints": ["open_source_projects","project_based_learning"]
+      },
+      "verification_policy": {
+        "guardian_confirmation_required": true,
+        "signature_required": true
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

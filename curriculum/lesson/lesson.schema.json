@@ -1,0 +1,256 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.org/lesson.schema.json",
+    "title": "Universal Lesson",
+    "type": "object",
+    "required": ["id", "module_id", "subject", "stage", "age_hint", "title", "type", "duration_minutes", "language", "objectives", "content", "tasks", "assessment", "feedback_policy", "accessibility", "telemetry", "version"],
+    "properties": {
+      "id": { "type": "string", "description": "Уникальный ID урока" },
+      "module_id": { "type": "string", "description": "ID модуля/темы" },
+      "subject": { "type": "string", "description": "Предмет (Mathematics, English, Physics, ...)" },
+      "stage": { "type": "string", "description": "Учебная ступень (stage_primary, stage_lower_secondary, stage_upper_secondary, stage_advanced)" },
+      "age_hint": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": { "type": "integer" },
+        "description": "Диапазон лет: [min, max]"
+      },
+      "language": { "type": "string", "description": "Код языка (ru, en, ...)" },
+      "locale_overrides": {
+        "type": "object",
+        "description": "Переводы ключевых строк, если нужно мультиязычие",
+        "additionalProperties": { "type": "string" }
+      },
+      "title": { "type": "string" },
+      "subtitle": { "type": "string" },
+      "type": {
+        "type": "string",
+        "enum": ["concept", "guided", "independent", "assessment", "revision", "project", "lab"],
+        "description": "Тип урока"
+      },
+      "duration_minutes": { "type": "integer", "minimum": 5, "maximum": 120 },
+      "prerequisites": { "type": "array", "items": { "type": "string" } },
+      "tags": { "type": "array", "items": { "type": "string" } },
+  
+      "objectives": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": ["description"],
+          "properties": {
+            "code": { "type": "string" },
+            "description": { "type": "string" },
+            "bloom": { "type": "string", "enum": ["remember","understand","apply","analyze","evaluate","create"] }
+          }
+        }
+      },
+  
+      "materials": {
+        "type": "object",
+        "properties": {
+          "required": { "type": "array", "items": { "type": "string" } },
+          "optional": { "type": "array", "items": { "type": "string" } },
+          "safety_notes": { "type": "string", "description": "Важно для lab/PE" }
+        },
+        "additionalProperties": false
+      },
+  
+      "content": {
+        "type": "object",
+        "required": ["intro", "theory_blocks", "examples"],
+        "properties": {
+          "intro": { "type": "string", "description": "Короткий ввод/разминка" },
+          "theory_blocks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["heading", "body"],
+              "properties": {
+                "heading": { "type": "string" },
+                "body": { "type": "string" },
+                "formulas_latex": { "type": "array", "items": { "type": "string" } },
+                "media": { "type": "array", "items": { "type": "string", "description": "video:..., diagram:..., simulation:..." } }
+              }
+            }
+          },
+          "examples": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["prompt", "worked_solution"],
+              "properties": {
+                "prompt": { "type": "string" },
+                "worked_solution": { "type": "string" },
+                "media": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          },
+          "guided_prompts": { "type": "array", "items": { "type": "string" } },
+          "misconceptions": { "type": "array", "items": { "type": "string" } }
+        }
+      },
+  
+      "differentiation": {
+        "type": "object",
+        "properties": {
+          "easier": { "type": "array", "items": { "type": "string" } },
+          "harder": { "type": "array", "items": { "type": "string" } },
+          "fast_track_rule": { "type": "string", "description": "Когда переводить на усложнение" },
+          "remediate_rule": { "type": "string", "description": "Когда давать дополнительный guided" }
+        }
+      },
+  
+      "interactives": {
+        "type": "array",
+        "description": "Набор виджетов/активностей",
+        "items": {
+          "type": "object",
+          "required": ["id", "type", "instructions"],
+          "properties": {
+            "id": { "type": "string" },
+            "title": { "type": "string" },
+            "type": {
+              "type": "string",
+              "enum": ["drag_drop","multiple_choice","short_text","numeric","draw_on_canvas","code_runner","simulation","audio_record","video_upload","file_upload"]
+            },
+            "instructions": { "type": "string" },
+            "payload": { "type": "object", "description": "Данные конкретного виджета (опции, фигуры, тестовые кейсы…)" },
+            "answer_key": { "type": "object" },
+            "scoring": {
+              "type": "object",
+              "properties": {
+                "max_points": { "type": "number" },
+                "auto_grader": { "type": "boolean" },
+                "tolerance": { "type": "number" }
+              }
+            },
+            "feedback_rules": { "type": "array", "items": { "type": "object" } }
+          }
+        }
+      },
+  
+      "tasks": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": ["id","kind","instructions","inputs","expected"],
+          "properties": {
+            "id": { "type": "string" },
+            "kind": { "type": "string", "enum": ["practice","homework","project","lab","assessment"] },
+            "instructions": { "type": "string" },
+            "inputs": { "type": "array", "items": { "type": "string", "enum": ["text","number","mcq","drawing","photo","audio","video","file"] } },
+            "expected": { "type": "object", "description": "Ожидаемые выходы / ключи / критерии" },
+            "allow_ai_hints": { "type": "boolean" },
+            "allow_parent_confirmation": { "type": "boolean" },
+            "deadline": { "type": "string", "format": "date-time" }
+          }
+        }
+      },
+  
+      "assessment": {
+        "type": "object",
+        "required": ["mode","rubric","mastery_threshold"],
+        "properties": {
+          "mode": { "type": "string", "enum": ["formative","summative"] },
+          "rubric": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["criterion","levels"],
+              "properties": {
+                "criterion": { "type": "string" },
+                "levels": { "type": "array", "items": { "type": "string" }, "minItems": 2 }
+              }
+            }
+          },
+          "mastery_threshold": {
+            "type": "object",
+            "description": "Порог мастерства по компонентам и в целом",
+            "additionalProperties": { "type": "number" }
+          },
+          "proctoring": {
+            "type": "object",
+            "properties": {
+              "parent_signoff_required": { "type": "boolean" },
+              "parent_pin": { "type": "boolean" },
+              "camera_required": { "type": "boolean" }
+            }
+          }
+        }
+      },
+  
+      "feedback_policy": {
+        "type": "object",
+        "properties": {
+          "ai_check": { "type": "boolean" },
+          "hint_after_incorrect": { "type": "integer" },
+          "show_worked_example_on_fail": { "type": "boolean" },
+          "retry_limit": { "type": "integer" }
+        }
+      },
+  
+      "accessibility": {
+        "type": "object",
+        "properties": {
+          "alt_text": { "type": "boolean" },
+          "keyboard_support": { "type": "boolean" },
+          "reduced_motion": { "type": "boolean" },
+          "high_contrast_mode": { "type": "boolean" },
+          "read_aloud": { "type": "boolean" },
+          "captions": { "type": "boolean" }
+        }
+      },
+  
+      "resources": {
+        "type": "object",
+        "properties": {
+          "allowed_media": { "type": "array", "items": { "type": "string" } },
+          "links": { "type": "array", "items": { "type": "string" } },
+          "source_hints": { "type": "array", "items": { "type": "string" } }
+        }
+      },
+  
+      "safety": {
+        "type": "object",
+        "properties": {
+          "adult_supervision": { "type": "boolean" },
+          "protective_equipment": { "type": "array", "items": { "type": "string" } },
+          "hazards": { "type": "array", "items": { "type": "string" } }
+        }
+      },
+  
+      "telemetry": {
+        "type": "object",
+        "properties": {
+          "log_events": { "type": "array", "items": { "type": "string" } },
+          "store_artifacts": { "type": "array", "items": { "type": "string" } }
+        }
+      },
+  
+      "next_lesson_logic": {
+        "type": "object",
+        "description": "Правила маршрутизации после урока",
+        "properties": {
+          "if_mastery_gte": { "type": "number" },
+          "next_type_if_mastered": { "type": "string", "enum": ["guided","independent","assessment","revision","project","lab","concept"] },
+          "next_type_if_not_mastered": { "type": "string", "enum": ["guided","independent","revision"] }
+        }
+      },
+  
+      "version": { "type": "string" },
+      "metadata": {
+        "type": "object",
+        "properties": {
+          "authors": { "type": "array", "items": { "type": "string" } },
+          "created_at": { "type": "string", "format": "date-time" },
+          "updated_at": { "type": "string", "format": "date-time" },
+          "license": { "type": "string" }
+        }
+      }
+    },
+    "additionalProperties": false
+  }
+  

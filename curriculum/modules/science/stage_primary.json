@@ -1,0 +1,163 @@
+[
+    {
+      "id": "module_sci_living_primary",
+      "subject": "Science",
+      "stage": "stage_primary",
+      "title": "Living Things and Habitats",
+      "description": "Живые организмы и их среды обитания: растения, животные, простые цепи питания.",
+      "recommended_hours": 40,
+      "age_hint": [5,11],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "SCI.LIV.P.1", "description": "Распознавать живое и неживое", "bloom": "remember" },
+        { "code": "SCI.LIV.P.2", "description": "Объяснять простые цепи питания", "bloom": "understand" },
+        { "code": "SCI.LIV.P.3", "description": "Наблюдать и описывать растения и животных в окружении", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["observation_log","quiz","drawing_tasks"],
+        "summative": ["mini_project","parent_confirmation"],
+        "required_artifacts": ["doc","drawing"],
+        "rubrics": ["accuracy","observation","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 30,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["video","worksheet","drawing"],
+        "source_hints": ["kids_animals_videos","simple_ecosystem_apps"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_sci_materials_primary",
+      "subject": "Science",
+      "stage": "stage_primary",
+      "title": "Materials and Properties",
+      "description": "Материалы и их свойства: твёрдые, жидкие, газообразные вещества. Примеры из быта.",
+      "recommended_hours": 35,
+      "age_hint": [5,11],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "SCI.MAT.P.1", "description": "Классифицировать материалы по свойствам", "bloom": "understand" },
+        { "code": "SCI.MAT.P.2", "description": "Проводить простые опыты с водой, льдом, воздухом", "bloom": "apply" },
+        { "code": "SCI.MAT.P.3", "description": "Объяснять различия между состояниями вещества", "bloom": "understand" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["sorting_tasks","quiz","experiment_demo"],
+        "summative": ["mini_report","oral_explanation"],
+        "required_artifacts": ["worksheet","photo"],
+        "rubrics": ["observation","clarity","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 25,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["video","worksheet","photo"],
+        "source_hints": ["kids_materials_videos","simple_home_experiments"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_sci_forces_primary",
+      "subject": "Science",
+      "stage": "stage_primary",
+      "title": "Forces and Motion (intro)",
+      "description": "Силы и движение: толкание и тяга, трение, скорость и простые опыты.",
+      "recommended_hours": 30,
+      "age_hint": [5,11],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "SCI.FOR.P.1", "description": "Демонстрировать действие сил (толкание, притяжение)", "bloom": "apply" },
+        { "code": "SCI.FOR.P.2", "description": "Объяснять, как сила влияет на движение предмета", "bloom": "understand" },
+        { "code": "SCI.FOR.P.3", "description": "Наблюдать влияние трения", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["simple_experiments","quiz","drawing_tasks"],
+        "summative": ["video_demo","mini_project"],
+        "required_artifacts": ["video","doc"],
+        "rubrics": ["clarity","engagement","understanding"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 25,
+        "min_lessons": 6,
+        "max_lessons": 7,
+        "mix": { "concept": 0.35, "guided": 0.25, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["video","worksheet","drawing"],
+        "source_hints": ["forces_for_kids","motion_experiments"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_sci_light_sound_primary",
+      "subject": "Science",
+      "stage": "stage_primary",
+      "title": "Light and Sound (intro)",
+      "description": "Свет и звук: источники света, отражение, громкие и тихие звуки, простые опыты.",
+      "recommended_hours": 25,
+      "age_hint": [5,11],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "SCI.LIG.P.1", "description": "Распознавать источники света и звука", "bloom": "remember" },
+        { "code": "SCI.LIG.P.2", "description": "Объяснять разницу между громкими и тихими звуками", "bloom": "understand" },
+        { "code": "SCI.LIG.P.3", "description": "Наблюдать отражение света", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["sound_games","light_experiments","quiz"],
+        "summative": ["drawing_task","short_report"],
+        "required_artifacts": ["drawing","doc"],
+        "rubrics": ["accuracy","engagement","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 20,
+        "min_lessons": 5,
+        "max_lessons": 6,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["video","worksheet","drawing"],
+        "source_hints": ["light_sound_for_kids","phet_light_sims"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_sci_earth_primary",
+      "subject": "Science",
+      "stage": "stage_primary",
+      "title": "Earth and Space",
+      "description": "Планета Земля, Солнце, Луна, погода и простые наблюдения за небом.",
+      "recommended_hours": 30,
+      "age_hint": [5,11],
+      "prerequisites": [],
+      "objectives": [
+        { "code": "SCI.EAR.P.1", "description": "Опознавать Солнце, Луну и планеты", "bloom": "remember" },
+        { "code": "SCI.EAR.P.2", "description": "Объяснять смену дня и ночи", "bloom": "understand" },
+        { "code": "SCI.EAR.P.3", "description": "Вести наблюдения за погодой и небом", "bloom": "apply" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["sky_observation_log","quiz","drawing_tasks"],
+        "summative": ["mini_project","oral_presentation"],
+        "required_artifacts": ["drawing","log"],
+        "rubrics": ["observation","clarity","engagement"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 25,
+        "min_lessons": 6,
+        "max_lessons": 8,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["video","drawing","worksheet"],
+        "source_hints": ["kids_astronomy_videos","weather_apps_for_children"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

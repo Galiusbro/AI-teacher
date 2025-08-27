@@ -1,0 +1,57 @@
+{
+  "id": "curriculum_further_mathematics",
+  "title": "Further Mathematics (Cambridge-style)",
+  "subject": "FurtherMathematics",
+  "stages": [
+    {
+      "id": "stage_advanced",
+      "title": "Advanced (A Level Further Mathematics)",
+      "age_range": [
+        16,
+        19
+      ],
+      "modules": [
+        {
+          "id": "module_fmath_algebra",
+          "title": "Advanced Algebra and Proof",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_fmath_matrices",
+          "title": "Matrices and Linear Algebra",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_fmath_complex",
+          "title": "Complex Numbers and Functions",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_fmath_calculus",
+          "title": "Further Calculus (advanced integration, series)",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_fmath_differential",
+          "title": "Differential Equations (1st & 2nd order, modelling)",
+          "recommended_hours": 45
+        },
+        {
+          "id": "module_fmath_vectors",
+          "title": "Advanced Vectors and 3D Geometry",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_fmath_mechanics",
+          "title": "Further Mechanics (momentum, circular motion, energy)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_fmath_statistics",
+          "title": "Further Statistics and Probability",
+          "recommended_hours": 40
+        }
+      ]
+    }
+  ]
+}

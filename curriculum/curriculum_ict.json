@@ -1,0 +1,117 @@
+{
+  "id": "curriculum_ict",
+  "title": "ICT / Digital Literacy (Cambridge-style)",
+  "subject": "ICT",
+  "stages": [
+    {
+      "id": "stage_primary",
+      "title": "Primary",
+      "age_range": [
+        5,
+        11
+      ],
+      "modules": [
+        {
+          "id": "module_ict_foundations_primary",
+          "title": "Devices & Basic Operations",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_ict_typing_primary",
+          "title": "Keyboarding & Text Entry",
+          "recommended_hours": 20
+        },
+        {
+          "id": "module_ict_safety_primary",
+          "title": "Online Safety & Digital Citizenship (intro)",
+          "recommended_hours": 20
+        },
+        {
+          "id": "module_ict_productivity_primary",
+          "title": "Creating with Tools (paint, slides, simple docs)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_ict_data_primary",
+          "title": "Pictures, Tables and Simple Charts",
+          "recommended_hours": 20
+        }
+      ]
+    },
+    {
+      "id": "stage_lower_secondary",
+      "title": "Lower Secondary",
+      "age_range": [
+        11,
+        14
+      ],
+      "modules": [
+        {
+          "id": "module_ict_safety_lower",
+          "title": "E-Safety, Privacy, Cyber Hygiene",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_ict_docs_lower",
+          "title": "Documents, Spreadsheets, Presentations (skills)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_ict_data_lower",
+          "title": "Data Handling: Spreadsheets, Charts, Simple Databases",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_ict_media_lower",
+          "title": "Digital Media: Images, Audio, Video (basics)",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_ict_comms_lower",
+          "title": "Communication & Collaboration (email, cloud, etiquette)",
+          "recommended_hours": 20
+        }
+      ]
+    },
+    {
+      "id": "stage_upper_secondary",
+      "title": "Upper Secondary (IGCSE ICT)",
+      "age_range": [
+        14,
+        16
+      ],
+      "modules": [
+        {
+          "id": "module_ict_systems_igcse",
+          "title": "ICT Systems & Impact (networks, ethics, law)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_ict_data_igcse",
+          "title": "Data, Databases & Spreadsheets (functions, queries)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_ict_docs_igcse",
+          "title": "Document, Presentation & DTP Skills (professional)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_ict_graphics_igcse",
+          "title": "Graphics, Imaging & Multimedia",
+          "recommended_hours": 20
+        },
+        {
+          "id": "module_ict_comms_igcse",
+          "title": "Communication, Networks & Internet Services",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_ict_project_igcse",
+          "title": "Practical Project & Case Study",
+          "recommended_hours": 25
+        }
+      ]
+    }
+  ]
+}

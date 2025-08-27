@@ -1,0 +1,87 @@
+{
+  "id": "curriculum_biology",
+  "title": "Biology",
+  "subject": "Biology",
+  "stages": [
+    {
+      "id": "stage_upper_secondary",
+      "title": "Upper Secondary (IGCSE Biology)",
+      "age_range": [
+        14,
+        16
+      ],
+      "modules": [
+        {
+          "id": "module_bio_cells",
+          "title": "Cells and Microscopy",
+          "recommended_hours": 20
+        },
+        {
+          "id": "module_bio_organisms",
+          "title": "Classification and Organisms",
+          "recommended_hours": 20
+        },
+        {
+          "id": "module_bio_human_biology",
+          "title": "Human Biology (digestion, respiration, circulation)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_bio_plants",
+          "title": "Plant Biology and Photosynthesis",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_bio_ecology",
+          "title": "Ecology and Environment",
+          "recommended_hours": 20
+        },
+        {
+          "id": "module_bio_genetics",
+          "title": "Inheritance and Genetics",
+          "recommended_hours": 15
+        }
+      ]
+    },
+    {
+      "id": "stage_advanced",
+      "title": "Advanced (A Level Biology)",
+      "age_range": [
+        16,
+        19
+      ],
+      "modules": [
+        {
+          "id": "module_bio_cell_biology",
+          "title": "Cell Biology and Biochemistry",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_bio_genetics_advanced",
+          "title": "Molecular Genetics and Biotechnology",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_bio_physiology",
+          "title": "Human and Plant Physiology",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_bio_ecosystems",
+          "title": "Advanced Ecology and Sustainability",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_bio_evolution",
+          "title": "Evolution and Biodiversity",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_bio_research",
+          "title": "Practical Skills and Research Methods",
+          "recommended_hours": 20
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+[
+    {
+      "id": "module_fmath_algebra",
+      "subject": "FurtherMathematics",
+      "stage": "stage_advanced",
+      "title": "Advanced Algebra and Proof",
+      "description": "Расширенные методы алгебры: биномиальные разложения, рекуррентные соотношения, доказательства по индукции и контрапозиции.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_math_algebra_upper"],
+      "objectives": [
+        { "code": "FM.ALG.A.1", "description": "Применять методы математической индукции", "bloom": "apply" },
+        { "code": "FM.ALG.A.2", "description": "Решать сложные алгебраические задачи с использованием рекуррентных формул", "bloom": "analyze" },
+        { "code": "FM.ALG.A.3", "description": "Доказывать утверждения с использованием различных методов", "bloom": "create" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["problem_sets","proof_exercises","quiz"],
+        "summative": ["structured_exam","coursework_proof_assignment"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["rigour","clarity","logical_structure"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","interactive"],
+        "source_hints": ["cambridge_fmath_texts","induction_problem_banks"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_fmath_matrices",
+      "subject": "FurtherMathematics",
+      "stage": "stage_advanced",
+      "title": "Matrices and Linear Algebra",
+      "description": "Работа с матрицами: определители, обратные матрицы, системы уравнений, собственные значения и векторы.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_math_algebra_upper"],
+      "objectives": [
+        { "code": "FM.MAT.A.1", "description": "Вычислять определители и обратные матрицы", "bloom": "apply" },
+        { "code": "FM.MAT.A.2", "description": "Решать системы линейных уравнений методом матриц", "bloom": "analyze" },
+        { "code": "FM.MAT.A.3", "description": "Применять собственные значения/векторы в задачах", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["matrix_drills","linear_system_tasks","quiz"],
+        "summative": ["exam_questions","data_response_assignment"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["calculation_accuracy","application","interpretation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","graph","interactive"],
+        "source_hints": ["linear_algebra_texts","matrix_calculators"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_fmath_complex",
+      "subject": "FurtherMathematics",
+      "stage": "stage_advanced",
+      "title": "Complex Numbers and Functions",
+      "description": "Комплексные числа: алгебраическая и тригонометрическая форма, формулы Муавра, комплексные функции и корни.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_math_algebra_upper","module_math_trigonometry_upper"],
+      "objectives": [
+        { "code": "FM.CPX.A.1", "description": "Работать с комплексными числами в разных формах", "bloom": "apply" },
+        { "code": "FM.CPX.A.2", "description": "Использовать формулу Муавра для решения задач", "bloom": "analyze" },
+        { "code": "FM.CPX.A.3", "description": "Интерпретировать комплексные корни уравнений", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["complex_calc_tasks","graphing_exercises","quiz"],
+        "summative": ["structured_exam","problem_solving_assignment"],
+        "required_artifacts": ["doc","graph"],
+        "rubrics": ["accuracy","representation","application"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","graph"],
+        "source_hints": ["complex_number_sets","cambridge_problems"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_fmath_calculus",
+      "subject": "FurtherMathematics",
+      "stage": "stage_advanced",
+      "title": "Further Calculus (advanced integration, series)",
+      "description": "Продвинутые методы интегрирования (по частям, замена переменной, интегралы рациональных функций), степенные ряды, разложения Тейлора и Маклорена.",
+      "recommended_hours": 50,
+      "age_hint": [16,19],
+      "prerequisites": ["module_math_calculus_upper"],
+      "objectives": [
+        { "code": "FM.CAL.A.1", "description": "Применять продвинутые методы интегрирования", "bloom": "apply" },
+        { "code": "FM.CAL.A.2", "description": "Разлагать функции в ряды Тейлора и Маклорена", "bloom": "analyze" },
+        { "code": "FM.CAL.A.3", "description": "Оценивать сходимость и использовать ряды для приближений", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["integration_drills","series_problems","quiz"],
+        "summative": ["exam_paper","problem_set_submission"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["calculation","method_selection","clarity"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 10,
+        "max_lessons": 12,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","graph"],
+        "source_hints": ["integration_problems","series_collections"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_fmath_differential",
+      "subject": "FurtherMathematics",
+      "stage": "stage_advanced",
+      "title": "Differential Equations (1st & 2nd order, modelling)",
+      "description": "Решение дифференциальных уравнений первого и второго порядка, методы интегрирующего множителя, характеристические уравнения, моделирование процессов.",
+      "recommended_hours": 45,
+      "age_hint": [16,19],
+      "prerequisites": ["module_fmath_calculus"],
+      "objectives": [
+        { "code": "FM.DIF.A.1", "description": "Решать уравнения первого порядка аналитическими методами", "bloom": "apply" },
+        { "code": "FM.DIF.A.2", "description": "Решать линейные уравнения второго порядка", "bloom": "analyze" },
+        { "code": "FM.DIF.A.3", "description": "Применять ДУ к моделированию физических и экономических процессов", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["DE_problems","modelling_tasks","quiz"],
+        "summative": ["exam_paper","case_study_report"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["accuracy","application","interpretation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 9,
+        "max_lessons": 11,
+        "mix": { "concept": 0.3, "guided": 0.3, "independent": 0.25, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","graph"],
+        "source_hints": ["diff_eq_collections","applied_math_models"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_fmath_vectors",
+      "subject": "FurtherMathematics",
+      "stage": "stage_advanced",
+      "title": "Advanced Vectors and 3D Geometry",
+      "description": "Векторы в пространстве: скалярное и векторное произведение, уравнения прямых и плоскостей, геометрические задачи в 3D.",
+      "recommended_hours": 35,
+      "age_hint": [16,19],
+      "prerequisites": ["module_math_vectors_upper"],
+      "objectives": [
+        { "code": "FM.VEC.A.1", "description": "Применять операции с векторами в 3D", "bloom": "apply" },
+        { "code": "FM.VEC.A.2", "description": "Составлять уравнения прямых и плоскостей", "bloom": "apply" },
+        { "code": "FM.VEC.A.3", "description": "Решать геометрические задачи с использованием векторов", "bloom": "analyze" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["vector_problems","3d_geometry_tasks","quiz"],
+        "summative": ["exam_questions","problem_set_submission"],
+        "required_artifacts": ["doc","graph"],
+        "rubrics": ["calculation","representation","problem_solving"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 7,
+        "max_lessons": 9,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","graph"],
+        "source_hints": ["vector_problem_sets","geometry_references"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_fmath_mechanics",
+      "subject": "FurtherMathematics",
+      "stage": "stage_advanced",
+      "title": "Further Mechanics (momentum, circular motion, energy)",
+      "description": "Продвинутая механика: законы сохранения, движение по окружности, энергия, импульс, динамика систем.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_math_mechanics_upper"],
+      "objectives": [
+        { "code": "FM.MEC.A.1", "description": "Анализировать задачи с использованием законов сохранения", "bloom": "analyze" },
+        { "code": "FM.MEC.A.2", "description": "Решать задачи на круговое движение и динамику тел", "bloom": "apply" },
+        { "code": "FM.MEC.A.3", "description": "Оценивать физические модели на основе механики", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["mechanics_problems","lab_modelling","quiz"],
+        "summative": ["exam_questions","lab_report"],
+        "required_artifacts": ["doc"],
+        "rubrics": ["application","accuracy","interpretation"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.3, "guided": 0.25, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","graph","interactive"],
+        "source_hints": ["mechanics_problem_sets","physics_labs"]
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "module_fmath_statistics",
+      "subject": "FurtherMathematics",
+      "stage": "stage_advanced",
+      "title": "Further Statistics and Probability",
+      "description": "Вероятность и статистика: распределения (нормальное, биномиальное, пуассоновское), выборки, проверка гипотез, регрессия.",
+      "recommended_hours": 40,
+      "age_hint": [16,19],
+      "prerequisites": ["module_math_statistics_upper"],
+      "objectives": [
+        { "code": "FM.STA.A.1", "description": "Применять вероятностные модели к задачам", "bloom": "apply" },
+        { "code": "FM.STA.A.2", "description": "Анализировать данные и строить модели регрессии", "bloom": "analyze" },
+        { "code": "FM.STA.A.3", "description": "Проверять статистические гипотезы", "bloom": "evaluate" }
+      ],
+      "assessment_blueprint": {
+        "formative": ["probability_tasks","data_analysis_exercises","quiz"],
+        "summative": ["exam_questions","data_report"],
+        "required_artifacts": ["doc","data"],
+        "rubrics": ["accuracy","interpretation","method_selection"]
+      },
+      "lesson_policy": {
+        "default_lesson_minutes": 60,
+        "min_lessons": 8,
+        "max_lessons": 10,
+        "mix": { "concept": 0.25, "guided": 0.3, "independent": 0.3, "assessment": 0.15 }
+      },
+      "resources": {
+        "allowed_media": ["text","data","graph"],
+        "source_hints": ["stats_problem_sets","probability_labs"]
+      },
+      "version": "1.0.0"
+    }
+  ]
+  

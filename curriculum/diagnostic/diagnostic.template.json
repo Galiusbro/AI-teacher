@@ -1,0 +1,308 @@
+{
+  "diagnostic_templates": {
+    "mcq_single": {
+      "structure": {
+        "question_type": "mcq_single",
+        "content": {
+          "question": "{{QUESTION_TEXT}}",
+          "options": [
+            {"text": "{{CORRECT_ANSWER}}", "is_correct": true},
+            {"text": "{{DISTRACTOR_1}}"},
+            {"text": "{{DISTRACTOR_2}}"},
+            {"text": "{{DISTRACTOR_3}}"}
+          ]
+        },
+        "scoring": {
+          "max_points": 1,
+          "auto_grade": true,
+          "correct_answers": [
+            {"answer": "{{CORRECT_OPTION_INDEX}}", "points": 1}
+          ]
+        }
+      },
+      "templates": {
+        "mathematics_beginner": {
+          "question_patterns": [
+            "Сколько будет {{NUMBER_1}} + {{NUMBER_2}}?",
+            "Если у тебя {{NUMBER_1}} яблок и ты съешь {{NUMBER_2}}, сколько останется?",
+            "Какое число больше: {{NUMBER_1}} или {{NUMBER_2}}?",
+            "Сосчитай: {{SEQUENCE}}. Какое следующее число?"
+          ],
+          "distractors": [
+            "арифметическая_ошибка",
+            "близкое_число",
+            "перепутывание_знаков",
+            "случайное_число"
+          ]
+        },
+        "english_beginner": {
+          "question_patterns": [
+            "Какое слово означает '{{WORD}}'?",
+            "Как правильно написать: '{{MISPELLED_WORD}}'?",
+            "Что значит '{{SENTENCE}}'?",
+            "Выбери правильный ответ: '{{QUESTION}}'"
+          ],
+          "distractors": [
+            "синоним",
+            "омоним",
+            "близкое_по_написанию",
+            "грамматическая_ошибка"
+          ]
+        }
+      }
+    },
+
+    "numeric": {
+      "structure": {
+        "question_type": "numeric",
+        "content": {
+          "question": "{{QUESTION_TEXT}}",
+          "expected_format": {
+            "type": "number",
+            "precision": "{{PRECISION}}"
+          }
+        },
+        "scoring": {
+          "max_points": "{{POINTS}}",
+          "auto_grade": true,
+          "tolerance": "{{TOLERANCE}}"
+        }
+      },
+      "templates": {
+        "calculation": {
+          "question_patterns": [
+            "Реши: {{EXPRESSION}} = ?",
+            "Найди значение выражения: {{EXPRESSION}}",
+            "Вычисли: {{EXPRESSION}}"
+          ]
+        },
+        "word_problem": {
+          "question_patterns": [
+            "{{STORY_PROBLEM}} Сколько всего?",
+            "{{STORY_PROBLEM}} На сколько больше/меньше?"
+          ]
+        }
+      }
+    },
+
+    "short_text": {
+      "structure": {
+        "question_type": "short_text",
+        "content": {
+          "question": "{{QUESTION_TEXT}}",
+          "expected_format": {
+            "type": "text"
+          }
+        },
+        "scoring": {
+          "max_points": "{{POINTS}}",
+          "auto_grade": false,
+          "correct_answers": [
+            {"answer": "{{EXPECTED_ANSWER}}", "points": "{{POINTS}}"}
+          ]
+        }
+      },
+      "templates": {
+        "vocabulary": {
+          "question_patterns": [
+            "Что значит слово '{{WORD}}'?",
+            "Какое слово подходит: '{{SENTENCE_WITH_BLANK}}'?",
+            "Назови синоним к слову '{{WORD}}'"
+          ]
+        },
+        "grammar": {
+          "question_patterns": [
+            "Поставь слово '{{WORD}}' в правильную форму",
+            "Исправь ошибку: '{{SENTENCE_WITH_ERROR}}'",
+            "Образуй слово от '{{ROOT}}'"
+          ]
+        }
+      }
+    },
+
+    "dialogue": {
+      "structure": {
+        "question_type": "dialogue",
+        "content": {
+          "question": "{{DIALOGUE_PROMPT}}",
+          "instructions": "Ответь свободно, как ты думаешь"
+        },
+        "scoring": {
+          "max_points": 1,
+          "auto_grade": false
+        },
+        "psychological_profile": {
+          "communication_style": "{{ANALYZED_STYLE}}"
+        }
+      },
+      "templates": {
+        "personality_assessment": {
+          "question_patterns": [
+            "Расскажи о своем любимом предмете в школе. Почему он тебе нравится?",
+            "Если бы ты мог изобрести что-то новое, что бы это было?",
+            "Как ты обычно решаешь сложные задачи?",
+            "Расскажи о своем самом интересном опыте в учебе",
+            "Что тебе больше нравится: работать одному или в команде? Почему?"
+          ]
+        },
+        "learning_style": {
+          "question_patterns": [
+            "Как ты лучше запоминаешь новую информацию?",
+            "Что тебе помогает лучше понять новый материал?",
+            "Как ты предпочитаешь получать объяснения?"
+          ]
+        }
+      }
+    },
+
+    "problem_solving": {
+      "structure": {
+        "question_type": "problem_solving",
+        "content": {
+          "question": "{{PROBLEM_STATEMENT}}",
+          "context": "{{PROBLEM_CONTEXT}}",
+          "instructions": "Реши задачу и объясни свой ход мыслей"
+        },
+        "scoring": {
+          "max_points": "{{POINTS}}",
+          "auto_grade": false,
+          "partial_credit": true
+        }
+      },
+      "templates": {
+        "logic_puzzles": {
+          "question_patterns": [
+            "{{LOGIC_PROBLEM}} Найди решение.",
+            "{{PATTERN_PROBLEM}} Какое число/слово следующее?",
+            "{{WORD_PROBLEM}} Реши и объясни."
+          ]
+        },
+        "creative_thinking": {
+          "question_patterns": [
+            "{{CREATIVE_PROBLEM}} Придумай как можно решить эту задачу.",
+            "{{ALTERNATIVE_APPROACH}} Как еще можно подойти к этой проблеме?",
+            "{{INNOVATION_TASK}} Что нового ты можешь предложить?"
+          ]
+        }
+      }
+    }
+  },
+
+  "adaptation_algorithms": {
+    "age_based_start": {
+      "description": "Начинаем с уровня на 2-3 года младше возраста ученика",
+      "formula": "start_age = student_age - 2",
+      "progression_rules": {
+        "correct_streak_3": "увеличить_сложность_на_1_уровень",
+        "incorrect_streak_2": "уменьшить_сложность_на_1_уровень",
+        "max_age_advance": "student_age + 3",
+        "min_age_decline": "student_age - 4"
+      }
+    },
+
+    "dynamic_difficulty": {
+      "description": "Адаптивная сложность на основе ответов",
+      "parameters": {
+        "response_time_factor": 0.3,
+        "confidence_factor": 0.4,
+        "accuracy_factor": 0.3
+      },
+      "adjustment_rules": {
+        "fast_correct": "увеличить_сложность",
+        "slow_correct": "сохранить_сложность",
+        "fast_incorrect": "уменьшить_сложность",
+        "slow_incorrect": "значительно_уменьшить_сложность"
+      }
+    },
+
+    "subject_specific": {
+      "description": "Разные стратегии для разных предметов",
+      "mathematics": {
+        "focus": "точность_и_скорость",
+        "progression": "арифметика -> алгебра -> геометрия"
+      },
+      "english": {
+        "focus": "понимание_и_выражение",
+        "progression": "слова -> предложения -> тексты"
+      },
+      "science": {
+        "focus": "наблюдение_и_эксперименты",
+        "progression": "факты -> концепции -> применение"
+      }
+    }
+  },
+
+  "psychological_profiling": {
+    "response_analysis": {
+      "communication_style": {
+        "indicators": {
+          "formal": ["использует_сложные_конструкции", "официальный_тон"],
+          "casual": ["простые_слова", "разговорный_стиль"],
+          "humorous": ["шутки", "ирония", "сарказм"],
+          "technical": ["специальные_термины", "точные_определения"]
+        }
+      },
+      "learning_style": {
+        "visual": ["предпочитает_картинки", "описывает_визуально"],
+        "auditory": ["запоминает_через_повторение", "предпочитает_объяснения"],
+        "kinesthetic": ["нуждается_в_практике", "учится_делая"],
+        "reading_writing": ["любит_читать", "делает_заметки"]
+      },
+      "personality_traits": {
+        "conscientious": ["тщательно_отвечает", "проверяет_работу"],
+        "creative": ["нестандартные_ответы", "оригинальные_идеи"],
+        "analytical": ["разбирает_на_части", "ищет_систему"],
+        "intuitive": ["быстрые_решения", "основывается_на_чувствах"]
+      }
+    },
+
+    "motivation_detection": {
+      "achievement": ["хочет_быть_лучшим", "ставит_высокие_цели"],
+      "mastery": ["интересуется_глубиной", "хочет_понять"],
+      "social": ["учится_для_других", "ценит_мнение_группы"],
+      "autonomy": ["самостоятельные_решения", "самоорганизация"],
+      "purpose": ["ищет_смысл", "связывает_с_жизнью"]
+    }
+  },
+
+  "individualized_learning_plan": {
+    "structure": {
+      "student_profile": {
+        "age": "{{STUDENT_AGE}}",
+        "subjects": {
+          "{{SUBJECT}}": {
+            "current_level": "{{DETECTED_LEVEL}}",
+            "strengths": ["{{STRENGTH_1}}", "{{STRENGTH_2}}"],
+            "weaknesses": ["{{WEAKNESS_1}}", "{{WEAKNESS_2}}"],
+            "recommended_difficulty": "{{DIFFICULTY_LEVEL}}",
+            "learning_style": ["{{STYLE_1}}", "{{STYLE_2}}"],
+            "pace": "{{LEARNING_PACE}}"
+          }
+        },
+        "psychological_profile": {
+          "communication_style": "{{STYLE}}",
+          "motivation_type": ["{{TYPE_1}}", "{{TYPE_2}}"],
+          "personality_traits": ["{{TRAIT_1}}", "{{TRAIT_2}}"]
+        }
+      },
+
+      "learning_pathway": {
+        "immediate_focus": ["{{PRIORITY_SUBJECT_1}}", "{{PRIORITY_SUBJECT_2}}"],
+        "long_term_goals": ["{{GOAL_1}}", "{{GOAL_2}}"],
+        "recommended_schedule": {
+          "daily_study_time": "{{TIME_MINUTES}} минут",
+          "preferred_times": ["{{TIME_1}}", "{{TIME_2}}"],
+          "break_patterns": "{{BREAK_PATTERN}}"
+        },
+        "intervention_strategies": ["{{STRATEGY_1}}", "{{STRATEGY_2}}"]
+      },
+
+      "adaptive_features": {
+        "difficulty_adjustment": "{{ADJUSTMENT_RULE}}",
+        "content_personalization": "{{PERSONALIZATION_RULE}}",
+        "feedback_style": "{{FEEDBACK_STYLE}}",
+        "motivation_techniques": ["{{TECHNIQUE_1}}", "{{TECHNIQUE_2}}"]
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "id": "curriculum_business",
+  "title": "Business Studies (Cambridge-style)",
+  "subject": "Business",
+  "stages": [
+    {
+      "id": "stage_upper_secondary",
+      "title": "Upper Secondary (IGCSE Business Studies)",
+      "age_range": [
+        14,
+        16
+      ],
+      "modules": [
+        {
+          "id": "module_bus_intro",
+          "title": "Business Activity and Objectives",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_bus_org",
+          "title": "Types of Business Organisation",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_bus_people",
+          "title": "People in Business (motivation, HR)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_bus_marketing",
+          "title": "Marketing (market research, 4Ps, strategy)",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_bus_operations",
+          "title": "Operations Management (production, quality)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_bus_finance",
+          "title": "Financial Information and Decisions",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_bus_external",
+          "title": "External Influences on Business",
+          "recommended_hours": 30
+        }
+      ]
+    },
+    {
+      "id": "stage_advanced",
+      "title": "Advanced (A Level Business)",
+      "age_range": [
+        16,
+        19
+      ],
+      "modules": [
+        {
+          "id": "module_bus_strategy_adv",
+          "title": "Business Strategy and Objectives",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_bus_marketing_adv",
+          "title": "Marketing Strategy and Analytics",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_bus_hr_adv",
+          "title": "Human Resource Management and Leadership",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_bus_ops_adv",
+          "title": "Operations and Global Supply Chains",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_bus_finance_adv",
+          "title": "Corporate Finance and Investment Decisions",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_bus_global_adv",
+          "title": "Global Business and International Trade",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_bus_research_adv",
+          "title": "Case Studies, Data Response & Research Project",
+          "recommended_hours": 50
+        }
+      ]
+    }
+  ]
+}

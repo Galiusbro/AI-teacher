@@ -1,0 +1,172 @@
+{
+  "id": "curriculum_math",
+  "title": "Mathematics (Cambridge-style)",
+  "subject": "Mathematics",
+  "stages": [
+    {
+      "id": "stage_primary",
+      "title": "Primary",
+      "age_range": [
+        5,
+        11
+      ],
+      "modules": [
+        {
+          "id": "module_math_numbers_primary",
+          "title": "Numbers and Counting",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_math_operations_primary",
+          "title": "Basic Operations (+, −, ×, ÷)",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_math_fractions_primary",
+          "title": "Fractions and Decimals (intro)",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_math_measure_primary",
+          "title": "Measurement (length, mass, time)",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_math_geometry_primary",
+          "title": "Shapes and Space",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_math_data_primary",
+          "title": "Data Handling (charts, simple graphs)",
+          "recommended_hours": 25
+        }
+      ]
+    },
+    {
+      "id": "stage_lower_secondary",
+      "title": "Lower Secondary",
+      "age_range": [
+        11,
+        14
+      ],
+      "modules": [
+        {
+          "id": "module_math_numbers_lower",
+          "title": "Integers, Fractions, Decimals",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_math_algebra_intro",
+          "title": "Introduction to Algebra (expressions, simple equations)",
+          "recommended_hours": 45
+        },
+        {
+          "id": "module_math_geometry_lower",
+          "title": "Geometry (angles, triangles, symmetry)",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_math_ratio_proportion",
+          "title": "Ratio, Proportion, Percentages",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_math_measure_lower",
+          "title": "Perimeter, Area, Volume",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_math_data_lower",
+          "title": "Statistics and Probability (intro)",
+          "recommended_hours": 25
+        }
+      ]
+    },
+    {
+      "id": "stage_upper_secondary",
+      "title": "Upper Secondary (IGCSE)",
+      "age_range": [
+        14,
+        16
+      ],
+      "modules": [
+        {
+          "id": "module_math_numbers_upper",
+          "title": "Number Theory and Standard Form",
+          "recommended_hours": 30
+        },
+        {
+          "id": "module_math_algebra_upper",
+          "title": "Algebra (expressions, equations, inequalities)",
+          "recommended_hours": 50
+        },
+        {
+          "id": "module_math_quadratics_upper",
+          "title": "Quadratic Equations and Functions",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_math_geometry_upper",
+          "title": "Geometry and Trigonometry",
+          "recommended_hours": 45
+        },
+        {
+          "id": "module_math_statistics_upper",
+          "title": "Statistics (mean, median, probability)",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_math_calculus_intro",
+          "title": "Introduction to Calculus (limits, gradients)",
+          "recommended_hours": 20
+        }
+      ]
+    },
+    {
+      "id": "stage_advanced",
+      "title": "Advanced (AS/A Level)",
+      "age_range": [
+        16,
+        19
+      ],
+      "modules": [
+        {
+          "id": "module_math_algebra_advanced",
+          "title": "Advanced Algebra and Polynomials",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_math_functions_advanced",
+          "title": "Functions and Graphs",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_math_calculus_advanced",
+          "title": "Calculus (differentiation, integration)",
+          "recommended_hours": 60
+        },
+        {
+          "id": "module_math_trigonometry_advanced",
+          "title": "Advanced Trigonometry and Identities",
+          "recommended_hours": 35
+        },
+        {
+          "id": "module_math_complex",
+          "title": "Complex Numbers",
+          "recommended_hours": 25
+        },
+        {
+          "id": "module_math_probability_stats_advanced",
+          "title": "Probability and Statistics",
+          "recommended_hours": 40
+        },
+        {
+          "id": "module_math_mechanics",
+          "title": "Mechanics (forces, motion, vectors)",
+          "recommended_hours": 35
+        }
+      ]
+    }
+  ]
+}
