@@ -66,7 +66,8 @@ def simulate_student_progress():
         print(f"❌ Ошибка: {initial_state['error']}")
         return
 
-    print("🏆 Начальный уровень:"    print(f"   Общий mastery: {initial_state['current_mastery']:.3f}")
+    print("🏆 Начальный уровень:")
+    print(f"   Общий mastery: {initial_state['current_mastery']:.3f}")
     print(f"   Описание: {initial_state['mastery_description']}")
     print(f"   Детали: {format_mastery_details(initial_state['mastery_details'])}")
     print(f"   Рекомендация: {initial_state['next_lesson_type']} урок")
@@ -127,7 +128,8 @@ def simulate_student_progress():
             print(f"      ❌ Ошибка: {result['error']}")
             continue
 
-        print("      ✅ Ответ принят:"        print(f"         Mastery урока: {result['lesson_mastery']:.3f}")
+        print("      ✅ Ответ принят:")
+        print(f"         Mastery урока: {result['lesson_mastery']:.3f}")
         print(f"         Общий mastery: {result['overall_mastery']:.3f} ({result['mastery_description']})")
         print(f"         Следующий урок: {result['next_recommended']}")
 
@@ -139,7 +141,8 @@ def simulate_student_progress():
     })
 
     if "error" not in final_state:
-        print("🏆 Финальный уровень:"        print(f"   Общий mastery: {final_state['current_mastery']:.3f}")
+        print("🏆 Финальный уровень:")
+        print(f"   Общий mastery: {final_state['current_mastery']:.3f}")
         print(f"   Описание: {final_state['mastery_description']}")
         print(f"   Детали: {format_mastery_details(final_state['mastery_details'])}")
         print(f"   Рекомендация: {final_state['next_lesson_type']} урок")
@@ -175,7 +178,7 @@ def show_mastery_statistics():
 def main():
     """Основная функция."""
     print("🚀 Демонстрация API системы Mastery в Ayaal Teacher")
-    print("Тестируем полную интеграцию: от ответов до расчета уровня освоения"
+    print("Тестируем полную интеграцию: от ответов до расчета уровня освоения")
     # Проверяем здоровье API
     health = api_call("/api/health")
     if "database" in health and health["database"] == "connected":

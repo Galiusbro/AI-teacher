@@ -10,8 +10,10 @@ from datetime import datetime
 from flask import Flask, request, jsonify
 import psycopg2
 from psycopg2.extras import RealDictCursor
+from psycopg2 import IntegrityError
 import jsonschema
 from dotenv import load_dotenv
+from werkzeug.security import generate_password_hash
 
 # Load environment variables from .env file
 load_dotenv()
@@ -136,6 +138,119 @@ def generate_guided_lesson(module_code, student_locale='ru'):
 def index():
     """Serve the main web interface."""
     return app.send_static_file('index.html')
+
+
+@app.route('/api/register/parent', methods=['POST'])
+def register_parent():
+    """Register a new parent user."""
+    try:
+        data = request.get_json()
+
+        if not data:
+            return jsonify({"error": "No data provided"}), 400
+
+        email = data.get('email')
+        password = data.get('password')
+        locale = data.get('locale', 'en')
+
+        if not email or not password:
+            return jsonify({"error": "Email and password required"}), 400
+
+        password_hash = generate_password_hash(password)
+
+        conn = get_db_connection()
+        with conn.cursor(cursor_factory=RealDictCursor) as cur:
+            cur.execute(
+                """
+                INSERT INTO app_user (email, password_hash, role, locale)
+                VALUES (%s, %s, 'parent', %s)
+                RETURNING id
+                """,
+                (email, password_hash, locale),
+            )
+            user_id = cur.fetchone()["id"]
+            conn.commit()
+        conn.close()
+
+        return jsonify({"user_id": str(user_id), "role": "parent"}), 201
+    except IntegrityError:
+        return jsonify({"error": "User with this email already exists"}), 400
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/api/register/child', methods=['POST'])
+def register_child():
+    """Register a new child (student) user and link to a parent."""
+    try:
+        data = request.get_json()
+
+        if not data:
+            return jsonify({"error": "No data provided"}), 400
+
+        email = data.get('email')
+        password = data.get('password')
+        parent_user_id = data.get('parent_user_id')
+        locale = data.get('locale', 'en')
+        dob = data.get('dob')
+        grade_hint = data.get('grade_hint')
+        relation = data.get('relation')
+
+        if not all([email, password, parent_user_id]):
+            return jsonify({"error": "Email, password and parent_user_id required"}), 400
+
+        password_hash = generate_password_hash(password)
+
+        conn = get_db_connection()
+        with conn.cursor(cursor_factory=RealDictCursor) as cur:
+            # Verify parent exists
+            cur.execute(
+                "SELECT id FROM app_user WHERE id = %s AND role = 'parent'",
+                (parent_user_id,)
+            )
+            if not cur.fetchone():
+                conn.close()
+                return jsonify({"error": "Parent not found"}), 404
+
+            # Create user
+            cur.execute(
+                """
+                INSERT INTO app_user (email, password_hash, role, locale)
+                VALUES (%s, %s, 'student', %s)
+                RETURNING id
+                """,
+                (email, password_hash, locale),
+            )
+            child_user_id = cur.fetchone()["id"]
+
+            # Create student record
+            cur.execute(
+                """
+                INSERT INTO student (user_id, dob, grade_hint)
+                VALUES (%s, %s, %s)
+                RETURNING id
+                """,
+                (child_user_id, dob, grade_hint),
+            )
+            student_id = cur.fetchone()["id"]
+
+            # Link parent and student
+            cur.execute(
+                """
+                INSERT INTO parent_link (student_id, parent_user_id, relation)
+                VALUES (%s, %s, %s)
+                """,
+                (student_id, parent_user_id, relation),
+            )
+
+            conn.commit()
+        conn.close()
+
+        return jsonify({"user_id": str(child_user_id), "student_id": str(student_id)}), 201
+    except IntegrityError:
+        return jsonify({"error": "User with this email already exists"}), 400
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 
 @app.route('/api/lessons/generate', methods=['POST'])
