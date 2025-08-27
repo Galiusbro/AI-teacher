@@ -1,0 +1,92 @@
+{
+  "id": "diag_user123_2025-08-27T10:00:00Z",
+  "student_context": {
+    "age_years": 10,
+    "language": "ru",
+    "stage_hint": "stage_lower_secondary",
+    "persona_probe": {
+      "enable": true,
+      "goals": ["communication_style","motivation","interests"],
+      "prompts": [
+        "Как тебе удобнее учиться: короткими задачами или долгими проектами?",
+        "Любишь ли ты, когда объяснения с юмором?",
+        "Каким предметом ты гордишься больше всего?"
+      ],
+      "signals_extract": ["humor","conciseness","emoji_tolerance","interests"]
+    }
+  },
+
+  "design": { "start_age_offset": -3, "min_level": 5, "max_level": 17, "time_cap_sec": 1800, "allow_cross_domain_adapt": true, "max_domains_per_session": 2 },
+
+  "domains": [
+    {
+      "code": "Mathematics",
+      "title": "Mathematics",
+      "ladder": [
+        { "level": 7,  "age_band": [7,8],  "difficulty_tag": "easy",   "module_hints": ["math_numbers_lower"] },
+        { "level": 10, "age_band": [9,11], "difficulty_tag": "medium", "module_hints": ["math_algebra_intro","math_geometry_lower"] },
+        { "level": 13, "age_band": [12,13],"difficulty_tag": "hard",   "module_hints": ["math_ratio_proportion","math_measure_lower"] }
+      ],
+      "subskills": ["Arithmetic","Geometry","Reasoning"],
+      "target_precision": 0.25
+    },
+    {
+      "code": "Geography",
+      "title": "Geography",
+      "ladder": [
+        { "level": 7,  "age_band": [7,8],  "difficulty_tag": "easy",   "module_hints": ["geo_maps"] },
+        { "level": 10, "age_band": [9,11], "difficulty_tag": "medium", "module_hints": ["geo_physical","geo_weather"] },
+        { "level": 13, "age_band": [12,13],"difficulty_tag": "hard",   "module_hints": ["geo_human"] }
+      ],
+      "subskills": ["MapSkills","Physical","Human"],
+      "target_precision": 0.25
+    }
+  ],
+
+  "item_bank": [
+    { "id": "M1", "domain": "Mathematics", "subskill": "Arithmetic", "level": 7,  "format": "numeric",     "stem": "Сколько будет 48 ÷ 6?",                                  "answer": 8,  "scoring": {"correct_if":"==","points":1} },
+    { "id": "M2", "domain": "Mathematics", "subskill": "Geometry",   "level": 10, "format": "mcq",       "stem": "Сколько углов у пятиугольника?",                           "choices":["4","5","6"], "answer":"5", "scoring":{"correct_if":"choice==answer","points":1} },
+    { "id": "M3", "domain": "Mathematics", "subskill": "Reasoning",  "level": 13, "format": "short_text", "stem": "Почему 3/6 и 1/2 — это одно и то же?",                     "answer":["сокращение","деление на 3"], "scoring":{"correct_if":"keywords_any>=1","points":1} },
+
+    { "id": "G1", "domain": "Geography",   "subskill": "MapSkills", "level": 7,  "format": "mcq",       "stem": "Что показывает компас?",                               "choices":["высоту","направление","температуру"], "answer":"направление", "scoring":{"correct_if":"choice==answer","points":1} },
+    { "id": "G2", "domain": "Geography",   "subskill": "Physical",  "level": 10, "format": "mcq",       "stem": "Река ближе к устью обычно становится…",                    "choices":["шире","уже","суше"], "answer":"шире", "scoring":{"correct_if":"choice==answer","points":1} },
+    { "id": "G3", "domain": "Geography",   "subskill": "Human",     "level": 13, "format": "short_text", "stem": "Назови одну причину роста городов.",               "answer":["работа","промышленность","миграция","услуги"], "scoring":{"correct_if":"keywords_any>=1","points":1} }
+  ],
+
+  "routing": {
+    "per_domain": {
+      "Mathematics": { "start_level": 7, "step_up": 1, "step_down": 1, "min_items": 5, "max_items": 10, "backoff_on_miss": 2, "confidence_gate": 0.8 },
+      "Geography":   { "start_level": 7, "step_up": 1, "step_down": 1, "min_items": 5, "max_items": 10, "backoff_on_miss": 2, "confidence_gate": 0.8 }
+    },
+    "switch_rules": { "on_fast_mastery": true, "min_items_per_domain_before_switch": 3 }
+  },
+
+  "stopping_rules": { "global_min_items": 8, "global_max_items": 24, "se_threshold": 0.3, "time_cap_sec": 1800 },
+
+  "scoring": {
+    "estimator": "simple_ratio",
+    "bands": [
+      { "name": "below", "min": 0.0, "max": 0.4 },
+      { "name": "basic", "min": 0.4, "max": 0.6 },
+      { "name": "proficient", "min": 0.6, "max": 0.8 },
+      { "name": "advanced", "min": 0.8, "max": 1.0 }
+    ],
+    "age_norms": {}
+  },
+
+  "outputs": {
+    "placement_rules": {
+      "Mathematics": { "if_level_gte": 10, "modules": ["math_algebra_intro","math_geometry_lower"], "lesson_type": "guided" },
+      "Geography":   { "if_level_gte": 10, "modules": ["geo_physical","geo_weather"], "lesson_type": "concept" }
+    },
+    "persona_profile_schema": {
+      "traits": ["humor","conciseness","persistence","self_efficacy"],
+      "style": { "tone": "friendly", "emoji": "auto", "examples_frequency": "high" },
+      "interests": [],
+      "language_tone": "adaptive"
+    }
+  },
+
+  "version": "1.0.0",
+  "metadata": { "source": "cambridge-style" }
+}

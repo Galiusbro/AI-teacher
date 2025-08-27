@@ -1,0 +1,225 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.org/diagnostic.schema.json",
+  "title": "Adaptive Diagnostic Session",
+  "type": "object",
+  "required": ["id","student_context","design","domains","item_bank","routing","stopping_rules","scoring","outputs","version"],
+  "properties": {
+    "id": { "type": "string" },
+
+    "student_context": {
+      "type": "object",
+      "required": ["age_years","language","stage_hint"],
+      "properties": {
+        "age_years": { "type": "integer", "minimum": 3, "maximum": 20 },
+        "language": { "type": "string" },
+        "stage_hint": { "type": "string", "description": "stage_primary|lower_secondary|upper_secondary|advanced" },
+        "persona_probe": {
+          "type": "object",
+          "description": "Настройки диалоговой части (портрет)",
+          "properties": {
+            "enable": { "type": "boolean" },
+            "goals": { "type": "array", "items": { "type": "string" } },
+            "prompts": { "type": "array", "items": { "type": "string" } },
+            "signals_extract": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    },
+
+    "design": {
+      "type": "object",
+      "description": "Глобальные правила диагностики",
+      "required": ["start_age_offset","min_level","max_level"],
+      "properties": {
+        "start_age_offset": { "type": "integer", "description": "Напр.: -3 (начинаем с уровня младше возраста)" },
+        "min_level": { "type": "integer", "description": "Самый нижний уровень лестницы" },
+        "max_level": { "type": "integer", "description": "Самый верхний уровень лестницы" },
+        "time_cap_sec": { "type": "integer", "default": 1800 },
+        "allow_cross_domain_adapt": { "type": "boolean", "default": true },
+        "max_domains_per_session": { "type": "integer", "default": 3 }
+      }
+    },
+
+    "domains": {
+      "type": "array",
+      "description": "Дисциплины и поднавыки для диагностики",
+      "items": {
+        "type": "object",
+        "required": ["code","title","ladder","subskills"],
+        "properties": {
+          "code": { "type": "string", "description": "Math|Geography|..." },
+          "title": { "type": "string" },
+          "ladder": {
+            "type": "array",
+            "description": "Сопоставление уровней сложности (обычно возрастные уровни)",
+            "items": {
+              "type": "object",
+              "required": ["level","age_band","difficulty_tag","module_hints"],
+              "properties": {
+                "level": { "type": "integer" },
+                "age_band": { "type": "array", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2 },
+                "difficulty_tag": { "type": "string", "description": "easy|medium|hard|…"},
+                "module_hints": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "description": "Коды модулей, куда пойдём при таком уровне"
+                }
+              }
+            }
+          },
+          "subskills": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Поднавыки внутри домена (напр., Arithmetic, Geometry)"
+          },
+          "target_precision": { "type": "number", "default": 0.25 }
+        }
+      }
+    },
+
+    "item_bank": {
+      "type": "array",
+      "description": "Банк заданий для всех доменов",
+      "items": {
+        "type": "object",
+        "required": ["id","domain","subskill","level","format","stem","scoring"],
+        "properties": {
+          "id": { "type": "string" },
+          "domain": { "type": "string" },
+          "subskill": { "type": "string" },
+          "level": { "type": "integer", "description": "Соответствует ступени из ladder" },
+          "format": { "type": "string", "enum": ["mcq","numeric","short_text","drag_drop","image_choice"] },
+          "assets": { "type": "array", "items": { "type": "string" } },
+          "stem": { "type": "string" },
+          "choices": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "answer": { "type": ["string","number","array"] },
+          "irt": {
+            "type": "object",
+            "description": "Опционально: параметры IRT",
+            "properties": {
+              "a": { "type": "number" },
+              "b": { "type": "number" },
+              "c": { "type": "number" }
+            }
+          },
+          "scoring": {
+            "type": "object",
+            "required": ["correct_if","points"],
+            "properties": {
+              "correct_if": { "type": "string", "description": "rule expr или enum" },
+              "points": { "type": "number" }
+            }
+          },
+          "exposure_limit": { "type": "number", "default": 0.2 }
+        }
+      }
+    },
+
+    "routing": {
+      "type": "object",
+      "description": "Адаптивная логика выбора следующего вопроса",
+      "required": ["per_domain","switch_rules"],
+      "properties": {
+        "per_domain": {
+            "type": "object",
+            "description": "Правила адаптации внутри домена",
+            "additionalProperties": {
+              "type": "object",
+              "required": ["start_level","step_up","step_down","max_items","min_items"],
+              "properties": {
+                "start_level": { "type": "integer" },
+                "step_up": { "type": "integer", "default": 1 },
+                "step_down": { "type": "integer", "default": 1 },
+                "min_items": { "type": "integer", "default": 5 },
+                "max_items": { "type": "integer", "default": 12 },
+                "backoff_on_miss": { "type": "integer", "default": 2 },
+                "confidence_gate": { "type": "number", "default": 0.8 }
+              }
+            }
+        },
+        "switch_rules": {
+          "type": "object",
+          "description": "Когда переключаться между доменами",
+          "properties": {
+            "on_fast_mastery": { "type": "boolean", "default": true },
+            "min_items_per_domain_before_switch": { "type": "integer", "default": 3 }
+          }
+        }
+      }
+    },
+
+    "stopping_rules": {
+      "type": "object",
+      "required": ["global_max_items","global_min_items"],
+      "properties": {
+        "global_min_items": { "type": "integer", "default": 8 },
+        "global_max_items": { "type": "integer", "default": 40 },
+        "se_threshold": { "type": "number", "description": "Порог дисперсии/ошибки IRT/оценки" },
+        "time_cap_sec": { "type": "integer" }
+      }
+    },
+
+    "scoring": {
+      "type": "object",
+      "description": "Как оцениваем и нормируем",
+      "required": ["estimator","bands"],
+      "properties": {
+        "estimator": { "type": "string", "enum": ["simple_ratio","EAP","MLE"] },
+        "bands": {
+          "type": "array",
+          "description": "Интерпретация уровней",
+          "items": {
+            "type": "object",
+            "required": ["name","min","max"],
+            "properties": {
+              "name": { "type": "string" },
+              "min": { "type": "number" },
+              "max": { "type": "number" }
+            }
+          }
+        },
+        "age_norms": {
+          "type": "object",
+          "description": "Нормы по возрасту для скалирования",
+          "additionalProperties": { "type": "object" }
+        }
+      }
+    },
+
+    "outputs": {
+      "type": "object",
+      "required": ["placement_rules","persona_profile_schema"],
+      "properties": {
+        "placement_rules": {
+          "type": "object",
+          "description": "Правила выбора стартовых модулей/уроков по доменам",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "if_level_gte": { "type": "integer" },
+              "modules": { "type": "array", "items": { "type": "string" } },
+              "lesson_type": { "type": "string" }
+            }
+          }
+        },
+        "persona_profile_schema": {
+          "type": "object",
+          "description": "Схема портрета ученика",
+          "properties": {
+            "traits": { "type": "array", "items": { "type": "string" } },
+            "style": { "type": "object" },
+            "interests": { "type": "array", "items": { "type": "string" } },
+            "language_tone": { "type": "string" }
+          }
+        }
+      }
+    },
+
+    "version": { "type": "string" },
+    "metadata": { "type": "object" }
+  }
+}

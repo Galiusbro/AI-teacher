@@ -1,0 +1,96 @@
+{
+  "id": "diag_{{student_id}}_{{iso_date}}",
+  "student_context": {
+    "age_years": {{age}},
+    "language": "{{lang}}",
+    "stage_hint": "{{stage_hint}}",
+    "persona_probe": {
+      "enable": true,
+      "goals": ["communication_style","motivation","interests"],
+      "prompts": [
+        "Расскажи, что тебе нравится изучать и почему?",
+        "Предпочитаешь короткие задачи или большие проекты?",
+        "Любишь шутки или деловой стиль?"
+      ],
+      "signals_extract": ["humor","conciseness","emoji_tolerance","self_efficacy","growth_mindset"]
+    }
+  },
+
+  "design": {
+    "start_age_offset": -3,
+    "min_level": 5,
+    "max_level": 17,
+    "time_cap_sec": 1800,
+    "allow_cross_domain_adapt": true,
+    "max_domains_per_session": 3
+  },
+
+  "domains": [
+    {
+      "code": "{{domain_code_1}}",
+      "title": "{{domain_title_1}}",
+      "ladder": [
+        { "level": 7,  "age_band": [7,8],  "difficulty_tag": "easy",   "module_hints": ["{{mod_a}}","{{mod_b}}"] },
+        { "level": 10, "age_band": [9,11], "difficulty_tag": "medium", "module_hints": ["{{mod_c}}"] },
+        { "level": 13, "age_band": [12,13],"difficulty_tag": "hard",   "module_hints": ["{{mod_d}}"] }
+      ],
+      "subskills": ["{{sub1}}","{{sub2}}"],
+      "target_precision": 0.25
+    }
+  ],
+
+  "item_bank": [
+    {
+      "id": "item_{{id}}",
+      "domain": "{{domain_code_1}}",
+      "subskill": "{{sub1}}",
+      "level": 7,
+      "format": "mcq",
+      "stem": "…",
+      "choices": ["A","B","C","D"],
+      "answer": "B",
+      "scoring": { "correct_if": "choice==answer", "points": 1 },
+      "exposure_limit": 0.2
+    }
+  ],
+
+  "routing": {
+    "per_domain": {
+      "{{domain_code_1}}": { "start_level": {{start_level_1}}, "step_up": 1, "step_down": 1, "min_items": 5, "max_items": 10, "backoff_on_miss": 2, "confidence_gate": 0.8 }
+    },
+    "switch_rules": { "on_fast_mastery": true, "min_items_per_domain_before_switch": 3 }
+  },
+
+  "stopping_rules": {
+    "global_min_items": 8,
+    "global_max_items": 40,
+    "se_threshold": 0.3,
+    "time_cap_sec": 1800
+  },
+
+  "scoring": {
+    "estimator": "simple_ratio",
+    "bands": [
+      { "name": "below",      "min": 0.0, "max": 0.4 },
+      { "name": "basic",      "min": 0.4, "max": 0.6 },
+      { "name": "proficient", "min": 0.6, "max": 0.8 },
+      { "name": "advanced",   "min": 0.8, "max": 1.0 }
+    ],
+    "age_norms": {}
+  },
+
+  "outputs": {
+    "placement_rules": {
+      "{{domain_code_1}}": { "if_level_gte": 10, "modules": ["{{mod_c}}","{{mod_d}}"], "lesson_type": "guided" }
+    },
+    "persona_profile_schema": {
+      "traits": ["humor","conciseness","risk_taking","persistence"],
+      "style": { "tone": "friendly", "emoji": "auto", "examples_frequency": "medium" },
+      "interests": [],
+      "language_tone": "adaptive"
+    }
+  },
+
+  "version": "1.0.0",
+  "metadata": { "source": "cambridge-style" }
+}
