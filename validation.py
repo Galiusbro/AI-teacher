@@ -16,7 +16,7 @@ class ValidationError(Exception):
 
 def validate_uuid(uuid_str: str) -> bool:
     """Validate UUID format."""
-    uuid_pattern = r'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$'
+    uuid_pattern = r'^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$'
     return bool(re.match(uuid_pattern, uuid_str))
 
 
