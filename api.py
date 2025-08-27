@@ -8,12 +8,13 @@ import json
 import uuid
 from datetime import datetime
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import psycopg2
 from psycopg2.extras import RealDictCursor
 from psycopg2 import IntegrityError
 import jsonschema
 from dotenv import load_dotenv
-from werkzeug.security import generate_password_hash
+from werkzeug.security import generate_password_hash, check_password_hash
 
 # Load environment variables from .env file
 load_dotenv()
@@ -23,6 +24,9 @@ app = Flask(__name__,
            static_folder='templates',
            static_url_path='/static')
 app.config['JSON_AS_ASCII'] = False  # Allow non-ASCII characters in JSON
+
+# Enable CORS for frontend
+CORS(app, origins=['http://localhost:5173', 'http://127.0.0.1:5173'])
 
 from validation import (
     validate_api_request_generate_lesson,
@@ -151,7 +155,7 @@ def register_parent():
 
         email = data.get('email')
         password = data.get('password')
-        locale = data.get('locale', 'en')
+        locale = data.get('locale', 'ru')
 
         if not email or not password:
             return jsonify({"error": "Email and password required"}), 400
@@ -160,6 +164,11 @@ def register_parent():
 
         conn = get_db_connection()
         with conn.cursor(cursor_factory=RealDictCursor) as cur:
+            # Check if user already exists
+            cur.execute("SELECT id FROM app_user WHERE email = %s", (email,))
+            if cur.fetchone():
+                return jsonify({"error": "User with this email already exists"}), 409
+            
             cur.execute(
                 """
                 INSERT INTO app_user (email, password_hash, role, locale)
@@ -172,34 +181,34 @@ def register_parent():
             conn.commit()
         conn.close()
 
-        return jsonify({"user_id": str(user_id), "role": "parent"}), 201
+        return jsonify({
+            "user_id": str(user_id), 
+            "role": "parent",
+            "message": "Parent registered successfully"
+        }), 201
     except IntegrityError:
         return jsonify({"error": "User with this email already exists"}), 400
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
 
-@app.route('/api/register/child', methods=['POST'])
-def register_child():
-    """Register a new child (student) user and link to a parent."""
+@app.route('/api/parent/add-child', methods=['POST'])
+def add_child():
+    """Add a child directly to parent without separate account."""
     try:
         data = request.get_json()
 
         if not data:
             return jsonify({"error": "No data provided"}), 400
 
-        email = data.get('email')
-        password = data.get('password')
         parent_user_id = data.get('parent_user_id')
-        locale = data.get('locale', 'en')
+        child_name = data.get('child_name')
+        grade_hint = data.get('grade_hint', '')
+        relation = data.get('relation', 'child')
         dob = data.get('dob')
-        grade_hint = data.get('grade_hint')
-        relation = data.get('relation')
 
-        if not all([email, password, parent_user_id]):
-            return jsonify({"error": "Email, password and parent_user_id required"}), 400
-
-        password_hash = generate_password_hash(password)
+        if not all([parent_user_id, child_name]):
+            return jsonify({"error": "Parent user ID and child name are required"}), 400
 
         conn = get_db_connection()
         with conn.cursor(cursor_factory=RealDictCursor) as cur:
@@ -212,29 +221,18 @@ def register_child():
                 conn.close()
                 return jsonify({"error": "Parent not found"}), 404
 
-            # Create user
+            # Create student record directly linked to parent (no separate user account)
             cur.execute(
                 """
-                INSERT INTO app_user (email, password_hash, role, locale)
-                VALUES (%s, %s, 'student', %s)
-                RETURNING id
-                """,
-                (email, password_hash, locale),
-            )
-            child_user_id = cur.fetchone()["id"]
-
-            # Create student record
-            cur.execute(
-                """
-                INSERT INTO student (user_id, dob, grade_hint)
+                INSERT INTO student (parent_user_id, grade_hint, dob)
                 VALUES (%s, %s, %s)
                 RETURNING id
                 """,
-                (child_user_id, dob, grade_hint),
+                (parent_user_id, grade_hint, dob),
             )
             student_id = cur.fetchone()["id"]
 
-            # Link parent and student
+            # Link parent and student (optional, since we already have parent_user_id)
             cur.execute(
                 """
                 INSERT INTO parent_link (student_id, parent_user_id, relation)
@@ -246,9 +244,12 @@ def register_child():
             conn.commit()
         conn.close()
 
-        return jsonify({"user_id": str(child_user_id), "student_id": str(student_id)}), 201
-    except IntegrityError:
-        return jsonify({"error": "User with this email already exists"}), 400
+        return jsonify({
+            "student_id": str(student_id),
+            "child_name": child_name,
+            "message": "Child added successfully"
+        }), 201
+        
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
@@ -845,6 +846,295 @@ def get_modules_endpoint():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+
+# ---------- Registration endpoints ----------
+
+@app.route('/api/register/student', methods=['POST'])
+def register_student():
+    """Register a new student user."""
+    try:
+        data = request.get_json()
+        
+        if not data or 'email' not in data or 'password' not in data:
+            return jsonify({"error": "Email and password are required"}), 400
+        
+        email = data['email']
+        password = data['password']
+        locale = data.get('locale', 'ru')
+        grade_hint = data.get('grade_hint', '')
+        
+        conn = get_db_connection()
+        with conn.cursor() as cur:
+            # Check if user already exists
+            cur.execute("SELECT id FROM app_user WHERE email = %s", (email,))
+            if cur.fetchone():
+                return jsonify({"error": "User with this email already exists"}), 409
+            
+            # Create new user
+            password_hash = generate_password_hash(password)
+            cur.execute("""
+                INSERT INTO app_user (email, password_hash, role, locale)
+                VALUES (%s, %s, %s, %s)
+                RETURNING id
+            """, (email, password_hash, 'student', locale))
+            
+            user_id = cur.fetchone()[0]
+            
+            # Create student record
+            cur.execute("""
+                INSERT INTO student (user_id, grade_hint)
+                VALUES (%s, %s)
+                RETURNING id
+            """, (user_id, grade_hint))
+            
+            conn.commit()
+            conn.close()
+            
+            return jsonify({
+                "user_id": str(user_id),
+                "role": "student",
+                "message": "Student registered successfully"
+            }), 201
+            
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+# ---------- Authentication endpoints ----------
+
+@app.route('/api/login', methods=['POST'])
+def login():
+    """Authenticate user and return session info."""
+    try:
+        data = request.get_json()
+        
+        if not data or 'email' not in data or 'password' not in data:
+            return jsonify({"error": "Email and password are required"}), 400
+        
+        email = data['email']
+        password = data['password']
+        
+        conn = get_db_connection()
+        with conn.cursor(cursor_factory=RealDictCursor) as cur:
+            # Find user by email
+            cur.execute("""
+                SELECT id, email, password_hash, role, locale
+                FROM app_user 
+                WHERE email = %s
+            """, (email,))
+            
+            user = cur.fetchone()
+            conn.close()
+            
+            if not user:
+                return jsonify({"error": "Invalid email or password"}), 401
+            
+            # Check password
+            if not check_password_hash(user['password_hash'], password):
+                return jsonify({"error": "Invalid email or password"}), 401
+            
+            # Return user info (without password)
+            return jsonify({
+                "user_id": str(user['id']),
+                "email": user['email'],
+                "role": user['role'],
+                "locale": user['locale'],
+                "message": "Login successful"
+            }), 200
+            
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/api/logout', methods=['POST'])
+def logout():
+    """Logout user (client-side session cleanup)."""
+    try:
+        # Since we're not using server-side sessions, 
+        # this endpoint just confirms logout
+        return jsonify({
+            "message": "Logout successful",
+            "note": "Please clear client-side session data"
+        }), 200
+        
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/api/user/profile', methods=['GET'])
+def get_user_profile():
+    """Get current user profile information."""
+    try:
+        # Get user_id from query parameter (in real app, use JWT token)
+        user_id = request.args.get('user_id')
+        
+        if not user_id:
+            return jsonify({"error": "User ID is required"}), 400
+        
+        conn = get_db_connection()
+        with conn.cursor(cursor_factory=RealDictCursor) as cur:
+            # Get user info
+            cur.execute("""
+                SELECT id, email, role, locale, created_at
+                FROM app_user 
+                WHERE id = %s
+            """, (user_id,))
+            
+            user = cur.fetchone()
+            
+            if not user:
+                conn.close()
+                return jsonify({"error": "User not found"}), 404
+            
+            # Get additional info based on role
+            if user['role'] == 'student':
+                cur.execute("""
+                    SELECT grade_hint, dob
+                    FROM student 
+                    WHERE user_id = %s
+                """, (user_id,))
+                student_info = cur.fetchone()
+                if student_info:
+                    user['grade_hint'] = student_info['grade_hint']
+                    user['dob'] = student_info['dob']
+            
+            conn.close()
+            
+            return jsonify({
+                "user": user,
+                "message": "Profile retrieved successfully"
+            }), 200
+            
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+# ---------- Parent-Child Management endpoints ----------
+
+@app.route('/api/parent/children', methods=['GET'])
+def get_parent_children():
+    """Get all children linked to a parent."""
+    try:
+        parent_user_id = request.args.get('parent_user_id')
+        
+        if not parent_user_id:
+            return jsonify({"error": "Parent user ID is required"}), 400
+        
+        conn = get_db_connection()
+        with conn.cursor(cursor_factory=RealDictCursor) as cur:
+            cur.execute("""
+                SELECT 
+                    s.id as student_id,
+                    s.grade_hint,
+                    s.dob,
+                    pl.relation
+                FROM parent_link pl
+                JOIN student s ON pl.student_id = s.id
+                WHERE pl.parent_user_id = %s
+                ORDER BY s.id DESC
+            """, (parent_user_id,))
+            
+            children = cur.fetchall()
+            conn.close()
+            
+            return jsonify({
+                "children": children,
+                "total": len(children)
+            }), 200
+            
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/api/enrollment/enroll', methods=['POST'])
+def enroll_student():
+    """Enroll a student in a subject and stage."""
+    try:
+        data = request.get_json()
+        
+        if not data or 'student_id' not in data or 'subject_code' not in data or 'stage_code' not in data:
+            return jsonify({"error": "Student ID, subject code, and stage code are required"}), 400
+        
+        student_id = data['student_id']
+        subject_code = data['subject_code']
+        stage_code = data['stage_code']
+        curriculum_version = data.get('curriculum_version', '1.0.0')
+        
+        conn = get_db_connection()
+        with conn.cursor(cursor_factory=RealDictCursor) as cur:
+            # Get subject and stage IDs
+            # Try exact match first, then case-insensitive match
+            cur.execute("SELECT id FROM subject WHERE code = %s OR LOWER(code) = LOWER(%s)", (subject_code, subject_code))
+            subject = cur.fetchone()
+            if not subject:
+                conn.close()
+                return jsonify({"error": f"Subject not found: {subject_code}"}), 404
+            
+            cur.execute("SELECT id FROM stage WHERE code = %s", (stage_code,))
+            stage = cur.fetchone()
+            if not stage:
+                conn.close()
+                return jsonify({"error": f"Stage not found: {stage_code}"}), 404
+            
+            # Check if already enrolled
+            cur.execute("""
+                SELECT id FROM enrollment 
+                WHERE student_id = %s AND subject_id = %s AND stage_id = %s
+            """, (student_id, subject['id'], stage['id']))
+            
+            if cur.fetchone():
+                conn.close()
+                return jsonify({"error": "Student already enrolled in this subject and stage"}), 409
+            
+            # Create enrollment
+            cur.execute("""
+                INSERT INTO enrollment (student_id, subject_id, stage_id, curriculum_version)
+                VALUES (%s, %s, %s, %s)
+                RETURNING id
+            """, (student_id, subject['id'], stage['id'], curriculum_version))
+            
+            enrollment_id = cur.fetchone()['id']
+            
+            # Get first module for this subject/stage combination
+            cur.execute("""
+                SELECT id, code FROM module 
+                WHERE subject_id = %s AND stage_id = %s 
+                ORDER BY code LIMIT 1
+            """, (subject['id'], stage['id']))
+            
+            first_module = cur.fetchone()
+            
+            if first_module:
+                # Create initial learning state
+                cur.execute("""
+                    INSERT INTO learning_state (student_id, module_id, current_lesson_type, mastery_jsonb, counters_jsonb, next_recommended)
+                    VALUES (%s, %s, %s, %s, %s, %s)
+                    RETURNING id
+                """, (
+                    student_id, 
+                    first_module['id'], 
+                    'concept',
+                    '{"overall":0,"concept":0,"guided":0,"independent":0,"assessment":0}',
+                    '{"concept":0,"guided":0,"independent":0,"assessment":0}',
+                    'concept'
+                ))
+                
+                learning_state_id = cur.fetchone()['id']
+            else:
+                learning_state_id = None
+            
+            conn.commit()
+            conn.close()
+            
+            return jsonify({
+                "enrollment_id": str(enrollment_id),
+                "learning_state_id": str(learning_state_id) if learning_state_id else None,
+                "first_module": first_module['code'] if first_module else None,
+                "message": "Student enrolled successfully"
+            }), 201
+            
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 
 if __name__ == '__main__':
