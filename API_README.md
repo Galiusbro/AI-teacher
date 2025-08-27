@@ -17,7 +17,57 @@ PORT=5000 python api.py
 
 ## 📚 API Эндпоинты
 
-### 1. Health Check
+### 1. Регистрация пользователей
+
+#### Родитель
+```http
+POST /api/register/parent
+```
+
+**Request:**
+```json
+{
+  "email": "parent@example.com",
+  "password": "secret",
+  "locale": "ru"
+}
+```
+
+**Response:**
+```json
+{
+  "user_id": "uuid",
+  "role": "parent"
+}
+```
+
+#### Ребёнок
+```http
+POST /api/register/child
+```
+
+**Request:**
+```json
+{
+  "email": "child@example.com",
+  "password": "secret",
+  "parent_user_id": "uuid-of-parent",
+  "locale": "ru",
+  "dob": "2015-05-01",
+  "grade_hint": "1",
+  "relation": "son"
+}
+```
+
+**Response:**
+```json
+{
+  "user_id": "uuid",
+  "student_id": "uuid"
+}
+```
+
+### 2. Health Check
 ```http
 GET /api/health
 ```
@@ -30,7 +80,7 @@ GET /api/health
 }
 ```
 
-### 2. Database Validation
+### 3. Database Validation
 ```http
 GET /api/validate/database
 ```
@@ -49,7 +99,7 @@ GET /api/validate/database
 }
 ```
 
-### 3. Lesson Validation
+### 4. Lesson Validation
 ```http
 POST /api/validate/lesson
 ```
@@ -73,7 +123,7 @@ POST /api/validate/lesson
 }
 ```
 
-### 4. Генерация урока
+### 5. Генерация урока
 ```http
 POST /api/lessons/generate
 ```
@@ -132,7 +182,7 @@ POST /api/lessons/generate
 **Метаданные:**
 - `_generated_with`: `"ai"` или `"template"` - метод генерации
 
-### 5. Следующий урок
+### 6. Следующий урок
 ```http
 POST /api/next
 ```
@@ -155,7 +205,7 @@ POST /api/next
 }
 ```
 
-### 6. Отправка ответа
+### 7. Отправка ответа
 ```http
 POST /api/submissions
 ```
