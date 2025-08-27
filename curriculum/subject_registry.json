@@ -11,7 +11,17 @@
       { "code": "Physics", "kind": "single", "titles": {"en":"Physics","ru":"Физика"} },
       { "code": "ICT", "kind": "single", "titles": {"en":"ICT","ru":"ИКТ"} },
       { "code": "ComputerScience", "kind": "single", "titles": {"en":"Computer Science","ru":"Информатика"} },
-      { "code": "GlobalPerspectives", "kind": "single", "titles": {"en":"Global Perspectives","ru":"Глобальные перспективы"} }
+      { "code": "GlobalPerspectives", "kind": "single", "titles": {"en":"Global Perspectives","ru":"Глобальные перспективы"} },
+      { "code": "Music", "kind": "single", "titles": {"en":"Music","ru":"Музыка"} },
+      { "code": "Art", "kind": "single", "titles": {"en":"Art","ru":"Искусство"} },
+      { "code": "Business", "kind": "single", "titles": {"en":"Business","ru":"Бизнес"} },
+      { "code": "Languages", "kind": "single", "titles": {"en":"Languages","ru":"Языки"} },
+      { "code": "EnglishLiterature", "kind": "single", "titles": {"en":"English Literature","ru":"Английская литература"} },
+      { "code": "History", "kind": "single", "titles": {"en":"History","ru":"История"} },
+      { "code": "Economics", "kind": "single", "titles": {"en":"Economics","ru":"Экономика"} },
+      { "code": "FurtherMathematics", "kind": "single", "titles": {"en":"Further Mathematics","ru":"Дополнительная математика"} },
+      { "code": "PhysicalEducation", "kind": "single", "titles": {"en":"Physical Education","ru":"Физическая культура"} },
+      { "code": "Geography", "kind": "single", "titles": {"en":"Geography","ru":"География"} }
     ]
   }
   

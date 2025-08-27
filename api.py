@@ -38,7 +38,6 @@ from mastery_calculator import (
     MasteryCalculatorV2,
     MasteryConfig
 )
-from diagnostic_system import diagnostic_system
 
 # Try to import AI generator
 try:
@@ -323,7 +322,7 @@ def create_submission():
             score = data.get('score', 0.0)
             difficulty = data.get('difficulty', 'medium')
 
-            lesson_mastery, mastery_diagnostics = calculate_lesson_mastery_v2(
+            lesson_mastery = calculate_lesson_mastery_v2(
                 submissions_history, lesson_type, time_spent, score, difficulty
             )
 
@@ -397,7 +396,6 @@ def create_submission():
             "submission_id": str(submission['id']),
             "created_at": submission['created_at'].isoformat(),
             "lesson_mastery": lesson_mastery,
-            "mastery_diagnostics": mastery_diagnostics,
             "overall_mastery": updated_mastery.get('overall', 0),
             "mastery_description": mastery_description,
             "next_recommended": next_lesson_type,
@@ -732,234 +730,6 @@ def get_modules_endpoint():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-
-# ---------- Диагностические API эндпоинты ----------
-
-@app.route('/api/diagnostic/start', methods=['POST'])
-def start_diagnostic():
-    """Начинает новую диагностическую сессию для ученика."""
-    try:
-        data = request.get_json()
-
-        if not data or 'student_id' not in data or 'subject_id' not in data or 'stage_id' not in data:
-            return jsonify({"error": "Missing required fields: student_id, subject_id, stage_id"}), 400
-
-        student_id = data['student_id']
-        subject_id = data['subject_id']
-        stage_id = data['stage_id']
-
-        conn = get_db_connection()
-        with conn.cursor() as cur:
-            # Проверяем, что ученик существует
-            cur.execute("SELECT id FROM student WHERE id = %s", (student_id,))
-            if not cur.fetchone():
-                return jsonify({"error": "Student not found"}), 404
-
-            # Проверяем, что предмет и уровень существуют
-            cur.execute("SELECT id FROM subject WHERE id = %s", (subject_id,))
-            if not cur.fetchone():
-                return jsonify({"error": "Subject not found"}), 404
-
-            cur.execute("SELECT id FROM stage WHERE id = %s", (stage_id,))
-            if not cur.fetchone():
-                return jsonify({"error": "Stage not found"}), 404
-
-            # Создаем диагностическую сессию
-            session_id = diagnostic_system.start_diagnostic_session(
-                conn, student_id, subject_id, stage_id
-            )
-
-            conn.commit()
-
-        return jsonify({
-            "success": True,
-            "session_id": session_id,
-            "message": "Диагностическая сессия начата",
-            "next_action": "Получите следующий вопрос через /api/diagnostic/question"
-        })
-
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-
-@app.route('/api/diagnostic/question', methods=['POST'])
-def get_diagnostic_question():
-    """Получает следующий вопрос для диагностики."""
-    try:
-        data = request.get_json()
-
-        if not data or 'session_id' not in data:
-            return jsonify({"error": "Missing required field: session_id"}), 400
-
-        session_id = data['session_id']
-        current_level = data.get('current_level')
-
-        conn = get_db_connection()
-        question = diagnostic_system.get_next_diagnostic_question(
-            conn, session_id, current_level
-        )
-
-        if question is None:
-            return jsonify({
-                "message": "Диагностика завершена - все вопросы отвечены",
-                "next_action": "Завершите диагностику через /api/diagnostic/complete",
-                "session_id": session_id
-            })
-
-        return jsonify({
-            "success": True,
-            "question": question
-        })
-
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-
-@app.route('/api/diagnostic/answer', methods=['POST'])
-def submit_diagnostic_answer():
-    """Обрабатывает ответ ученика на диагностический вопрос."""
-    try:
-        data = request.get_json()
-
-        required_fields = ['session_id', 'question_id', 'answer', 'time_spent_sec']
-        if not all(field in data for field in required_fields):
-            return jsonify({"error": f"Missing required fields: {required_fields}"}), 400
-
-        session_id = data['session_id']
-        question_id = data['question_id']
-        answer = data['answer']
-        time_spent_sec = data['time_spent_sec']
-
-        conn = get_db_connection()
-        result = diagnostic_system.submit_diagnostic_answer(
-            conn, session_id, question_id, answer, time_spent_sec
-        )
-
-        if 'error' in result:
-            return jsonify(result), 400
-
-        conn.commit()
-
-        return jsonify({
-            "success": True,
-            "result": result,
-            "next_action": "Получите следующий вопрос через /api/diagnostic/question"
-        })
-
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-
-@app.route('/api/diagnostic/complete', methods=['POST'])
-def complete_diagnostic():
-    """Завершает диагностическую сессию и рассчитывает результаты."""
-    try:
-        data = request.get_json()
-
-        if not data or 'session_id' not in data:
-            return jsonify({"error": "Missing required field: session_id"}), 400
-
-        session_id = data['session_id']
-
-        conn = get_db_connection()
-        result = diagnostic_system.complete_diagnostic_session(conn, session_id)
-
-        if 'error' in result:
-            return jsonify(result), 400
-
-        conn.commit()
-
-        return jsonify({
-            "success": True,
-            "diagnostic_result": result,
-            "message": "Диагностика завершена! Результаты сохранены."
-        })
-
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-
-@app.route('/api/diagnostic/results/<session_id>', methods=['GET'])
-def get_diagnostic_results(session_id):
-    """Получает результаты диагностической сессии."""
-    try:
-        conn = get_db_connection()
-        with conn.cursor(cursor_factory=RealDictCursor) as cur:
-            cur.execute("""
-                SELECT
-                    ds.*,
-                    s.email as student_email,
-                    subj.title as subject_title,
-                    st.title as stage_title
-                FROM diagnostic_session ds
-                JOIN student stud ON ds.student_id = stud.id
-                JOIN app_user s ON stud.user_id = s.id
-                JOIN subject subj ON ds.subject_id = subj.id
-                JOIN stage st ON ds.stage_id = st.id
-                WHERE ds.id = %s
-            """, (session_id,))
-
-            session = cur.fetchone()
-            if not session:
-                return jsonify({"error": "Diagnostic session not found"}), 404
-
-            return jsonify({
-                "session": dict(session),
-                "results": session['results_jsonb'],
-                "recommendations": session['recommendations_jsonb']
-            })
-
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-
-@app.route('/api/diagnostic/student/<student_id>', methods=['GET'])
-def get_student_diagnostic_status(student_id):
-    """Получает статус диагностики для ученика."""
-    try:
-        conn = get_db_connection()
-        with conn.cursor(cursor_factory=RealDictCursor) as cur:
-            # Получаем информацию о студенте
-            cur.execute("""
-                SELECT
-                    s.*,
-                    u.email,
-                    CASE
-                        WHEN s.diagnostic_completed_at IS NOT NULL THEN 'completed'
-                        WHEN EXISTS (
-                            SELECT 1 FROM diagnostic_session ds
-                            WHERE ds.student_id = s.id AND ds.status = 'in_progress'
-                        ) THEN 'in_progress'
-                        ELSE 'not_started'
-                    END as diagnostic_status
-                FROM student s
-                JOIN app_user u ON s.user_id = u.id
-                WHERE s.id = %s
-            """, (student_id,))
-
-            student = cur.fetchone()
-            if not student:
-                return jsonify({"error": "Student not found"}), 404
-
-            result = dict(student)
-
-            # Если диагностика завершена, получаем последнюю сессию
-            if result['diagnostic_status'] == 'completed':
-                cur.execute("""
-                    SELECT * FROM diagnostic_session
-                    WHERE student_id = %s AND status = 'completed'
-                    ORDER BY completed_at DESC
-                    LIMIT 1
-                """, (student_id,))
-
-                last_session = cur.fetchone()
-                if last_session:
-                    result['last_diagnostic'] = dict(last_session)
-
-            return jsonify(result)
-
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
 
 
 if __name__ == '__main__':
