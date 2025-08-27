@@ -205,3 +205,52 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Ayaal Teacher specific
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache directories
+.lesson_cache/
+.cache/
+
+# Test data and temporary files
+test_*.py
+demo_*.py
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Python virtual environment
+venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Frontend build artifacts (keep source, ignore build)
+frontend/dist/
+frontend/build/
+frontend/node_modules/
+
+# Keep frontend source code but ignore dependencies
+!frontend/src/
+!frontend/public/
+!frontend/package.json
+!frontend/vite.config.ts
+!frontend/tailwind.config.js
+!frontend/postcss.config.js
+!frontend/tsconfig.json
+!frontend/index.html
