@@ -44,6 +44,7 @@ from mastery_calculator import (
     MasteryCalculatorV2,
     MasteryConfig
 )
+from smart_diagnostic_system import SmartDiagnosticSystem
 
 # Try to import AI generator
 try:
@@ -56,6 +57,9 @@ try:
 except ImportError:
     print("Warning: AI generator not available. Install groq package and set GROQ_API_KEY")
     AI_AVAILABLE = False
+
+# Initialize diagnostic system
+diagnostic_system = SmartDiagnosticSystem()
 
 
 def get_db_connection():
@@ -1133,6 +1137,147 @@ def enroll_student():
                 "message": "Student enrolled successfully"
             }), 201
             
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+# ---------- Diagnostic endpoints ----------
+
+@app.route('/api/diagnostic/start', methods=['POST'])
+def start_diagnostic():
+    """Start a diagnostic session for a student."""
+    try:
+        data = request.get_json()
+        
+        if not data:
+            return jsonify({"error": "No data provided"}), 400
+        
+        student_id = data.get('student_id')
+        age = data.get('age')
+        subjects = data.get('subjects', ['Mathematics', 'English'])
+        
+        if not student_id or not age:
+            return jsonify({"error": "student_id and age are required"}), 400
+        
+        # Initialize student profile
+        profile = diagnostic_system.initialize_student_profile(
+            student_id, age, subjects
+        )
+        
+        return jsonify({
+            "student_id": student_id,
+            "age": age,
+            "subjects": subjects,
+            "profile_created": True
+        }), 200
+        
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/api/diagnostic/question', methods=['POST'])
+def get_diagnostic_question():
+    """Get next diagnostic question for a student."""
+    try:
+        data = request.get_json()
+        
+        if not data:
+            return jsonify({"error": "No data provided"}), 400
+        
+        student_id = data.get('student_id')
+        subject = data.get('subject')
+        
+        if not student_id or not subject:
+            return jsonify({"error": "student_id and subject are required"}), 400
+        
+        # Generate next question
+        question = diagnostic_system.generate_next_question(student_id, subject)
+        
+        if not question:
+            return jsonify({
+                "question": None,
+                "message": "No more questions available for this subject"
+            }), 200
+        
+        return jsonify({
+            "question": {
+                "id": question.id,
+                "subject": question.subject,
+                "difficulty_level": question.difficulty_level.value,
+                "question_type": question.question_type,
+                "content": question.content,
+                "target_age": question.target_age
+            }
+        }), 200
+        
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/api/diagnostic/answer', methods=['POST'])
+def submit_diagnostic_answer():
+    """Submit answer to a diagnostic question."""
+    try:
+        data = request.get_json()
+        
+        if not data:
+            return jsonify({"error": "No data provided"}), 400
+        
+        student_id = data.get('student_id')
+        question_id = data.get('question_id')
+        answer = data.get('answer')
+        time_spent_sec = data.get('time_spent_sec', 0)
+        
+        if not all([student_id, question_id, answer is not None]):
+            return jsonify({"error": "student_id, question_id, and answer are required"}), 400
+        
+        # Process answer
+        result = diagnostic_system.process_answer(
+            student_id, question_id, {"answer": answer}, time_spent_sec
+        )
+        
+        return jsonify({
+            "result": result,
+            "question_id": question_id
+        }), 200
+        
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/api/diagnostic/plan/<student_id>', methods=['GET'])
+def get_learning_plan(student_id):
+    """Get learning plan for a student based on diagnostic results."""
+    try:
+        if not student_id:
+            return jsonify({"error": "student_id is required"}), 400
+        
+        # Generate learning plan
+        plan = diagnostic_system.generate_learning_plan(student_id)
+        
+        return jsonify({
+            "student_id": student_id,
+            "plan": plan
+        }), 200
+        
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/api/diagnostic/export/<student_id>', methods=['GET'])
+def export_diagnostic_session(student_id):
+    """Export diagnostic session data for database storage."""
+    try:
+        if not student_id:
+            return jsonify({"error": "student_id is required"}), 400
+        
+        # Export session record
+        session_record = diagnostic_system.export_session_record(student_id)
+        
+        return jsonify({
+            "session_record": session_record
+        }), 200
+        
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 

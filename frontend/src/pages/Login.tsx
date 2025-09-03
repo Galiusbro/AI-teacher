@@ -34,7 +34,7 @@ const Login: React.FC = () => {
         if (response.data.role === 'parent') {
           navigate('/parent/dashboard');
         } else if (response.data.role === 'student') {
-          navigate('/dashboard/student');
+          navigate('/student/dashboard');
         } else {
           navigate('/dashboard');
         }
