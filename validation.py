@@ -43,29 +43,32 @@ def validate_locale(locale: str) -> bool:
     return bool(re.match(r'^[a-z]{2}(-[A-Z]{2})?$', locale))
 
 
+def _validate_common_fields(data: Dict[str, Any], required_fields: List[str]) -> Tuple[bool, str]:
+    """Validate presence of required fields and common identifiers."""
+    for field in required_fields:
+        if field not in data:
+            return False, f"Missing required field: {field}"
+
+    if 'module_code' in required_fields and not validate_module_code(data['module_code']):
+        return False, f"Invalid module_code format: {data['module_code']}"
+
+    if 'student_id' in required_fields and not validate_uuid(data['student_id']):
+        return False, f"Invalid student_id format: {data['student_id']}"
+
+    return True, "Valid"
+
+
 def validate_api_request_generate_lesson(data: Dict[str, Any]) -> Tuple[bool, str]:
     """Validate request for lesson generation."""
     try:
         required_fields = ['module_code', 'lesson_type', 'student_id']
+        valid, msg = _validate_common_fields(data, required_fields)
+        if not valid:
+            return False, msg
 
-        # Check required fields
-        for field in required_fields:
-            if field not in data:
-                return False, f"Missing required field: {field}"
-
-        # Validate module_code
-        if not validate_module_code(data['module_code']):
-            return False, f"Invalid module_code format: {data['module_code']}"
-
-        # Validate lesson_type
         if not validate_lesson_type(data['lesson_type']):
             return False, f"Invalid lesson_type: {data['lesson_type']}"
 
-        # Validate student_id (UUID)
-        if not validate_uuid(data['student_id']):
-            return False, f"Invalid student_id format: {data['student_id']}"
-
-        # Validate optional locale
         if 'locale' in data and not validate_locale(data['locale']):
             return False, f"Invalid locale format: {data['locale']}"
 
@@ -79,19 +82,9 @@ def validate_api_request_next_lesson(data: Dict[str, Any]) -> Tuple[bool, str]:
     """Validate request for next lesson."""
     try:
         required_fields = ['student_id', 'module_code']
-
-        # Check required fields
-        for field in required_fields:
-            if field not in data:
-                return False, f"Missing required field: {field}"
-
-        # Validate module_code
-        if not validate_module_code(data['module_code']):
-            return False, f"Invalid module_code format: {data['module_code']}"
-
-        # Validate student_id (UUID)
-        if not validate_uuid(data['student_id']):
-            return False, f"Invalid student_id format: {data['student_id']}"
+        valid, msg = _validate_common_fields(data, required_fields)
+        if not valid:
+            return False, msg
 
         return True, "Valid"
 
@@ -103,19 +96,9 @@ def validate_api_request_submission(data: Dict[str, Any]) -> Tuple[bool, str]:
     """Validate request for submission."""
     try:
         required_fields = ['student_id', 'module_code', 'lesson_id', 'task_id', 'kind']
-
-        # Check required fields
-        for field in required_fields:
-            if field not in data:
-                return False, f"Missing required field: {field}"
-
-        # Validate module_code
-        if not validate_module_code(data['module_code']):
-            return False, f"Invalid module_code format: {data['module_code']}"
-
-        # Validate student_id (UUID)
-        if not validate_uuid(data['student_id']):
-            return False, f"Invalid student_id format: {data['student_id']}"
+        valid, msg = _validate_common_fields(data, required_fields)
+        if not valid:
+            return False, msg
 
         # Validate kind
         valid_kinds = ['practice', 'homework', 'project', 'lab', 'assessment']
